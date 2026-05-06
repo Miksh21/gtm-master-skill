@@ -86,5 +86,5 @@ Recommended: Option [n] — [one-line reason]
 
 ## What to do after
 
-- Run the PS through `tasks/stress-test-sequence.md` separately — it's often the highest-read part of the email
+- Run the PS through `clusters/cold-email/tasks/stress-test-sequence.md` separately — it's often the highest-read part of the email
 - If PS is on Step 1 and uses Social Proof, save room on Step 2 for a Curiosity PS (rotate goals across the sequence)

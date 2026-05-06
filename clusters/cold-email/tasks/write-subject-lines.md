@@ -84,12 +84,12 @@ Recommended default: [A/B/C] — [one-line reason]
 
 ## What to do after
 
-- Run **spintax** across the top 3 (`tasks/add-spintax.md`) so the same variant doesn't fire repeatedly
+- Run **spintax** across the top 3 (`clusters/cold-email/tasks/add-spintax.md`) so the same variant doesn't fire repeatedly
 - Track open rate per subject variant (not campaign overall)
 - If open rate < 40% after launch, the subject is the first thing to swap — don't touch the body yet
 
 ## Deeper knowledge (load only when needed)
 
-- Full subject-line theory + extended templates → `knowledge/writing-frameworks.md`
-- ColdIQ-specific subject patterns for different value-prop styles → `knowledge/coldiq-playbook.md`
-- ATL vs BTL subject-line tone shifts → `knowledge/atl-btl-messaging.md`
+- Full subject-line theory + extended templates → `clusters/cold-email/knowledge/writing-frameworks.md`
+- ColdIQ-specific subject patterns for different value-prop styles → `clusters/cold-email/knowledge/coldiq-playbook.md`
+- ATL vs BTL subject-line tone shifts → `clusters/cold-email/knowledge/atl-btl-messaging.md`

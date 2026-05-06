@@ -4,7 +4,7 @@ Apply `{option1|option2|option3}` variation across an approved sequence to make 
 
 ## When to use this
 
-Apply this AFTER the sequence has passed `tasks/stress-test-sequence.md` (8.1+ on every step). Never spintax bad copy — variation doesn't fix a bad email.
+Apply this AFTER the sequence has passed `clusters/cold-email/tasks/stress-test-sequence.md` (8.1+ on every step). Never spintax bad copy — variation doesn't fix a bad email.
 
 ## Inputs required
 
@@ -27,7 +27,7 @@ Supported natively in Instantly, PlusVibe, Smartlead, Lemlist. Test rendering in
 3. **CTA phrasing** — same meaning, different words: `{Worth a chat?|Open to a 15-min call?|Up for a quick conversation?}`
 4. **Opening phrase** — first 3-5 words before the signal reference
 5. **Transition phrases** — "The reason I'm reaching out" → `{The reason I'm reaching out|What made me write|Why I'm sending this}`
-6. **Subject line** — if 3 winners were selected from `tasks/write-subject-lines.md`, rotate them via spintax
+6. **Subject line** — if 3 winners were selected from `clusters/cold-email/tasks/write-subject-lines.md`, rotate them via spintax
 
 ## What NOT to randomize
 
@@ -97,5 +97,5 @@ CHECKS
 ## What to do after
 
 - Send a test email to yourself in the actual sending platform — confirm spintax renders
-- Run the spintax'd sequence through `tasks/stress-test-sequence.md` ONE more time on the most likely permutation — confirm quality is preserved
+- Run the spintax'd sequence through `clusters/cold-email/tasks/stress-test-sequence.md` ONE more time on the most likely permutation — confirm quality is preserved
 - Launch

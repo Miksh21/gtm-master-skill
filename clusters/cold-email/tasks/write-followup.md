@@ -89,7 +89,7 @@ Next action if no reply: [close thread / one more try / mark nurture]
 
 ## Deeper knowledge (load only when needed)
 
-- Sequence theory and value prop rotation → `knowledge/copywriting-sequences.md`
-- Re-engagement template library → `knowledge/email-templates-library.md`
-- ATL vs BTL tone differences for follow-ups → `knowledge/atl-btl-messaging.md`
-- Reactivation (6+ months cold) — different from follow-up → use `tasks/re-engage-cold-leads.md` instead
+- Sequence theory and value prop rotation → `clusters/cold-email/knowledge/copywriting-sequences.md`
+- Re-engagement template library → `clusters/cold-email/knowledge/email-templates-library.md`
+- ATL vs BTL tone differences for follow-ups → `clusters/cold-email/knowledge/atl-btl-messaging.md`
+- Reactivation (6+ months cold) — different from follow-up → use `clusters/cold-email/tasks/re-engage-cold-leads.md` instead

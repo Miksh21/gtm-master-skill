@@ -25,7 +25,7 @@ If any of these are missing, ask before drafting:
 - **One CTA only** — soft ask, not a hard sell
 - **Pain over features** — name the problem the signal implies, not your solution
 - **No vanity openers** — never "I came across your profile…", "hope you're well", "quick question"
-- **Subject line under 6 words** (use `tasks/write-subject-lines.md` to generate options)
+- **Subject line under 6 words** (use `clusters/cold-email/tasks/write-subject-lines.md` to generate options)
 
 ## Process
 
@@ -34,14 +34,14 @@ If any of these are missing, ask before drafting:
    - **Strong quantifiable signal** (hiring, funding, growth) → "Do the Maths" or "Challenge of Similar Companies"
    - **Behavioral signal** (job change, tech stack switch) → "Pattern Interrupt" or "Ask Before Pitch"
    - **Soft/inferred signal** → "Neutral Insight" or "Upfront Value"
-   - Full framework menu: Read `knowledge/copywriting-frameworks.md`
+   - Full framework menu: Read `clusters/cold-email/knowledge/copywriting-frameworks.md`
 3. Draft Step 1 using this skeleton:
    - **Opener** (1 sentence): signal reference, specific
    - **Problem** (1 sentence): the pain the signal implies for this role
    - **Bridge** (optional, 1 sentence): proof point with a number, or pattern observation
    - **CTA** (1 sentence): soft, scheduling-oriented, low-friction
 4. Apply tone calibration:
-   - VP/C-Level (ATL): direct, blunt, peer-to-peer, 40-70 words. See `knowledge/atl-btl-messaging.md`.
+   - VP/C-Level (ATL): direct, blunt, peer-to-peer, 40-70 words. See `clusters/cold-email/knowledge/atl-btl-messaging.md`.
    - Manager/IC (BTL): logical, efficient, more context allowed, 60-90 words.
    - Founder: peer-to-peer, low formality, name-drop other founders if relevant.
 5. Self-check before output:
@@ -49,7 +49,7 @@ If any of these are missing, ask before drafting:
    - Is the signal in sentence 1? → if not, restructure
    - Are there bullet points or HTML? → strip
    - Is the CTA a meeting demand or a question? → soft question wins
-6. Generate 2-3 subject line options inline (or route to `tasks/write-subject-lines.md` for full ranked set)
+6. Generate 2-3 subject line options inline (or route to `clusters/cold-email/tasks/write-subject-lines.md` for full ranked set)
 
 ## Output format
 
@@ -72,7 +72,7 @@ Word count: [n]
 Framework used: [name]
 ```
 
-End with one line: *"Run `tasks/stress-test-sequence.md` once Steps 2 and 3 are drafted — don't launch below 8.1/10."*
+End with one line: *"Run `clusters/cold-email/tasks/stress-test-sequence.md` once Steps 2 and 3 are drafted — don't launch below 8.1/10."*
 
 ## Pass criteria
 
@@ -87,13 +87,13 @@ End with one line: *"Run `tasks/stress-test-sequence.md` once Steps 2 and 3 are 
 - **Generic opener** — fix by replacing sentence 1 with the literal signal observation
 - **Multiple CTAs** — strip to one, the most-conversion-likely
 - **Feature dump in middle** — replace with the problem the persona feels because of the signal
-- **Subject line over 6 words** — regenerate using `tasks/write-subject-lines.md`
+- **Subject line over 6 words** — regenerate using `clusters/cold-email/tasks/write-subject-lines.md`
 
 ## Deeper knowledge (load only when needed)
 
-- 13 named frameworks with full templates → `knowledge/copywriting-frameworks.md`
-- Email component rules (opener / body / CTA / sign-off) → `knowledge/copywriting-principles.md`
-- ATL vs BTL deep guide → `knowledge/atl-btl-messaging.md`
-- E-commerce vertical specifics → `knowledge/copywriting-ecom-playbook.md`
-- ColdIQ playbook (3 value-prop styles, 3 preview patterns) → `knowledge/coldiq-playbook.md`
-- Ready-to-deploy templates → `knowledge/email-templates-library.md`
+- 13 named frameworks with full templates → `clusters/cold-email/knowledge/copywriting-frameworks.md`
+- Email component rules (opener / body / CTA / sign-off) → `clusters/cold-email/knowledge/copywriting-principles.md`
+- ATL vs BTL deep guide → `clusters/cold-email/knowledge/atl-btl-messaging.md`
+- E-commerce vertical specifics → `clusters/cold-email/knowledge/copywriting-ecom-playbook.md`
+- ColdIQ playbook (3 value-prop styles, 3 preview patterns) → `clusters/cold-email/knowledge/coldiq-playbook.md`
+- Ready-to-deploy templates → `clusters/cold-email/knowledge/email-templates-library.md`

@@ -99,6 +99,6 @@ QUALITY GATE BEFORE LAUNCH
 
 ## Deeper knowledge (load only when needed)
 
-- Full Clay prompt library and personalization patterns → `knowledge/personalization-prompts.md`
-- Campaign-level personalization strategy and bucketing → `knowledge/campaign-playbooks.md`
-- Why signal-based outperforms cold (benchmarks) → `knowledge/cold-email-mastery.md`
+- Full Clay prompt library and personalization patterns → `clusters/cold-email/knowledge/personalization-prompts.md`
+- Campaign-level personalization strategy and bucketing → `clusters/cold-email/knowledge/campaign-playbooks.md`
+- Why signal-based outperforms cold (benchmarks) → `clusters/cold-email/knowledge/cold-email-mastery.md`

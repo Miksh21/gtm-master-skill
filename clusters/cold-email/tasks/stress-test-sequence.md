@@ -75,11 +75,11 @@ If a step keeps failing on the same dimension after rewrites:
 
 | Failing dimension | Root cause | Fix |
 |---|---|---|
-| **Catchy** | Subject line is the issue, not the body | Run `tasks/write-subject-lines.md` for fresh options |
+| **Catchy** | Subject line is the issue, not the body | Run `clusters/cold-email/tasks/write-subject-lines.md` for fresh options |
 | **Engaging** | Passive voice, fake personalization, or template tells | Rewrite in active voice, strip `[First Name]` openers |
 | **Logical** | Signal → problem → offer has a jump | Add or rewrite the bridge sentence |
 | **Easy to read** | Too many ideas, too long, jargon | Cut to one idea, drop to 60-90 words BTL or 40-70 ATL |
-| **Points to problem** | The signal isn't specific enough | Go back to `tasks/write-first-email.md` with a sharper signal — copy can't fix bad targeting |
+| **Points to problem** | The signal isn't specific enough | Go back to `clusters/cold-email/tasks/write-first-email.md` with a sharper signal — copy can't fix bad targeting |
 
 ## Common failures
 
@@ -90,5 +90,5 @@ If a step keeps failing on the same dimension after rewrites:
 
 ## What to do after
 
-- All steps PASS → ready for spintax (`tasks/add-spintax.md`) before launch
+- All steps PASS → ready for spintax (`clusters/cold-email/tasks/add-spintax.md`) before launch
 - Any step FAIL → rewrite, re-score, re-stress-test. Don't launch a sequence with a known weak step — the weak step drags the whole reply rate.

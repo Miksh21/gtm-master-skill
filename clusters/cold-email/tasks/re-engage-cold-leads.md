@@ -9,7 +9,7 @@ Recipe for restarting a conversation with a contact who went cold 3+ months ago,
 - Old MQLs, expired trials, churned customers worth a second look
 - Old list of "interested but not ready" contacts
 
-If the contact engaged within the last 30-60 days, use `tasks/write-followup.md` instead — that's a follow-up, not a re-engagement.
+If the contact engaged within the last 30-60 days, use `clusters/cold-email/tasks/write-followup.md` instead — that's a follow-up, not a re-engagement.
 
 ## Inputs required
 
@@ -18,7 +18,7 @@ If the contact engaged within the last 30-60 days, use `tasks/write-followup.md`
 - **Their current company / role status** (still at same company? same role?) — verify before sending
 - **Original campaign signal** (so the new sequence can use a different angle)
 
-If the contact has changed companies or roles, treat as a NEW cold sequence (use `tasks/write-first-email.md`) — re-engagement assumes continuity.
+If the contact has changed companies or roles, treat as a NEW cold sequence (use `clusters/cold-email/tasks/write-first-email.md`) — re-engagement assumes continuity.
 
 ## Principles (non-negotiable)
 
@@ -97,11 +97,11 @@ Close rule: If no reply after Touch 2, mark as nurture or remove. Do not restart
 
 ## What to do after
 
-- If reply is positive → branch to `tasks/write-followup.md` Type C (interested, get to a meeting fast)
+- If reply is positive → branch to `clusters/cold-email/tasks/write-followup.md` Type C (interested, get to a meeting fast)
 - If no reply after Touch 2 → mark as nurture, set re-evaluation in 6 months
 - Track re-engagement reply rate separately from cold reply rate — different baseline (typically 8-15% reply rate vs 5-10% cold)
 
 ## Deeper knowledge (load only when needed)
 
-- Full re-engagement template library → `knowledge/email-templates-library.md`
-- Sequence theory and value-prop rotation logic → `knowledge/copywriting-sequences.md`
+- Full re-engagement template library → `clusters/cold-email/knowledge/email-templates-library.md`
+- Sequence theory and value-prop rotation logic → `clusters/cold-email/knowledge/copywriting-sequences.md`
