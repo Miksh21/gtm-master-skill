@@ -13,7 +13,8 @@ gtm-master/
 │   ├── cold-email/             Email writing, follow-ups, subject lines, deliverability
 │   ├── signals/                Buying signals, intent data, signal scoring
 │   ├── list-building/          Sales Nav, ICP search, list hygiene
-│   ├── enrichment/             Clay, waterfalls, Claygent
+│   ├── enrichment/             Clay end-to-end workflow building, waterfalls, Claygent
+│   │   └── clay-engineer/      Phases + platform + 13 provider docs (imported from clay-engineer)
 │   ├── icp/                    ICP definition + validation
 │   ├── personas/               Buyer personas, JTBD
 │   ├── lead-scoring/           Score + prioritize leads
@@ -68,6 +69,7 @@ This skill consolidates content from:
 - Custom skills (signal-sourcer, list-building, clay, cold-email)
 - [Growth.Band Outbound Skills](https://github.com/ilya-a11y/growthband-outbound-skills) — 30 outbound skills
 - Equivalent anthropic-skills:* (intent-signals, lead-prioritization, persona-development, etc.) — content absorbed; the originals can be disabled via settings.json to avoid trigger competition
+- [clay-engineer](https://github.com/mariosworkflows/clay-engineer) (MIT) — end-to-end Clay workflow builder. Phase orchestration (discovery → list-building → qualification → table architecture → enrichment → export), 13 provider docs, formula-syntax + table-mechanics, and the 8 Clay global rules (Sending Gate, gates-before-credits, data unification, free-before-paid, etc.). Imported verbatim into `clusters/enrichment/clay-engineer/`. The waterfall and Claygent knowledge files were merged into existing gtm-master content.
 
 Originals remain unmodified at their source paths.
 
@@ -77,3 +79,4 @@ Originals remain unmodified at their source paths.
 - Setup section uses Glob to dynamically resolve `SKILL_BASE` — no hardcoded paths
 - To add a new task: drop a `.md` into the right `clusters/<x>/tasks/` and add a row to that cluster's routing table in `SKILL.md`
 - To add a new cluster: create the directory + tasks/knowledge/reference subdirs, add a section + table to `SKILL.md`
+- To re-sync clay-engineer content: `git clone --depth=1 https://github.com/mariosworkflows/clay-engineer.git /tmp/clay-engineer-src && cp -R /tmp/clay-engineer-src/{phases,providers} clusters/enrichment/clay-engineer/ && cp /tmp/clay-engineer-src/clay/{formula-syntax,table-mechanics}.md clusters/enrichment/clay-engineer/platform/ && cp /tmp/clay-engineer-src/SKILL.md clusters/enrichment/clay-engineer/clay-engineer-master.md`. Then manually re-merge upstream changes to `knowledge/waterfall-enrichment.md` and `knowledge/prompts/claygent-guide.md` if those upstream files changed.

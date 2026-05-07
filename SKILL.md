@@ -1,6 +1,6 @@
 ---
 name: gtm-master
-description: Master GTM / B2B outbound knowledge base. Single source of truth for cold email writing, follow-ups, subject lines, PS lines, sequence QA (stress-testing), spintax, personalization at scale, re-engagement, deliverability, email infrastructure (SPF/DKIM/DMARC, warmup), buying signals (intent data, signal scoring, multi-signal stacking, RB2B/Trigify/Common Room/Bombora/Koala/Warmly), list building (Sales Navigator, boolean search, ICP, account qualification, ABM), Clay enrichment (waterfalls, Claygent, Clayscript, credit optimization), ICP definition + validation, buyer persona development, lead scoring + prioritization, sales objection handling, multi-channel sequence design (email + LinkedIn), LinkedIn outreach sequences, hypothesis matrices, TAM mapping, campaign tiering, A/B testing, weekly campaign reports, campaign naming, campaign platform setup (Instantly/PlusVibe/Smartlead), LinkedIn profile audit, CTA optimization, reply analysis, meeting intent scoring, second-brain setup. Use for ANY GTM, outbound, sales engineering, RevOps, or B2B sales work. Triggers on "cold email", "outbound", "GTM", "buying signals", "intent data", "Clay", "ICP", "persona", "lead scoring", "list building", "Sales Navigator", "follow-up", "subject line", "deliverability", "warmup", "SPF/DKIM/DMARC", "Instantly", "Smartlead", "Lemlist", "Apollo", "PlusVibe", "RB2B", "Trigify", "Common Room", "Bombora", "objection", "sequence", "LinkedIn outreach", "hypothesis matrix", "TAM", "A/B test", "campaign report", "second brain". Do NOT use for marketing emails/newsletters, organic LinkedIn content (use linkedin-content skill), LinkedIn paid ads (use linkedin-ads skill), or executive comms framing (use game-pyramid skill).
+description: Master GTM / B2B outbound knowledge base. Single source of truth for cold email writing, follow-ups, subject lines, PS lines, sequence QA (stress-testing), spintax, personalization at scale, re-engagement, deliverability, email infrastructure (SPF/DKIM/DMARC, warmup), buying signals (intent data, signal scoring, multi-signal stacking, RB2B/Trigify/Common Room/Bombora/Koala/Warmly), list building (Sales Navigator, boolean search, ICP, account qualification, ABM), end-to-end Clay workflow building (qualification, table architecture, contact finding, email/phone waterfalls, Sending Gate, push to sequencer/CRM), Clay enrichment (Claygent, Clayscript, credit optimization, formula columns, table mechanics), Clay providers (Clay Find Companies, Apify, BuiltWith, Sumble, Crunchbase, SEMrush, HTTP API, Enrich Person, Professional Posts), Clay sequencer push (Instantly, HeyReach), Clay CRM push (HubSpot, Salesforce, Google Sheets), ICP definition + validation, buyer persona development, lead scoring + prioritization, sales objection handling, multi-channel sequence design (email + LinkedIn), LinkedIn outreach sequences, hypothesis matrices, TAM mapping, campaign tiering, A/B testing, weekly campaign reports, campaign naming, campaign platform setup (Instantly/PlusVibe/Smartlead), LinkedIn profile audit, CTA optimization, reply analysis, meeting intent scoring, second-brain setup. Use for ANY GTM, outbound, sales engineering, RevOps, or B2B sales work. Triggers on "cold email", "outbound", "GTM", "buying signals", "intent data", "Clay", "Clay workflow", "Sending Gate", "Clay table architecture", "Clay Find Companies", "Apify", "BuiltWith", "Sumble", "Crunchbase", "SEMrush", "HeyReach", "ICP", "persona", "lead scoring", "list building", "Sales Navigator", "follow-up", "subject line", "deliverability", "warmup", "SPF/DKIM/DMARC", "Instantly", "Smartlead", "Lemlist", "Apollo", "PlusVibe", "RB2B", "Trigify", "Common Room", "Bombora", "objection", "sequence", "LinkedIn outreach", "hypothesis matrix", "TAM", "A/B test", "campaign report", "second brain". Do NOT use for marketing emails/newsletters, organic LinkedIn content (use linkedin-content skill), LinkedIn paid ads (use linkedin-ads skill), or executive comms framing (use game-pyramid skill).
 ---
 
 ## Setup (Run Once Per Session)
@@ -30,7 +30,7 @@ Master router for B2B GTM/outbound work. Knowledge is split into **10 clusters**
 | **cold-email** | "write a cold email", "follow-up", "subject line", "PS line", "stress test", "spintax", "deliverability", "warmup", "SPF/DKIM/DMARC", "Instantly", "Smartlead" | 8 tasks (write-first-email, write-followup, write-subject-lines, write-ps-line, stress-test-sequence, add-spintax, personalize-at-scale, re-engage-cold-leads) |
 | **signals** | "buying signals", "intent data", "RB2B", "Trigify", "signal scoring", "multi-signal stacking", "hiring signals", "funding signals", "job change tracking" | 3 tasks (detect-signals-from-list, map-signals-to-icp, score-multi-signal) |
 | **list-building** | "build a list", "Sales Navigator", "boolean search", "find prospects", "data validation", "list hygiene", "Evaboot", "PhantomBuster" | 2 tasks (build-prospect-list, validate-and-cleanup) |
-| **enrichment** | "Clay", "waterfall enrichment", "find emails", "Claygent", "Clayscript", "Clay credits", "Clay HubSpot", "email waterfall", "phone waterfall" | 1 task (run-email-waterfall) |
+| **enrichment** | "Clay", "Clay workflow", "Sending Gate", "table architecture", "waterfall enrichment", "find emails", "Claygent", "Clayscript", "Clay credits", "Clay HubSpot/Salesforce", "Instantly Clay push", "HeyReach Clay push", "Clay Find Companies", "Apify", "BuiltWith", "Sumble", "Crunchbase", "SEMrush" | 5 tasks (build-clay-workflow, build-table-architecture, design-sending-gate, push-to-sequencer, run-email-waterfall) |
 | **icp** | "build ICP", "define ICP", "ideal customer profile", "validate against ICP", "score company fit" | 2 tasks (build-icp, validate-against-icp) |
 | **personas** | "build persona", "buyer persona", "JTBD", "buying committee", "messaging guide for [role]" | 1 task (build-persona) |
 | **lead-scoring** | "score leads", "prioritize list", "ICP scoring", "lead tiering", "who to contact first" | 1 task (score-and-prioritize) |
@@ -95,13 +95,23 @@ Knowledge index: Sales Navigator guide, lead sources guide, data validation, beg
 
 ## Cluster: enrichment
 
-**Trigger:** anything Clay, waterfall enrichment, finding emails/phones, Claygent, Clayscript, credit optimization.
+**Trigger:** anything Clay, end-to-end Clay workflow building, table architecture, Sending Gate, waterfall enrichment, finding emails/phones, Claygent, Clayscript, credit optimization, Clay providers (Clay Find Companies, Apify, BuiltWith, Sumble, Crunchbase, SEMrush), Clay sequencer/CRM push (Instantly, HeyReach, HubSpot, Salesforce).
 
 | Intent | Load |
 |---|---|
+| Build a Clay workflow end-to-end (orchestrates 6 phases) | `{SKILL_BASE}/clusters/enrichment/tasks/build-clay-workflow.md` |
+| Design Clay table architecture (Table A/B, multi-segment, dedupe) | `{SKILL_BASE}/clusters/enrichment/tasks/build-table-architecture.md` |
+| Build the Sending Gate formula column (gate before any export) | `{SKILL_BASE}/clusters/enrichment/tasks/design-sending-gate.md` |
+| Push Clay output to Instantly / HeyReach | `{SKILL_BASE}/clusters/enrichment/tasks/push-to-sequencer.md` |
 | Run an email waterfall | `{SKILL_BASE}/clusters/enrichment/tasks/run-email-waterfall.md` |
 
-Knowledge index: core Clay concepts, waterfall enrichment deep guide, workflow patterns, Clayscript formulas, copy-paste formulas, Claygent (AI agents), credit optimization, Clay operations guide, enrichment templates, CRM sync (HubSpot/Salesforce/Pipedrive), Eric Noski expert tips, HTTP API column patterns (Clay → n8n). Browse `{SKILL_BASE}/clusters/enrichment/knowledge/`.
+Knowledge index — gtm-master native: core Clay concepts, waterfall enrichment deep guide, workflow patterns, Clayscript formulas, copy-paste formulas, Claygent (5-step prompt-writing process + Eric Noski's 8 rules + production prompt library), credit optimization, Clay operations guide, enrichment templates, CRM sync (HubSpot/Salesforce/Pipedrive), Eric Noski expert tips, HTTP API column patterns (Clay → n8n). Browse `{SKILL_BASE}/clusters/enrichment/knowledge/`.
+
+Knowledge index — clay-engineer (operational reference, lazy-loaded):
+- Master rules + FETE framework + Standard Workflow Order → `{SKILL_BASE}/clusters/enrichment/clay-engineer/clay-engineer-master.md`
+- 6 phases (discovery → list-building → qualification → table-architecture → enrichment → export) → `{SKILL_BASE}/clusters/enrichment/clay-engineer/phases/`
+- Platform: formula-syntax, table-mechanics → `{SKILL_BASE}/clusters/enrichment/clay-engineer/platform/`
+- Providers (13 files): databases (Clay Find Companies), contact-finding (email-waterfall, phone), enrichments (Apify, BuiltWith+Sumble, Crunchbase, Enrich Person, HTTP API, Professional Posts, SEMrush), sequencers (Instantly, HeyReach), crm (HubSpot, Salesforce), other (Google Sheets) → `{SKILL_BASE}/clusters/enrichment/clay-engineer/providers/`
 
 ---
 
@@ -264,6 +274,10 @@ GTM request
 ├─ List + enrichment?
 │  ├─ Build list end-to-end → clusters/list-building/tasks/build-prospect-list.md
 │  ├─ Validate / dedupe     → clusters/list-building/tasks/validate-and-cleanup.md
+│  ├─ Build Clay workflow   → clusters/enrichment/tasks/build-clay-workflow.md
+│  ├─ Clay table arch.      → clusters/enrichment/tasks/build-table-architecture.md
+│  ├─ Sending Gate column   → clusters/enrichment/tasks/design-sending-gate.md
+│  ├─ Push to Instantly/HR  → clusters/enrichment/tasks/push-to-sequencer.md
 │  ├─ Find emails           → clusters/enrichment/tasks/run-email-waterfall.md
 │  ├─ Validate against ICP  → clusters/icp/tasks/validate-against-icp.md
 │  ├─ Detect signals        → clusters/signals/tasks/detect-signals-from-list.md
@@ -325,3 +339,12 @@ GTM request
 
 **Example 6: "How do I personalize 500 emails using Clay?"**
 → Single task: `clusters/cold-email/tasks/personalize-at-scale.md`. Outputs prompt + 5-lead sample + quality gate.
+
+**Example 7: "Build me a Clay workflow from this CSV of 500 SaaS domains into Instantly"**
+→ Multi-task workflow:
+1. `clusters/enrichment/tasks/build-clay-workflow.md` (orchestrates discovery → list-building → qualification → table architecture → enrichment → export)
+2. `clusters/enrichment/tasks/build-table-architecture.md` (Table A/B + segment split decisions)
+3. `clusters/enrichment/tasks/run-email-waterfall.md` (email step within phase 05)
+4. `clusters/enrichment/tasks/design-sending-gate.md` (Ready to Send formula column)
+5. `clusters/enrichment/tasks/push-to-sequencer.md` (Instantly Add Lead step gated on Ready to Send = TRUE)
+6. Optional: `clusters/cold-email/tasks/write-first-email.md` if copy isn't already written
