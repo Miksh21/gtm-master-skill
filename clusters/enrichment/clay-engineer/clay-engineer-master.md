@@ -132,6 +132,15 @@ One Clay table can have multiple Instantly or HeyReach "Add Lead to Campaign" st
 |---|---|
 | `providers/other/google-sheets.md` | Google Sheets actions, setup, run settings |
 
+### UI Playbook (Execution Layer)
+
+Deterministic recipes for driving Clay's UI via the Playwright MCP — pairs with phases (the *what*) to cover the *how to actually click through Clay*. See `ui-playbook/README.md` for setup, conventions, and known sticky points (Lexical editor, Run Settings scoping, drag-to-reorder).
+
+| File | What it covers |
+|---|---|
+| `ui-playbook/README.md` | Playwright MCP setup, conventions, known sticky points, hardening protocol |
+| `ui-playbook/add-claygent-web-research-column.md` | Add a Claygent Web Research column with custom prompt, JSON schema generation, and optional conditional run (draft v0 — needs first-run hardening) |
+
 ---
 
 ## FETE Framework
