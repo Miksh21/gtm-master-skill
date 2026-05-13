@@ -330,4 +330,61 @@ Trigger-based message with soft CTA. Pick your trigger:
 
 ---
 
+## Workflows.io Modular Cold Message Framework
+
+A more granular construction approach. Pick from finite menus per section, mix-and-match. Under 70-80 words total.
+
+### First line — pick ONE of 3 types
+| Type | Pattern |
+|---|---|
+| **Relevancy** | Why this message is meant for them ("Reaching out because [Company] is doing [thing] which is exactly the pattern we see with our best customers...") |
+| **Observation** | A signal / action / behavior you noticed ("Saw your team just hired 3 SDRs in the last 6 weeks...") |
+| **Recency** | A recent event / update / news item ("Congrats on the Series B yesterday...") |
+
+### Body — pick 1-4 of 11 components
+Mix-and-match based on context. Don't use all 11 — pick the right 1-4.
+1. **Problem statement** — highlight a common issue they likely face
+2. **Dream outcome** — describe what success looks like for them
+3. **Poke the bear** — question that challenges the current state
+4. **Case study** — results from a similar company
+5. **Problem-solution** — connect problem directly to your solution
+6. **Personal touch** — short personalized note, video, or voice message
+7. **Social proof** — real results or recognizable names
+8. **Value** — save time / save money / make money framing
+9. **Story** — short story to illustrate your point
+10. **Resource** — offer a relevant guide or report
+11. **Offer** — explain concrete help
+
+### CTA — pick ONE of 4 types (NEVER multiple CTAs in one message)
+| Type | Pattern |
+|---|---|
+| **Soft CTA** | "Is the problem a priority right now?" |
+| **Resource CTA** | "Want me to share the [report/guide]?" |
+| **Hard CTA** | "Open to a short conversation?" |
+| **Colleague ask** | "Is someone else the right person to speak with?" |
+
+### Optional P.S. line
+Use intentionally for:
+- A relevant signal (hiring, launch, funding)
+- Light social proof
+- A human touch
+- A reminder of value
+
+Many readers read the P.S. FIRST. Use it as a second hook, not throwaway content.
+
+### Hard constraint
+**Under 70-80 words total** including subject line, body, CTA, PS. If it's longer, cut.
+
+### Hook formula (from a different but compatible source)
+Hook = under 140 characters. Use one of three patterns:
+- **Social proof** — "We generated 40M impressions using this system"
+- **Numbers** — "3 changes that improved our response rate by 2x"
+- **Relevance** — "If your LinkedIn posts aren't converting, this is why"
+
+For body: visual-first format (if visual element exists), clear line breaks, F-pattern structure. Tone: casual; use "I", "you", "we".
+
+---
+
 > **Built by [ColdIQ](https://www.coldiq.com) & [Ivan Falco](https://www.linkedin.com/in/ivanfalco/en/).** For questions on implementation or anything not covered here, reach out to Ivan directly on [LinkedIn](https://www.linkedin.com/in/ivanfalco/en/).
+>
+> The Workflows.io Modular Framework section synthesized from workflows.io "Cold Outreach Messaging Framework 2026" + "Organic LinkedIn Lead Generation Playbook" + "The Complete LinkedIn Growth Guide" (2026-05-13 crawl).

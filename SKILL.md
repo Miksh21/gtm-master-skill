@@ -1,6 +1,6 @@
 ---
 name: gtm-master
-description: Master GTM / B2B outbound knowledge base. Single source of truth for cold email writing, follow-ups, subject lines, PS lines, sequence QA (stress-testing), spintax, personalization at scale, re-engagement, deliverability, email infrastructure (SPF/DKIM/DMARC, warmup), buying signals (intent data, signal scoring, multi-signal stacking, RB2B/Trigify/Common Room/Bombora/Koala/Warmly), list building (Sales Navigator, boolean search, ICP, account qualification, ABM), end-to-end Clay workflow building (qualification, table architecture, contact finding, email/phone waterfalls, Sending Gate, push to sequencer/CRM), Clay enrichment (Claygent, Clayscript, credit optimization, formula columns, table mechanics), Clay providers (Clay Find Companies, Apify, BuiltWith, Sumble, Crunchbase, SEMrush, HTTP API, Enrich Person, Professional Posts), Clay sequencer push (Instantly, HeyReach), Clay CRM push (HubSpot, Salesforce, Google Sheets), ICP definition + validation, buyer persona development, lead scoring + prioritization, sales objection handling, multi-channel sequence design (email + LinkedIn), LinkedIn outreach sequences, hypothesis matrices, TAM mapping, campaign tiering, A/B testing, weekly campaign reports, campaign naming, campaign platform setup (Instantly/PlusVibe/Smartlead), LinkedIn profile audit, CTA optimization, reply analysis, meeting intent scoring, second-brain setup. Use for ANY GTM, outbound, sales engineering, RevOps, or B2B sales work. Triggers on "cold email", "outbound", "GTM", "buying signals", "intent data", "Clay", "Clay workflow", "Sending Gate", "Clay table architecture", "Clay Find Companies", "Apify", "BuiltWith", "Sumble", "Crunchbase", "SEMrush", "HeyReach", "ICP", "persona", "lead scoring", "list building", "Sales Navigator", "follow-up", "subject line", "deliverability", "warmup", "SPF/DKIM/DMARC", "Instantly", "Smartlead", "Lemlist", "Apollo", "PlusVibe", "RB2B", "Trigify", "Common Room", "Bombora", "objection", "sequence", "LinkedIn outreach", "hypothesis matrix", "TAM", "A/B test", "campaign report", "second brain". Do NOT use for marketing emails/newsletters, organic LinkedIn content (use linkedin-content skill), LinkedIn paid ads (use linkedin-ads skill), or executive comms framing (use game-pyramid skill).
+description: Master GTM / B2B outbound knowledge base. Single source of truth for GTM philosophy + fundamentals (BIPSY framework, scale-top-performers, signal-based outreach economics, multi-channel coordination, channel/timing mindsets), cold email writing, follow-ups, subject lines, PS lines, sequence QA (stress-testing), spintax, personalization at scale, re-engagement, deliverability, email infrastructure (SPF/DKIM/DMARC, warmup), buying signals (intent data, signal scoring, multi-signal stacking, RB2B/Trigify/Common Room/Bombora/Koala/Warmly), list building (Sales Navigator, boolean search, ICP, account qualification, ABM), end-to-end Clay workflow building (qualification, table architecture, contact finding, email/phone waterfalls, Sending Gate, push to sequencer/CRM), Clay enrichment (Claygent, Clayscript, credit optimization, formula columns, table mechanics), Clay providers (Clay Find Companies, Apify, BuiltWith, Sumble, Crunchbase, SEMrush, HTTP API, Enrich Person, Professional Posts), Clay sequencer push (Instantly, HeyReach), Clay CRM push (HubSpot, Salesforce, Google Sheets), ICP definition + validation, buyer persona development, lead scoring + prioritization, sales objection handling, multi-channel sequence design (email + LinkedIn), LinkedIn outreach sequences, hypothesis matrices, TAM mapping, campaign tiering, A/B testing, weekly campaign reports, campaign naming, campaign platform setup (Instantly/PlusVibe/Smartlead), LinkedIn profile audit, CTA optimization, reply analysis, meeting intent scoring, second-brain setup, sales team training and diagnosis. Use for ANY GTM, outbound, sales engineering, RevOps, or B2B sales work. Triggers on "GTM philosophy", "GTM fundamentals", "BIPSY", "diagnose sales team", "train SDRs", "multi-channel coordination", "cold email", "outbound", "GTM", "buying signals", "intent data", "Clay", "Clay workflow", "Sending Gate", "Clay table architecture", "Clay Find Companies", "Apify", "BuiltWith", "Sumble", "Crunchbase", "SEMrush", "HeyReach", "ICP", "persona", "lead scoring", "list building", "Sales Navigator", "follow-up", "subject line", "deliverability", "warmup", "SPF/DKIM/DMARC", "Instantly", "Smartlead", "Lemlist", "Apollo", "PlusVibe", "RB2B", "Trigify", "Common Room", "Bombora", "objection", "sequence", "LinkedIn outreach", "hypothesis matrix", "TAM", "A/B test", "campaign report", "second brain". Do NOT use for marketing emails/newsletters, organic LinkedIn content (use linkedin-content skill), LinkedIn paid ads (use linkedin-ads skill), or executive comms framing (use game-pyramid skill).
 ---
 
 ## Setup (Run Once Per Session)
@@ -44,6 +44,8 @@ Master router for B2B GTM/outbound work. Knowledge is split into **10 clusters**
 2. **Cross-cluster workflow** → identify the most upstream task, load it, follow its "what to do after" pointers.
 3. **Theory question** ("how does X work?") → skip tasks, load the matching `knowledge/` file directly.
 4. **Quick lookup** (tool name, benchmark, threshold) → use the inline tables below first.
+5. **Philosophy / fundamentals / sales team diagnosis** ("how should I think about X", "BIPSY", "train my team", "scale what works", "multi-channel mindset", "lead with pain") → load `{SKILL_BASE}/philosophy.md`. This is foundational theory that informs every cluster.
+6. **Master architectural designs** (full outbound motion / full ABM motion / inbound zero-leakage pipeline / attribution architecture / signal activation architecture / tool stack + MCPs) → load the corresponding file in `{SKILL_BASE}/clusters/campaign-ops/knowledge/` or `{SKILL_BASE}/clusters/signals/knowledge/` or `{SKILL_BASE}/reference/`. See the "Top-level references" + cluster knowledge indexes below.
 
 ---
 
@@ -75,8 +77,9 @@ Knowledge index: 13 named copywriting frameworks, ATL/BTL messaging, ColdIQ play
 | Scan a company list for signals | `{SKILL_BASE}/clusters/signals/tasks/detect-signals-from-list.md` |
 | Map signals to a specific ICP | `{SKILL_BASE}/clusters/signals/tasks/map-signals-to-icp.md` |
 | Score multi-signal stacks (Cool→Warm→Hot) | `{SKILL_BASE}/clusters/signals/tasks/score-multi-signal.md` |
+| Run the Customer Alumni play (3-5× reply rate) | `{SKILL_BASE}/clusters/signals/tasks/customer-alumni-play.md` |
 
-Knowledge index: 6 core buying signals + benchmarks, 137-trigger taxonomy, 30-trigger detection-tools matrix, signal scoring framework, tool setup (RB2B/Trigify/Common Room/Bombora/Koala/Warmly/6sense/BuiltWith), 11 executable GTM plays, job-change tracking. Browse `{SKILL_BASE}/clusters/signals/knowledge/`.
+Knowledge index: 6 core buying signals + benchmarks, 137-trigger taxonomy, 30-trigger detection-tools matrix, signal scoring framework, tool setup (RB2B/Trigify/Common Room/Bombora/Koala/Warmly/6sense/BuiltWith), 11 executable GTM plays, job-change tracking. Plus: **signal activation architecture** (11-step capture→score→act→feedback loop + 5-field metadata schema) → `{SKILL_BASE}/clusters/signals/knowledge/signal-activation-architecture.md`. Plus: **engagement-on-external-content signal class** (competitor followers / brand mentions / influencer engagement / keyword listening / own-content engagement / employee LinkedIn — 6 surfaces) → `{SKILL_BASE}/clusters/signals/knowledge/engagement-on-external-content.md`. Plus: **intent signal tools 2026 catalog** (18 signal categories × 50+ specific vendor recommendations, organized by 1st/2nd/3rd party) → `{SKILL_BASE}/clusters/signals/knowledge/intent-signal-tools-2026.md`. **Visual:** see `{SKILL_BASE}/visual-library/the-signal-playbook.png` — radial 3-ring diagram showing 1st/2nd/3rd party signals with 16+ signal types around the perimeter. Browse `{SKILL_BASE}/clusters/signals/knowledge/`.
 
 ---
 
@@ -105,7 +108,7 @@ Knowledge index: Sales Navigator guide, lead sources guide, data validation, beg
 | Push Clay output to Instantly / HeyReach | `{SKILL_BASE}/clusters/enrichment/tasks/push-to-sequencer.md` |
 | Run an email waterfall | `{SKILL_BASE}/clusters/enrichment/tasks/run-email-waterfall.md` |
 
-Knowledge index — gtm-master native: core Clay concepts, waterfall enrichment deep guide, workflow patterns, Clayscript formulas, copy-paste formulas, Claygent (5-step prompt-writing process + Eric Noski's 8 rules + production prompt library), credit optimization, Clay operations guide, enrichment templates, CRM sync (HubSpot/Salesforce/Pipedrive), Eric Noski expert tips, HTTP API column patterns (Clay → n8n). Browse `{SKILL_BASE}/clusters/enrichment/knowledge/`.
+Knowledge index — gtm-master native: core Clay concepts, waterfall enrichment deep guide, workflow patterns, Clayscript formulas, copy-paste formulas, Claygent (5-step prompt-writing process + Eric Noski's 8 rules + production prompt library), credit optimization, Clay operations guide, enrichment templates, CRM sync (HubSpot/Salesforce/Pipedrive), Eric Noski expert tips, HTTP API column patterns (Clay → n8n). Plus: **2 copy-paste Clay templates** — Instantly-reply→enrichment→HubSpot+Slack pipeline at `{SKILL_BASE}/clusters/enrichment/knowledge/templates/reply-enrichment-clay-template.md`; Warmly/RB2B/Albacross→deanon→enrichment→tier-route at `{SKILL_BASE}/clusters/enrichment/knowledge/templates/website-deanon-clay-template.md`. Browse `{SKILL_BASE}/clusters/enrichment/knowledge/`.
 
 Knowledge index — clay-engineer (operational reference, lazy-loaded):
 - Master rules + FETE framework + Standard Workflow Order → `{SKILL_BASE}/clusters/enrichment/clay-engineer/clay-engineer-master.md`
@@ -124,7 +127,7 @@ Knowledge index — clay-engineer (operational reference, lazy-loaded):
 | Build an ICP from scratch | `{SKILL_BASE}/clusters/icp/tasks/build-icp.md` |
 | Validate a company against ICP | `{SKILL_BASE}/clusters/icp/tasks/validate-against-icp.md` |
 
-Knowledge index: ICP scoring deep theory lives in `clusters/list-building/knowledge/templates/qualification-workflow.md` and `clusters/list-building/knowledge/abm/account-selection-framework.md`.
+Knowledge index: ICP scoring deep theory lives in `clusters/list-building/knowledge/templates/qualification-workflow.md` and `clusters/list-building/knowledge/abm/account-selection-framework.md`. The build-icp task now includes a **backtest validation step** ("do wins cluster in Tier 1 and losses cluster in Tier 3?") — this is what separates predictive ICPs from aspirational ones.
 
 ---
 
@@ -136,7 +139,7 @@ Knowledge index: ICP scoring deep theory lives in `clusters/list-building/knowle
 |---|---|
 | Build a persona | `{SKILL_BASE}/clusters/personas/tasks/build-persona.md` |
 
-Knowledge index: buying-committee/persona-mapping framework lives in `clusters/list-building/knowledge/abm/persona-mapping-framework.md`. ATL/BTL messaging in `clusters/cold-email/knowledge/atl-btl-messaging.md`.
+Knowledge index: **5-role buying committee + per-role messaging strategy** (Exec / Ops / Tech / Finance / End-User — Gartner says 6-10 stakeholders per B2B deal) → `{SKILL_BASE}/clusters/personas/knowledge/buying-committee-5-roles.md`. Buying-committee/persona-mapping framework lives in `clusters/list-building/knowledge/abm/persona-mapping-framework.md`. ATL/BTL messaging in `clusters/cold-email/knowledge/atl-btl-messaging.md`.
 
 ---
 
@@ -148,7 +151,7 @@ Knowledge index: buying-committee/persona-mapping framework lives in `clusters/l
 |---|---|
 | Score and prioritize leads | `{SKILL_BASE}/clusters/lead-scoring/tasks/score-and-prioritize.md` |
 
-Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/signals/knowledge/signal-scoring.md`.
+Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/signals/knowledge/signal-scoring.md`. Plus: **awareness-stage model** — 5-stage state framework (Identified → Aware → Interested → Considering → Selecting) with HubSpot-specific OR-criteria filter mechanics + priority-branch workflow → `{SKILL_BASE}/clusters/lead-scoring/knowledge/awareness-stage-model.md`. Score = number; stage = state with a play attached. Use both.
 
 ---
 
@@ -171,6 +174,8 @@ Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/
 | Design a multi-channel email + LinkedIn sequence | `{SKILL_BASE}/clusters/sequences/tasks/design-multi-channel.md` |
 | Write a LinkedIn outreach sequence | `{SKILL_BASE}/clusters/sequences/tasks/write-linkedin-sequence.md` |
 
+Knowledge index: **Tiered routing template** — canonical 3-tier pattern (Tier 1 multichannel from C-level email + AE LinkedIn + supporting connection requests + Slack alert; Tier 2/3 automated) plus 4 variations by signal type (own-content engagement → cold call; website deanon → stakeholder expansion; inbound signup → multi-thread; customer alumni → 1:1 AE-led) → `{SKILL_BASE}/clusters/sequences/knowledge/tiered-routing-template.md`.
+
 ---
 
 ## Cluster: campaign-ops
@@ -192,6 +197,25 @@ Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/
 | Analyze A/B test results | `{SKILL_BASE}/clusters/campaign-ops/tasks/run-ab-test.md` |
 | Generate weekly campaign report | `{SKILL_BASE}/clusters/campaign-ops/tasks/weekly-report.md` |
 | Tier active campaigns (scale/optimize/kill) | `{SKILL_BASE}/clusters/campaign-ops/tasks/tier-campaigns.md` |
+
+Knowledge index — strategic-architectural references (load when designing or auditing a full motion, not for single-task questions):
+- **Outbound master system** — 7-step framework (ICP → TAM → research → scoring → contact sourcing → message-market fit → scale-only-when-3-gates-pass) → `{SKILL_BASE}/clusters/campaign-ops/knowledge/outbound-master-system.md`. Visual: `{SKILL_BASE}/visual-library/complete-outbound-playbook.png`
+- **ABM operating system 2026** — 11-step pipeline + Tier × Awareness × Signal-strength matrix + bi-directional CRM↔Slack feedback loop → `{SKILL_BASE}/clusters/campaign-ops/knowledge/abm-operating-system-2026.md`. Visual: `{SKILL_BASE}/visual-library/gtm-flywheel-playbook.png` (6-stage flywheel infographic)
+- **Outbound attribution** — 2-property HubSpot pattern capturing "hidden" influence (silent conversions, LinkedIn effect, delayed signups) → `{SKILL_BASE}/clusters/campaign-ops/knowledge/outbound-attribution.md`. Visual: `{SKILL_BASE}/visual-library/outbound-attribution-playbook.png` (traditional-vs-complete workflow)
+- **Inbound orchestration** — zero-leakage form → enrichment → CRM → meeting prep pipeline (2-field Webflow form, HeyReach pre-meeting warmup, Slack-as-CRM approval) → `{SKILL_BASE}/clusters/campaign-ops/knowledge/inbound-orchestration.md`. Visual: `{SKILL_BASE}/visual-library/inbound-orchestration.png`
+- **Ad spend management via Claude Code** — 12 skills (4 per platform) managing $300K/mo Google + Meta + LinkedIn ads at consistent 4× ROAS+. Operational rhythm + setup. Worth $3K-$8K/mo recovery per $50K Google Ads account → `{SKILL_BASE}/clusters/campaign-ops/knowledge/ad-spend-management-claude-code.md`
+
+---
+
+## Top-level references
+
+- **GTM philosophy** (BIPSY, multi-channel coordination, mindsets, benchmarks) → `{SKILL_BASE}/philosophy.md`
+- **2026 GTM tool stack + 8 sales MCPs for Claude Code** → `{SKILL_BASE}/reference/2026-tool-stack-and-mcps.md`
+- **Claude Code GTM architecture** (the 4-layer operating model + 7-gate qualification + feedback loop + API stack — how to run GTM entirely inside one terminal) → `{SKILL_BASE}/reference/claude-code-gtm-architecture.md`
+- **GTM Engineer role** (what 1 hire that replaces 5 actually does — 3 pillars, tool stack, hiring criteria, when NOT to hire one) → `{SKILL_BASE}/reference/gtm-engineer-role.md`
+- **ColdIQ skills directory** (196 Claude Code skills for GTM, organized by category + GTM-relevance ranking + install commands) → `{SKILL_BASE}/reference/coldiq-skills-directory.md`
+- **Case studies + benchmarks** (real published results from ColdIQ/Workflows.io/Earleads/Trigify campaigns — AirOps $3M, Aircall 3,655 accounts, Hemlane 5.5% reply rate, Workflows.io 25.4% — defensible numbers to cite) → `{SKILL_BASE}/reference/case-studies-and-benchmarks.md`
+- **Visual library** (18 workflow diagrams extracted from workflows.io PDFs — radial signal taxonomy, GTM flywheel infographic, ABM operating system, signal-class workflows etc.) → `{SKILL_BASE}/visual-library/INDEX.md`
 
 ---
 

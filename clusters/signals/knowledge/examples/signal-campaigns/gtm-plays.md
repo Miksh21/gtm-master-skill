@@ -203,17 +203,6 @@ Most {{title}}s I talk to are dealing with {{common_problem}}.
 Is that on your radar?
 ```
 
-## Core GTM Philosophy
+---
 
-- **Scale what top performers do** — Study best reps, systematize their approach
-- **Diagnose before prescribing** — BIPSY framework: Behaviors, Individual, Process, Skill, You
-- **Signal-based outreach = 3-4x higher contract values**
-- **You can't burn your TAM** — Re-engage with new angles
-- **Lead with pain, not features**
-- **Segment and convert, don't over-personalize** — Gorgias went from 200 sequences to 10 modular ones
-
-## Multi-Channel Coordination
-
-- Email + ads + referrals = extra $2M ARR (case study)
-- ABM approach = 36% meeting rate vs 10% non-ABM
-- Warm before you touch principle
+> For cross-cluster GTM philosophy (BIPSY framework, multi-channel coordination, key mindsets), see `{SKILL_BASE}/philosophy.md`.

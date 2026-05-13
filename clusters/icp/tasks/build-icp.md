@@ -29,6 +29,26 @@ User asks to define their ICP, build an ideal customer profile, structure ICP do
 2. Synthesize into the structured dimensions below
 3. Add **negative ICP** (disqualifiers — equally important as positive criteria)
 4. Output as a reusable markdown file the user can reference across all GTM work
+5. **Backtest the ICP against historical deals** (see "Backtest validation" below — this is the step most ICPs skip and the reason most ICPs predict nothing).
+
+## Backtest validation (skipped at your peril)
+
+An ICP is just a hypothesis until you check whether it predicts actual deal outcomes.
+
+**Process:**
+1. Export 12-24 months of Closed Won + Closed Lost from CRM (HubSpot / Salesforce).
+2. Score every past account against the new ICP rubric → assigns Tier 1 / Tier 2 / Tier 3.
+3. **Check: do wins cluster in Tier 1 and losses cluster in Tier 3?**
+4. If not, refine signals + thresholds until tiers correlate with real ACV, win rates, and cycle length.
+
+**The validation criterion:**
+> "Wins should cluster in Tier 1. Losses should cluster in Tier 3."
+
+If your model says a closed-won was Tier 3, either the model is wrong or that customer is going to churn — both worth investigating.
+
+**Outcome:** An ICP that *predicts* close rate and contract size, not based on assumptions.
+
+For backtest tooling: enrich historical accounts in Clay with firmographics + technographics + growth + intent data, apply the scoring rules, run the cluster analysis.
 
 ## Output format
 
@@ -69,6 +89,7 @@ Last updated: [date]
 - All 6 sections populated (firmographic, technographic, persona, situational, negative, one-sentence value)
 - At least 3 disqualifiers in negative ICP
 - One-sentence value passes the "your customer would say this verbatim" test
+- **Backtest run + validated**: wins cluster in Tier 1, losses cluster in Tier 3
 
 ## Common failures
 
