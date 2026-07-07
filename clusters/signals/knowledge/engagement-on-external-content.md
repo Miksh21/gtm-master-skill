@@ -14,11 +14,11 @@ This isn't one play. It's a *class* of plays with 6 specific surfaces.
 ---
 
 **Visual references for the workflow pattern (all share the same skeleton):**
-- `visual-library/the-customer-alumni-play.png` — closed-won → past employees → qualify new company → score → 3-tier routing
-- `visual-library/the-founder-connections-playbook.png` — export LinkedIn connections → qualify → 3-tier
-- `visual-library/linkedin-brand-mentions-outbound-playbook.png` — brand mention engagers tree
-- `visual-library/scrape-influencers-linkedin-engagement-playbook.png` — influencer engagement
-- `visual-library/track-your-employees-linkedin-engagement-playbook.png` — multi-employee LinkedIn signals (Connections + Impressions + Engagement)
+- `visual-library/the-customer-alumni-play.md` — closed-won → past employees → qualify new company → score → 3-tier routing
+- `visual-library/the-founder-connections-playbook.md` — export LinkedIn connections → qualify → 3-tier
+- `visual-library/linkedin-brand-mentions-outbound-playbook.md` — brand mention engagers tree
+- `visual-library/scrape-influencers-linkedin-engagement-playbook.md` — influencer engagement
+- `visual-library/track-your-employees-linkedin-engagement-playbook.md` — multi-employee LinkedIn signals (Connections + Impressions + Engagement)
 
 All five visualize the same pattern in different sources. Load any one via Read tool to see the canonical Workflows.io flowchart structure.
 

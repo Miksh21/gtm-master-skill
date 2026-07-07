@@ -9,7 +9,7 @@ Companion to `signal-scoring.md` (weights + tiers) and `signal-taxonomy.md` (137
 - "What's the right metadata schema for our signal table?"
 - Designing a signal infrastructure from scratch
 
-**Visual reference:** `visual-library/the-signal-playbook.png` — radial 3-ring diagram showing 1st/2nd/3rd-party signal categories as concentric rings, with 16+ signal types around the perimeter (Funding Announcements, Search Analytics, Web Data, LinkedIn Engagement, Marketing Events, CRM Data, Webinar Attendance, Outreach Replies, Website Visitor, Product Usage, Warm Intros, Champion Tracking, Social Signals, Review Sites, Job Openings, Ad Insights). Load it directly via Read tool when explaining the architecture visually.
+**Visual reference:** `visual-library/the-signal-playbook.md` — radial 3-ring diagram showing 1st/2nd/3rd-party signal categories as concentric rings, with 16+ signal types around the perimeter (Funding Announcements, Search Analytics, Web Data, LinkedIn Engagement, Marketing Events, CRM Data, Webinar Attendance, Outreach Replies, Website Visitor, Product Usage, Warm Intros, Champion Tracking, Social Signals, Review Sites, Job Openings, Ad Insights). Load it directly via Read tool when explaining the architecture visually.
 
 ## The core insight
 

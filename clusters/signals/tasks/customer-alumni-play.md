@@ -2,7 +2,7 @@
 
 Turn past customer champions (people who used your product at a previous job) into a high-intent, always-on outbound pipeline. Reported uplift: **3-5x reply rates** + **15-30% qualified-pipeline lift per quarter** vs cold outbound, without additional headcount.
 
-**Visual reference:** `visual-library/the-customer-alumni-play.png` — full workflow diagram showing Closed Won Accounts (HubSpot) → Find past employees (Clay) → Qualify new company (Clay) → Score (ChatGPT) → Tier 1 (Manual Prospecting via HubSpot) / Tier 2 (Auto Email + LinkedIn via Instantly + HeyReach) / Tier 3 (Auto Email via Instantly).
+**Visual reference:** `visual-library/the-customer-alumni-play.md` — full workflow diagram showing Closed Won Accounts (HubSpot) → Find past employees (Clay) → Qualify new company (Clay) → Score (ChatGPT) → Tier 1 (Manual Prospecting via HubSpot) / Tier 2 (Auto Email + LinkedIn via Instantly + HeyReach) / Tier 3 (Auto Email via Instantly).
 
 ## When to use this
 

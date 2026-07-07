@@ -2,7 +2,7 @@
 
 A GTM engineering operating system for Claude Code. Single source of truth for B2B outbound work: cold email, buying signals, list building, Clay enrichment, ICP, personas, lead scoring, objection handling, multi-channel sequences, and campaign ops.
 
-**10 clusters · 40 runnable tasks · 70+ knowledge files · 8 architectural references · 18 workflow diagrams.** Continuously updated (last sync: 2026-07-07).
+**10 clusters · 40 runnable tasks · 70+ knowledge files · 8 architectural references · 18 Mermaid workflow diagrams.** Continuously updated (last sync: 2026-07-07).
 
 Built for **Claude Code** (filesystem skill), also usable in **Claude.ai** (Settings → Skills upload) and via the **Claude API** (Files API).
 
@@ -13,7 +13,7 @@ gtm-master/
 ├── SKILL.md                    Master router (always loaded)
 ├── philosophy.md               GTM fundamentals: BIPSY, multi-channel mindsets, benchmarks
 ├── reference/                  8 architectural references (see below)
-├── visual-library/             18 workflow diagrams (signal taxonomy, GTM flywheel, ABM OS...)
+├── visual-library/             18 agent-readable Mermaid diagrams (signal taxonomy, GTM flywheel, ABM OS...)
 ├── clusters/
 │   ├── cold-email/             8 tasks · copywriting frameworks, deliverability, infra
 │   ├── signals/                4 tasks · signal taxonomy, scoring, activation architecture
@@ -90,7 +90,7 @@ Consolidates and extends:
 - Custom skills built across real engagements (signal-sourcer, list-building, clay, cold-email)
 - [Growth.Band Outbound Skills](https://github.com/ilya-a11y/growthband-outbound-skills) · 30 outbound skills
 - [clay-engineer](https://github.com/mariosworkflows/clay-engineer) (MIT) · imported into `clusters/enrichment/clay-engineer/`: phase orchestration, 13 provider docs, formula syntax, table mechanics, and the 8 Clay global rules (Sending Gate, gates-before-credits, free-before-paid)
-- ColdIQ and Workflows.io published playbooks (2026 crawls), synthesized into references and cluster knowledge
+- Published GTM playbooks and conference material (2026), synthesized into references, cluster knowledge, and the Mermaid visual library
 - Weekly creator-radar insight merges from 20 GTM practitioners
 
 Originals remain unmodified at their source paths.

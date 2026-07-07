@@ -1,18 +1,10 @@
-# Visual Library — Workflow Diagrams
+# Visual Library: Agent-Readable Workflow Diagrams
 
-18 workflow diagrams extracted from Workflows.io playbook PDFs. Each diagram visualizes a complete GTM workflow with tools at each node and the routing logic between stages.
-
-These diagrams are **referenced by name from cluster knowledge files** when a visual is more useful than prose. Load the PNG directly with the Read tool to see the diagram in vision.
+18 GTM workflow diagrams as Mermaid markdown files. Each file captures a complete workflow: steps as nodes, tools at each step, routing logic between stages, plus detail notes for anything that does not fit a diagram (matrices, component lists, per-stage tool stacks).
 
 ## How to use
 
-When a knowledge file references "(see diagram: `visual-library/X.png`)", that's a workflow diagram you can vision-read. The diagrams are dense — they show:
-- Workflow steps as nodes
-- Tools at each step (small icons)
-- Routing logic (branches → Tier 1 / Tier 2 / Tier 3)
-- Data flow direction (arrows)
-
-Use them when explaining a workflow architecture to someone visually, or when designing a new workflow that should follow the same pattern.
+When a knowledge file references a diagram (`visual-library/<name>.md`), Read that file. Every diagram is plain text: Mermaid flowcharts and mindmaps that can be rendered, quoted in deliverables, or reused as a template when designing a new workflow that should follow the same pattern.
 
 ---
 
@@ -22,49 +14,47 @@ Use them when explaining a workflow architecture to someone visually, or when de
 
 | Diagram | What it shows | Cluster link |
 |---|---|---|
-| [`the-signal-playbook.png`](the-signal-playbook.png) | **RADIAL 3-ring signal taxonomy** — 1st/2nd/3rd party signals as concentric rings, with 16+ specific signal types around the perimeter (Funding Announcements, Search Analytics, Web Data, LinkedIn Engagement, Marketing Events, CRM Data, Webinar Attendance, Outreach Replies, Website Visitor, Product Usage, Warm Intros, Champion Tracking, Social Signals, Review Sites, Job Openings, etc.) | `clusters/signals/knowledge/signal-activation-architecture.md` |
-| [`gtm-flywheel-playbook.png`](gtm-flywheel-playbook.png) | **Full 6-stage GTM flywheel infographic** — vertical swim-lane: Traffic Generation (Content/Ads/Outbound/Partnerships with full tool icons per channel) → Lead Capturing (Social Followers / Engagement / Lead Magnets / Landing Pages) → Lead Nurturing (10+ approaches inc. SDR Touchpoints / Retargeting / Newsletter / Community / Webinar / Dinner Invites / In-Person / Email Flows / Gifts) → Conversion (Website demos / testimonials / case studies / product marketing) → Qualification → Retention/Expansion | `clusters/campaign-ops/knowledge/abm-operating-system-2026.md` |
-| [`icp-modeling-guide.png`](icp-modeling-guide.png) | **ICP modeling flow with backtest loops** — CRM (HubSpot/Salesforce/Attio) → Closed Won (analyze highest spend / interview AEs+CSMs) + Closed Lost (look for commonalities) → Find firmographic + technographic data → ICP Report → Scoring Model → Tier 1/2/3 → ICP Model. **Backtest loops drawn on both sides** (refine until wins cluster in Tier 1, losses in Tier 3). | `clusters/icp/tasks/build-icp.md` |
-| [`complete-outbound-playbook.png`](complete-outbound-playbook.png) | **4-channel outbound architecture** — Cold Calling + LinkedIn Automated Outreach + LinkedIn Manual Prospecting + Email Campaigns, each with tool icons, branching into specific tactics (warmup, sequences, signal-based plays). | `clusters/campaign-ops/knowledge/outbound-master-system.md` |
-| [`inbound-orchestration.png`](inbound-orchestration.png) | **Inbound zero-leakage pipeline** — complex multi-branch tree showing form capture → qualification routing → enrichment waterfall → CRM/Slack alerts → meeting prep flow. | `clusters/campaign-ops/knowledge/inbound-orchestration.md` |
+| [`the-signal-playbook.md`](the-signal-playbook.md) | Radial 3-ring signal taxonomy: 1st/2nd/3rd party signals with 24 signal types mapped to detection tools | `clusters/signals/knowledge/signal-activation-architecture.md` |
+| [`gtm-flywheel-playbook.md`](gtm-flywheel-playbook.md) | Full 6-stage GTM flywheel: Traffic Generation (Content/Ads/Outbound/Partnerships with tools per channel) → Lead Capturing → Lead Nurturing (10 approaches) → Conversion → Sales Process → Closed Won | `clusters/campaign-ops/knowledge/abm-operating-system-2026.md` |
+| [`icp-modeling-guide.md`](icp-modeling-guide.md) | ICP modeling flow with backtest loops: CRM → Closed Won + Closed Lost analysis → firmographic/technographic data → ICP Report → Scoring Model → Tier 1/2/3 → ICP Model, refine until wins cluster in Tier 1 | `clusters/icp/tasks/build-icp.md` |
+| [`complete-outbound-playbook.md`](complete-outbound-playbook.md) | 4-channel outbound architecture: Cold Calling + LinkedIn Automated + LinkedIn Manual + Email Campaigns, with full tool stacks, signals layer, and missed-opportunities recycling | `clusters/campaign-ops/knowledge/outbound-master-system.md` |
+| [`inbound-orchestration.md`](inbound-orchestration.md) | Inbound zero-leakage pipeline: form capture → qualification routing → enrichment → CRM/Slack approval → pre-frame emails → meeting prep | `clusters/campaign-ops/knowledge/inbound-orchestration.md` |
 
 ### Signal-class workflow diagrams (engagement-on-external-content)
 
-The 5 diagrams below share the same skeleton (signal capture → enrichment → AI qualification → tier-score → Tier 1/2/3 routing) but with different signal sources at the top.
+The 5 diagrams below share one skeleton (signal capture → aggregation in Clay → enrichment → AI qualification → tier scoring → tiered routing) with a different signal source at the top. Per-file deviations from the skeleton are noted inside each file.
 
 | Diagram | Signal source |
 |---|---|
-| [`the-customer-alumni-play.png`](the-customer-alumni-play.png) | Closed Won Accounts → Find past employees in Clay |
-| [`the-founder-connections-playbook.png`](the-founder-connections-playbook.png) | Export Founder LinkedIn Connections |
-| [`linkedin-brand-mentions-outbound-playbook.png`](linkedin-brand-mentions-outbound-playbook.png) | LinkedIn posts mentioning brand keywords |
-| [`scrape-influencers-linkedin-engagement-playbook.png`](scrape-influencers-linkedin-engagement-playbook.png) | Influencer post engagement + influencer connections |
-| [`track-your-employees-linkedin-engagement-playbook.png`](track-your-employees-linkedin-engagement-playbook.png) | Connections + Impressions + Engagement across all employee LinkedIn accounts |
+| [`the-customer-alumni-play.md`](the-customer-alumni-play.md) | Closed Won accounts → find past employees in Clay |
+| [`the-founder-connections-playbook.md`](the-founder-connections-playbook.md) | Exported founder LinkedIn connections |
+| [`linkedin-brand-mentions-outbound-playbook.md`](linkedin-brand-mentions-outbound-playbook.md) | LinkedIn posts mentioning brand keywords + their engagers |
+| [`scrape-influencers-linkedin-engagement-playbook.md`](scrape-influencers-linkedin-engagement-playbook.md) | Influencer post engagement + influencer connections |
+| [`track-your-employees-linkedin-engagement-playbook.md`](track-your-employees-linkedin-engagement-playbook.md) | Connections + impressions + engagement across all employee LinkedIn accounts |
 
-All five operationalize the same pattern documented in `clusters/signals/knowledge/engagement-on-external-content.md`. **The canonical 5-element routing footer is visible in all of them: Cold Calling / Manual Outreach / Auto Email+LinkedIn / Auto Email Only / Slack alert.**
+All five operationalize the pattern documented in `clusters/signals/knowledge/engagement-on-external-content.md`.
 
 ### Specialized workflow diagrams
 
 | Diagram | What it shows | Cluster |
 |---|---|---|
-| [`outbound-attribution-playbook.png`](outbound-attribution-playbook.png) | **Traditional Tracking vs Complete Attribution Workflow** — top half shows the broken "85% Missed Attribution" pattern; bottom half shows the OutboundSync + Instantly + HeyReach → HubSpot + Slack architecture with `Outbound Campaign` and `Sign Up` checkpoints. | `clusters/campaign-ops/knowledge/outbound-attribution.md` |
-| [`website-visitor-de-anonymization-outbound-playbook.png`](website-visitor-de-anonymization-outbound-playbook.png) | **Website deanon outbound workflow** — Website Visitors → Company-Level + Contact-Level ID (Warmly) → Data Enrichment (Clay) → Lead Scoring + Qualification (ChatGPT) → Tier 1 (Slack Notification + Find more people + Cold Calling + Auto Email+LinkedIn) / Tier 2&3 (Auto Email Outreach). | `clusters/enrichment/knowledge/templates/website-deanon-clay-template.md` |
-| [`awareness-scoring-playbook.png`](awareness-scoring-playbook.png) | **Awareness Stages matrix** — companies listed on left axis (Clay, Parabola, Userpilot, etc.) × 5 stages on top (Identified → Aware → Interested → Considering → Selecting) with specific signal criteria per cell. | `clusters/lead-scoring/knowledge/awareness-stage-model.md` |
-| [`linkedin-social-selling-playbook.png`](linkedin-social-selling-playbook.png) | **LinkedIn 7-step funnel** — Audience Building → Warming → TOFU → MOFU → BOFU → Capture → Conversion → Retention. Each row shows specific tactics + tools. | `linkedin-content` skill |
-| [`human-in-the-loop-content-operating-system.png`](human-in-the-loop-content-operating-system.png) | **Human + AI Content Workflow** — Content Ideas → Content Drafts → Content Development → Content Management → Distribution → Analytics. Shows where humans + AI each contribute. | Content ops (not GTM-master core) |
-| [`data-trained-ai-content-engine-playbook.png`](data-trained-ai-content-engine-playbook.png) | **AI Content Engine** — Pick top niche creators → scrape posts → clean → analyze → build Custom AI Content Engine trained on real high-performing posts. | Content ops (not GTM-master core) |
-| [`vibe-coding-playbook-for-gtm-app-building.png`](vibe-coding-playbook-for-gtm-app-building.png) | **Build internal GTM tools without code** — vertical workflow: GTM App Idea → Define App Spec → Reference Material → Prompt Engineering → Lovable (Build MVP) → Version Control → AI-assisted iteration (Cursor/Claude Code) → Internal GTM App ready. | (Not GTM-master core — engineering reference) |
+| [`outbound-attribution-playbook.md`](outbound-attribution-playbook.md) | Traditional tracking (85% missed attribution) vs complete attribution workflow: OutboundSync + Instantly + HeyReach → HubSpot + Slack with reply and sign-up checkpoints | `clusters/campaign-ops/knowledge/outbound-attribution.md` |
+| [`website-visitor-de-anonymization-outbound-playbook.md`](website-visitor-de-anonymization-outbound-playbook.md) | Website visitors → company + contact identification (Warmly) → enrichment (Clay) → scoring (ChatGPT) → tiered outreach | `clusters/enrichment/knowledge/templates/website-deanon-clay-template.md` |
+| [`awareness-scoring-playbook.md`](awareness-scoring-playbook.md) | Awareness-stage matrix: companies × stage criteria with OR-condition semantics, recency windows, and the supporting tool stack | `clusters/lead-scoring/knowledge/awareness-stage-model.md` |
+| [`linkedin-social-selling-playbook.md`](linkedin-social-selling-playbook.md) | LinkedIn funnel: Audience Building → Warming → TOFU (70%) → MOFU (20%) → BOFU (10%) → Capture → Conversion, with tactics per stage | `linkedin-content` skill |
+| [`human-in-the-loop-content-operating-system.md`](human-in-the-loop-content-operating-system.md) | Human + AI content workflow at 100+ pieces/month: ideas → drafts → development → management → distribution → analytics | Content ops (not GTM-master core) |
+| [`data-trained-ai-content-engine-playbook.md`](data-trained-ai-content-engine-playbook.md) | AI content engine: scrape top-performing creator posts → clean → analyze → build a trained content engine | Content ops (not GTM-master core) |
+| [`vibe-coding-playbook-for-gtm-app-building.md`](vibe-coding-playbook-for-gtm-app-building.md) | Internal GTM tools without code: idea → spec → reference material → prompt engineering → MVP build → version control → AI-assisted iteration | Engineering reference |
 
 ### Reference cards (not workflow diagrams)
 
 | Diagram | What it shows | Cluster |
 |---|---|---|
-| [`the-cold-outreach-message-playbook.png`](the-cold-outreach-message-playbook.png) | **Cold Outreach Components reference card** — visual menu of the modular framework: First Line (3 types) + Body (11 components) + CTA (4 types) + PS (optional). Useful as a copy-pastable visual cheatsheet. | `clusters/cold-email/knowledge/copywriting-frameworks.md` |
+| [`the-cold-outreach-message-playbook.md`](the-cold-outreach-message-playbook.md) | Modular cold-outreach message framework: First Line (3 types) + Body (11 components) + CTA (4 types) + optional PS, with selection rules | `clusters/cold-email/knowledge/copywriting-frameworks.md` |
 
 ---
 
-## Common visual patterns to recognize
-
-When you see a Workflows.io workflow diagram, the standard structure is:
+## The shared signal-workflow skeleton
 
 ```
 SOURCE SIGNAL (top)
@@ -73,20 +63,13 @@ Aggregation in Clay (one row per signal)
     ↓
 Enrichment (Clay + Findymail + BetterContact)
     ↓
-AI Qualification (Clay "Use AI" + ChatGPT)
+AI Qualification
     ↓
 Tier Scoring (formula)
     ↓
-3-way fork at the bottom:
-   ┌─ Tier 1 ─→ Cold Call (BetterContact) + Manual LinkedIn (HeyReach) + Slack alert
-   ├─ Tier 2 ─→ Auto Email (Instantly) + Auto LinkedIn (HeyReach)
-   └─ Tier 3 ─→ Auto Email only (Instantly)
+Tiered routing at the bottom:
+   ┌─ Tier 1 ─→ Cold call + manual LinkedIn + Slack alert (C-level sender)
+   └─ Tier 2/3 ─→ Automated email + LinkedIn sequences (AE sender)
 ```
 
-The signal-class diagrams (5 of them) all follow this pattern; the source signal at the top is what varies.
-
-## Source
-
-PNGs extracted from PDF playbooks at workflows.io via `pdftoppm -r 150`. Source PDFs: see `~/workflows-io-extraction-2026-05-13.md` for the full URL list. 2026-05-13 crawl.
-
-Diagram resolution: 150 DPI — readable at full screen, sufficient to see tool icons and node labels.
+The signal-class diagrams all follow this pattern; the source signal at the top is what varies. Some variants merge Tier 2 and Tier 3 into one branch differentiated by sender profile; per-file notes flag this.

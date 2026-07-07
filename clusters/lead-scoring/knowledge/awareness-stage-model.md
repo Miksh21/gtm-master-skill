@@ -2,7 +2,7 @@
 
 A **state model** (where is the account in the buying journey) that complements gtm-master's existing scoring tiers (`signal-scoring.md` heat tiers — Red Hot/Hot/Warm/Cool/Cold). Score = number; stage = state. **Stage is what your playbook is keyed to.**
 
-**Visual reference:** `visual-library/awareness-scoring-playbook.png` — matrix view with companies on the left axis (Clay, Parabola, Userpilot etc.) × 5 stages on the top axis (Identified → Aware → Interested → Considering → Selecting), with specific signal criteria per cell.
+**Visual reference:** `visual-library/awareness-scoring-playbook.md` — matrix view with companies on the left axis (Clay, Parabola, Userpilot etc.) × 5 stages on the top axis (Identified → Aware → Interested → Considering → Selecting), with specific signal criteria per cell.
 
 ## When to load
 
