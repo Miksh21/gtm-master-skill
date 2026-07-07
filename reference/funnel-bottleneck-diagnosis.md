@@ -21,7 +21,7 @@ GTM as a factory: four machines in series. **Revenue throughput is capped by the
 
 1. **Compute stage-to-stage conversion** against benchmark. The machine with the worst rate *relative to its benchmark* is the constraint — not the one with the lowest absolute number.
 2. **The "suspiciously high" tell.** A close rate far above the B2B norm means the bottleneck is *upstream* — you're only closing the trickle that makes it through. (Clay's own diagnosis: their close rate was "suspiciously high," which pointed to a Capture bottleneck, not a Closing strength.)
-3. **A dead/exhausted input = Capture starved.** If no leads are flowing, copy and closing fixes do nothing. *Worked example (Talent'em audit):* the only "active" cold campaign sat at ~0 sends for 9 business days from lead-pool exhaustion — the constraint was Capture supply, so better copy or A/B variants would have changed nothing.
+3. **A dead/exhausted input = Capture starved.** If no leads are flowing, copy and closing fixes do nothing. *Worked example (recruitment-client audit):* the only "active" cold campaign sat at ~0 sends for 9 business days from lead-pool exhaustion — the constraint was Capture supply, so better copy or A/B variants would have changed nothing.
 
 ## The rule
 

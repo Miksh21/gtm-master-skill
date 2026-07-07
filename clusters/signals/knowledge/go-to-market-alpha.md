@@ -27,7 +27,7 @@ Most "buying signals" are commodities: funding, hiring, job changes, tech instal
 
 - **Canva** — compares a prospect's *public brand guidelines* to their *latest social post*; a mismatch is the signal that the brand isn't being applied consistently → reach out with the exact product that fixes it. No competitor computes this.
 - **Mercado (cameras/compliance)** — agents detect a *compliance-rule violation* that legally requires the sensor they sell. The signal **is** the value prop.
-- **Talent'em (recruitment) — two proven first-party signals (from the live audit):**
+- **An IT-recruitment client (anonymized) — two proven first-party signals (from the live audit):**
   - *Ex-employer placement signal* — HR at a company where you recently placed a candidate. Pure first-party relationship data; competitors can't see it. Measured **16.9% reply rate** vs 3–5% on generic HR lists.
   - *Active job-posting signal* — HR at a company posting a role you can fill, scraped from the market's biggest board. **15.9% reply rate.**
 
@@ -41,7 +41,7 @@ Most "buying signals" are commodities: funding, hiring, job changes, tech instal
 ## Anti-patterns
 
 - Buying the same intent feed as everyone and calling it "signal-led."
-- A signal the copy never actually references — the US Talent'em A/B ran a "hiring" trigger at **0.17%** vs **0.22%** no-trigger (no lift), because the signal wasn't leveraged in copy *and* the market didn't fit.
+- A signal the copy never actually references — the same client's US A/B ran a "hiring" trigger at **0.17%** vs **0.22%** no-trigger (no lift), because the signal wasn't leveraged in copy *and* the market didn't fit.
 - One alpha signal applied to the wrong business model / buyer (see `philosophy.md` → business-model fit).
 
 ## Cross-references
@@ -52,4 +52,4 @@ Most "buying signals" are commodities: funding, hiring, job changes, tech instal
 
 ## Source
 
-Clay GTM conference 2026 (Estrella / Grieco) + Talent'em outbound audit (the two first-party worked examples and the US no-lift counter-example).
+Clay GTM conference 2026 (Estrella / Grieco) + an IT-recruitment client's outbound audit (the two first-party worked examples and the US no-lift counter-example).
