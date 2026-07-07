@@ -51,7 +51,9 @@ Data sources used: [list]
 Confidence: [High / Medium / Low] — [reason]
 
 MOTION RECOMMENDATION
-[If TAM < 2,000: ABM. If 2K-50K: hypothesis-driven outbound. If 50K+: vertical-first then expand.]
+[If TAM < 2,000: ABM mandatory. If 2K-20K AND ACV ≥ $50K: ABM recommended (Workflows.io gate —
+volume channels can't be relied on in silos below 20K). If 2K-50K at lower ACV: hypothesis-driven
+outbound. If 50K+: vertical-first then expand.]
 ```
 
 ## Pass criteria

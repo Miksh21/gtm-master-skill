@@ -126,7 +126,7 @@ Replace volume-based prospecting with intent-driven outreach. Instead of 1,000 c
 | Funding round ($10M+) | "Congratulations" + relevant case study | Email | SDR |
 | Relevant job posting | Connect hiring pain to your solution | LinkedIn + Email | SDR |
 | Bombora surge score 70+ | Reference their research area | Email | SDR |
-| G2 comparison activity | Send competitive battlecard | Email | SDR |
+| G2 comparison activity *by target-account-domain employees* | Send competitive battlecard | Email | SDR |
 
 #### Tier 3: Act-This-Week Signals (< 72 hours)
 

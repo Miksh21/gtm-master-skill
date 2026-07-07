@@ -11,6 +11,10 @@ The 11-step ABM operating system. Load when designing an account-based motion (n
 **Strategic framing (the one-line summary):**
 ABM is **architectural, not theoretical.** "Most teams don't struggle with ABM strategy, they struggle with execution. They know how to define an ICP or build a target list, but few know how to run ABM inside the CRM, automate intent signals, or route real buyer activity to sales in real time."
 
+**The qualification gate (when to recommend ABM at all):** ACV $50k+ AND a constrained addressable market of < 20,000 qualified companies. Below that TAM, volume channels can't be relied on in silos and every % of TAM coverage matters.
+
+**For the hands-on build** (cost math, evergreen CRM enrichment, HubSpot mechanics, channel lessons, the 6 reports): `clusters/campaign-ops/knowledge/abm-engine-implementation.md`.
+
 ---
 
 ## The 11-step pipeline

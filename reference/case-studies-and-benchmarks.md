@@ -31,6 +31,12 @@ All numbers here are **published**, not internal speculation.
 | LinkedIn content per-post performance | 40M+ impressions over 2 years from 1 founder | Same |
 | ABM multi-channel meeting rate | 36% vs 10% non-ABM | Industry data |
 | 6-10 stakeholders per B2B deal | Gartner 2023 | Sourced ref |
+| Signal activation → pipeline | **20-40% of active pipeline** attributed to signal activation (7-day deal-creation windows), best cases | Workflows.io across clients (Growth Unhinged, 2026-05) |
+| Interested + Aware stage accounts vs cold | **3x conversion lift** common after awareness staging | Workflows.io (Growth Unhinged, 2026-05) |
+| Cold calling out of "Aware" lists | BDR booked **4 meetings in 1 day** vs prior 1-2/week baseline ($100k+ ACV product) | Workflows.io client anecdote (Growth Unhinged, 2026-05) |
+| Medrio ABM program | **$1.3M ABM-attributed pipeline in 4 months** | Workflows.io published case (Growth Unhinged, 2026-05) |
+| Workflows.io itself | Bootstrapped **$2.5M ARR in 10 months**; 80% of deals at least indirectly attributed to LinkedIn content; ABM gifting play (Freckle, 60 accounts) generated 140k impressions | Growth Unhinged, 2026-05 |
+| Full TAM map + account research cost | **$2,000+** across data providers + Clay + AI credits (30+ custom data points) | Workflows.io implementation benchmark |
 
 ---
 

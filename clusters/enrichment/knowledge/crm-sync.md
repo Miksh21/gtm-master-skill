@@ -1,5 +1,7 @@
 # CRM Sync — HubSpot & Salesforce
 
+> **Evergreen enrichment pattern:** to convert a one-time Clay TAM build into an always-on CRM enrichment workflow (list-enrollment vs webhook triggers, "Enriched by Clay" freshness field, re-enrollment after ~1yr, ignore-blank-values rule, on-demand enrichment buttons) → `clusters/campaign-ops/knowledge/abm-engine-implementation.md` Step 3.
+
 ## Supported CRMs
 HubSpot, Salesforce, Pipedrive, Close, Attio
 

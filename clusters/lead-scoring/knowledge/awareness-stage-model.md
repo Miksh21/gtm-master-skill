@@ -17,6 +17,8 @@ A **state model** (where is the account in the buying journey) that complements 
 
 This model is used across the workflows.io content corpus (ABM Playbook, Signal Playbook, Awareness Scoring Playbook). It's complementary to gtm-master's existing heat-tier scoring, not a replacement.
 
+**Why it exists at all:** it fixes the major shortcoming of CRM lifecycle stages — they usually start *after an opt-in*, so they miss a significant portion of the warm market. Design note on stage 4: "Considering/Evaluating" is deliberately placed to capture the state right before the highest conversion drop-off (e.g. before the first meeting is held).
+
 ---
 
 ## The 5 stages

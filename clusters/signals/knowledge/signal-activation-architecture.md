@@ -59,22 +59,40 @@ Used across `signal-scoring.md` and `abm-operating-system-2026.md`. Quick refere
 
 ---
 
-## The 11-step pipeline
+## The 13-step pipeline (2026 revision)
 
 ```
-1. Define purpose         → which of the 5 outcomes drives this system?
-2. Capture across 1/2/3 party → webhooks, APIs, native integrations
-3. Aggregate              → one Clay/Cargo table, one row = one signal
-4. Normalize + dedupe     → standardize formats, clean fields
-5. Enrich                 → firmographics + contact details + technographics
-6. CRM lookup             → existing account? assigned owner? deal in flight?
-7. AI qualify             → company fit + persona fit (Clay + Claude/ChatGPT/Perplexity)
-8. Score into tiers       → firmographics × technographics × signal strength
-9. Segment + route        → tier + segment determine action + owner
-10. Sync to CRM as custom events (not properties)
-11. Activate              → retargeting + outbound + LinkedIn + manual + Slack + CRM tasks
-12. Close the feedback loop → outcomes feed back into scoring
+0. Define purpose   → which of the 5 outcomes drives this system?
+1. Capture          → pull from all sources: webhooks, APIs, native integrations
+2. Aggregate        → one Clay/Cargo table, one row = one signal + one company/contact
+3. Normalize        → standardize domain, LinkedIn URL, job title; clean, dedupe, format
+4. Enrich           → basic enrichments for qualification (evergreen CRM workflow handles the rest)
+5. CRM lookup       → existing account? A net-new account vs an existing pipeline account
+                      need DIFFERENT treatment. Pull the assigned owner if one exists.
+6. Qualify          → AI-qualify net-new companies/contacts, add to CRM if missing.
+                      Many teams skip this — then complain about signal fatigue.
+7. Score            → pull tiers from CRM (Tier 1/2/3/Unqualified) → enables logical routing
+8. Segment          → group by territory: size, industry, location, business type
+9. Route            → live rep-assignment table (rep name + CRM Owner ID + Slack channel).
+                      Match signal type to role: ad engagements → BDR; champion tracking → AE.
+10. Sync to CRM     → as custom events (HubSpot) / dedicated custom object (Salesforce)
+11. Activate        → Tier 1: Slack + manual (Nooks) + CRM task
+                      Tier 2: retargeting ads + Instantly + HeyReach
+                      Tier 3: automated email only
+12. Track           → roll signals up into awareness stages (Identified→…→Selecting)
+13. Enablement      → sales leadership steps in (see below)
 ```
+
+**The economics of this pipeline:** capturing a signal is the easy part — **activating it is 90% of the work**. Done right, best-case implementations attribute **20-40% of active pipeline to signal activation** (7-day deal-creation windows), and intent-based outbound ranked #2 among GTM channels teams invest more into in 2026 (Growth Unhinged State of B2B GTM). Expect some signals to fail anyway: either no correlation to buying intent, or insufficient volume — finding winners takes testing.
+
+### Step 13 — Enablement (where sales leadership steps in)
+
+The pipeline is RevOps work; adoption is a leadership deliverable:
+- Custom sequences per signal type
+- Call scripts referencing the signal
+- Weekly signal digests
+- Dashboards per rep (incl. overdue-signal-tasks accountability)
+- Rep onboarding for new hires
 
 ---
 
@@ -198,4 +216,4 @@ This is one calibration — different from gtm-master's existing scale (5-100 in
 
 ## Source
 
-Synthesized from workflows.io "The 2026 Signal Playbook" + "Signal Activation Playbook" + "How to Build a Signal Architecture for GTM Teams", 2026-05-13 crawl.
+Synthesized from workflows.io "The 2026 Signal Playbook" + "Signal Activation Playbook" + "How to Build a Signal Architecture for GTM Teams" (2026-05-13 crawl); 13-step revision + enablement layer + pipeline-attribution stats from Dan Rosenthal, "How to build a modern ABM engine", Growth Unhinged, 2026-05-27.

@@ -6,7 +6,7 @@ For executable recipes, go to the cluster tasks. This file is *theory*, not proc
 
 ---
 
-## 1. The 6 Fundamental Principles
+## 1. The 7 Fundamental Principles
 
 1. **Scale what top performers do** — Study the top 10-20% of reps in your org (or industry exemplars). Reverse-engineer their inputs (which lists, which signals, which copy patterns, which channels), then systematize. Most "GTM strategy" should start here, not with frameworks.
 
@@ -26,6 +26,22 @@ For executable recipes, go to the cluster tasks. This file is *theory*, not proc
 5. **Lead with pain, not features** — HockeyStack-style framing: "Do you have problems tying brand awareness to revenue?" beats "We help marketers attribute brand to revenue." Open with the problem the buyer feels, not the capability you sell. See `clusters/cold-email/knowledge/copywriting-principles.md`.
 
 6. **Segment and convert, don't over-personalize** — Gorgias went from 200 hyper-personalized sequences to 10 modular ones and improved conversion. Sequence sprawl is a tell that you're substituting volume of variants for clarity of segmentation. Define 5-10 segments, write strong modular copy per segment, stop the proliferation.
+
+7. **Diagnose the funnel as a factory — revenue is capped by the slowest machine.** Four machines in series: Demand Gen (cold→aware) → Capture (aware→lead) → Conversion (lead→pipeline) → Closing (pipeline→revenue). Find the *bottleneck* machine and fix THAT — optimizing a non-bottleneck adds zero throughput. Tell: a suspiciously high close rate means the bottleneck is upstream (you're only closing the few who get through). When you fix the bottleneck it *moves* — re-diagnose and repeat. Don't write better copy if the real constraint is an exhausted lead pool. This is the meta-layer above every cluster: diagnose which machine is slow, *then* route. See `reference/funnel-bottleneck-diagnosis.md`. (Complements Principle 2 — BIPSY diagnoses the *reps*; the factory diagnoses the *funnel*.)
+
+---
+
+## 1b. Business model dictates channels — apply BEFORE any channel/motion recommendation
+
+The growth motion that works is downstream of the business model. Pick the motion your model can actually run; never port a playbook across models.
+
+| Business model | Motion that fits | Don't |
+|---|---|---|
+| Self-serve / PLG, low ACV, AI-native audience | UGC loop, community, content flywheel, Meta/LinkedIn | mass cold outbound (brand risk) |
+| Long-cycle / enterprise, high ACV, buying committee | ABM, unique experiences, deep first-party-data content, partnerships | UGC flywheel, volume spray |
+| Transactional SMB, owner-operator buyer | signal-led outbound + warm network | gatekept-corporate volume |
+
+**The rule:** TikTok doesn't run ABM; Workday doesn't run Meta ads. Clay can drop cold outbound because it has a UGC/inbound flywheel — a business *without* that flywheel cannot copy "stop doing outbound." Diagnose the model first; it determines which machine (Principle 7) you can move cheaply. See `reference/funnel-bottleneck-diagnosis.md`.
 
 ---
 
@@ -137,3 +153,7 @@ Calibrating expectations from real published agency data (Workflows.io, 2026):
 | Attribution beyond reply rate | `clusters/campaign-ops/knowledge/outbound-attribution.md` |
 | Tool stack discipline | `reference/2026-tool-stack-and-mcps.md` |
 | BIPSY diagnosis | This file — apply manually before reaching for any cluster |
+| Funnel-as-factory bottleneck diagnosis | `reference/funnel-bottleneck-diagnosis.md` — find the slowest machine before picking a cluster |
+| Business model dictates channels | This file (§1b) — filter every channel/motion recommendation through the model |
+| Go-to-market alpha (signal originality) | `clusters/signals/knowledge/go-to-market-alpha.md` |
+| Campaign-in-a-box (sales enablement) | `clusters/campaign-ops/tasks/enable-sales.md` |

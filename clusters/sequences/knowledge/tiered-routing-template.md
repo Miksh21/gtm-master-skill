@@ -77,6 +77,15 @@ Customer alumni at Tier 1 account:
 3. Cold call via BetterContact phone for highest-priority subset
 ```
 
+### Variation 5 — PLG ↔ SLG hybrid routing (dual product-led + sales-led funnel)
+
+When the business runs BOTH self-serve and sales-led, the two funnels are actually one. Route *across* them instead of treating them as separate — and never let a disqualify step become a dead end.
+
+- **Upgrade path (PLG → SLG):** an enterprise-eligible account takes a high-intent product action (advanced workflow built, usage threshold hit, multiple seats sign up) → create a **sales task** (not a sequence): "this self-serve account is enterprise-eligible, here's the behavior." A human converts self-serve → enterprise.
+- **Downgrade path (SLG → PLG):** an inbound "talk to sales / demo" lead is too small for a rep (sub-ICP size, ACV below threshold) → **do NOT disqualify-and-ghost.** Route to a group demo / self-serve onboarding / nurture. "You're too small for us" is a lost future customer; a group demo captures the revenue and the goodwill.
+
+Key: the disqualify step becomes a **re-route**, never a dead end.
+
 ---
 
 ## Why the template works
@@ -117,6 +126,7 @@ Every Tier 1 routing includes a Slack alert. Why:
 | Customer alumni | Variation 4 (1:1 AE-led, not sequence) | Warmth is too high for automated sequence |
 | External engagement (competitor follower, influencer engager, brand mention engager) | Canonical template | Standard tiering applies |
 | Cold ICP outreach with no signal | Canonical template, but most flow to Tier 2/3 (Tier 1 reserved for signal-qualified) | No signal = no Tier 1 |
+| Dual PLG + SLG motion | Variation 5 (hybrid up/down routing) | The two funnels are one; convert across them, never dead-end an inbound |
 
 ---
 
