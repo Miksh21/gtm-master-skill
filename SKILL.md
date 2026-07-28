@@ -14,16 +14,16 @@ Always resolve SKILL_BASE dynamically — never hardcode.
 
 # GTM Master — Single Entry Point for All Outbound Work
 
-Master router for B2B GTM/outbound work. Knowledge is split into **10 clusters**, each with `tasks/` (runnable recipes), `knowledge/` (deep references — lazy-loaded), and `reference/` (quick lookups).
+Master router for B2B GTM/outbound work. Knowledge is split into **11 clusters**, each with `tasks/` (runnable recipes), `knowledge/` (deep references — lazy-loaded), and `reference/` (quick lookups).
 
 ## How to use this skill
 
-1. **Identify the user's intent** — match it to ONE of the 10 clusters via the cluster index below
+1. **Identify the user's intent** — match it to ONE of the 11 clusters via the cluster index below
 2. **Match intent to a task** — each cluster has a task routing table; load the matching `tasks/<x>.md` file
 3. **Tasks are self-contained** — they include inputs, process, output format, pass criteria. They reference `knowledge/` only when depth is needed.
 4. **Multi-cluster workflows** chain tasks — typical chain: `icp/build-icp` → `signals/map-signals-to-icp` → `list-building/build-prospect-list` → `enrichment/run-email-waterfall` → `lead-scoring/score-and-prioritize` → `cold-email/write-first-email` → `cold-email/stress-test-sequence` → `campaign-ops/setup-campaign-platform`
 
-## The 10 clusters — index
+## The 11 clusters — index
 
 | Cluster | Owns triggers like | Primary tasks |
 |---|---|---|
@@ -37,6 +37,7 @@ Master router for B2B GTM/outbound work. Knowledge is split into **10 clusters**
 | **objections** | "handle objection", "not interested reply", "send more info reply", "wrong person reply", "objection playbook" | 1 task (handle-objection) |
 | **sequences** | "multi-channel sequence", "LinkedIn outreach", "LinkedIn sequence", "email + LinkedIn flow", "connection request", "InMail" | 2 tasks (design-multi-channel, write-linkedin-sequence) |
 | **campaign-ops** | "TAM", "hypothesis matrix", "name campaigns", "set up campaign", "second brain", "deliverability audit", "LinkedIn profile audit", "CTA optimization", "analyze replies", "score meeting intent", "A/B test", "weekly report", "tier campaigns" | 13 tasks |
+| **linkedin-organic** | "write a LinkedIn post", "hook", "carousel", "CTA", "repurpose", "viral post analysis", "swipe file", "trending topics", "niche", "content pillars", "content calendar", "audience persona", "smart comment", "connection request", "DM opener", "profile optimizer", "post analytics" | 21 skills across content / research / strategy / engagement / networking / analytics |
 
 ## Routing logic
 
@@ -211,6 +212,59 @@ Knowledge index — strategic-architectural references (load when designing or a
 
 ---
 
+## Cluster: linkedin-organic
+
+**Trigger:** anything LinkedIn ORGANIC content and growth — writing posts, hooks, carousels, CTAs, repurposing, viral-post teardown, niche / persona / pillars / calendar strategy, comment + DM + connection engagement, profile optimization, post analytics. Sourced from Taplio's LinkedIn Claude Skills. NOTE: overlaps the standalone `linkedin-content` skill — prefer whichever the user names; these are the quick single-shot recipes, `linkedin-content` holds the deeper engagement data + ColdIQ voice guide.
+
+Organized by category (not the usual `tasks/` layout). Load the matching file:
+
+**content**
+| Intent | Load |
+|---|---|
+| Write a post from a raw idea (3 variants) | `{SKILL_BASE}/clusters/linkedin-organic/content/post-writer.md` |
+| Generate scroll-stopping hooks | `{SKILL_BASE}/clusters/linkedin-organic/content/hook-generator.md` |
+| Build a carousel from content | `{SKILL_BASE}/clusters/linkedin-organic/content/carousel-builder.md` |
+| Optimize the CTA | `{SKILL_BASE}/clusters/linkedin-organic/content/cta-optimizer.md` |
+| Repurpose one piece into many | `{SKILL_BASE}/clusters/linkedin-organic/content/repurposer.md` |
+| Extract a story from raw experience | `{SKILL_BASE}/clusters/linkedin-organic/content/story-extractor.md` |
+
+**research**
+| Intent | Load |
+|---|---|
+| Reverse-engineer a viral post | `{SKILL_BASE}/clusters/linkedin-organic/research/viral-post-analyzer.md` |
+| Build a swipe file | `{SKILL_BASE}/clusters/linkedin-organic/research/swipe-file-builder.md` |
+| Scan trending topics | `{SKILL_BASE}/clusters/linkedin-organic/research/trending-topics-scanner.md` |
+| Find niche creators to learn from | `{SKILL_BASE}/clusters/linkedin-organic/research/niche-creator-finder.md` |
+
+**strategy**
+| Intent | Load |
+|---|---|
+| Define your niche | `{SKILL_BASE}/clusters/linkedin-organic/strategy/niche-definer.md` |
+| Build content pillars | `{SKILL_BASE}/clusters/linkedin-organic/strategy/content-pillars-builder.md` |
+| Plan a content calendar | `{SKILL_BASE}/clusters/linkedin-organic/strategy/content-calendar-planner.md` |
+| Build an audience persona | `{SKILL_BASE}/clusters/linkedin-organic/strategy/audience-persona-builder.md` |
+
+**engagement**
+| Intent | Load |
+|---|---|
+| Find comment opportunities | `{SKILL_BASE}/clusters/linkedin-organic/engagement/comment-opportunity-finder.md` |
+| Write a smart comment | `{SKILL_BASE}/clusters/linkedin-organic/engagement/smart-comment-writer.md` |
+
+**networking**
+| Intent | Load |
+|---|---|
+| Write a connection-request hook | `{SKILL_BASE}/clusters/linkedin-organic/networking/connection-request-hook.md` |
+| Write a DM opener | `{SKILL_BASE}/clusters/linkedin-organic/networking/dm-opener.md` |
+| Optimize your profile | `{SKILL_BASE}/clusters/linkedin-organic/networking/profile-optimizer.md` |
+
+**analytics**
+| Intent | Load |
+|---|---|
+| Interpret your account analytics | `{SKILL_BASE}/clusters/linkedin-organic/analytics/analytics-interpreter.md` |
+| Critique a post's performance | `{SKILL_BASE}/clusters/linkedin-organic/analytics/post-performance-critic.md` |
+
+---
+
 ## Top-level references
 
 - **GTM philosophy** (BIPSY, multi-channel coordination, mindsets, benchmarks) → `{SKILL_BASE}/philosophy.md`
@@ -222,6 +276,7 @@ Knowledge index — strategic-architectural references (load when designing or a
 - **Case studies + benchmarks** (real published results from ColdIQ/Workflows.io/Earleads/Trigify campaigns — AirOps $3M, Aircall 3,655 accounts, Hemlane 5.5% reply rate, Workflows.io 25.4% — defensible numbers to cite) → `{SKILL_BASE}/reference/case-studies-and-benchmarks.md`
 - **Visual library** (18 agent-readable Mermaid workflow diagrams: radial signal taxonomy, GTM flywheel infographic, ABM operating system, signal-class workflows etc.) → `{SKILL_BASE}/visual-library/INDEX.md`
 - **lemlist dynamic personalization** (Liquid `{% if %}` conditionals, per-sender personalization, spintax — the rule: NEVER bake a sender-dependent value like a full salutation into the contact; store only sender-independent blocks and resolve the form at send time. Liquid > AI column for deterministic rules) → `{SKILL_BASE}/reference/lemlist-dynamic-personalization.md`
+- **Czech declension engine** (ALL CZ/SK declension work — vocatives, gender detection, declining injected job titles. Never regex; engine order: sklonovani-jmen.cz API for commercial production, MorphoDiTa for testing/QA only (models are CC BY-NC-SA non-commercial), LLM per-row for the ambiguous/multi-word tail) → `{SKILL_BASE}/reference/czech-declension-engine.md`
 
 ---
 

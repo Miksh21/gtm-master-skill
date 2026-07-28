@@ -6,7 +6,7 @@
 
 | Value type | Depends on | Where it lives |
 |---|---|---|
-| first-name vocative, last-name vocative, gender, company name, role | the **contact** | contact custom field (write via API/sync) |
+| first-name vocative, last-name vocative, gender, company name, role | the **contact** | contact custom field (write via API/sync) — how to COMPUTE these values → `{SKILL_BASE}/reference/czech-declension-engine.md` |
 | salutation **form** (informal first-name vs formal pane/paní), sender's gendered words, sender signature | the **sender** | resolve at send time — Liquid and/or lemlist per-sender personalization |
 | the assembled salutation | sender **and** contact | Liquid conditional in copy, combining both |
 
