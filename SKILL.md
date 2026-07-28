@@ -1,6 +1,6 @@
 ---
 name: gtm-master
-description: Master GTM / B2B outbound knowledge base. Single source of truth for GTM philosophy + fundamentals (BIPSY framework, scale-top-performers, signal-based outreach economics, multi-channel coordination, channel/timing mindsets), cold email writing, follow-ups, subject lines, PS lines, sequence QA (stress-testing), spintax, personalization at scale, re-engagement, deliverability, email infrastructure (SPF/DKIM/DMARC, warmup), buying signals (intent data, signal scoring, multi-signal stacking, RB2B/Trigify/Common Room/Bombora/Koala/Warmly), list building (Sales Navigator, boolean search, ICP, account qualification, ABM), end-to-end Clay workflow building (qualification, table architecture, contact finding, email/phone waterfalls, Sending Gate, push to sequencer/CRM), Clay enrichment (Claygent, Clayscript, credit optimization, formula columns, table mechanics), Clay providers (Clay Find Companies, Apify, BuiltWith, Sumble, Crunchbase, SEMrush, HTTP API, Enrich Person, Professional Posts), Clay sequencer push (Instantly, HeyReach), Clay CRM push (HubSpot, Salesforce, Google Sheets), ICP definition + validation, buyer persona development, lead scoring + prioritization, sales objection handling, multi-channel sequence design (email + LinkedIn), LinkedIn outreach sequences, hypothesis matrices, TAM mapping, campaign tiering, A/B testing, weekly campaign reports, campaign naming, campaign platform setup (Instantly/PlusVibe/Smartlead), LinkedIn profile audit, CTA optimization, reply analysis, meeting intent scoring, second-brain setup, sales team training and diagnosis. Use for ANY GTM, outbound, sales engineering, RevOps, or B2B sales work. Triggers on "GTM philosophy", "GTM fundamentals", "BIPSY", "diagnose sales team", "train SDRs", "multi-channel coordination", "cold email", "outbound", "GTM", "buying signals", "intent data", "Clay", "Clay workflow", "Sending Gate", "Clay table architecture", "Clay Find Companies", "Apify", "BuiltWith", "Sumble", "Crunchbase", "SEMrush", "HeyReach", "ICP", "persona", "lead scoring", "list building", "Sales Navigator", "follow-up", "subject line", "deliverability", "warmup", "SPF/DKIM/DMARC", "Instantly", "Smartlead", "Lemlist", "Apollo", "PlusVibe", "RB2B", "Trigify", "Common Room", "Bombora", "objection", "sequence", "LinkedIn outreach", "hypothesis matrix", "TAM", "A/B test", "campaign report", "second brain". Do NOT use for marketing emails/newsletters, organic LinkedIn content (use linkedin-content skill), LinkedIn paid ads (use linkedin-ads skill), or executive comms framing (use game-pyramid skill).
+description: Master GTM / B2B outbound knowledge base. Single source of truth for GTM philosophy + fundamentals (BIPSY framework, scale-top-performers, signal-based outreach economics, multi-channel coordination, channel/timing mindsets), cold email writing, follow-ups, subject lines, PS lines, sequence QA (stress-testing), spintax, personalization at scale, re-engagement, deliverability, email infrastructure (SPF/DKIM/DMARC, warmup), buying signals (intent data, signal scoring, multi-signal stacking, RB2B/Trigify/Common Room/Bombora/Koala/Warmly), list building (Sales Navigator, boolean search, ICP, account qualification, ABM), end-to-end Clay workflow building (qualification, table architecture, contact finding, email/phone waterfalls, Sending Gate, push to sequencer/CRM), Clay enrichment (Claygent, Clayscript, credit optimization, formula columns, table mechanics), Clay providers (Clay Find Companies, Apify, BuiltWith, Sumble, Crunchbase, SEMrush, HTTP API, Enrich Person, Professional Posts), Clay sequencer push (Instantly, HeyReach), Clay CRM push (HubSpot, Salesforce, Google Sheets), ICP definition + validation, buyer persona development, lead scoring + prioritization, sales objection handling, multi-channel sequence design (email + LinkedIn), LinkedIn outreach sequences, hypothesis matrices, TAM mapping, campaign tiering, A/B testing, weekly campaign reports, campaign naming, campaign platform setup (Instantly/PlusVibe/Smartlead), LinkedIn profile audit, CTA optimization, reply analysis, meeting intent scoring, second-brain setup, sales team training and diagnosis, RevOps operations (revenue diagnostics, forecasting, pipeline visibility, metrics definitions, lead routing, handoffs, data governance, operating cadence, revenue planning, deal desk, deal velocity, CRM migration, AI/data product pricing), B2B paid ads (Meta/Facebook for B2B, LinkedIn ABM ads incl. 1:1, Google Ads, ad creative testing, creative fatigue, retargeting, ads-as-outbound-signal, CAPI/pixel tracking, ads account audits), AEO / AI-engine visibility (audits, citation mining, visibility tracking) + Reddit GTM (subreddit research, account warmup + safety, campaigns, mention triage), and content marketing (newsletter systems, SEO topic research pipeline, creator-led growth, creator deal pricing, B2B affiliate programs). Use for ANY GTM, outbound, sales engineering, RevOps, or B2B sales work. Triggers on "GTM philosophy", "GTM fundamentals", "BIPSY", "diagnose sales team", "train SDRs", "multi-channel coordination", "cold email", "outbound", "GTM", "buying signals", "intent data", "Clay", "Clay workflow", "Sending Gate", "Clay table architecture", "Clay Find Companies", "Apify", "BuiltWith", "Sumble", "Crunchbase", "SEMrush", "HeyReach", "ICP", "persona", "lead scoring", "list building", "Sales Navigator", "follow-up", "subject line", "deliverability", "warmup", "SPF/DKIM/DMARC", "Instantly", "Smartlead", "Lemlist", "Apollo", "PlusVibe", "RB2B", "Trigify", "Common Room", "Bombora", "objection", "sequence", "LinkedIn outreach", "hypothesis matrix", "TAM", "A/B test", "campaign report", "second brain", "RevOps", "forecast", "pipeline coverage", "lead routing", "CRM migration", "deal desk", "Meta ads", "Facebook ads", "LinkedIn ABM", "Google Ads", "ads audit", "retargeting", "AEO", "AI visibility", "GEO", "Reddit", "subreddit", "newsletter", "SEO topics", "creator marketing", "influencer", "affiliate program", "AI pricing", "credit pricing", "reverse ETL". Do NOT use for organic LinkedIn deep-dive content strategy (use linkedin-content skill; the linkedin-organic cluster here covers quick recipes), general LinkedIn ads fundamentals (use linkedin-ads skill; the paid-ads cluster here owns Meta B2B, ABM ads math, and ads-as-signal), or executive comms framing (use game-pyramid skill).
 ---
 
 ## Setup (Run Once Per Session)
@@ -14,16 +14,16 @@ Always resolve SKILL_BASE dynamically — never hardcode.
 
 # GTM Master — Single Entry Point for All Outbound Work
 
-Master router for B2B GTM/outbound work. Knowledge is split into **11 clusters**, each with `tasks/` (runnable recipes), `knowledge/` (deep references — lazy-loaded), and `reference/` (quick lookups).
+Master router for B2B GTM/outbound work. Knowledge is split into **15 clusters**, each with `tasks/` (runnable recipes), `knowledge/` (deep references — lazy-loaded), and `reference/` (quick lookups).
 
 ## How to use this skill
 
-1. **Identify the user's intent** — match it to ONE of the 11 clusters via the cluster index below
+1. **Identify the user's intent** — match it to ONE of the 15 clusters via the cluster index below
 2. **Match intent to a task** — each cluster has a task routing table; load the matching `tasks/<x>.md` file
 3. **Tasks are self-contained** — they include inputs, process, output format, pass criteria. They reference `knowledge/` only when depth is needed.
 4. **Multi-cluster workflows** chain tasks — typical chain: `icp/build-icp` → `signals/map-signals-to-icp` → `list-building/build-prospect-list` → `enrichment/run-email-waterfall` → `lead-scoring/score-and-prioritize` → `cold-email/write-first-email` → `cold-email/stress-test-sequence` → `campaign-ops/setup-campaign-platform`
 
-## The 11 clusters — index
+## The 15 clusters — index
 
 | Cluster | Owns triggers like | Primary tasks |
 |---|---|---|
@@ -38,6 +38,10 @@ Master router for B2B GTM/outbound work. Knowledge is split into **11 clusters**
 | **sequences** | "multi-channel sequence", "LinkedIn outreach", "LinkedIn sequence", "email + LinkedIn flow", "connection request", "InMail" | 2 tasks (design-multi-channel, write-linkedin-sequence) |
 | **campaign-ops** | "TAM", "hypothesis matrix", "name campaigns", "set up campaign", "second brain", "deliverability audit", "LinkedIn profile audit", "CTA optimization", "analyze replies", "score meeting intent", "A/B test", "weekly report", "tier campaigns" | 13 tasks |
 | **linkedin-organic** | "write a LinkedIn post", "hook", "carousel", "CTA", "repurpose", "viral post analysis", "swipe file", "trending topics", "niche", "content pillars", "content calendar", "audience persona", "smart comment", "connection request", "DM opener", "profile optimizer", "post analytics" | 21 skills across content / research / strategy / engagement / networking / analytics |
+| **revops** | "diagnose revenue system", "forecast", "pipeline coverage", "pipeline visibility", "lead routing", "handoffs", "data governance", "operating cadence", "revenue planning", "deal desk", "deal velocity", "CRM migration", "AI pricing" | 2 tasks (run-revops-diagnostic, plan-crm-migration) + 9 knowledge files |
+| **paid-ads** | "Meta ads", "Facebook B2B", "LinkedIn ABM ads", "1:1 ABM", "Google Ads", "ad creative", "creative fatigue", "retargeting", "CAPI", "ads audit", "ads report", "ad engagement signals" | 3 tasks (plan-abm-ads-campaign, audit-ads-account, monthly-ads-report) + 9 knowledge files |
+| **aeo-reddit** | "AEO", "AI visibility", "AI citations", "show up in ChatGPT/Perplexity", "Reddit", "subreddit", "karma", "Reddit warmup", "brand mentions" | 3 tasks (run-aeo-audit, launch-reddit-campaign, research-subreddits) |
+| **content-marketing** | "newsletter", "welcome sequence", "SEO topics", "keyword research", "creator marketing", "influencer", "sponsored post", "creator rates", "affiliate program" | 3 tasks (launch-newsletter, run-seo-topic-research, launch-creator-campaign) |
 
 ## Routing logic
 
@@ -67,7 +71,7 @@ Master router for B2B GTM/outbound work. Knowledge is split into **11 clusters**
 | Personalize at scale (Clay/AI prompts) | `{SKILL_BASE}/clusters/cold-email/tasks/personalize-at-scale.md` |
 | Re-engage cold/closed-lost leads | `{SKILL_BASE}/clusters/cold-email/tasks/re-engage-cold-leads.md` |
 
-Knowledge index: 13 named copywriting frameworks, ATL/BTL messaging, ColdIQ playbook, e-commerce playbook, sequence theory, deliverability deep guide, email infra (3 files), personalization prompt library, campaign playbooks, email template library. See `{SKILL_BASE}/clusters/cold-email/SKILL_INDEX.md` for full knowledge map (or browse the directory).
+Knowledge index: 13 named copywriting frameworks, ATL/BTL messaging, ColdIQ playbook, e-commerce playbook, sequence theory, deliverability deep guide, email infra (3 files), personalization prompt library, campaign playbooks, email template library. Browse `{SKILL_BASE}/clusters/cold-email/knowledge/` for the full map.
 
 ---
 
@@ -265,6 +269,79 @@ Organized by category (not the usual `tasks/` layout). Load the matching file:
 
 ---
 
+## Cluster: revops
+
+**Trigger:** anything revenue operations: diagnosing revenue problems, forecasting, pipeline visibility/hygiene, revenue metrics + benchmarks, lead routing + speed-to-lead, handoffs (marketing→sales→CS→expansion), data governance/CRM data quality, operating cadence + board reporting, annual revenue planning + capacity, deal desk + discount governance, deal velocity/stalled deals, CRM migration or consolidation.
+
+| Intent | Load |
+|---|---|
+| Diagnose a revenue system ("we keep missing plan") | `{SKILL_BASE}/clusters/revops/tasks/run-revops-diagnostic.md` |
+| Plan a CRM migration or consolidation | `{SKILL_BASE}/clusters/revops/tasks/plan-crm-migration.md` |
+| Build or fix a forecast (categories, coverage, accuracy, breach rules) | `{SKILL_BASE}/clusters/revops/knowledge/forecasting.md` |
+| Define metrics / benchmark performance (funnel, unit economics, NRR, deal health) | `{SKILL_BASE}/clusters/revops/knowledge/metrics-definitions.md` |
+| Design pipeline dashboards, hygiene automation, quality scores | `{SKILL_BASE}/clusters/revops/knowledge/pipeline-visibility.md` |
+| Fix slow/stalling deals; design deal desk, discount governance | `{SKILL_BASE}/clusters/revops/knowledge/deal-desk-and-velocity.md` |
+| Design lead routing, SLAs, handoffs, expansion handback | `{SKILL_BASE}/clusters/revops/knowledge/handoffs-and-lead-routing.md` |
+| Fix CRM data quality, field governance, integrations, warehouse architecture | `{SKILL_BASE}/clusters/revops/knowledge/data-governance.md` |
+| Design meeting cadence, forecast calls, QBR/board decks | `{SKILL_BASE}/clusters/revops/knowledge/operating-cadence.md` |
+| Build annual plan, capacity model, territories, org ratios | `{SKILL_BASE}/clusters/revops/knowledge/revenue-planning.md` |
+| Price an AI/data product (model picker, credits, ROI receipts, billing ops) | `{SKILL_BASE}/clusters/revops/reference/ai-pricing-and-packaging.md` |
+
+Knowledge index: full diagnostic framework (3-layer system, IFA, Six Stages, triage tree, crisis 4-week protocol + 30-60-90) in `{SKILL_BASE}/clusters/revops/knowledge/diagnostic-framework.md`. Portable CRM principles (lifecycle vs deal stage vs lead status, time-in-stage workarounds, HubSpot-vs-Salesforce decision table) → `{SKILL_BASE}/clusters/revops/reference/crm-platform-portable-principles.md`. ICP/scoring deltas ONLY (ECP customer-count thresholds, 7-dimension ICP audit, account-level ABM engagement scoring with decay + buying-group handover gate) → `{SKILL_BASE}/clusters/revops/reference/icp-and-scoring-notes.md`; the `icp` and `lead-scoring` clusters own that canon.
+
+---
+
+## Cluster: paid-ads
+
+**Trigger:** anything paid advertising: Meta/Facebook/Instagram for B2B, LinkedIn ABM ads (1:1, 1:few, 1:many), Google Ads, ad budget math, ad creative testing/fatigue, retargeting, ad-engagement-as-signal for outbound, CAPI/pixel tracking, ad account audits, monthly ads reports.
+
+| Intent | Load |
+|---|---|
+| Plan a LinkedIn ABM campaign (budget/audience/ad-count math) | `{SKILL_BASE}/clusters/paid-ads/tasks/plan-abm-ads-campaign.md` |
+| Audit a live ads account (graded fix list) | `{SKILL_BASE}/clusters/paid-ads/tasks/audit-ads-account.md` |
+| Write a monthly stakeholder ads report | `{SKILL_BASE}/clusters/paid-ads/tasks/monthly-ads-report.md` |
+| Turn ad engagement into outbound (signals, CTR loop, BDR triggers) | `{SKILL_BASE}/clusters/paid-ads/knowledge/ads-outbound-interplay.md` |
+| Run/fix a Meta B2B account (any pause/scale/graduate decision) | `{SKILL_BASE}/clusters/paid-ads/knowledge/meta-operating-system.md` |
+| Set up Meta for B2B (audiences, phases, offers, Advantage+, qualified pipeline) | `{SKILL_BASE}/clusters/paid-ads/knowledge/meta-b2b-system.md` |
+| Write ad copy / TLAs / headlines | `{SKILL_BASE}/clusters/paid-ads/knowledge/ad-copywriting.md` |
+| Build/iterate ad creative, diagnose fatigue | `{SKILL_BASE}/clusters/paid-ads/knowledge/creative-system.md` |
+| LinkedIn ABM mechanics (lists, 1:1 whale play, sizing, targeting gotchas) | `{SKILL_BASE}/clusters/paid-ads/knowledge/linkedin-abm-ads.md` |
+| Select/score/stage ABM accounts, retargeting orchestration | `{SKILL_BASE}/clusters/paid-ads/knowledge/abm-orchestration.md` |
+| Measure/attribute paid programs, pause rules, experiments | `{SKILL_BASE}/clusters/paid-ads/knowledge/measurement-attribution.md` |
+
+Reference: all benchmarks in one file → `{SKILL_BASE}/clusters/paid-ads/reference/benchmarks.md`; Meta tracking/CAPI setup + audit → `{SKILL_BASE}/clusters/paid-ads/reference/meta-tracking-capi.md`; Google Ads intent-first notes → `{SKILL_BASE}/clusters/paid-ads/reference/google-ads-notes.md`; demand lifecycle + channel selection + budget splits → `{SKILL_BASE}/clusters/paid-ads/knowledge/budget-channels-demand.md`. Note: general LinkedIn ads strategy (funnel architecture, bidding, formats) stays in the standalone `linkedin-ads` skill; this cluster holds what it does not.
+
+---
+
+## Cluster: aeo-reddit
+
+**Trigger:** anything AEO/GEO measurement (AI-engine visibility, AEO score, AI citations, "do we show up in ChatGPT/Perplexity answers", citation mining) and anything Reddit GTM (subreddit research, Reddit campaigns, advocate comments, account warmup, karma, bans, brand mentions on Reddit, Reddit attribution).
+
+| Intent | Load |
+|---|---|
+| Run an AEO audit (baseline, or "why did the score move") | `{SKILL_BASE}/clusters/aeo-reddit/tasks/run-aeo-audit.md` |
+| Find / vet subreddits for a product | `{SKILL_BASE}/clusters/aeo-reddit/tasks/research-subreddits.md` |
+| Launch or run a Reddit campaign, review drafts | `{SKILL_BASE}/clusters/aeo-reddit/tasks/launch-reddit-campaign.md` |
+| Fix off-brand or wrong-fact advocate drafts | `{SKILL_BASE}/clusters/aeo-reddit/reference/advocate-voice-tuning.md` |
+
+Knowledge index: **AEO measurement system** (visibility tracking, three-step score audit, three-level citation drill-down, hit-list method) → `{SKILL_BASE}/clusters/aeo-reddit/knowledge/aeo-measurement-system.md`. **Reddit GTM system** (campaign model, advocate personas, approval loop, mention triage, UTM attribution) → `{SKILL_BASE}/clusters/aeo-reddit/knowledge/reddit-gtm-system.md`. **Reddit account safety** (karma warmup ladder, ban/removal/rule-note signals, six-point comment check, four-check pre-post gate) → `{SKILL_BASE}/clusters/aeo-reddit/knowledge/reddit-account-safety.md`; this file is BLOCKING before any Reddit posting work. For the supply side (llms.txt, markdown endpoints, comparison pages, build gates) and market context, still load `{SKILL_BASE}/reference/aeo-and-ai-buyer-discovery.md` alongside the AEO knowledge file; the cluster covers the demand/measurement side and cross-references it.
+
+---
+
+## Cluster: content-marketing
+
+**Trigger:** anything newsletter (positioning, landing page, welcome sequence, subject lines for a subscriber list, roundup/announcement emails), SEO topic/keyword research and content roadmaps (incl. AEO/AI-search), creator/influencer marketing (sourcing, pricing, briefs, sponsored posts, ROI), or B2B affiliate programs. NOT LinkedIn organic posting strategy (use linkedin-organic) and NOT paid ads (use the paid-ads cluster).
+
+| Intent | Load |
+|---|---|
+| Launch or reposition a newsletter (value prop → landing page → welcome flow) | `{SKILL_BASE}/clusters/content-marketing/tasks/launch-newsletter.md` |
+| Run SEO topic research end-to-end (7 phases → tiered roadmap) | `{SKILL_BASE}/clusters/content-marketing/tasks/run-seo-topic-research.md` |
+| Launch a creator campaign / brief a creator / write or review a sponsored post | `{SKILL_BASE}/clusters/content-marketing/tasks/launch-creator-campaign.md` |
+
+Knowledge index: **newsletter system** (analysis-format 8 steps, value-prop formula, 40-60% opt-in landing page, 6-step welcome email with the deliverability reply ask, 5-email welcome sequence) → `{SKILL_BASE}/clusters/content-marketing/knowledge/newsletter-system.md`. **SEO topic pipeline** (account intelligence → opportunities → keyword validation → SERP verdicts → 5 commercial gates → format assignment → 6-dimension scoring into Tier 1/2/3; pipeline over traffic) → `{SKILL_BASE}/clusters/content-marketing/knowledge/seo-topic-pipeline.md`. **Creator-led growth** (expertise curve, 60/30/10 portfolio, 4-axis vetting, founder-vs-employees-vs-creators fork, 90-day program, 14-30 day attribution) → `{SKILL_BASE}/clusters/content-marketing/knowledge/creator-led-growth.md`. **Creator deal economics** (flat vs CPC decision rule, qualified click = tracked + ≥30s, rate bands, weighted-engagement rate model, 3-option negotiation, pipeline forecast, Scale/Adjust/Stop QBR) → `{SKILL_BASE}/clusters/content-marketing/knowledge/creator-deal-economics.md`. **Affiliate program** (Allowable CAC commission math, 90-day cookie floor, gated applications, 4-email onboarding, no coupon sites ever) → `{SKILL_BASE}/clusters/content-marketing/knowledge/affiliate-program.md`. Reference: **newsletter copy patterns** (100 subject-line formulas by trigger, 10 optimizer rules, Pain-Is-The-Pitch rewrites, roundup/announcement/repurpose templates, 52-format idea bank) → `{SKILL_BASE}/clusters/content-marketing/reference/newsletter-copy-patterns.md`; **benchmarks** (Beehiiv click-to-open trap + report formulas, creator rate and conversion tables, SEO thresholds, affiliate numbers) → `{SKILL_BASE}/clusters/content-marketing/reference/benchmarks.md`. Boundary: the newsletter↔LinkedIn repurposing bridge lives here and cross-references `clusters/linkedin-organic/content/repurposer.md`; creator sourcing cross-references `clusters/linkedin-organic/research/niche-creator-finder.md`.
+
+---
+
 ## Top-level references
 
 - **GTM philosophy** (BIPSY, multi-channel coordination, mindsets, benchmarks) → `{SKILL_BASE}/philosophy.md`
@@ -273,6 +350,7 @@ Organized by category (not the usual `tasks/` layout). Load the matching file:
 - **Claude Code GTM architecture** (the 4-layer operating model + 7-gate qualification + feedback loop + API stack — how to run GTM entirely inside one terminal) → `{SKILL_BASE}/reference/claude-code-gtm-architecture.md`
 - **GTM Engineer role** (what 1 hire that replaces 5 actually does — 3 pillars, tool stack, hiring criteria, when NOT to hire one) → `{SKILL_BASE}/reference/gtm-engineer-role.md`
 - **ColdIQ skills directory** (196 Claude Code skills for GTM, organized by category + GTM-relevance ranking + install commands) → `{SKILL_BASE}/reference/coldiq-skills-directory.md`
+- **Swan GTM skills repo** (github.com/swan-gtm/gtm-skills — ~220 skills / 30 authors, MIT; fully imported 2026-07-28: revops + paid-ads + aeo-reddit + content-marketing clusters distilled from it, overlap authors filed as takes in `clusters/_external-takes/swan-*.md`; weekly drift watch via the `swan-radar-collect` scheduled task)
 - **Case studies + benchmarks** (real published results from ColdIQ/Workflows.io/Earleads/Trigify campaigns — AirOps $3M, Aircall 3,655 accounts, Hemlane 5.5% reply rate, Workflows.io 25.4% — defensible numbers to cite) → `{SKILL_BASE}/reference/case-studies-and-benchmarks.md`
 - **Visual library** (18 agent-readable Mermaid workflow diagrams: radial signal taxonomy, GTM flywheel infographic, ABM operating system, signal-class workflows etc.) → `{SKILL_BASE}/visual-library/INDEX.md`
 - **lemlist dynamic personalization** (Liquid `{% if %}` conditionals, per-sender personalization, spintax — the rule: NEVER bake a sender-dependent value like a full salutation into the contact; store only sender-independent blocks and resolve the form at send time. Liquid > AI column for deterministic rules) → `{SKILL_BASE}/reference/lemlist-dynamic-personalization.md`
@@ -392,6 +470,27 @@ GTM request
 │  ├─ Analyze replies       → clusters/campaign-ops/tasks/analyze-replies.md
 │  ├─ Score meeting intent  → clusters/campaign-ops/tasks/score-meeting-intent.md
 │  └─ Handle objection      → clusters/objections/tasks/handle-objection.md
+│
+├─ RevOps / revenue system?
+│  ├─ Diagnose revenue system → clusters/revops/tasks/run-revops-diagnostic.md
+│  ├─ Plan CRM migration      → clusters/revops/tasks/plan-crm-migration.md
+│  └─ Forecast / pipeline / routing / cadence / planning → clusters/revops/knowledge/ (see cluster section)
+│
+├─ Paid ads?
+│  ├─ Plan ABM ads campaign   → clusters/paid-ads/tasks/plan-abm-ads-campaign.md
+│  ├─ Audit ads account       → clusters/paid-ads/tasks/audit-ads-account.md
+│  ├─ Monthly ads report      → clusters/paid-ads/tasks/monthly-ads-report.md
+│  └─ Ad engagement → outbound → clusters/paid-ads/knowledge/ads-outbound-interplay.md
+│
+├─ AEO / Reddit?
+│  ├─ AEO audit               → clusters/aeo-reddit/tasks/run-aeo-audit.md
+│  ├─ Research subreddits     → clusters/aeo-reddit/tasks/research-subreddits.md
+│  └─ Launch Reddit campaign  → clusters/aeo-reddit/tasks/launch-reddit-campaign.md
+│
+├─ Content marketing?
+│  ├─ Launch newsletter       → clusters/content-marketing/tasks/launch-newsletter.md
+│  ├─ SEO topic research      → clusters/content-marketing/tasks/run-seo-topic-research.md
+│  └─ Creator campaign / sponsored post → clusters/content-marketing/tasks/launch-creator-campaign.md
 │
 └─ Performance / ops?
    ├─ Tier campaigns        → clusters/campaign-ops/tasks/tier-campaigns.md
