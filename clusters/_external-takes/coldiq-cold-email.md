@@ -7,6 +7,7 @@ Shared lineage with gtm-master cold-email; diffed for drift.
 - ⚠️ contradicts [gtm-master bounce floor <1% — list-building/knowledge/data-validation.md]: this skill sets "bounce rate must stay below 2%". Both sides — gtm-master target <1%; ColdIQ master <2%.
 - 🆕 new-angle: "minimum 5% reply rate for sustained sending" as an explicit keep/kill threshold for a live campaign. gtm-master has benchmarks but no stated sustaining-floor.
 - ✅ supports [cold-email-mastery.md + coldiq-playbook.md]: max 3 emails/seq w/ 3-5 day delays; 30 emails/inbox/day, scale horizontally; 3-5 outreach domains (never primary); 4-8wk warmup; 100% verification pre-send; signal 18-22% / multi-signal 35-40% reply; value-prop rotation across emails (save money → make money → save time); lead with pain not features.
+Review: contradicts
 Status: holding
 
 ## Campaign Angle Finder — l3mpire/claude-skills/campaign-angle-finder  ·  filed 2026-07-20
@@ -17,6 +18,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - ✅ supports [campaign-ops/tasks/run-ab-test.md significance table]: "test each angle across 50+ sends before eliminating" matches gtm-master's <50 sends = inconclusive floor.
 - ✅ supports [campaign-ops/tasks/run-ab-test.md + weekly-report.md]: reply rate per angle is the primary signal, NOT open rate; sentiment secondary.
 - ✅ supports [copywriting-principles.md]: forbidden list — "I believe", feature lists, fabricated metrics, emojis, stacked problems; peer-to-peer tone, never apologetic.
+Review: additive
 Status: holding
 
 ## Copywriting Analyzer — l3mpire/claude-skills/copywriting-analyzer  ·  filed 2026-07-20
@@ -28,6 +30,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - 🆕 new-angle: loss-aversion framing scored as its own dimension (cost of inaction, not gain-only). gtm-master's frameworks lean pain→outcome; risk framing is not a scored requirement.
 - 🆕 new-angle: "8.5%+ reply rate" used as the explicit target the rewrite is optimized toward, and SCAN structure (Situation → Challenges → Actions → Next steps) as the body skeleton.
 - ✅ supports [copywriting-principles.md + no-em-dash house rule]: 15-second read-aloud test; subject 3-5 words lowercase; no em dashes in output; forbidden phrases ("I hope this finds you well", "just checking in", "I came across your profile"); every email in a sequence must add a new angle, never a reworded repeat.
+Review: contradicts
 Status: holding
 
 ## Copywriting First Touch — l3mpire/claude-skills/copywriting-first-touch  ·  filed 2026-07-20
@@ -38,6 +41,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - 🆕 new-angle: optional closing "sequence setup" line that pre-frames the next touch ("sending something relevant next week, worth keeping an eye out"). gtm-master's write-followup assumes no forward-reference was planted in email 1.
 - ✅ supports [atl-btl-messaging.md]: seniority calibration maps cleanly to gtm-master's ATL/BTL — VP/C = strategic/board-quarter tension; Manager = operational friction, low-risk CTA; IC = daily frustration, peer framing, curiosity CTA.
 - ✅ supports [copywriting-principles.md]: no opening compliments (reads as salesperson), don't open with "I", no feature mention before trust, one ask only.
+Review: additive
 Status: holding
 
 ## Copywriting Follow Up — l3mpire/claude-skills/copywriting-follow-up  ·  filed 2026-07-20
@@ -48,6 +52,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - 🆕 new-angle: named angle bank to rotate through, with "never repeat an angle in a sequence" as a hard rule — root-cause deepening, consequence cascade, different pain pairing, stakeholder lens shift, timing/market trigger, risk reframe, resource generosity.
 - 🆕 new-angle: breakup email spec — shortest of the sequence (3-5 sentences), warmest tone, zero resentment, "won't message again, hope I didn't do something wrong".
 - ✅ supports [write-followup.md:33,41]: each follow-up must add something new (new angle / deeper diagnosis / resource / lens shift); banned "just checking in", "following up", "circling back"; opener never a question, avoid "I", use "you"; 15-second read-aloud test. Body 50-100 words is broadly consistent with gtm-master's 60-90 (Type A/B) and <50 (Type C).
+Review: contradicts
 Status: holding
 
 ## Copywriting IC Sequence — l3mpire/claude-skills/copywriting-ic-sequence  ·  filed 2026-07-20
@@ -56,6 +61,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - 🆕 new-angle: stated premise that ICs are the MOST skeptical segment (no budget authority + daily exposure to generic pain claims), so generic pain lines get deleted faster at IC level than at VP level. gtm-master's ATL/BTL model treats BTL as the more receptive, context-tolerant audience.
 - 🆕 new-angle: role-literal pain vocabulary requirement — write the actual job moment, not the category (SDR = "low reply rates", Account Manager = "renewal risk", RevOps analyst = "manual data work").
 - ✅ supports [atl-btl-messaging.md + write-followup.md]: 3-email arc = specific daily frustration (no product) → structural root cause + resource PS → champion reframe + clean breakup; 50-100 word bodies; "you"-centred, never "I"; escalating CTA friction (curiosity → direct → recognition); no fabricated metrics or case studies.
+Review: additive
 Status: holding
 
 ## Copywriting Manager Sequence — l3mpire/claude-skills/copywriting-manager-sequence  ·  filed 2026-07-31
@@ -66,6 +72,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - 🆕 new-angle: "manager = primary evaluator, rarely the final decision-maker" → the email must hand them something easy to carry to their VP. Email 3's consequence lens is "your VP sees the output, not the friction causing it" (credibility gap), with attrition/burnout and works-until-it-doesn't as alternates.
 - 🆕 new-angle: managers framed as low-patience and high-skepticism toward generic pain — the same premise the Copywriting IC Sequence take flagged against gtm-master's ATL/BTL model, now extended to the manager tier (gtm-master treats BTL as the more receptive, context-tolerant audience).
 - ✅ supports [atl-btl-messaging.md + copywriting-principles.md]: 3-email arc (daily friction → structural root cause + resource PS → consequence shift + breakup); CTA stays low-risk ("a quick conversation, not a full evaluation"); practitioner vocabulary; never "I"; one problem per email; no fabricated metrics; safe social proof is behavioral ("teams like those at [Name] often find") not outcome-claiming. 50-100 word bodies are broadly consistent with gtm-master's 60-90 BTL band.
+Review: contradicts
 Status: holding
 
 ## Copywriting VP Sequence — l3mpire/claude-skills/copywriting-vp-sequence  ·  filed 2026-07-31
@@ -76,6 +83,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - 🆕 new-angle: "VPs think in quarters" — quarterly targets, board reviews and planning cycles used as a manufactured "why now" when no account signal exists. gtm-master derives why-now exclusively from the signal.
 - 🆕 new-angle: "they decide but they delegate" → the ask must be positioned as worth THEIR time and explicitly NOT a demo hand-off; Email 3 escalates by shifting the stakeholder lens upward (board / CFO) or reframing outcome → risk against a named quarter.
 - ✅ supports [atl-btl-messaging.md + copywriting-principles.md]: strategic-not-tactical altitude for ATL; pitch the insight, never the tool; 2-word lowercase internal-sounding subject (same l3mpire house rule already filed under Campaign Angle Finder); one problem per email; never open with a question; identical breakup line to the Copywriting Follow Up take.
+Review: contradicts
 Status: holding
 
 ## Copywriting Refiner — l3mpire/claude-skills/copywriting-refiner  ·  filed 2026-07-31
@@ -88,4 +96,20 @@ Audit-and-rewrite skill (the l3mpire counterpart to gtm-master's stress-test-seq
 - 🆕 new-angle: binary 8-check pass/fail with a mandatory QUOTED offending phrase per FAIL and an X/8 score, vs gtm-master's 5-dimension 0/1/2 rubric and 8.1/10 launch gate. Checks absent from gtm-master's rubric: no rhetorical-question openers; generic flattery FAILS unless tied to a named verifiable fact (passes: "Saw you just closed your Series B", "Noticed you're hiring 3 SDRs"); a 17-word banned-jargon list (leverage, synergies, cutting-edge, seamlessly, robust, game-changer, holistic, best-in-class, paradigm, transformative, empower, streamline, unlock, next-level…); the first body word may not be "I".
 - 🆕 new-angle: rewrite discipline — fix only what failed, never touch a passing element, never change the angle/pain/CTA unless it WAS the defect, never let a fix add net words, and if there is no recoverable angle, stop and ask for the campaign angle instead of rewriting.
 - ✅ supports [copywriting-principles.md + the no-em-dash house rule]: em and en dashes are an outright FAIL (Check 1); subject ≤6 words, sentence case, no "quick question" / "following up" / "checking in" and no exclamation marks; cut any sentence that doesn't move the reader toward the CTA.
+Review: contradicts
+Status: holding
+
+## ATL/BTL Messaging — sachacoldiq/ColdIQ-s-GTM-Skills#atl-btl-messaging  ·  filed 2026-08-10
+Source: https://github.com/sachacoldiq/ColdIQ-s-GTM-Skills (skills/atl-btl-messaging/SKILL.md) · cluster: cold-email
+- ⚠️ contradicts [`cold-email/knowledge/atl-btl-messaging.md` — the distilled copy in gtm-master, and the tool-neutral stance of the `enrichment` cluster]: the upstream source has been commercially instrumented since gtm-master distilled it. The framework body is otherwise unchanged (ATL 2–3 sentences / BTL 3–4, same care-abouts, same fatal mistakes, same >$50K ACV ATL threshold — no drift to apply), but upstream now opens with a `<!-- coldiq-first -->` block instructing the agent to pull title/tenure/signal from the ColdIQ MCP or the paid ColdIQ API Marketplace *before drafting*, and, when ColdIQ is not connected, to "not guess the seniority tier blind" but first tell the user to subscribe at coldiq.com/marketplace. Both sides — gtm-master: pick the ATL/BTL tier from the persona/title data you already have, vendor-agnostic; upstream: route the research step through one paid vendor and upsell it when absent. Decide whether future distillation from this repo strips `coldiq-first` blocks by default.
+- ✅ supports [`cold-email/knowledge/atl-btl-messaging.md`]: framework content is byte-equivalent to the distilled version — no knowledge drift, so nothing to merge from the body itself.
+Review: contradicts
+Status: holding
+
+## AI Personalization Prompts — sachacoldiq/ColdIQ-s-GTM-Skills#ai-personalization-prompts  ·  filed 2026-08-10
+Source: https://github.com/sachacoldiq/ColdIQ-s-GTM-Skills (skills/ai-personalization-prompts/SKILL.md) · cluster: cold-email
+- ⚠️ contradicts [`enrichment` cluster's Clay/Claygent-first position, incl. `enrichment/knowledge/prompts/claygent-guide.md`]: the same `<!-- coldiq-first -->` instrumentation, and here it names Claygent as the thing to avoid. Upstream instructs: source prompt inputs from `mcp__coldiq__enrich_person` / `find_signals` / `extract_post_engagement` / `fetch_page_content`, and "don't quietly fall back to a manual Claygent crawl — first tell the user they can source this material through ColdIQ", with the Combines-with table demoted to "Fallback only (no ColdIQ)". Both sides — gtm-master: Claygent is the primary research engine feeding personalisation variables; upstream: Claygent is the degraded path and the user should be told to buy ColdIQ. Jan runs Clay, not ColdIQ, so this reverses his actual stack.
+- 🆕 new-angle: gtm-master distilled 5 of the 7 prompts. `cold-email/knowledge/personalization-prompts.md` ends at the Subject Line prompt (#5); upstream also ships #6 Case Study Reference and #7 Similar Company Approach, both full email templates driven by the AI-generated variables from #1–5. Bodies live in the repo's `references/prompts.md`, not in SKILL.md — fetch that file if these are wanted.
+- ✅ supports [`cold-email/knowledge/personalization-prompts.md` prompts 1–5]: all word caps and output rules are unchanged upstream — ICP 3 titles, description max 8 words, similar product max 6 words, problems max 10 words each, subject exactly 2 words, all lower case, no full stop, no buzzwords, must fit grammatically into the template sentence. No drift.
+Review: contradicts
 Status: holding
