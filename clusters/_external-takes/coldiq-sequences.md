@@ -8,6 +8,7 @@ Sequence-architecture-before-copy engine, trained on lemlist 244k-campaign datas
 - 🆕 new-angle: list-size → reply-rate curve — 6-50 leads 5.3% vs 1,000+ leads 1.1%; segment any list above 200. Argues small-batch beats blast.
 - 🆕 new-angle: voice notes only for <35 / tech-forward audiences; avoid 40+ / traditional industries. Not in gtm-master.
 - ✅ supports [sequences/tasks/design-multi-channel behavioral rules]: mimic human follow-up — LinkedIn profile-visit before email, channel-switch after timeout, never stack emails.
+Review: contradicts
 Status: holding
 
 ## LinkedIn Sequence — l3mpire/claude-skills/linkedin-sequence  ·  filed 2026-07-31
@@ -20,6 +21,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: sequences
 - 🆕 new-angle: per-seniority DM calibration — VP/C: a strategic observation that reframes something they think they already know; Manager: name a friction they live with daily; IC: a hyper-specific job moment. Same three tiers as gtm-master's ATL/BTL but with a distinct opening MOVE per tier rather than a tone shift.
 - 🆕 new-angle: the no-reply bump is a clean-slate NEW angle that must not reference the earlier message — switch to the personal credibility/career lens, a market or timing trigger, or a resource useful regardless of the product. gtm-master's follow-up 2 adds a new angle but assumes continuity with message 1.
 - ✅ supports [design-multi-channel.md + write-linkedin-sequence.md]: LinkedIn M1 must attack a different pain than Email 1; a LinkedIn reply pauses the email sequence; "LinkedIn leads on tone, email leads on depth" restates gtm-master's "email is for the argument, LinkedIn is for the relationship"; no emojis (they signal automation); connection note 300 chars and often better left empty; never fabricate a resource or case study that wasn't provided.
+Review: contradicts
 Status: holding
 
 ## LinkedIn Outbound Angle — l3mpire/claude-skills/linkedin-outbound-angle  ·  filed 2026-07-31
@@ -32,4 +34,27 @@ Per-prospect profile analysis → 1 primary + 2 backup angles. Operating-mode ca
 - 🆕 new-angle: a 0-10 ICP fit score (title/seniority 3, size/stage 2, industry 2, trigger 2, tech 1) with a 0-4 "outside your core ICP, proceed only if you confirm" stop. This is a FOURTH scoring scheme alongside validate-against-icp (/12), lead-scoring (100-point) and the Lead Research Assistant take's 1-10 — redundant rather than contradictory; reconcile to one rubric if promoted, don't add.
 - 🆕 new-angle: thin-profile protocol — say so plainly, don't invent. Output a persona-based angle with a confidence caveat and recommend enrichment (Clay / company page / other channels) before sending.
 - ✅ supports [write-linkedin-sequence.md + copywriting-principles.md]: never "I came across your profile", never open with a compliment or "hope this finds you well"; 300-char connection note; soft CTA, never "can we jump on a call?"; match their register (formal if they write formally); one idea per message; no ROI or percentage claims without a verified source; no client name-drops without permission.
+Review: additive
+Status: holding
+
+## linkedin-success-factors — sachacoldiq/ColdIQ-s-GTM-Skills#linkedin-success-factors  ·  filed 2026-08-31
+Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: sequences
+- ⚠️ contradicts [`sequences/tasks/write-linkedin-sequence.md:90` "acceptance rate < 30% after 100 connection requests = the note OR the targeting is wrong"; `campaign-ops/tasks/audit-linkedin-profile.md:101` "< 25% → re-run the audit"]: this skill's benchmark table calls **25% acceptance "Good", 35% "Great", 45%+ "Excellent"** — i.e. it treats as healthy the exact band gtm-master treats as broken. Both sides — gtm-master: sub-30% means stop and diagnose the note or the list; ColdIQ: 25% is a passing campaign. Note gtm-master's own two thresholds (30% vs 25%) already disagree with each other, so this is worth resolving in canon regardless of the external take.
+- ⚠️ contradicts [same systemic finding as 2026-08-17 / 2026-08-24]: carries the `<!-- coldiq-first -->` vendor block. It reframes "target active users only" (Rule 2) as something to verify via `mcp__coldiq__extract_post_engagement`, and tells the agent that without ColdIQ access it must not judge who is active but should first sell a marketplace subscription. ONE systemic finding across this whole filing batch, not eight.
+- 🆕 new-angle: **hard LinkedIn volume ceilings** — under 400 connections/month, under 120 interactions/day, under 20 connection requests/day in the pre-launch checklist. gtm-master carries no numeric LinkedIn volume limit anywhere in `sequences/` or `campaign-ops/`; it only warns that a single profile "gets rate-limited" (`tiered-routing-template.md:160`). This is the missing number behind that warning.
+- 🆕 new-angle: a **LinkedIn benchmark ladder** gtm-master lacks — connection acceptance 25/35/45%, message response 10/15/20%, meeting booked 2/5/8%. gtm-master has an acceptance threshold but no reply or meeting benchmark for LinkedIn at all, so today there is no way to tell a mediocre LinkedIn campaign from a failing one below the acceptance step.
+- 🆕 new-angle: activity-gating as a **targeting prerequisite** — the "posted within last 30 days" Sales Nav filter applied before spending any of the monthly connection budget. gtm-master's LinkedIn sequence task gates on profile readiness (the sender's) but never on the recipient's recent activity.
+- 🆕 new-angle: scheduling rules — send inside the prospect's 9AM-6PM local window, weekdays only, Tue-Thu optimal, avoid Monday morning and Friday afternoon; and randomize inter-step timing so the sequence does not fire the same shape every time.
+- ✅ supports [`sequences/tasks/write-linkedin-sequence.md:80` "pitching in the connection request kills acceptance rate"]: listed as Common Mistake #1, with the same reasoning (the note exists to get accepted, not to sell). Also independently confirms the 3-4 sentence / one-paragraph ceiling gtm-master applies to BTL messages.
+Review: contradicts
+Status: holding
+
+## linkedin-campaign-complete — sachacoldiq/ColdIQ-s-GTM-Skills#linkedin-campaign-complete  ·  filed 2026-08-31
+Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: sequences
+- ⚠️ contradicts [`sequences/tasks/design-multi-channel.md` "The default 14-day flow", Day 0 = connection request]: this skill inserts **three warming steps before the connection request** — view the profile (Day 1), like a recent post (Day 1-2), then connect (Day 2-3), first message 4-24h after acceptance, follow-up Day 5-7. gtm-master opens cold at Day 0 with the CR and has no pre-warming step in any sequence file. Both sides — gtm-master: the note carries the whole first impression; ColdIQ: two passive touches precede it so the request arrives from a recognized name. Also a timing conflict downstream: gtm-master sends LinkedIn FU1 on Day 3 of a fixed calendar, ColdIQ triggers the first message off the acceptance event (4-24h), which is a different scheduling model, not just a different number.
+- ⚠️ contradicts [same systemic finding]: `<!-- coldiq-first -->` vendor block, and — sharper here — a **"Fallback only (no ColdIQ)" stamp printed directly on the Tier 1/Tier 2 target list**, demoting the skill's own targeting method to a second choice behind `find_signals` + `extract_post_engagement`. Same pattern as `list-building-tips` (2026-08-24).
+- 🆕 new-angle: a **LinkedIn target-priority tier list** gtm-master does not have — Tier 1: webinar/event attendees, post engagers filtered to ICP, company-page followers, profile viewers; Tier 2: members of recently-created groups, newsletter subscribers, content commenters. gtm-master's sequences cluster treats the LinkedIn audience as given and starts at message design; this is the step before it, and it ranks warm-ish sources rather than treating LinkedIn as uniformly cold.
+- ✅ supports [`cold-email/knowledge/atl-btl-messaging.md` + `writing-frameworks.md:78`]: the LinkedIn copy rules (never over one paragraph, 3-4 sentences max, create conversation rather than sell) match gtm-master's BTL length discipline, arrived at independently for the DM channel.
+- ✅ supports [`sequences/tasks/design-multi-channel.md` "Email is for the argument. LinkedIn is for the relationship."]: the "focus on creating conversation, not selling" rule and the auto-embedding resource idea (Loom, post, webinar) operationalize the same split.
+Review: contradicts
 Status: holding

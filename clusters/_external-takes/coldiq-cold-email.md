@@ -172,3 +172,28 @@ Shared lineage: `cold-email/knowledge/personalization-prompts.md` "Personalizati
 - ✅ supports [`writing-frameworks.md` "Josh Braun — be specific" + `copywriting-principles.md` on specific social proof]: the worked Strong-Hook example threads quote → named comparable → specific number → soft question ("Worth comparing notes?"), landing on the same shape gtm-master prescribes, and the Lite-Hook example does the same at lower research cost.
 Review: contradicts
 Status: holding
+
+## email-writing-frameworks — sachacoldiq/ColdIQ-s-GTM-Skills#email-writing-frameworks  ·  filed 2026-08-31
+Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
+Shared lineage: `cold-email/knowledge/writing-frameworks.md` lines 1-30 is a distillation of this skill. Only the material below is new.
+- ⚠️ contradicts [same systemic finding as 2026-08-17 / 2026-08-24]: the `<!-- coldiq-first -->` vendor block asserts "great cold email is 80% research, 20% writing" and routes all five frameworks' inputs — trigger, pain, public statements, verified address — through `mcp__coldiq__*`, instructing the agent that without ColdIQ it must "not fall back to guessing a trigger" but first sell marketplace access. gtm-master routes the same research to Clay, Claygent and the signal-detection stack (`enrichment/`, `signals/knowledge/signal-detection-tools.md`). ONE systemic finding across this batch.
+- ✅ supports [`writing-frameworks.md` "Core Frameworks"]: all five frameworks — Do the Maths, Short-Trigger, Challenge of Similar Companies, Neutral Insight, Leader Responsibilities — are canon-identical, down to the example strings. gtm-master additionally stores five frameworks this skill does not (Ask Before Pitch, Not Too Different Persona, Upfront Value, Leverage Content, "Why Are You Paying?"), so canon is the strict superset here. **No new substance; nothing to promote.**
+Review: contradicts
+Status: holding
+
+## josh-braun-copywriting — sachacoldiq/ColdIQ-s-GTM-Skills#josh-braun-copywriting  ·  filed 2026-08-31
+Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
+Shared lineage: `cold-email/knowledge/writing-frameworks.md:53-59` (the 5 principles, verbatim) and `copywriting-principles.md:158-180` (each principle expanded) are distillations of this skill. `personalization-prompts.md:112` already carries its founding-date example verbatim.
+- ⚠️ contradicts [same systemic finding]: `<!-- coldiq-first -->` block. It attaches the vendor to Braun's *specificity* principle specifically — the claim is that "be specific" is unreachable without ColdIQ research calls, and that absent access the agent should not fall back to writing but should pitch the marketplace. gtm-master treats specificity as a writing discipline enforced at stress-test time (`tasks/stress-test-sequence.md`), independent of any data vendor.
+- ✅ supports [`writing-frameworks.md:53-59` + `copywriting-principles.md:158-180`]: the 5 principles are canon-identical, and the "e-commerce companies doing $5k/month overpaying 10-15%" example is the same string gtm-master stores. The DO/DON'T personalization list (founding date, recent news, tech-stack signals; no generic AI compliments, no substanceless post compliments, no creepy over-personalization) matches `personalization-prompts.md:112` and `copywriting-principles.md:205`. **No new substance; nothing to promote.**
+Review: contradicts
+Status: holding
+
+## email-1-variations-7 — sachacoldiq/ColdIQ-s-GTM-Skills#email-1-variations-7  ·  filed 2026-08-31
+Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
+Shared lineage: `cold-email/knowledge/email-templates-library.md:221+` is titled "7 Email 1 Variations (ColdIQ Core Framework)" and carries all seven skeletons plus the Email 2 template — it is a distillation of this skill.
+- ⚠️ contradicts [`cold-email/knowledge/copywriting-sequences.md:8-14` sequence timing]: this skill puts **Email 3 at Day 14**; gtm-master's canonical table puts it at **Day 17** (new subject line, very soft CTA, break-up) and states the delay between emails should be 3-5 days. Both sides — gtm-master: Day 0 / Day 3 / Day 17, then a 3-month wait before re-engagement; ColdIQ: Day 0 / Day 3 / Day 14. A three-day gap on a single step, but it is a canon number that two ColdIQ-lineage sources now disagree on.
+- ⚠️ contradicts [same systemic finding]: `<!-- coldiq-first -->` vendor block ahead of the variations, with the "don't fall back to generic filler, sell the marketplace" instruction.
+- ✅ supports [`email-templates-library.md:221-300`]: all 7 Email 1 skeletons and the Email 2 (lead magnet + social proof + restated value prop) template are canon-identical. The Email 3 delegation ask ("If this isn't you, who should I be talking to about {{topic}}?") matches `cold-email-mastery.md:88-95` on what actually works in a break-up.
+Review: contradicts
+Status: holding

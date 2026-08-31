@@ -5,6 +5,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: campaign-ops
 Benchmark verdict engine on lemlist data (244k campaigns / 249M emails). NOTE: the numeric benchmark tables live in the skill's resources/, not its SKILL.md — only the diagnostic frame was fetchable this run.
 - 🆕 new-angle: fixed metric-triage ladder for diagnosing a campaign — (1) deliverability/warmup [foundation] → (2) reply rate [main KPI] → (3) accept rate [entry point] → (4) positive reply rate [pipeline quality] → (5) open rate [weak signal]. Fix upstream before downstream. gtm-master campaign-ops has weekly-report + analyze-replies but no single ordered triage ladder.
 - ✅ supports [campaign-ops deliverability stance]: open rate is a weak/unreliable signal (post-MPP) and should never be the primary optimization target.
+Review: additive
 Status: holding
 
 ## A/B Testing — coreyhaines31/marketingskills/ab-testing  ·  filed 2026-07-20
@@ -19,6 +20,7 @@ Context caveat before reading the contradiction: this skill is written for web/C
 - 🆕 new-angle: a persistent experiment playbook where every result is documented with the reusable PATTERN extracted, not just the winner, so the library compounds.
 - ✅ supports [run-ab-test.md:77]: one variable per test, or attribution is impossible; changing variants/traffic/tracking mid-test invalidates the result; a no-difference outcome means test bolder changes, not more of the same.
 - ✅ supports [run-ab-test.md:79 kill-the-hypothesis rule]: distinguishes statistical significance from practical significance — a real but tiny effect may not justify implementation.
+Review: contradicts
 Status: holding
 
 ## CTA Designer — l3mpire/claude-skills/cta-designer  ·  filed 2026-07-31
@@ -31,6 +33,7 @@ Permissionless Value Promise (PVP) model for outreach CTAs.
 - 🆕 new-angle: "never use the same CTA type twice in a row" across a sequence — a type-rotation rule parallel to the value-prop rotation gtm-master already requires across steps.
 - 🆕 new-angle: PVP pass bar — the prospect could use the thing even if they never buy; the product is not mentioned; a one-word reply suffices; it could not be sent to 1,000 random people; no implied urgency or pressure.
 - ✅ supports [optimize-cta.md red-flag table]: "Would you be open to a 30-minute call?" is high-friction and seller-centric; one ask only; the goal of touch 1 is a REPLY, not a booked meeting.
+Review: contradicts
 Status: holding
 
 ## GTM Action Thinker — l3mpire/claude-skills/gtm-action-thinker  ·  filed 2026-07-31
@@ -42,4 +45,20 @@ Idea-stress-testing skill; no gtm-master task currently occupies this slot.
 - 🆕 new-angle: three-direction idea expansion — deepen the core (the 10x version of this exact idea), adjacent plays (same idea × different segment / channel / inbound-outbound inversion / automation layer / partnership), and a deliberate contrarian inversion (opposite persona, channel, or timing).
 - 🆕 new-angle: MVP-first execution blueprint with dependencies triaged Already resolved / Easy to resolve / Hard blocker, a week-by-week sequencing map with a deliverable per week, and a scale path (what gets automated, hired for, templatized; what breaks at 10x that must be solved now).
 - ✅ supports [campaign-ops + philosophy.md]: reply rate > open rate, meeting booked > click, revenue influenced > leads generated; every motion needs a "why now" that isn't "we need pipeline"; specificity over generality; a good idea that ships next week beats the best idea that needs three months of engineering.
+Review: additive
+Status: holding
+
+## email-metrics-benchmarks — sachacoldiq/ColdIQ-s-GTM-Skills#email-metrics-benchmarks  ·  filed 2026-08-31
+Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: campaign-ops
+- ⚠️ contradicts [`signals/knowledge/signal-scoring.md:217`, `signals/knowledge/buying-signals.md:75`, `cold-email/knowledge/cold-email-mastery.md:148` — all three state cold outreach with no signal replies at **6-8%**]: this skill prints **both numbers on the same page**. Its "2X Levers" table gives cold email reply rate a baseline of **0.5-1.0%**, Good 2-3%, Great 5%+ — then its very next table repeats the canonical "cold outreach (no signal) 6-8%". Those are ~8x apart for the same metric from the same author. Both sides — gtm-master (three files, one lineage): 6-8% is the no-signal floor; the same source's own benchmark table: 0.5-1% is the floor and 5% is exceptional. **The number gtm-master repeats in three places rests on a source that contradicts itself.** This is the sharpest finding in the batch and is worth resolving in canon rather than filing away: 6-8% almost certainly describes a signal-light but targeted send, not true cold, and gtm-master currently uses it as the untargeted baseline in its signal-uplift math.
+- ⚠️ contradicts [`cold-email/tasks/write-subject-lines.md:89` "if open rate < 40% after launch, the subject is the first thing to swap"]: this skill sets the intervention threshold at **< 30%** and calls 20-40% the normal baseline with 50% "Good". Both sides — gtm-master: anything under 40% means swap the subject before touching the body; ColdIQ: 30-40% is expected and needs no action. gtm-master's rule fires on a majority of normal campaigns under ColdIQ's distribution.
+- ⚠️ contradicts [`cold-email/knowledge/copywriting-sequences.md:8-14` (3 emails, ending Day 17) and `cold-email-mastery.md:88` "Breakup Emails = STOP"]: this skill runs a **4-email sequence with a distinct Email 4 break-up that "often has the highest reply rate"**. gtm-master runs three emails, folds the break-up into Email 3, and states 80% of positive replies land on Email 1. Both sides — gtm-master: the break-up is a low-value final touch and gimmick break-ups are banned outright; ColdIQ: the break-up is the highest-yielding step in the sequence. (The two are not fully opposed — gtm-master's ban is on *style*, "alligator" openers and begging, and it endorses the delegation ask this skill also uses — but the claim that it out-replies Email 1 is a direct conflict with canon.)
+- ⚠️ contradicts [same systemic finding]: `<!-- coldiq-first -->` vendor block, here arguing the gap between the no-signal and multi-signal reply rates is closed by buying ColdIQ-sourced contacts.
+- 🆕 new-angle: a **deliverability threshold ladder with warning and critical bands** — bounce <2% / 2-5% / >5%, spam <0.1% / 0.1-0.3% / >0.3%, unsubscribe <0.5% / 0.5-1% / >1%. gtm-master's `deliverability-guide.md:349` carries only a single "bounce rate <2%" checkbox: no spam-complaint threshold, no unsubscribe threshold, and no distinction between "watch this" and "stop the campaign". Directly usable by `campaign-ops/tasks/audit-deliverability.md`, which today has no numeric fail bar.
+- 🆕 new-angle: a **three-symptom diagnostic ladder** keyed to where the funnel breaks — low opens → subject / sender reputation / deliverability / send time; opens but no replies → relevance, length, CTA strength, social proof, framework; replies but no meetings (<20% of replies) → qualification, CTA clarity, booking friction, follow-up speed. gtm-master has exactly one rule of this shape (the subject-line one above) and no meeting-rate floor at all. Pairs with `campaign-ops/tasks/weekly-report.md` and `analyze-replies.md`.
+- 🆕 new-angle: two reply-rate rows gtm-master's signal tables lack — **website visitor follow-up 25-30%** and **champion job change 20-25%**, both landing between single-signal (18-22%) and multi-signal-stacked (35-40%). gtm-master's tables stop at the generic tiers, so these two named plays currently have no benchmark to be judged against.
+- 🆕 new-angle: **Email 2 opens run 40-60% of Email 1's** — a same-thread decay figure gtm-master does not store, and the number that tells you whether a soft Email 2 is underperforming or merely obeying the channel.
+- ✅ supports [`cold-email/tasks/write-first-email.md:22` and `writing-frameworks.md:78-84`]: the seniority length caps (BTL 3-4 sentences / 90 words, ATL 2-3 sentences / 60 words) sit inside gtm-master's stated ranges (BTL 60-90, ATL 40-70) with identical sentence counts — independent agreement, no conflict.
+- ✅ supports [`signals/knowledge/signal-scoring.md:217-219`]: the 6-8 / 18-22 / 35-40 progression is canon-identical (see the first bullet for the caveat that the same page also contradicts it).
+Review: contradicts
 Status: holding
