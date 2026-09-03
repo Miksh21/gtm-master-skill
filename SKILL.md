@@ -21,13 +21,15 @@ Master router for B2B GTM/outbound work. Knowledge is split into **15 clusters**
 1. **Identify the user's intent** — match it to ONE of the 15 clusters via the cluster index below
 2. **Match intent to a task** — each cluster has a task routing table; load the matching `tasks/<x>.md` file
 3. **Tasks are self-contained** — they include inputs, process, output format, pass criteria. They reference `knowledge/` only when depth is needed.
-4. **Multi-cluster workflows** chain tasks — typical chain: `icp/build-icp` → `signals/map-signals-to-icp` → `list-building/build-prospect-list` → `enrichment/run-email-waterfall` → `lead-scoring/score-and-prioritize` → `cold-email/write-first-email` → `cold-email/stress-test-sequence` → `campaign-ops/setup-campaign-platform`
+4. **Multi-cluster workflows** chain tasks — typical chain: `icp/build-icp` → `signals/map-signals-to-icp` → `list-building/build-prospect-list` → `enrichment/run-email-waterfall` → `lead-scoring/score-and-prioritize` → `cold-email/reframe-offer` → `cold-email/write-first-email` → `cold-email/stress-test-sequence` → `campaign-ops/setup-campaign-platform`
+5. **External takes — second opinions, never doctrine.** 11 clusters end with a pointer to `{SKILL_BASE}/clusters/_external-takes/`: 101 third-party positions collected by the ColdIQ and Swan radars from other people's GTM skills, plus manually-filed digests from GTM creator videos (`spychalski-*.md`, filed 2026-09-03). One further digest, `spychalski-tooling-and-architecture.md`, targets the top-level `reference/` docs rather than a cluster, so it has no cluster pointer. They are **UNREVIEWED and NOT canonical gtm-master positions.** Never auto-load them. Load one only when (a) the user asks for alternatives or a second opinion, (b) the user pushes back on a position this skill just gave, or (c) you are about to give advice on a topic and want to check whether a competing view was filed. When you use one: **attribute the source skill and author, say it is an unreviewed external take, and keep it visibly separate from the gtm-master position.** The marker `⚠️ contradicts` inside those files flags a take that directly disagrees with canonical doctrine here — surface both sides and let Jan decide; never resolve it silently.
+6. **Client-specific rules are not in this skill.** Hard client bans (e.g. Talent'em's ban on value-based CTAs) live in Jan's memory scoped by client, not here. Nothing in this skill or in `_external-takes/` overrides a client rule, and no take should ever be promoted into a cluster as general doctrine if its evidence is a single company, market, or ICP.
 
 ## The 15 clusters — index
 
 | Cluster | Owns triggers like | Primary tasks |
 |---|---|---|
-| **cold-email** | "write a cold email", "follow-up", "subject line", "PS line", "stress test", "spintax", "deliverability", "warmup", "SPF/DKIM/DMARC", "Instantly", "Smartlead" | 8 tasks (write-first-email, write-followup, write-subject-lines, write-ps-line, stress-test-sequence, add-spintax, personalize-at-scale, re-engage-cold-leads) |
+| **cold-email** | "write a cold email", "follow-up", "subject line", "PS line", "stress test", "spintax", "deliverability", "warmup", "SPF/DKIM/DMARC", "Instantly", "Smartlead", "mafia offer", "reframe this offer" | 9 tasks (reframe-offer, write-first-email, write-followup, write-subject-lines, write-ps-line, stress-test-sequence, add-spintax, personalize-at-scale, re-engage-cold-leads) |
 | **signals** | "buying signals", "intent data", "RB2B", "Trigify", "signal scoring", "multi-signal stacking", "hiring signals", "funding signals", "job change tracking" | 3 tasks (detect-signals-from-list, map-signals-to-icp, score-multi-signal) |
 | **list-building** | "build a list", "Sales Navigator", "boolean search", "find prospects", "data validation", "list hygiene", "Evaboot", "PhantomBuster" | 2 tasks (build-prospect-list, validate-and-cleanup) |
 | **enrichment** | "Clay", "Clay workflow", "Sending Gate", "table architecture", "waterfall enrichment", "find emails", "Claygent", "Clayscript", "Clay credits", "Clay HubSpot/Salesforce", "Instantly Clay push", "HeyReach Clay push", "Clay Find Companies", "Apify", "BuiltWith", "Sumble", "Crunchbase", "SEMrush" | 5 tasks (build-clay-workflow, build-table-architecture, design-sending-gate, push-to-sequencer, run-email-waterfall) |
@@ -45,7 +47,7 @@ Master router for B2B GTM/outbound work. Knowledge is split into **15 clusters**
 
 ## Routing logic
 
-0. **Diagnose the bottleneck FIRST** (for any strategy / "what should I do / where do I invest" request). Map the funnel as four machines — Demand Gen → Capture → Conversion → Closing — and find the slowest. Route to the cluster that fixes THAT machine; don't optimize a non-bottleneck. See `{SKILL_BASE}/reference/funnel-bottleneck-diagnosis.md`. Skip for single-task/tactical requests where the bottleneck is already known.
+0. **Diagnose the bottleneck FIRST** (for any strategy / "what should I do / where do I invest" request). Map the funnel as four machines — Demand Gen → Capture → Conversion → Closing — and find the slowest. Route to the cluster that fixes THAT machine; don't optimize a non-bottleneck. See `{SKILL_BASE}/reference/funnel-bottleneck-diagnosis.md`. Skip for single-task/tactical requests where the bottleneck is already known. **Then pick the play for that machine** via `{SKILL_BASE}/reference/three-gtm-plays-by-buyer-state.md` (demand creation / capture / conversion — Jan's endorsed lens; the three run CONCURRENTLY, never as a funnel, and a motion missing an entire state is a bigger finding than an underperforming channel).
 
 1. **Single-task request** → match to a cluster, load that task file. Done.
 2. **Cross-cluster workflow** → identify the most upstream task, load it, follow its "what to do after" pointers.
@@ -62,6 +64,7 @@ Master router for B2B GTM/outbound work. Knowledge is split into **15 clusters**
 
 | Intent | Load |
 |---|---|
+| Reframe the offer before writing any copy ("mafia offer", weak offer, low reply rate) | `{SKILL_BASE}/clusters/cold-email/tasks/reframe-offer.md` |
 | Write the first/opening email | `{SKILL_BASE}/clusters/cold-email/tasks/write-first-email.md` |
 | Write a follow-up email | `{SKILL_BASE}/clusters/cold-email/tasks/write-followup.md` |
 | Generate / rank subject lines | `{SKILL_BASE}/clusters/cold-email/tasks/write-subject-lines.md` |
@@ -72,6 +75,8 @@ Master router for B2B GTM/outbound work. Knowledge is split into **15 clusters**
 | Re-engage cold/closed-lost leads | `{SKILL_BASE}/clusters/cold-email/tasks/re-engage-cold-leads.md` |
 
 Knowledge index: 13 named copywriting frameworks, ATL/BTL messaging, ColdIQ playbook, e-commerce playbook, sequence theory, deliverability deep guide, email infra (3 files), personalization prompt library, campaign playbooks, email template library. Browse `{SKILL_BASE}/clusters/cold-email/knowledge/` for the full map.
+
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **22, the largest holding in the skill**: `{SKILL_BASE}/clusters/_external-takes/swan-cold-email.md` (12), `{SKILL_BASE}/clusters/_external-takes/coldiq-cold-email.md` (9), `{SKILL_BASE}/clusters/_external-takes/spychalski-cold-email.md` (1). Several carry `⚠️ contradicts` against positions above, including CTA framing, agent-written copy, and per-inbox send volume.
 
 ---
 
@@ -88,6 +93,8 @@ Knowledge index: 13 named copywriting frameworks, ATL/BTL messaging, ColdIQ play
 
 Knowledge index: 6 core buying signals + benchmarks, 137-trigger taxonomy, 30-trigger detection-tools matrix, signal scoring framework, tool setup (RB2B/Trigify/Common Room/Bombora/Koala/Warmly/6sense/BuiltWith), 11 executable GTM plays, job-change tracking. Plus: **signal activation architecture** (13-step capture→…→track→enablement pipeline + 5-field metadata schema + rep-routing table) → `{SKILL_BASE}/clusters/signals/knowledge/signal-activation-architecture.md`. Plus: **engagement-on-external-content signal class** (competitor followers / brand mentions / influencer engagement / keyword listening / own-content engagement / employee LinkedIn — 6 surfaces) → `{SKILL_BASE}/clusters/signals/knowledge/engagement-on-external-content.md`. Plus: **intent signal tools 2026 catalog** (18 signal categories × 50+ specific vendor recommendations, organized by 1st/2nd/3rd party) → `{SKILL_BASE}/clusters/signals/knowledge/intent-signal-tools-2026.md`. **Visual:** see `{SKILL_BASE}/visual-library/the-signal-playbook.md` — radial 3-ring diagram showing 1st/2nd/3rd party signals with 16+ signal types around the perimeter. Plus: **go-to-market alpha** (the signal-originality test — "can a competitor buy this exact signal off the shelf?"; Canva / Mercado / recruitment-client ex-employer + job-posting worked examples) → `{SKILL_BASE}/clusters/signals/knowledge/go-to-market-alpha.md`. Browse `{SKILL_BASE}/clusters/signals/knowledge/`.
 
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **20**: `{SKILL_BASE}/clusters/_external-takes/swan-signals.md` (18), `{SKILL_BASE}/clusters/_external-takes/coldiq-signals.md` (1), `{SKILL_BASE}/clusters/_external-takes/spychalski-signals.md` (1).
+
 ---
 
 ## Cluster: list-building
@@ -100,6 +107,8 @@ Knowledge index: 6 core buying signals + benchmarks, 137-trigger taxonomy, 30-tr
 | Validate / clean up an existing list | `{SKILL_BASE}/clusters/list-building/tasks/validate-and-cleanup.md` |
 
 Knowledge index: Sales Navigator guide, lead sources guide, data validation, beginner Clay workflow, qualification workflow, ABM account-selection framework, persona-mapping framework, 62+ underused data sources, 100+ industry directories, 8-phase quality framework. Browse `{SKILL_BASE}/clusters/list-building/knowledge/`.
+
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **9**: `{SKILL_BASE}/clusters/_external-takes/swan-list-building.md` (6), `{SKILL_BASE}/clusters/_external-takes/coldiq-list-building.md` (2), `{SKILL_BASE}/clusters/_external-takes/spychalski-list-building.md` (1).
 
 ---
 
@@ -123,6 +132,8 @@ Knowledge index — clay-engineer (operational reference, lazy-loaded):
 - Platform: formula-syntax, table-mechanics → `{SKILL_BASE}/clusters/enrichment/clay-engineer/platform/`
 - Providers (13 files): databases (Clay Find Companies), contact-finding (email-waterfall, phone), enrichments (Apify, BuiltWith+Sumble, Crunchbase, Enrich Person, HTTP API, Professional Posts, SEMrush), sequencers (Instantly, HeyReach), crm (HubSpot, Salesforce), other (Google Sheets) → `{SKILL_BASE}/clusters/enrichment/clay-engineer/providers/`
 
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **5**: `{SKILL_BASE}/clusters/_external-takes/swan-enrichment.md` (4), `{SKILL_BASE}/clusters/_external-takes/coldiq-enrichment.md` (1).
+
 ---
 
 ## Cluster: icp
@@ -136,6 +147,8 @@ Knowledge index — clay-engineer (operational reference, lazy-loaded):
 
 Knowledge index: ICP scoring deep theory lives in `clusters/list-building/knowledge/templates/qualification-workflow.md` and `clusters/list-building/knowledge/abm/account-selection-framework.md`. The build-icp task now includes a **backtest validation step** ("do wins cluster in Tier 1 and losses cluster in Tier 3?") — this is what separates predictive ICPs from aspirational ones.
 
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **7**: `{SKILL_BASE}/clusters/_external-takes/coldiq-icp.md` (3), `{SKILL_BASE}/clusters/_external-takes/swan-icp.md` (3), `{SKILL_BASE}/clusters/_external-takes/spychalski-icp.md` (1).
+
 ---
 
 ## Cluster: personas
@@ -147,6 +160,8 @@ Knowledge index: ICP scoring deep theory lives in `clusters/list-building/knowle
 | Build a persona | `{SKILL_BASE}/clusters/personas/tasks/build-persona.md` |
 
 Knowledge index: **5-role buying committee + per-role messaging strategy** (Exec / Ops / Tech / Finance / End-User — Gartner says 6-10 stakeholders per B2B deal) → `{SKILL_BASE}/clusters/personas/knowledge/buying-committee-5-roles.md`. Buying-committee/persona-mapping framework lives in `clusters/list-building/knowledge/abm/persona-mapping-framework.md`. ATL/BTL messaging in `clusters/cold-email/knowledge/atl-btl-messaging.md`.
+
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **2**: `{SKILL_BASE}/clusters/_external-takes/coldiq-personas.md` (1), `{SKILL_BASE}/clusters/_external-takes/swan-personas.md` (1).
 
 ---
 
@@ -160,6 +175,8 @@ Knowledge index: **5-role buying committee + per-role messaging strategy** (Exec
 
 Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/signals/knowledge/signal-scoring.md`. Plus: **awareness-stage model** — 5-stage state framework (Identified → Aware → Interested → Considering → Selecting) with HubSpot-specific OR-criteria filter mechanics + priority-branch workflow → `{SKILL_BASE}/clusters/lead-scoring/knowledge/awareness-stage-model.md`. Score = number; stage = state with a play attached. Use both.
 
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **6**: `{SKILL_BASE}/clusters/_external-takes/swan-lead-scoring.md` (5), `{SKILL_BASE}/clusters/_external-takes/spychalski-lead-scoring.md` (1).
+
 ---
 
 ## Cluster: objections
@@ -169,6 +186,8 @@ Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/
 | Intent | Load |
 |---|---|
 | Handle a sales objection | `{SKILL_BASE}/clusters/objections/tasks/handle-objection.md` |
+
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **5**: `{SKILL_BASE}/clusters/_external-takes/swan-objections.md` (4), `{SKILL_BASE}/clusters/_external-takes/coldiq-objections.md` (1).
 
 ---
 
@@ -182,6 +201,8 @@ Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/
 | Write a LinkedIn outreach sequence | `{SKILL_BASE}/clusters/sequences/tasks/write-linkedin-sequence.md` |
 
 Knowledge index: **Tiered routing template** — canonical 3-tier pattern (Tier 1 multichannel from C-level email + AE LinkedIn + supporting connection requests + Slack alert; Tier 2/3 automated) plus 4 variations by signal type (own-content engagement → cold call; website deanon → stakeholder expansion; inbound signup → multi-thread; customer alumni → 1:1 AE-led) → `{SKILL_BASE}/clusters/sequences/knowledge/tiered-routing-template.md`.
+
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **8**: `{SKILL_BASE}/clusters/_external-takes/swan-sequences.md` (4), `{SKILL_BASE}/clusters/_external-takes/coldiq-sequences.md` (3), `{SKILL_BASE}/clusters/_external-takes/spychalski-sequences.md` (1).
 
 ---
 
@@ -213,6 +234,8 @@ Knowledge index — strategic-architectural references (load when designing or a
 - **Outbound attribution** — 2-property HubSpot pattern capturing "hidden" influence (silent conversions, LinkedIn effect, delayed signups) → `{SKILL_BASE}/clusters/campaign-ops/knowledge/outbound-attribution.md`. Visual: `{SKILL_BASE}/visual-library/outbound-attribution-playbook.md` (traditional-vs-complete workflow)
 - **Inbound orchestration** — zero-leakage form → enrichment → CRM → meeting prep pipeline (2-field Webflow form, HeyReach pre-meeting warmup, Slack-as-CRM approval) → `{SKILL_BASE}/clusters/campaign-ops/knowledge/inbound-orchestration.md`. Visual: `{SKILL_BASE}/visual-library/inbound-orchestration.md`
 - **Ad spend management via Claude Code** — 12 skills (4 per platform) managing $300K/mo Google + Meta + LinkedIn ads at consistent 4× ROAS+. Operational rhythm + setup. Worth $3K-$8K/mo recovery per $50K Google Ads account → `{SKILL_BASE}/clusters/campaign-ops/knowledge/ad-spend-management-claude-code.md`
+
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **13**: `{SKILL_BASE}/clusters/_external-takes/swan-campaign-ops.md` (9), `{SKILL_BASE}/clusters/_external-takes/coldiq-campaign-ops.md` (4).
 
 ---
 
@@ -289,6 +312,8 @@ Organized by category (not the usual `tasks/` layout). Load the matching file:
 
 Knowledge index: full diagnostic framework (3-layer system, IFA, Six Stages, triage tree, crisis 4-week protocol + 30-60-90) in `{SKILL_BASE}/clusters/revops/knowledge/diagnostic-framework.md`. Portable CRM principles (lifecycle vs deal stage vs lead status, time-in-stage workarounds, HubSpot-vs-Salesforce decision table) → `{SKILL_BASE}/clusters/revops/reference/crm-platform-portable-principles.md`. ICP/scoring deltas ONLY (ECP customer-count thresholds, 7-dimension ICP audit, account-level ABM engagement scoring with decay + buying-group handover gate) → `{SKILL_BASE}/clusters/revops/reference/icp-and-scoring-notes.md`; the `icp` and `lead-scoring` clusters own that canon.
 
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **4**: `{SKILL_BASE}/clusters/_external-takes/swan-revops.md` (3), `{SKILL_BASE}/clusters/_external-takes/spychalski-revops.md` (1).
+
 ---
 
 ## Cluster: paid-ads
@@ -346,6 +371,7 @@ Knowledge index: **newsletter system** (analysis-format 8 steps, value-prop form
 
 - **GTM philosophy** (BIPSY, multi-channel coordination, mindsets, benchmarks) → `{SKILL_BASE}/philosophy.md`
 - **Funnel bottleneck diagnosis** (the 4-machine factory model — Demand Gen → Capture → Conversion → Closing; find and fix the slowest machine; business-model-fit filter) → `{SKILL_BASE}/reference/funnel-bottleneck-diagnosis.md`
+- **The three GTM plays, by buyer state** (Tim Carden / RevenueFlow — demand creation / capture / conversion; per-state job, plays, stack, metric and dead-end; the three are concurrent, not sequential. **Jan endorsed this as the default framing lens for GTM strategy work**) → `{SKILL_BASE}/reference/three-gtm-plays-by-buyer-state.md`
 - **2026 GTM tool stack + 8 sales MCPs for Claude Code** → `{SKILL_BASE}/reference/2026-tool-stack-and-mcps.md`
 - **Claude Code GTM architecture** (the 4-layer operating model + 7-gate qualification + feedback loop + API stack — how to run GTM entirely inside one terminal) → `{SKILL_BASE}/reference/claude-code-gtm-architecture.md`
 - **GTM Engineer role** (what 1 hire that replaces 5 actually does — 3 pillars, tool stack, hiring criteria, when NOT to hire one) → `{SKILL_BASE}/reference/gtm-engineer-role.md`
@@ -448,6 +474,7 @@ GTM request
 │  └─ Score & prioritize    → clusters/lead-scoring/tasks/score-and-prioritize.md
 │
 ├─ Copy + sequences?
+│  ├─ Offer reframe first   → clusters/cold-email/tasks/reframe-offer.md
 │  ├─ Email Step 1          → clusters/cold-email/tasks/write-first-email.md
 │  ├─ Email follow-ups      → clusters/cold-email/tasks/write-followup.md
 │  ├─ Subject lines         → clusters/cold-email/tasks/write-subject-lines.md

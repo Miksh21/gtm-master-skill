@@ -1,0 +1,12 @@
+# External takes — cold-email (Patrick Spychalski video, UNREVIEWED)
+
+## GTM Engineering in 2026 — A Complete Walkthrough — youtu.be/3jIhI-joTMc · filed 2026-09-03
+Source: https://youtu.be/3jIhI-joTMc (Patrick Spychalski, co-founder The Kiln; ex-Clay early employee) · cluster: cold-email
+Shelf-life (stated by author): "only alpha for the next 4-8 months past September 2026" → re-verify by 2027-03.
+- ✅ supports [cold-email/tasks/reframe-offer.md + deliverability deep guide]: the biggest reply-rate lever is the OFFER (what you trade for a call), then the first sentence — "most people don't read past the first sentence if it's garbage." And deliverability comes first: 60-70% of companies he talks to have deliverability problems and should fix those before any "fancy stuff."
+- ✅ supports [cold-email deliverability + email-infra knowledge]: split mailboxes ~50/50 Google/Microsoft for provider matching; let Instantly/Smartlead handle warmup + provider matching.
+- ⚠️ contradicts [SKILL.md deliverability hard limit "30 emails/day max per new mailbox; 50 ceiling for established"]: Spychalski caps at **15-20 emails/day per inbox** and **≤3 inboxes per account** — materially more conservative than canon's 30/50. Both sides. gtm-master: 30 new / 50 established. Spychalski: 15-20 regardless, tighter inbox fan-out.
+- ⚠️ contradicts [cold-email/tasks/personalize-at-scale.md + personalization prompt library — AI-written personalization at scale]: **"don't have agents do the copywriting for you."** Hire a high-end copywriter, turn their message into a template, and let agents fill only variables (a "Mad Libs" build: ~50% static human copy incl. the value prop, dynamic variables for the why-now opener). NUANCE / needs canon check: if personalize-at-scale means agent-generated variable/research SNIPPETS inside a human template, this corroborates; if it means agent-generated message BODIES, it contradicts. The claim is that syllable/line-break/verbiage nuance is "more art than science" and agent-written bodies read as AI slop that kills the read.
+- 🆕 new-angle: **manually set up Google/Microsoft inboxes (Upwork/part-timer) instead of private-server email providers.** Private servers "crash and burn," can't be instantly replaced (2-week warmup to rebuild), and one bad tenant can poison the whole server. Tedious-but-durable manual setup over cheap click-to-provision infra — an ops stance beside canon's SPF/DKIM/DMARC + warmup mechanics.
+Review: contradicts
+Status: holding

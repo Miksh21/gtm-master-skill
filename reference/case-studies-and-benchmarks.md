@@ -1,5 +1,7 @@
 # Real GTM Case Studies + Benchmarks
 
+**Freshness:** as of 2026-07 · re-verify by 2027-01 — published numbers get superseded; re-confirm before citing in a proposal.
+
 Published results from real B2B GTM agencies (Workflows.io + ColdIQ + their clients). Use this when you need **defensible benchmarks** to cite — when answering "is X reply rate good?" or "is Y pipeline number realistic?" or when proposing ROI projections.
 
 All numbers here are **published**, not internal speculation.

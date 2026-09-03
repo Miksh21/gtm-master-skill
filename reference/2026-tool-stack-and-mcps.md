@@ -1,5 +1,7 @@
 # 2026 GTM Tool Stack + Claude Code MCPs
 
+**Freshness:** as of 2026-05 · re-verify by 2026-11 — dated snapshot; tool names/prices/verdicts decay fastest. Pending refresh input: `clusters/_external-takes/spychalski-tooling-and-architecture.md` (Sept 2026 verdicts, unpromoted).
+
 The opinionated tool list + MCP-based execution layer Workflows.io ships with in 2026. Snapshot of a working AI-native GTM agency operating model.
 
 ## When to load

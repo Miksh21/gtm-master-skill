@@ -1,5 +1,7 @@
 # ColdIQ Skills Directory — 196 Claude Code Skills for GTM
 
+**Freshness:** as of 2026-07 · re-verify by 2026-11 — the marketplace churns; the `coldiq-radar-collect` task watches it, refresh this catalog on that cadence.
+
 Catalog of every skill in the ColdIQ skills marketplace (`coldiq.com/skills`), organized by category and ranked by GTM-relevance. **Install with `npx skills add <skill-name>` from inside a Claude Code project.**
 
 These are skills published by ColdIQ + community contributors, including Workflows.io (Fivos Aresti, Dan Rosenthal), Lemlist, OpenFunnel, Corey Haines, and others. They follow the prompt → project → **agent** pattern described in `reference/claude-code-gtm-architecture.md`.
