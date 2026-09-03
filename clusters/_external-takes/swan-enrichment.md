@@ -15,12 +15,14 @@ Shared lineage with gtm-master enrichment: 8 references byte-identical to gtm-ma
 - 🆕 new-angle: company-enrichment waterfall order with coverage claim: Apollo (60-70% of standard firmographic fields in one call) → Ocean.io → LinkedIn Company → Claygent → HG Insights for deep tech stack. gtm-master has provider files but no ordered company-level waterfall.
 - 🆕 new-angle: debugging runbook format: top-10 mistakes ranked with symptom/fix pairs plus a 7-question diagnostic checklist; the one item canon does not state anywhere: a column auto-runs only when BOTH table-level AND column-level auto-update are ON.
 - ✅ supports [enrichment canon wholesale]: conditional formulas on all paid integrations; formulas cost 0 credits; test 50 rows first; Supabase $30/month for 11.4M+ records, never pay twice; GPT-4-Mini-class models for 90% of AI tasks; one task per Claygent column; "purple" null keyword; dedupe case-sensitive ("Clay" != "clay"); Clay.getCellStatus conditional pattern; || "" null safety; batch in 250s; 296+ integrations; Frontal free-tool URLs are the old ColdIQ resources moved to frontal.so (/ai-sales-tools, /b2b-data-sources, /sales-triggers, /free-tools/email-spam-checker).
+Review: contradicts
 Status: holding
 
 ## Clay Enrichment 9-Step — swan-gtm/gtm-skills/skills/alex-vacca/clay-enrichment-9step · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: enrichment
 - ⚠️ contradicts [enrichment/clay-engineer/providers/contact-finding/email-waterfall.md:32-40]: Step 4 waterfall order "Apollo → Prospeo → LeadMagic → Findymail → Clay patterns", Apollo FIRST. gtm-master: FindyEmail 1st, Icypeas 2nd, Apollo own-API and often toggled off. Also uses "Clay patterns" (pattern-guessing) as the final fallback step, which gtm-master's waterfall never includes.
 - ✅ supports [enrichment/knowledge/templates/clay-enrichment-workflows.md]: the 9 steps (upload/clean → company → people → email waterfall → MillionVerifier → phone → Claygent custom → 100-pt scoring → export), 90%+ coverage target, batches of 250, 4x25 scoring model with 80/60 tiers, and the 58-template catalog in references/templates.md are all identical to canon (rebrand only).
+Review: contradicts
 Status: holding
 
 ## Account intelligence analyst — swan-gtm/gtm-skills/skills/katya-tarapovskaia/account-intelligence-analyst · filed 2026-07-28
@@ -30,6 +32,7 @@ Deep single-account research → seller-ready briefing (buying committee, talk t
 - 🆕 new-angle: calibrated-confidence labeling as a writing rule: confirmed signal (press release, job posting, filing) stated as fact; inferred signal (content themes, hiring patterns) stated as inference; speculation labeled hypothesis; gaps stated plainly ("no public financial data found") instead of padded; and fit called honestly, "the user trusts you more when you're honest about poor-fit accounts than when you spin everything positive."
 - 🆕 new-angle: uploaded third-party research (Humantic AI reports, Clay/Apollo exports) is treated as the richest input BUT cross-checked against live data: "third-party research reports sometimes conflate companies with similar names, misattribute news, or reference outdated signals. Always verify key claims — especially contracts, financial data, and personnel... Catching a data error before the seller acts on it is one of the highest-value things this skill can do." Reports get an analysis layer added, never a reformat.
 - 🆕 new-angle: data-priority order: connected tools first without asking (company enrichment → contacts by committee titles → CRM for existing engagement, with CRM status always reported in the exec summary because "net-new vs already-in-pipeline changes the entire approach") → uploaded files (read fully before searching) → ask the user last, and only for target, positioning service, relationship context, and the meeting being prepped.
+Review: additive
 Status: holding
 
 ## Research — swan-gtm/gtm-skills/skills/ido-goldberg/research · filed 2026-07-28
@@ -41,4 +44,5 @@ Swan's research verb: route the ask to one of nine facet sub-pages, pick depth, 
 - 🆕 new-angle: motion fingerprinting heuristics from the GTMmotion facet: the pricing page is the motion fingerprint (freemium/trial up front = PLG; NO public pricing page is itself a signal: pure enterprise sales-led); job postings reveal the rep org (SDR/BDR + AE openings = outbound+inbound; channel/partner-manager roles = indirect motion); detected tools map to motion (PLG-signal tools, lifecycle marketing, product analytics); mixed motions stated as mixed, "never force-fit a motion the evidence doesn't support."
 - 🆕 new-angle: tech-stack detection ladder with an evidence bar: existing records → CRM custom properties → job postings ("highest-quality public signal") → website script tags and embedded tools (form/chat/analytics signatures) → LinkedIn engineering posts → paid enrichment last; "MUST cite a source per tool detected... inference from 'they're enterprise' is not evidence"; scan only the 2-3 stack categories that matter to the play. CompetitorMentions facet: alias list first (parent names, rebrands, abbreviations), then LinkedIn mention sweep classified into switching signal / pain language / comparison shopping / customer reference / noise, then review sites focusing on ≤3-star reviews from the last 90 days ("lowest-star recent reviews are switch-ready prospects"), 20-item slices with one-line summaries.
 - ✅ supports [enrichment/knowledge/credits-and-pricing.md + waterfall-enrichment.md conditional-run discipline]: check what the workspace and CRM already have before ANY paid call; free preview tools before enrichment; enrich only when cheap signals left a real gap.
+Review: additive
 Status: holding

@@ -6,6 +6,7 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: lead-scoring
 - ⚠️ contradicts (position) [score-and-prioritize.md weighting philosophy]: swan makes email deliverability 25% of lead QUALITY. gtm-master treats deliverability as a gate (Sending Gate, validation status), not a fit component; a valid email says nothing about buying likelihood. Worth an explicit canon note so the 4x25 model in enrichment canon (clay-enrichment-workflows.md Step 8, same lineage) does not leak into prioritization work.
 - 🆕 new-angle: per-campaign score reweighting with concrete splits: ABM campaign = company fit 40 / signals 30 / deliverability 20 / size 10; volume outbound = deliverability 30 / size 25 / ICP 25 / signals 20; separate scoring columns per campaign, views filtered per tier. gtm-master allows custom weights but publishes no campaign-type presets.
 - ✅ supports [enrichment/knowledge/templates/clay-enrichment-workflows.md Step 8 + formulas canon]: scoring as formula columns at 0 credits, scoring runs LAST after all enrichment, ready-to-paste Clayscript for component scores and tier ternary.
+Review: contradicts
 Status: holding
 
 ## Customer expansion scoring — swan-gtm/gtm-skills/skills/ariel-cohen/customer-expansion-scoring · filed 2026-07-28
@@ -16,6 +17,7 @@ Sub-skill scoring a paying customer for expansion (usage depth + persona quality
 - 🆕 new-angle: senior-stakeholder exception overriding seat-count logic: a VP/SVP/C-suite/Director-level registered user at a quality company ($10M+ funded OR 100+ employees OR known brand) scores second-highest tier regardless of team size or seats, because "this person can unlock budget and teammates."
 - 🆕 new-angle: signal stack ranked for expansion specifically: completed meeting (new departments, budget conversations, advanced use cases) > product depth > chatbot/support advanced questions > post-signup website visits (pricing = plan-upgrade signal) > LinkedIn engagement with founder content (advocacy). Tier ladder: Diamond = deep multi-user usage + high ACV + "could 3-5x in ARR"; Gold = 1-2 integrations + medium-high ACV; Silver = shallow or low ceiling; Bronze = barely active, re-engage before expanding.
 - ✅ supports [lead-scoring/tasks/score-and-prioritize.md persona-authority weighting]: persona quality as multiplier (VP building on the product beats a junior IC doing the same); output disciplined to tier + 2-3 actionable sentences citing all dimensions, never essay-length reasoning; parent ACV assessment referenced, never re-researched.
+Review: additive
 Status: holding
 
 ## Account progression staging — swan-gtm/gtm-skills/skills/steve-armenti/account-progression-staging · filed 2026-07-28
@@ -29,6 +31,7 @@ Deterministic account-stage assignment (Unaware → Aware → Engaged → Qualif
 - 🆕 new-angle: the measurement layer this substrate exists for: attribution as delta-versus-baseline, not touchpoint credit. Baseline = per-transition conversion rate + median/P75 time-in-stage; lift = exposed cohort vs matched unexposed control on ICP, starting stage, firmographics; `lift = (exposed_rate − control_rate) / control_rate`; wait ~90 days of stage history before publishing lift or "the numbers bounce and lose trust." Budget goes to what moves stage transitions, not clicks.
 - 🆕 new-angle: tunable defaults exposed as parameters: ads >3 impressions/14d or ≥2 visits/14d for Aware; ≥2 key-page views or ≥2 email clicks/14d for Engaged; engagement half-life 30d, ads half-life 14d; stuck-in-Aware >30d feeds a batch activation list (not per-account pings); no stage change = no alert; only Sales Ready transitions page a rep, with buying-group summary + recommended next action.
 - ✅ supports [awareness-stage-model.md stage-beats-score principle + priority-branch assignment]: exactly one stage tag, highest qualifying stage wins by precedence; write-verify-retry on the stage tag with honest FAILED status; identity resolution before staging (never stage an orphan event); Sales-Ready alert includes relationship history and unengaged exec stakeholders.
+Review: contradicts
 Status: holding
 
 ## Account tier scoring — swan-gtm/gtm-skills/skills/amos-bar-joseph/account-tier-scoring · filed 2026-07-28
@@ -43,6 +46,7 @@ Production Bronze/Silver/Gold/Diamond scoring: pre-conversion on intent + ACV po
 - 🆕 new-angle: borderline tiebreaker with a scope limit: genuinely borderline Silver/Gold defaults to Gold ("the owner would rather review a Silver-quality account than miss a real one"), EXCEPT when all signals are third-party: "an account with only post engagement is Silver, full stop." Post engagement is Silver-level alone at any volume; a lone profile view caps at Silver; profile view + second first-party signal qualifies for Gold only for buyer-persona viewers at medium+ ACV.
 - 🆕 new-angle: write discipline: exactly one tier tag and one ACV tag per run, ACV committed and verified BEFORE tiering, tag writes re-read and retried once with `TIER_TAG_STATUS = VERIFIED | FAILED` carried into the alert ("never report a tag as applied that wasn't confirmed"); Bronze/Silver stay silent, Gold/Diamond alert in the org's one standard format; already-being-worked accounts route to the active-deals channel as one line instead.
 - ✅ supports [score-and-prioritize.md persona + ICP + signal composite and signal-scoring.md multi-stakeholder weighting]: multiple buyer personas from one company = significant multiplier; ICP fit judged by motion and use case, not industry label ("classify Bronze only if you can articulate WHY your product can't help"); vendor/partner/investor exclusion checks with partner-signup exception; buying-committee enrichment to 3+ persona-matched contacts on alerting tiers.
+Review: contradicts
 Status: holding
 
 ## Score — swan-gtm/gtm-skills/skills/ido-goldberg/score · filed 2026-07-28
@@ -56,4 +60,5 @@ Swan's core qualification verb: a 2x2 (intent strength x deal size) producing Go
 - 🆕 new-angle: routing modes as first-class: warm-context flag (prior positive engagement + new signal = re-entry, framing acknowledges the relationship); refresh mode for in-pipeline rescoring where rep-confirmed intel overrides public data and the return is a change delta ("Score unchanged — no new material intel" short-circuits all writes except memory); re-engagement mode requires a MEANINGFUL CHANGE (new leadership, competitor displacement, funding, a signal addressing the loss reason, >12 months elapsed, new inbound from a different person), a new signal alone returns Bronze "monitor only", and with no recorded loss context two change signals are required. Silver/Gold re-engagement returns a resurrection-first framing block: what changed, what to acknowledge from the prior deal, recommended first-touch angle.
 - 🆕 new-angle: alert semantics per tier: Silver alerts exist for score VERIFICATION (full signal stack posted to a QA channel, "purpose is score verification, not action"); Gold alerts are the action alert; Bronze/Non-ICP log only. Tech stack is a multiplier never a substitute: "strong tech stack + no intent → note it, do not inflate the tier."
 - ✅ supports [score-and-prioritize.md bias and audit trail]: when ambiguous, err toward the higher tier ("a rep reviewing a Silver-quality Gold is better than missing a real one" mirrors canon's economic-buyer override instinct); every run writes a structured CRM note + prepended memory snapshot (signals strongest-first, persona, deal size, change delta) as the human-readable audit trail.
+Review: contradicts
 Status: holding

@@ -10,6 +10,7 @@ Shared lineage with gtm-master cold-email (Frontal = rebranded ColdIQ; 15 of its
 - 🆕 new-angle: first-touch structure checklist names "Assumption" as an explicit skeleton slot: Opening (trigger) + Assumption + Social proof with numbers + Open-ended question. gtm-master's skeleton (write-first-email.md:38-42) is Opener/Problem/Bridge/CTA, no named assumption step.
 - 🆕 new-angle: subject A/B rules stricter than canon: 2-4 words ideal, ALL lowercase, test exactly 2 variants at a time, minimum 100 sends per variant before judging. gtm-master (write-subject-lines.md) has no lowercase position, recommends a top-3 A/B/C set, and run-ab-test.md treats 50 sends as the analysis floor with 100+ needed to declare a winner. The lowercase + exactly-2-words idea also echoes the l3mpire holding take.
 - ✅ supports [cold-email-mastery.md + coldiq-playbook.md + copywriting-sequences.md + write-followup.md + re-engage-cold-leads.md]: 3-email frame E1 / E2 day 3 same thread / E3 day 14-17 new thread lower-friction; no bullets in cold email; one soft CTA; plain text; value-prop rotation save money → make money → save time; verify 100% pre-send; 30/inbox/day in SKILL quick ref; reply floor 5% for sustained sending (confirms the recorded ColdIQ 🆕); breakup = right-person ask, no guilt; re-engagement = no-oriented question ("Would it be crazy to reconnect?" verbatim in canon email-templates-library.md:192); ATL 2-3 sentences / BTL 3-4, ATL at deal size > $50K ACV (canon atl-btl-messaging.md:19,62,91).
+Review: contradicts
 Status: holding
 
 ## Frontal Cold Email Playbook (reference) — swan-gtm/gtm-skills/skills/alex-vacca/cold-email-strategist/references/frontal-playbook.md · filed 2026-07-28
@@ -19,6 +20,7 @@ Lineage: byte-identical to gtm-master cold-email/knowledge/coldiq-playbook.md ex
 - 🎯 Frontal's live benchmark claims: open 50%+, positive reply 5-8%, meeting book 2-4%, 50-100 emails/inbox/day max, 13X gap between worst and best variant, "write for the 97%", 2-step sequences work best, 70-90 words optimal, subject positions sender as a potential customer, preview line IS the first line (first 50 chars).
 - ⚠️ contradicts [cold-email/knowledge/cold-email-mastery.md:8 "30 emails max per inbox" and :20 "Max 3 emails per sequence"]: this playbook says 50-100/inbox/day max and "2-step sequences work best". BUT the identical text already sits in gtm-master's own coldiq-playbook.md:110,125, so this is an inherited intra-canon split (mastery says 30 + max 3; playbook says 50-100 + 2-step), not new swan drift. Flagged because swan re-asserts the playbook side and Jan's canon has never resolved the split.
 - ✅ supports [coldiq-playbook.md wholesale]: 3 preview patterns (Observation / Pain / Industry), 3 value-prop styles (Show Cost / Peer Proof / Specific Outcome), interest-based CTAs safest at scale, segment > individual personalization, inbox-type matching Gmail↔Gmail Outlook↔Outlook, "So What?" signal test.
+Review: contradicts
 Status: holding
 
 ## Frontal Messaging Templates — swan-gtm/gtm-skills/skills/alex-vacca/frontal-messaging-templates · filed 2026-07-28
@@ -27,6 +29,7 @@ Template pack, 6 named message structures with examples.
 - 🎯 Branded as "Frontal messaging templates": these 6 are the structures Frontal packages as its house styles. 5 of 6 are already gtm-master canon frameworks (copywriting-frameworks.md 13-framework table): Ask Before Pitch (Will Allred), Not Too Different Persona, Upfront Value (Jordan Crawford), Leverage Content (Ethan Parker), Why Are You Paying (Leif Bisping).
 - 🆕 new-angle: #6 "Case Study Reference" is NOT in the canon 13: "Our client [X] used to prospect [ICP]. They focused on: [3 problems]. Since you focus on {{summary}}... Could I share the outbound campaign they were using to book 35 meetings/month?" A meetings-per-month proof line as the CTA carrier. Pairs with the lemlist AI-variable system (see ai-personalization-prompts entry).
 - ✅ supports [copywriting-frameworks.md]: framework-per-situation logic, example bodies match canon patterns.
+Review: additive
 Status: holding
 
 ## Frontal SDR Master Prompts — swan-gtm/gtm-skills/skills/alex-vacca/sdr-master-prompts · filed 2026-07-28
@@ -35,6 +38,7 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
 - 🆕 new-angle: lead-STATUS messaging ladder for inbound/booked leads, 5 states with distinct plays: form not completed (acknowledge + push booking), form completed no meeting (reference stated priority + offer 2-3 slots), meeting booked (build momentum, NO reselling), tried calling (mention briefly, move to email scheduling), LinkedIn (only mention if connection was sent). gtm-master's write-followup Type matrix covers outbound engagement states; campaign-ops/inbound-orchestration.md covers form plumbing; neither has a message-per-lead-status ladder.
 - 🆕 new-angle: WhatsApp as a first-class SDR channel next to email and LinkedIn, with 2-4 line "slang professional" messages. gtm-master has zero WhatsApp coverage.
 - ✅ supports [copywriting-principles.md]: no fake enthusiasm, no "hope you're doing well", no emojis, short over clever, meeting-booked is the only success metric.
+Review: additive
 Status: holding
 
 ## Cold Email Templates 34 — swan-gtm/gtm-skills/skills/alex-vacca/cold-email-templates-34 · filed 2026-07-28
@@ -43,12 +47,14 @@ Template pack: 23 first-touch + 4 follow-up + 4 re-engagement + 3 no-show/voicem
 - 🆕 new-angle: fills the number gaps in gtm-master's email-templates-library.md (canon claims 23 first-touch but enumerates ~15, skipping #7-#12, #14-#16, #18, #23 or renaming them). Net-new named templates in swan: #7 Podcast Guest, #8 Competitor Switch, #9 Content Engagement, #10 Mutual Connection, #11 Industry Event, #12 Tech Stack Trigger, #14 Problem Agitation, #15 Social Proof Stack, #16 Trigger + Timing, #18 Breakup Preview, #23 Pain + Authority. Re-engagement #33 Ghosted Prospect Recovery and #34 Renewal/Upsell Trigger are distinct where canon collapses #33-34 into "Ramp Re-Engagement Examples", plus a Re-Engagement Timing Guide section canon lacks.
 - 🆕 new-angle: per-template reply-rate attributions canon does not carry: #20 New Exec 8-12%, #22 Do the Math 8-10%, #27 Nooks SDR 6-8%, #31 No-Oriented 10-15% (canon only marks #4 NCAA Hook >10%).
 - ✅ supports [email-templates-library.md]: templates #1-#6, #13, #17, #19-#22, #27-#32 and the 7 Email 1 Variations are identical content (Frontal Core Framework = ColdIQ Core Framework renamed); E2 day 3 same thread, E3 day 14 new subject.
+Review: additive
 Status: holding
 
 ## Email 1 Variations 7 — swan-gtm/gtm-skills/skills/alex-vacca/email-1-variations-7 · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
 Template pack, repackage only.
 - ✅ supports [email-templates-library.md:221-311]: all 7 variations (Observation→Solution→Proof→CTA through Role Pain→Solution→Answer Objection→Soft CTA) plus the E2 day-3 and E3 day-14 templates are byte-equivalent to canon's "7 Email 1 Variations (ColdIQ Core Framework)" section, rebrand only. Nothing new.
+Review: corroboration
 Status: holding
 
 ## Cold Email 4-Sequence — swan-gtm/gtm-skills/skills/alex-vacca/cold-email-4-sequence · filed 2026-07-28
@@ -56,12 +62,14 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
 - ⚠️ contradicts [cold-email/knowledge/cold-email-mastery.md:20 "Max 3 emails per sequence" + write-first-email.md:3 3-touch cadence]: swan's "standard" is a FOUR-email sequence: E1 trigger opener, E2 pain/KPI (day 3), E3 delegation ask "who handles X?" (day 14, new subject), E4 break-up timing question. Both sides, gtm-master: 3 emails then stop, breakup logic lives inside E3; swan: delegation ask and breakup are separate touches 3 and 4. (l3mpire holding take records a 5-email ladder; swan lands between.)
 - 🆕 new-angle: E3 as a dedicated "someone else's responsibilities" delegation email, distinct from breakup. gtm-master uses the right-person ask as a PS or breakup element, not a standalone sequence position.
 - ✅ supports [atl-btl-messaging.md]: BTL 3-4 sentences, ATL 2-3 sentences per email; trigger-based openers; question-based soft CTA.
+Review: contradicts
 Status: holding
 
 ## Email Writing Frameworks 5 + Josh Braun + SDR Outbound Rules — swan-gtm/gtm-skills/skills/alex-vacca/email-writing-frameworks (+ josh-braun-copywriting, sdr-outbound-rules) · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
 Micro-skill family, all repackaged canon.
 - ✅ supports [writing-frameworks.md + copywriting-frameworks.md + sequencing-tools.md]: 5 frameworks (Do the Maths, Short-Trigger, Challenge of Similar Companies, Neutral Insight, Leader Responsibilities) are a subset of the canon 13; Josh Braun 5 principles (write with an eraser, be cheeky, be specific, "e-commerce companies doing $5k/month overpaying 10-15%" over "we reduce costs", loss aversion) are canon writing-frameworks.md:55-59; SDR rules (60-90 words, no bullets, one CTA, 8 allowed frameworks, tone by offer type incl. Accelerator "slang professional") are canon incl. sequencing-tools.md:80. Zero drift, nothing to import.
+Review: corroboration
 Status: holding
 
 ## AI Personalization Prompts (lemlist style) — swan-gtm/gtm-skills/skills/alex-vacca/ai-personalization-prompts · filed 2026-07-28
@@ -70,12 +78,14 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
 - 🆕 new-angle: spintax bank of 9 interchangeable CTA stems for the same resource ask ("Can I share", "Would you be open to", "If you have 15 minutes, I can share"...), plus the cheeky self-demo PS: "p.s if not, happy to share how ai wrote this email ;)". Sell-to-sellers pattern.
 - 🆕 new-angle: universal output rules for AI variables: all lowercase, no trailing full stop, no sales/buzzwords, abbreviate titles (CEO not Chief Executive Officer), "and" before the final list item. Concrete lint rules for Clay/lemlist AI columns.
 - ✅ supports [personalization-prompts.md AI principles]: AI writes one component not the whole email, no generic compliments.
+Review: additive
 Status: holding
 
 ## Personalization micro-family (6-buckets, hooks, playbooks, orchestrator ref) — swan-gtm/gtm-skills/skills/alex-vacca/personalization-6-buckets (+ personalization-hooks, personalization-playbooks, cold-email-strategist/references/personalization.md) · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
 - 🆕 new-angle: "show your work" source attribution as a personalization rule: write "According to SimilarWeb, you get 50K visitors/month", because naming the source protects you when the data point is wrong. Not present in gtm-master personalization-prompts.md or campaign-playbooks.md.
 - ✅ supports [personalization-prompts.md]: 6 buckets ranked (Self-Authored highest → Company Level), Strong Hook (verbatim tie) vs Lite Hook (conceptual tie) with volume/value selection logic, 5 core-static relevance fallbacks, playbooks by outreach category. All canon (:5-105). NOTE: swan's personalization-playbooks SKILL is content-identical to the personalization-playbooks skill Jan already has installed at ~/.agents/skills/personalization-playbooks, only frontmatter and Frontal footer differ; nothing to import.
+Review: additive
 Status: holding
 
 ## B2B cold email copywriting — swan-gtm/gtm-skills/skills/tim-yakubson/b2b-cold-email-copywriting · filed 2026-07-28
@@ -90,6 +100,7 @@ The B2B Boosted operating system "distilled from millions of real sends": Big-3 
 - 🆕 new-angle: the interest-based CTA ladder by friction: interest CTA default ("worth a look?", "asking for a yes, not time") > permission CTA ("would you be opposed to me sending a 2-min loom?", opposition-framed feels low-pressure) > resource CTA (named asset instead of a meeting) > direct time ask only in later steps; never a Calendly link in email one ("signals 'I want to sell you' before you've earned it"); one question mark per email; "make the yes small — 'Want the doc?' converts far better than 'Can we hop on a call?'"
 - 🆕 new-angle: mechanical writing rules with counts: first email under 75-90 words; "you/your" must OUTNUMBER "we/our" ("count it if you have to"); never open with "I"; 5th-grade reading level ("simplicity reads as confidence"); no em or en dashes ever; one "just" max per email (weak hedges undermine the ask); banned-list includes AI tells ("I hope this email finds you well", "I wanted to reach out", "game-changer", "seamless") and fake flattery without specifics; follow-ups 3-4 steps at 2-4 day gaps where the ask SHRINKS each step until "replying 'no' is the easiest thing they can do", breakup = one line ("should i close the file?").
 - ✅ supports [coldiq-playbook.md give-first + soft CTA + segment-over-individual, copywriting-principles.md specificity, cold-email/tasks/add-spintax.md]: give before ask, sell the outcome not the mechanism; one CTA one idea; specific beats clever; trigger-led openers ("saw {{company}} just opened 3 SDR roles. usually means pipeline is the bottleneck"); pre-send QA checklist formalizing all of the above.
+Review: contradicts
 Status: holding
 
 ## Outreach messaging — swan-gtm/gtm-skills/skills/maja-voje/outreach-messaging · filed 2026-07-28
@@ -102,4 +113,5 @@ Value-first cold email built to earn replies: the reader gets something useful f
 - 🆕 new-angle: the 4-touch value stack (days 1/4/8/13) where every touch delivers standalone value and "no touch should require having read the previous one": signal + insight → proof/case angle → different pain + ungated resource ("want me to send it?") → pattern-interrupt breakup with a parting useful thought ("wrong person?" / "should I close the loop?"). Cold-vs-warm register switch: warm/referred contacts drop the pitch posture entirely and can carry a direct ask, "a warm email that reads like a cold template wastes the warmth."
 - 🆕 new-angle: framework-bends-to-context clause: length, formality, and ask flex by deal size, regulation, and relationship ("email that works for a $200/mo PLG tool differs from a $250k enterprise committee sale... when a client's reality contradicts a default here, follow the client's reality and note why"), the principles hold, the tactics bend; session flow = map the stack table BEFORE writing lines, show message then a 2-line rationale (signal, pain, value, ask), build a persona x signal matrix noting what stays constant (proof, offer) vs what flexes.
 - ✅ supports [copywriting-principles.md give-first rules + write-first-email.md anatomy]: 50-90 word first touch scannable on a phone; subject 2-5 words referencing the signal or problem, never the product; line order relevance → empathy → payoff → ask; link-light plain-text first touches; one ask; kill hedges, "just", jargon, and em dashes; self-edit checklist ending "would I reply to this?"
+Review: contradicts
 Status: holding

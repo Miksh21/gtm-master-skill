@@ -11,4 +11,5 @@ Source: https://github.com/l3mpire/claude-skills (reply-handler) · cluster: obj
 - 🆕 new-angle: add a distinct "soft interest / maybe-later" reply class (value + patience + reconnect timing) separate from the 6 objection types — gtm-master folds these into timing objections.
 - 🆕 new-angle: mirror the prospect's register/language (casual↔casual, formal↔formal), not only the objection type.
 - ⚠️ contradicts [handle-objection "one reply per objection, max. If they don't respond, close" + "Not interested → No follow-up after this reply"]: reply-handler is relationship-first / nurture-biased — after a soft rejection it says "discover actual priorities and offer help there" and provides reconnection timing rather than closing after one reply. Both sides — gtm-master: one reply then close (guards against being annoying; treats no-context "not interested" as a targeting problem, not a copy/nurture one). reply-handler: keep giving value and schedule a reconnect (treats every reply as a relationship). Jan's call at review.
+Review: contradicts
 Status: holding
