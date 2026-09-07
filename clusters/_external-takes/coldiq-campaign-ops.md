@@ -62,3 +62,14 @@ Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: campaign-ops
 - ✅ supports [`signals/knowledge/signal-scoring.md:217-219`]: the 6-8 / 18-22 / 35-40 progression is canon-identical (see the first bullet for the caveat that the same page also contradicts it).
 Review: contradicts
 Status: holding
+
+## Meeting Prep — janskuba/outbound-agents#meeting-prep  ·  filed 2026-09-07
+Source: https://github.com/janskuba/outbound-agents (`.claude/agents/meeting-prep.md`) · cluster: campaign-ops
+Note: the Outbound Agents rows ship as Claude Code subagent definitions, not `SKILL.md` files. Extraction used the agent file at the path above; earlier runs recorded these as unfetchable.
+Coverage check: campaign-ops owns `score-meeting-intent.md` (scoring a REPLY for meeting intent) but has no task that prepares the meeting once booked. The only trace of one is `gtm-engineer-field-notes.md:43` describing a Slack pre-call brief as somebody else's build.
+- 🆕 new-angle: a **pre-call brief spec** — 11 fields (executive summary, company snapshot, prospect profile, 3 conversation starters, 5 discovery questions, 3 objection/handle pairs, time-blocked agenda, success metrics) under a hard 500-word total budget, one row per meeting. Fills the gap between `score-meeting-intent.md` (reply → booked) and the AE handoff.
+- 🆕 new-angle: **discovery/positioning ratio set by meeting type** — discovery call = 80% questions / 20% positioning; demo = 30% discovery / 70% demo, with matching time-blocked agendas (30-min discovery: 0-3 rapport, 3-15 discovery, 15-22 positioning, 22-27 next steps, 27-30 recap; 60-min demo: 0-5, 5-15, 15-45, 45-55, 55-60). gtm-master takes no position on in-meeting time allocation anywhere.
+- 🆕 new-angle: **BANT questions hard-banned in discovery** — no budget, no "who's the decision maker", no timeline, no "are you evaluating other vendors". Replaced with questions that surface impact of the pain, the prospect's vision of "good", and the consequences of inaction. gtm-master's `personas/knowledge/buying-committee-5-roles.md` maps who is in the room but never rules on what to ask them; nothing in the skill bans BANT.
+- 🆕 new-angle: **success metrics declared before the call** (2-3 named outcomes, e.g. "contact volunteered internal champion"), making the meeting pass/fail rather than subjective. gtm-master defines pass criteria per task but not per meeting.
+Review: additive
+Status: holding

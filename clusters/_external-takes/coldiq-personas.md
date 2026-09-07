@@ -41,3 +41,14 @@ Source: https://github.com/takechanman1228/claude-persona (skills/persona) · cl
 - ✅ supports [`personas/tasks/build-persona.md` Common failures — "generic" personas fail]: independently lands on the same bar from the simulation side — "a 5-persona panel with rich, differentiated responses is more valuable than a 15-persona panel with generic answers", and drives variation from Big Five traits + education level + communication style, with an explicit instruction that not all personas should be positive or articulate and some should break stereotype.
 Review: contradicts
 Status: holding
+
+## Prospect Profiler — janskuba/outbound-agents#prospect-profiler  ·  filed 2026-09-07
+Source: https://github.com/janskuba/outbound-agents (`.claude/agents/prospect-profiler.md`) · cluster: personas
+Note: the Outbound Agents rows ship as Claude Code subagent definitions, not `SKILL.md` files. Extraction used the agent file at the path above; earlier runs recorded these as unfetchable.
+- 🆕 new-angle: **per-account instantiation of a persona, not a role archetype**. gtm-master's `personas/tasks/build-persona.md` produces one archetype reused across a segment; this produces one row per COMPANY (profile summary, talking points, pain points, recommended approach) sitting between lead scoring and copy generation. The archetype answers "who do we sell to"; this answers "what do I say to THIS account" — a distinct artifact gtm-master's chain currently skips.
+- 🆕 new-angle: **`communication_style` as a scored field** (formal / casual / technical) with an explicit determination guide — formal for enterprise/regulated/500+/C-suite, casual for startups and informal LinkedIn presence, technical for engineering-led companies and technical titles. It is then consumed downstream (Hook Writer matches the register). gtm-master prescribes tone per audience (ATL vs BTL in `cold-email/knowledge/atl-btl-messaging`) but never derives register from firmographics as a stored field.
+- 🆕 new-angle: **`data_quality` (HIGH/MEDIUM/LOW) as a first-class output column** travelling with every profile, so downstream copy knows how much the profile can be trusted. gtm-master's persona output carries no provenance or confidence field.
+- 🆕 new-angle: `recommended_approach` compressed to a single routing string `channel | message_type | timing` (email/linkedin/phone/multi-channel · direct/educational/social-proof/challenge · immediate/this week/next month/event-triggered) — a machine-readable handoff to `sequences/knowledge/tiered-routing-template.md`, which currently routes on tier alone.
+- ✅ supports [`lead-scoring/tasks/score-and-prioritize.md` tiering]: research effort is explicitly tiered — TIER_1/TIER_2 get the detailed analysis, TIER_3/TIER_4 stay short but complete. Same discipline gtm-master applies to send priority, applied to research spend.
+Review: additive
+Status: holding
