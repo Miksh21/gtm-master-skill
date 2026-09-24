@@ -57,9 +57,6 @@ Two rules that survive every version of this:
   theater). The reframe must describe something that is literally true of the sender's
   business. If the exclusivity, the producer, or the eager influencers do not actually exist,
   the move is off the table.
-- **Talent'em: "Lead with the asset" is a value-based CTA and is HARD-BANNED** in Talent'em
-  copy (no ukázka/sample/shortlist offers; call/chat CTAs only — TB-A/B/C are the one
-  deliberate exception). Use the other four moves for Talent'em.
 - **Layering with canon:** this task fixes WHAT is offered. `write-first-email` still leads
   sentence 1 with the signal, keeps one soft CTA, and holds the word counts. The reframe
   becomes the offer/CTA half of that skeleton, not a replacement for it.
