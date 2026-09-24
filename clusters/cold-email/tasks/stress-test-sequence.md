@@ -33,6 +33,7 @@ Each dimension scores 0, 1, or 2. Sum across 5 dimensions = step score (max 10).
 3. Re-score. Repeat until every step is 8.1+.
 4. Once all steps pass, run a final whole-sequence read — make sure value props rotate (don't repeat across steps), tone is consistent, and CTAs escalate (Step 1 soft, Step 3 direct).
 5. Score the PS line separately if present — apply the same rubric to the PS only.
+6. Run the pre-send check in `clusters/cold-email/knowledge/human-voice.md` on every step, and for a live or cloned sequence the editing checks in `clusters/campaign-ops/knowledge/sequence-and-system-hygiene.md` (all sibling copies, populated conditionals, sender integrity).
 
 ## Output format
 

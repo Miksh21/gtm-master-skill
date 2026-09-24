@@ -93,6 +93,8 @@ Word count: [n] / 100 max
 
 ## Deeper knowledge
 
+- Voice + mirroring in replies → `clusters/cold-email/knowledge/human-voice.md`; LinkedIn steps only on connected paths, no-email contacts on a LinkedIn-only track → `clusters/campaign-ops/knowledge/sequence-and-system-hygiene.md`
+
 - Multi-channel coordination (email + LinkedIn timing) → `tasks/design-multi-channel.md`
 - Sender's profile readiness → `clusters/campaign-ops/tasks/audit-linkedin-profile.md`
 - ATL (executive) vs BTL (IC) tone differences for LinkedIn → `clusters/cold-email/knowledge/atl-btl-messaging.md`

@@ -89,6 +89,8 @@ Next action if no reply: [close thread / one more try / mark nurture]
 
 ## Deeper knowledge (load only when needed)
 
+- Openers that don't narrate the sequence + the final voice pass → `clusters/cold-email/knowledge/human-voice.md`
+
 - Sequence theory and value prop rotation → `clusters/cold-email/knowledge/copywriting-sequences.md`
 - Re-engagement template library → `clusters/cold-email/knowledge/email-templates-library.md`
 - ATL vs BTL tone differences for follow-ups → `clusters/cold-email/knowledge/atl-btl-messaging.md`

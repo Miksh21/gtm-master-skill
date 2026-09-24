@@ -96,6 +96,8 @@ End with one line: *"Run `clusters/cold-email/tasks/stress-test-sequence.md` onc
 
 ## Deeper knowledge (load only when needed)
 
+- Final voice pass (say-it-aloud test, rough edges, reader's verbs, claims, sender integrity) → `clusters/cold-email/knowledge/human-voice.md`
+
 - 13 named frameworks with full templates → `clusters/cold-email/knowledge/copywriting-frameworks.md`
 - Email component rules (opener / body / CTA / sign-off) → `clusters/cold-email/knowledge/copywriting-principles.md`
 - ATL vs BTL deep guide → `clusters/cold-email/knowledge/atl-btl-messaging.md`
