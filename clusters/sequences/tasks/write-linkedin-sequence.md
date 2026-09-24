@@ -24,7 +24,7 @@ User asks to write a LinkedIn sequence, connection request, LinkedIn DM, InMail,
 - NO URLs (LinkedIn flags as spam)
 
 ### Follow-up message 1 (after connection accepted)
-- Lead with the signal — what you noticed, not who you are
+- Lead with what you noticed, not who you are. Same hook-vs-intent rule as email (`clusters/cold-email/tasks/write-first-email.md`): alpha signal → name it; commodity signal (funding, job change, hiring) → name the situation it implies, not the trigger
 - One sentence on what it implies for them
 - Soft CTA: a question, not a demo ask
 - **Under 150 words**

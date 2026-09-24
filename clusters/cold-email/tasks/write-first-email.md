@@ -21,7 +21,11 @@ If any of these are missing, ask before drafting:
 
 - **60-90 words max** for BTL emails, **40-70 words** for ATL
 - **Plain text only** — no HTML, no images, no bullets in cold email
-- **Lead with the signal**, not the sender. If the email could be sent to a different company without changing it, rewrite.
+- **Lead with the prospect, not the sender.** If the email could be sent to a different company without changing it, rewrite.
+- **Decide per signal: hook or intent-only.** Run the alpha test (`clusters/signals/knowledge/go-to-market-alpha.md`): can a competitor buy this exact signal off the shelf?
+  - **Commodity signal** (funding, generic hiring, job change, tech install): everyone opens with it, so naming it reads as mass outreach ("congrats on the round"). Use it as intent only: it picks *who* and *when*; sentence 1 names the operational situation the signal implies for this company, not the signal.
+  - **Alpha signal** (derived from your product's value or first-party data, e.g. a geo cross-join no vendor sells): lead with it. That is the whole point of having it.
+  - A client's playbook may fix this per signal; that decision wins over this default.
 - **One CTA only** — soft ask, not a hard sell
 - **Pain over features** — name the problem the signal implies, not your solution
 - **No vanity openers** — never "I came across your profile…", "hope you're well", "quick question"
@@ -36,7 +40,7 @@ If any of these are missing, ask before drafting:
    - **Soft/inferred signal** → "Neutral Insight" or "Upfront Value"
    - Full framework menu: Read `clusters/cold-email/knowledge/copywriting-frameworks.md`
 3. Draft Step 1 using this skeleton:
-   - **Opener** (1 sentence): signal reference, specific
+   - **Opener** (1 sentence): alpha signal → the signal itself, specific; commodity signal → the situation it implies at this company, without naming the trigger
    - **Problem** (1 sentence): the pain the signal implies for this role
    - **Bridge** (optional, 1 sentence): proof point with a number, or pattern observation
    - **CTA** (1 sentence): soft, scheduling-oriented, low-friction
@@ -46,7 +50,7 @@ If any of these are missing, ask before drafting:
    - Founder: peer-to-peer, low formality, name-drop other founders if relevant.
 5. Self-check before output:
    - Could this be sent to a different company without rewriting? → fail, redraft
-   - Is the signal in sentence 1? → if not, restructure
+   - Alpha signal: is it in sentence 1? → if not, restructure. Commodity signal: is it named anywhere ("saw you raised", "noticed you're hiring")? → cut it, keep the implied situation
    - Are there bullet points or HTML? → strip
    - Is the CTA a meeting demand or a question? → soft question wins
 6. Generate 2-3 subject line options inline (or route to `clusters/cold-email/tasks/write-subject-lines.md` for full ranked set)
@@ -56,7 +60,7 @@ If any of these are missing, ask before drafting:
 ```
 Hypothesis: [name or one-line description]
 ICP: [role] @ [company type]
-Signal: [specific trigger]
+Signal: [specific trigger] — [hook | intent-only] (alpha test: [why])
 Angle: [core argument]
 Persona tier: [ATL / BTL]
 
@@ -77,14 +81,15 @@ End with one line: *"Run `clusters/cold-email/tasks/stress-test-sequence.md` onc
 ## Pass criteria
 
 - Word count in target range
-- Signal appears in opening sentence
+- Hook-vs-intent decision stated in the header; alpha signal in the opening sentence, commodity signal never named
 - Zero generic phrases ("hope you're well", "quick question", "wanted to reach out")
 - One CTA, framed as a question
 - Tone matches persona tier
 
 ## Common failures
 
-- **Generic opener** — fix by replacing sentence 1 with the literal signal observation
+- **Generic opener** — fix by replacing sentence 1 with the literal observation: the alpha signal, or the situation a commodity signal implies at this company
+- **Commodity trigger named** ("congrats on the Series B", "saw you're hiring") — reads as the same email every vendor sent that week; replace with the situation it implies
 - **Multiple CTAs** — strip to one, the most-conversion-likely
 - **Feature dump in middle** — replace with the problem the persona feels because of the signal
 - **Subject line over 6 words** — regenerate using `clusters/cold-email/tasks/write-subject-lines.md`
