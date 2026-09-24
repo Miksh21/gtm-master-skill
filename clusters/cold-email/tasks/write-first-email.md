@@ -24,7 +24,7 @@ If any of these are missing, ask before drafting:
 - **Lead with the prospect, not the sender.** If the email could be sent to a different company without changing it, rewrite.
 - **Decide per signal: hook or intent-only.** Run the alpha test (`clusters/signals/knowledge/go-to-market-alpha.md`): can a competitor buy this exact signal off the shelf?
   - **Commodity signal** (funding, generic hiring, job change, tech install): everyone opens with it, so naming it reads as mass outreach ("congrats on the round"). Use it as intent only: it picks *who* and *when*; sentence 1 names the operational situation the signal implies for this company, not the signal.
-  - **Alpha signal** (derived from your product's value or first-party data, e.g. a geo cross-join no vendor sells): lead with it. That is the whole point of having it.
+  - **Alpha signal** (derived from your product's value or first-party data, e.g. Canva's brand-guidelines-vs-latest-post mismatch): lead with it. That is the whole point of having it.
   - A client's playbook may fix this per signal; that decision wins over this default.
 - **One CTA only** — soft ask, not a hard sell
 - **Pain over features** — name the problem the signal implies, not your solution
