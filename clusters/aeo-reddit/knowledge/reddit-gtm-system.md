@@ -26,7 +26,7 @@ Every stage has a human gate. Nothing auto-posts.
 
 1. **Create the campaign** with the product name, URL, and how the brand should be mentioned. The mention framing shapes every draft, so get it from the operator, not scraped from the website title. Capture use cases and talking points at the same time.
 2. **Attach target subreddits, vetted first.** Community fit is its own discipline: run `clusters/aeo-reddit/tasks/research-subreddits.md`. Never add every keyword match.
-3. **One campaign per product.** Keeps drafting-time knowledge retrieval clean (see `reference/advocate-voice-tuning.md`).
+3. **One campaign per product.** Keeps drafting-time knowledge retrieval clean (see `clusters/aeo-reddit/reference/advocate-voice-tuning.md`).
 
 ## 4. Advocate personas
 
@@ -35,7 +35,7 @@ An advocate is the persona that drafts comments: name, role (user or employee), 
 - **Start the cap at 3 drafts per day.** Raise it only after draft quality proves out over multiple review sessions.
 - The overlooked trap: raising the cap before the voice is right floods the queue with mediocre drafts and burns reviewer attention.
 - NEVER present an advocate as unaffiliated where the community requires disclosure. Role and disclosure style are part of the persona definition, not an afterthought.
-- Tune the voice with `reference/advocate-voice-tuning.md` before scaling anything.
+- Tune the voice with `clusters/aeo-reddit/reference/advocate-voice-tuning.md` before scaling anything.
 
 ## 5. The approval loop
 
