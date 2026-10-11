@@ -16,7 +16,7 @@ The real problem is that industry tags are self-reported and unreliable. A compa
 
 **Always use Claygent Web Research (GPT-4.1 Mini) on the Domain as the first and only gate.**
 
-**No conditional run needed.** The prompt references `{Domain}` directly — if Domain is empty, Claygent automatically skips the row with a "missing input" status and spends zero credits. Adding `Run if Domain is not empty` is redundant. (See `clay/claygent.md` → Conditional Runs for Claygent.)
+**No conditional run needed.** The prompt references `{Domain}` directly — if Domain is empty, Claygent automatically skips the row with a "missing input" status and spends zero credits. Adding `Run if Domain is not empty` is redundant. (See `../../knowledge/prompts/claygent-guide.md` → Conditional Runs for Claygent.)
 
 Claygent explores the website freely and determines what the company truly does — independent of self-reported tags. Never restrict to specific pages.
 

@@ -4,7 +4,7 @@
 
 **Goal:** On a Clay table that's already open, add a Claygent Web Research column with a custom prompt, generate the JSON output schema, optionally set a conditional run, and validate the column on 3 test rows.
 
-**Used by:** Phase 03 (Qualification), Phase 05 (Enrichment) — anywhere `clay/claygent.md` says to spec a Web Research column.
+**Used by:** Phase 03 (Qualification), Phase 05 (Enrichment) — anywhere `../../knowledge/prompts/claygent-guide.md` says to spec a Web Research column.
 
 ---
 
@@ -16,9 +16,9 @@ The orchestrator (the calling Claude session) must provide:
 |---|---|---|---|
 | `TABLE_URL` | URL | yes | The Clay table URL (`https://app.clay.com/workspaces/.../tables/...`) |
 | `COLUMN_NAME` | string | yes | Display name for the new column (e.g. `"ICP Qualification"`) |
-| `PROMPT_BODY` | multiline string | yes | The Claygent prompt with `{Variable}` references — written per `clay/claygent.md` rules |
+| `PROMPT_BODY` | multiline string | yes | The Claygent prompt with `{Variable}` references — written per `../../knowledge/prompts/claygent-guide.md` rules |
 | `MODEL` | enum | optional, default `"GPT-4.1 Mini"` | Web Research uses `GPT-4.1 Mini`; Create-or-Modify uses `ChatGPT 4.1 Nano` |
-| `CONDITIONAL_RUN` | string \| null | optional | Formula expression for "Only run if". **Per `clay/claygent.md`: skip this if the only condition is "input variable not empty" — Clay auto-skips on empty input.** |
+| `CONDITIONAL_RUN` | string \| null | optional | Formula expression for "Only run if". **Per `../../knowledge/prompts/claygent-guide.md`: skip this if the only condition is "input variable not empty" — Clay auto-skips on empty input.** |
 | `TEST_ROW_COUNT` | int | optional, default `3` | How many rows to manually run before declaring success |
 
 ---
@@ -27,7 +27,7 @@ The orchestrator (the calling Claude session) must provide:
 
 1. Playwright MCP is loaded in this session — verify with a tool listing.
 2. Browser is logged into Clay (persistent profile dir from setup). If not, navigate to `https://app.clay.com` first and prompt the user to log in.
-3. `PROMPT_BODY` includes at least one `{Variable}` reference and a fallback instruction (per `clay/claygent.md` rules — confirm before running).
+3. `PROMPT_BODY` includes at least one `{Variable}` reference and a fallback instruction (per `../../knowledge/prompts/claygent-guide.md` rules — confirm before running).
 
 ---
 
@@ -122,7 +122,7 @@ browser_snapshot
 
 ### Step 7 — Generate the JSON output schema
 
-Per `clay/claygent.md` rule 4: this is non-negotiable. Always generate the schema before running.
+Per `../../knowledge/prompts/claygent-guide.md` rule 4: this is non-negotiable. Always generate the schema before running.
 
 Scroll to / find the "Define Outputs" section.
 
@@ -143,7 +143,7 @@ browser_snapshot
 
 ### Step 8 — Set conditional run (only if `CONDITIONAL_RUN` is provided)
 
-**Skip this step entirely if `CONDITIONAL_RUN` is null** — see `clay/claygent.md` for when conditional runs are redundant vs needed.
+**Skip this step entirely if `CONDITIONAL_RUN` is null** — see `../../knowledge/prompts/claygent-guide.md` for when conditional runs are redundant vs needed.
 
 Find the "Run Settings" section (often collapsed by default).
 
@@ -229,7 +229,7 @@ Report results to the user:
 
 ## Linked references
 
-- `clay/claygent.md` — prompt rules, model choice, output schema, conditional-run logic
+- `../../knowledge/prompts/claygent-guide.md` — prompt rules, model choice, output schema, conditional-run logic
 - `phases/03-qualification.md` — when this recipe is invoked from the qualification phase
 - `phases/05-enrichment.md` — when invoked for an enrichment Claygent column
 - `ui-playbook/README.md` — global conventions and sticky points

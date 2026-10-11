@@ -82,10 +82,10 @@ One Clay table can have multiple Instantly or HeyReach "Add Lead to Campaign" st
 
 | File | What it covers |
 |---|---|
-| `clay/claygent.md` | Claygent use cases, models, prompt rules, all prompt templates |
-| `clay/formula-syntax.md` | Formula columns and conditional run formulas — syntax, patterns, common examples |
-| `clay/table-mechanics.md` | Auto-dedupe, auto-update, keep existing results, scheduling, enrichment templates, credits system |
-| `clay/waterfall.md` | Native waterfall (Work Email, Mobile Phone), Custom Waterfall column, Merge Columns |
+| `../knowledge/prompts/claygent-guide.md` | Claygent use cases, models, prompt rules, all prompt templates |
+| `platform/formula-syntax.md` | Formula columns and conditional run formulas — syntax, patterns, common examples |
+| `platform/table-mechanics.md` | Auto-dedupe, auto-update, keep existing results, scheduling, enrichment templates, credits system |
+| `../knowledge/waterfall-enrichment.md` | Native waterfall (Work Email, Mobile Phone), Custom Waterfall column, Merge Columns |
 
 ### Databases
 
@@ -105,7 +105,7 @@ One Clay table can have multiple Instantly or HeyReach "Add Lead to Campaign" st
 | File | What it covers |
 |---|---|
 | `providers/enrichments/enrich-person.md` | Clay native person enrichment |
-| `providers/enrichments/professional-posts.md` | Clay native LinkedIn posts family — find a person's posts, reactions, comments, shares; pull engagers on a specific post. Pairs with the LinkedIn Post Theme Summary prompt in `clay/claygent.md`. |
+| `providers/enrichments/professional-posts.md` | Clay native LinkedIn posts family — find a person's posts, reactions, comments, shares; pull engagers on a specific post. Pairs with the LinkedIn Post Theme Summary prompt in `../knowledge/prompts/claygent-guide.md`. |
 | `providers/enrichments/apify.md` | Web scraping marketplace (use only when no Clay-native alternative exists — for LinkedIn posts, prefer professional-posts.md) |
 | `providers/enrichments/builtwith-sumble.md` | Tech stack detection — BuiltWith (website-facing), Sumble (internal tools) |
 | `providers/enrichments/semrush.md` | Web traffic enrichment |

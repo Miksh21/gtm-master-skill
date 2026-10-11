@@ -105,7 +105,7 @@ Tags that always produce noise and require keyword narrowing or separate searche
 
 ## Headcount — Verify on Clay Find Companies Tables
 
-Clay Find Companies returns headcount as a range (e.g. 51-200) and is often wrong. Always verify with a Claygent Web Research step on the LinkedIn URL to get the exact count, then apply a table filter to exclude rows outside the target range. This runs before ICP qualification — see `phases/05-enrichment.md` and `clay/table-mechanics.md` → Table Filters.
+Clay Find Companies returns headcount as a range (e.g. 51-200) and is often wrong. Always verify with a Claygent Web Research step on the LinkedIn URL to get the exact count, then apply a table filter to exclude rows outside the target range. This runs before ICP qualification — see `phases/05-enrichment.md` and `../platform/table-mechanics.md` → Table Filters.
 
 ---
 

@@ -38,7 +38,7 @@ The Professional Posts family has both **Sources** (create new tables from resul
 For outbound campaigns where you want a "you've been posting about X" line:
 
 1. **Get a person's professional posts and shares** — input: their LinkedIn URL or LinkedIn username. Configure to return last N posts (typically 10-20) within the last 60-90 days.
-2. **Claygent (Create or Modify Content, ChatGPT 4.1 Nano)** — input: the posts array. Output: a one-line theme summary for use as `{{linkedin_topic}}` in the email copy. See `clay/claygent.md` → LinkedIn Post Theme Summary.
+2. **Claygent (Create or Modify Content, ChatGPT 4.1 Nano)** — input: the posts array. Output: a one-line theme summary for use as `{{linkedin_topic}}` in the email copy. See `../../../knowledge/prompts/claygent-guide.md` → LinkedIn Post Theme Summary.
 3. Use the output as a personalisation variable in Instantly / HeyReach.
 
 **Cost per enriched contact:** 0.5 credit (posts fetch) + ~1 credit (Claygent summary) = **~1.5 credits/contact**. Compare to Apify (~5-10 credits equivalent + own API key setup).
