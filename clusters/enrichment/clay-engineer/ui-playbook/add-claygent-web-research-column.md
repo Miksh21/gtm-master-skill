@@ -122,7 +122,7 @@ browser_snapshot
 
 ### Step 7 — Generate the JSON output schema
 
-Per `../../knowledge/prompts/claygent-guide.md` rule 4: this is non-negotiable. Always generate the schema before running.
+Per `../../knowledge/prompts/claygent-guide.md` Step 4 (Set Output Schema in Clay): this is non-negotiable. Always generate the schema before running.
 
 Scroll to / find the "Define Outputs" section.
 
