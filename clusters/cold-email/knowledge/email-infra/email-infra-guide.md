@@ -185,7 +185,7 @@ Then configure in Instantly → Settings → Custom Tracking Domain.
 3. **Mail-Tester:** mail-tester.com — deliverability score (aim 8+/10)
 4. **Google Postmaster Tools:** postmaster.google.com — Gmail reputation
 
-For DNS troubleshooting, see [troubleshooting.md](troubleshooting.md).
+For DNS troubleshooting, see [email-infra-troubleshooting.md](email-infra-troubleshooting.md).
 
 ---
 
