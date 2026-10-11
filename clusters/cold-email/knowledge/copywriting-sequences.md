@@ -10,7 +10,9 @@ How to structure a full email sequence: Email 1 variations, follow-ups, timing, 
 |---|---|---|---|
 | **Email 1** | Day 0 | Get the reply | 80% of positive replies come here. Test 3–4 variations. |
 | **Email 2** | Day 3 (same thread) | Add value / follow up | Lead magnet, social proof, different angle |
-| **Email 3** | Day 17 (new subject line) | Final attempt | New angle, very soft CTA, break-up |
+| **Email 3** | Day 17 on the email-only cadence; Day 10 on the multichannel cadence (`sequences/tasks/design-multi-channel.md`); new subject line | Final attempt | New angle, very soft CTA, break-up |
+
+(updated 2026-10-11: was "Day 17 (new subject line)" with no cadence split, creator-radar review L3-05; 3 emails is the cap)
 
 If no reply after Email 3 → wait 3 months, then re-engage with a fresh sequence.
 

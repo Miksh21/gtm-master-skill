@@ -47,6 +47,7 @@ Person-level website visitor identification. Places a tracking pixel on your sit
 - Matches visitors to known identities
 - Output: Name, email, LinkedIn profile, company, title
 - Match rate: **40-45%** of US traffic
+**Counter-view (2026-10-11):** field benchmark says visitor-ID vendors match only 5-20% of visitors to a named person (vs the vendor-claimed 40-45%); matched-visitor demos convert 3-5x, and pricing-page intent goes cold in about a week. Size visitor plays on 5-20%. [#1601]
 
 **Company-Level (Global)**
 - IP-to-company matching
@@ -173,6 +174,8 @@ All contracts custom — no self-service or public pricing.
 ---
 
 ## 5. Other Signal Tools (Quick Comparison)
+
+> **Vendor consolidation (2026-10-11, verify before quoting):** HubSpot acquired Warmly; Zoom acquired Common Room. Re-check pricing, standalone availability and non-HubSpot CRM support before recommending either. [#402]
 
 ### Koala
 - **Focus**: Product usage + website intent for PLG companies

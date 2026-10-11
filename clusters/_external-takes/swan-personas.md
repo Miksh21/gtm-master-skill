@@ -7,4 +7,4 @@ Shared lineage: persona-mapping-framework.md is canon-identical (rebrand only).
 - 🆕 new-angle: role-appropriate CTA mapping as a rule: champion gets the demo/ROI narrative, end user gets the trial/ease-of-use, stage-appropriate content per persona. gtm-master build-persona.md covers pain/JTBD per persona but does not bind CTA TYPE to committee role.
 - ✅ supports [list-building/knowledge/abm/persona-mapping-framework.md]: budget allocation by persona (Champions 40-50%, Economic Buyers 20-30%, End Users 15-20%, Technical Evaluators 5-10%, Blockers monitor-only); persona attributes to capture (title patterns, JTBD, pains, success metrics, content preferences, buying role); LinkedIn targeting approach 2 recommended (company list + native filters, 95-100% match vs 30-70% for contact uploads); campaign naming [Campaign]-[Persona]-[AdType]-[JTBD]-[Stage] for intent detection from engagement.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)

@@ -25,6 +25,8 @@
 | **Role-based** (info@, sales@) | Flag for review, usually skip |
 | **Toxic/Spam Trap** | Remove immediately |
 
+**Graded, not binary** (single-source: Adam Robinson): valid/invalid verdicts are miscalibrated; Microsoft fake auth signals inflate "valid" while Google changes push real inboxes to "invalid". Grade emails A-F on recency, activity, catch-all status and bounce history instead. [#790]
+
 ## Phone Validation Tools
 
 | Tool | Price | Specialty |
@@ -64,7 +66,7 @@
 
 | Metric | Target | Danger Zone |
 |--------|--------|-------------|
-| Bounce rate | <1% | >3% — pause campaigns |
+| Bounce rate | <1% target; <2% launch gate / hard limit (updated 2026-10-11: was "<1%", creator-radar review L3-02) | >3% — pause campaigns |
 | Spam complaint rate | <0.1% | >0.3% — investigate |
 | Unsubscribe rate | 0.3-0.5% | >1% — targeting issue |
 | Email deliverability | 95%+ | <90% — infrastructure issue |
@@ -73,8 +75,10 @@
 ## Verification Best Practices
 
 1. **Verify 100% of emails before any campaign.** No exceptions.
+   **Counter-view (2026-10-11):** calibrate per provider instead: run 20 of a provider's addresses through an independent verifier once; if the bounce math holds, trust that provider's batch rather than re-verifying everything. [#974]
 2. **Re-verify lists older than 30 days.**
 3. **Remove all "unknown" and "catch-all"** or batch-test cautiously.
+   **Counter-view (2026-10-11):** benchmark validators on your own positive repliers (proven live inboxes) before discarding catch-alls: count each validator's catch-all/invalid misses, then check production bounce on a fresh pull. LeadMagic recovered 14.6% of flagged catch-alls as real; 73 positive replies had been discarded. [#1256]
 4. **Remove role-based emails** (info@, admin@, sales@) — higher spam complaints.
 5. **Remove free email providers** for B2B outreach (gmail, yahoo personal).
 6. **Use real-time verification** at point of collection if possible (API).

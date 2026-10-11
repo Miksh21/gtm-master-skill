@@ -98,3 +98,7 @@ Data prep: medians for rate/efficiency metrics, totals for volume; ICP reach via
 Six sections: (1) quarter snapshot: rollup table (this Q vs prior vs benchmark: impressions, ICP reach, cost/1k, leads/CVR, spend vs budget) with a one-paragraph headline an exec could read alone; (2) creator/campaign summary, 3-5 lines each, ranked; (3) trend analysis by lens; (4) wins and misses, each with its strategic implication, misses stated plainly; (5) 4-7 recommendations each tagged **Scale / Adjust / Stop**, with a forced real Stop section (if nothing underperformed, prove why the whole roster earns its place); (6) planning inputs: next-quarter budget, roster (re-sign / add / drop), KPI targets, key dates, open decisions.
 
 Untracked metrics are named as gaps with an instrumentation recommendation, never invented.
+
+## Creator-radar 2026-10-11
+
+- **Measure influencer spend by baseline lift, not last-click:** track month-over-month baseline signup lift and the ~2-4 week direct-traffic lag after spend; most influencer-driven actions surface later as direct or organic traffic, so last-click UTMs undercount. [#907]

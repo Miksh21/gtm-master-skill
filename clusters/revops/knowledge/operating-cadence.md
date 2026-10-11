@@ -84,6 +84,8 @@ Score 24-30 = ready for AI investment. 15-23 = fix cadence first. <15 = cadence 
 | Cadence without accountability | Name the owner, publish the date, escalate if not done |
 | Activity data not validated | Monthly CRM audit |
 
+**RevOps intake triage:** Batch it; Question it (ask why); Escalate it (name the trade: "I can do this if we push that"); Push back (name the cost). A published roadmap replaces weekly re-prioritising. [#1833]
+
 ## Async-First Variant (distributed teams)
 
 Daily standup → chat thread (wins, blockers, one forecast line; no meeting). Weekly pipeline review → RevOps posts the packet Monday 9am, team comments on risky deals inline, optional 30-min Friday sync for decisions only. Weekly forecast → compressed 15-min sync after async comments. Monthly review → 1 h async pre-read + 60-min decisions-only meeting. QBR stays sync with mandatory pre-reads. Decision logging via a chat workflow: decision | owner | due date | success metric | status; pin last week's log at the top of each review thread and start by checking completions. Convert to sync when >20% of the team hasn't contributed by deadline; deal escalations always get a 24 h sync slot, never parked overnight.

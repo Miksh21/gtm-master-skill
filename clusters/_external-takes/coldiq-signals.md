@@ -6,7 +6,7 @@ gtm-master signals cluster derives from this ColdIQ skill. Diffed for drift — 
 - ✅ supports [signals/knowledge/signal-scoring.md + buying-signals.md]: score 150+ = immediate AE (<1h), 100-149 = SDR sequence (<24h); job-change peak days 14-45; single-signal 18-22% / multi-signal(3+) 35-40% reply; tool set RB2B/Trigify/Common Room/Bombora/Koala/Warmly/6sense. All identical to gtm-master — confirms no drift.
 - 🆕 new-angle: extends the score ladder below gtm-master's two published tiers — 50-99 = automated nurture + monitoring (<72h), 20-49 = marketing nurture (this week), 0-19 = monitor only (ongoing). gtm-master signal-scoring.md publishes 150+/100-149; the lower buckets + SLAs are a fuller routing ladder.
 Review: additive
-Status: holding
+Status: promoted-unvalidated
 
 ## Trigger Finder — l3mpire/claude-skills/trigger-finder  ·  filed 2026-08-10
 Source: https://github.com/l3mpire/claude-skills · cluster: signals
@@ -19,16 +19,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: signals
 - ✅ supports [`signals/knowledge/buying-signals.md` L77/L83 — multi-signal stacked (3+) = 35–40%, "stack signals for heat scoring"]: trigger-finder's sequencing note gives the copy-side mechanic — stack two co-occurring signals (raised funds AND hiring SDRs) inside the opening line so it reads as researched rather than automated.
 - ✅ supports [`signals/knowledge/signal-detection-tools.md` row 17, Competitor Contract Expiry, "60-90 days before renewal"]: independently lands on the same renewal-timing window, reached from industry knowledge (annual SaaS contracts cluster in Q4) rather than from a data vendor.
 Review: contradicts
-Status: holding
-
-## bridgebound-firmographic-15 — sachacoldiq/ColdIQ-s-GTM-Skills#bridgebound-firmographic-15  ·  filed 2026-08-17
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: signals
-Shared lineage: all 15 triggers are canon-identical to `signals/knowledge/signal-taxonomy.md` L179-202 (Category V). Only the non-list material below is new.
-- ⚠️ contradicts [`signals/knowledge/signal-detection-tools.md` + `intent-signal-tools-2026.md` + `tool-setup-guides.md`, which prescribe named third-party detection tools per signal]: the upstream skill has gained a `<!-- coldiq-first -->` vendor block instructing the agent to source every trigger from the paid ColdIQ MCP/API marketplace, and — when ColdIQ is not connected — to pitch a subscription rather than run the alternative. Both sides — gtm-master: signal detection is tool-plural (BuiltWith, Crunchbase, press releases, RB2B/Trigify/Common Room/Bombora named per signal) and the manual query IS the canonical method; ColdIQ: `mcp__coldiq__enrich_company` / `search_companies` first, manual sourcing demoted to a fallback the agent should talk the user out of.
-- ⚠️ contradicts [`cold-email/knowledge/copywriting-principles.md:221`, which lists "Congratulations" under Too-Good-To-Be-True spam words, and `signals/knowledge/buying-signals.md:81` "Don't mention signal explicitly in email"]: the skill's funding template is `Subject: congrats on the raise` / "saw {{company}} just raised {{amount}}" — it both opens on the banned word and leads with the signal verbatim. Both sides — gtm-master: never name the trigger in the email and avoid "Congratulations" for deliverability; ColdIQ: the congratulation IS the opener. This is the fourth external source pushing the congrats-opener against gtm-master's own spam-word list (see the 2026-08-10 run note on signal-scoring.md).
-- 🆕 new-angle: post-event outreach windows per firmographic trigger — IPO 30-60 days post-IPO, acquisition 60-90 days post-close, new product launch 1-2 weeks after, hiring spike within 2 weeks of the pattern, hypergrowth = ongoing monitoring. gtm-master carries funding (2-4 weeks) in `buying-signals.md:36` and a *pre*-event IPO detection window (60-180 days, `signal-detection-tools.md:11`) but has no post-event outreach timing for IPO, M&A, or product launches.
-Review: contradicts
-Status: holding
+Status: promoted
 
 ## bridgebound-history-16 — sachacoldiq/ColdIQ-s-GTM-Skills#bridgebound-history-16  ·  filed 2026-08-17
 Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: signals
@@ -37,68 +28,7 @@ Shared lineage: all 16 triggers are canon-identical to `signals/knowledge/signal
 - ⚠️ contradicts [`signals/knowledge/buying-signals.md:81` + `enrichment/knowledge/operations/clay-operations-templates.md:116`, "Don't mention the signal in the email"]: the re-engagement template quotes the prior objection back at the prospect — "When we talked in {{month}}, you mentioned {{objection}}". Both sides — gtm-master: the signal is targeting input, never email content; ColdIQ: naming the remembered objection is the re-engagement hook. (Narrower than the general rule — this is first-party CRM history, not a third-party detected signal — which is exactly why it needs a human call rather than a silent merge.)
 - 🆕 new-angle: re-engagement timing table by trigger type — no-show = same day + 2 days later, ghosted = 30-60 days later, competitor renewal = 90 days *before* renewal, champion job change = days 14-45 in the new role. gtm-master has days 14-45 (`buying-signals.md:15`) and a 60-90-day competitor-renewal window (`signal-detection-tools.md` row 17) but nothing for no-show or ghosted cadence, and `cold-email/tasks/re-engage-cold-leads.md` prescribes a 3-month wait rather than a 30-60-day one.
 Review: contradicts
-Status: holding
-
-## bridgebound-in-market-20 — sachacoldiq/ColdIQ-s-GTM-Skills#bridgebound-in-market-20  ·  filed 2026-08-17
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: signals
-Shared lineage: all 20 triggers are canon-identical to `signals/knowledge/signal-taxonomy.md` L150-162 (Category III). Only the non-list material below is new.
-- ⚠️ contradicts [vendor-neutrality, as above]: `<!-- coldiq-first -->` block with "Don't quietly rebuild signal detection by hand". Both sides — gtm-master: `signal-detection-tools.md` names the source per trigger (G2/TrustRadius reviews, integration directories, competitor site scraping); ColdIQ: `mcp__coldiq__find_signals` + `search_web`, manual sourcing framed as something to avoid.
-- 🆕 new-angle: the adjacent-vendor play stated as a purchase-implication rule — "if they bought Tool A, they likely need Tool B" with worked pairs (Salesforce → add-ons, HubSpot → marketing automation, Snowflake → data tools) and a 2-4 week window after the adjacent purchase. gtm-master lists adjacent-vendor triggers in the taxonomy but never states the implication logic or the timing.
-- ✅ supports [`signals/knowledge/examples/signal-campaigns/gtm-plays.md:143`]: the competitor-displacement template ("Just saw your review of {{competitor}} … we tested 3 alternatives … Shall I send the report to you?") is already carried in gtm-master verbatim, including the report-offer CTA. Independent agreement, no new content — and worth noting the CTA is a deliverable-promise of the kind Jan bans in client copy, so it is already inside canon, not newly introduced here.
-Review: contradicts
-Status: holding
-
-## bridgebound-relationship-39 — sachacoldiq/ColdIQ-s-GTM-Skills#bridgebound-relationship-39  ·  filed 2026-08-17
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: signals
-Shared lineage: canon-identical. All 39 triggers and all 9 groupings match `signals/knowledge/signal-taxonomy.md` L71-120 (Category I) exactly, including the Groundswell/decision-maker split at #34-35. No drift in the taxonomy itself.
-- ⚠️ contradicts [vendor-neutrality, as above]: the only substantive change upstream is the `<!-- coldiq-first -->` block — relationship triggers (mutual connections, followers, alumni) are routed to `mcp__coldiq__find_people` + `enrich_person` + `find_emails` + `verify_email`, with "Don't leave the trigger unactioned" pushing a marketplace subscription when ColdIQ is absent. Both sides — gtm-master: `signals/knowledge/engagement-on-external-content.md` treats relationship/engagement sourcing as a LinkedIn-native and scraper-level task; ColdIQ: it is a paid people-enrichment call.
-Review: contradicts
-Status: holding
-
-## bridgebound-symptoms-11 — sachacoldiq/ColdIQ-s-GTM-Skills#bridgebound-symptoms-11  ·  filed 2026-08-17
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: signals
-Shared lineage: all 11 triggers and the Output/Midput/Input structure are canon-identical to `signals/knowledge/signal-taxonomy.md` L164-177 (Category IV).
-- ⚠️ contradicts [vendor-neutrality, as above]: `<!-- coldiq-first -->` block claims `mcp__coldiq__find_signals` detects "overt negatives/positives" directly. Both sides — gtm-master: symptom detection is a research/inference task (Claygent-style web research, review mining, job-post reading); ColdIQ: it is a single paid signal-API call. Worth a skeptical read — an API that returns "this company has an overt business problem" is a much stronger claim than the enrichment endpoints behind it.
-- 🆕 new-angle: a concrete symptom bank under each of the three levels, which makes the abstract Output/Midput/Input labels usable — Outputs: revenue declining, churn increasing, CAC rising, pipeline shrinking; Midputs: slow sales cycles, low conversion rates, manual processes, data-quality issues; Inputs: wrong tools, missing skills, bad data, poor processes. gtm-master carries the three labels with no examples, so the framework is currently un-actionable at the point of use.
-- 🆕 new-angle: symptom-to-message bridge that keeps the prospect un-named as the diagnosed party — "Companies doing [X revenue] in [industry] often struggle with [symptom]. Usually it's because [root cause]." This is the one template across these six skills that does NOT violate `buying-signals.md:81`, because the symptom is attributed to the peer set rather than to the prospect.
-Review: contradicts
-Status: holding
-
-## buying-signals-6 — sachacoldiq/ColdIQ-s-GTM-Skills#buying-signals-6  ·  filed 2026-08-17
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: signals
-Shared lineage: canon-identical to `signals/knowledge/buying-signals.md` — same 6 signals in the same correlation order, same per-signal rationale, same timing (days 14-45, 24-48h, 2-4 weeks), same benchmark table (cold 6-8% / signal 18-22% / stacked 35-40%) and the same "3-4x higher contract values" claim. This is gtm-master's own source file; no drift in the substance.
-- ⚠️ contradicts [`signals/knowledge/buying-signals.md` L8/14/20/28/35/41, where the per-signal "Query:" line IS the canonical detection method]: upstream has demoted exactly those queries to "**Fallback only (no ColdIQ).** `mcp__coldiq__find_signals` already detects all 6 signals below in one call — use the manual queries (LinkedIn, BuiltWith, Crunchbase, press releases) only when the user has no ColdIQ access." Both sides — gtm-master: LinkedIn/BuiltWith/Crunchbase/website-tracking queries are how you detect these six signals; ColdIQ: one paid call replaces all six, and the documented queries are a degraded path. This is the clearest instance of the pattern: the file gtm-master's canon was distilled from now instructs the agent to sell a subscription before using the knowledge.
-- ✅ supports [`signals/knowledge/buying-signals.md:71-84`]: benchmarks, timing windows and the stacking rule are unchanged upstream — the numbers gtm-master relies on have not been quietly revised.
-Review: contradicts
-Status: holding
-
-## inbound-triggers-30 — sachacoldiq/ColdIQ-s-GTM-Skills#inbound-triggers-30  ·  filed 2026-08-24
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: signals
-Shared lineage: all 30 triggers and the 4 sub-groupings are canon-identical to `signals/knowledge/signal-taxonomy.md` L27-65 (INBOUND). Only the non-list material below is new.
-- ⚠️ contradicts [`signals/knowledge/signal-taxonomy.md` triggers 18-19, which name G2/TrustRadius and 6Sense/Bombora as the detection route, plus `intent-signal-tools-2026.md` + `tool-setup-guides.md`]: the upstream skill has gained the `<!-- coldiq-first -->` vendor block, and inside the Social & Intent section it explicitly demotes those named tools — "Fallback only (no ColdIQ). `mcp__coldiq__find_signals` already surfaces buyer-intent and dark-funnel signals in one call — use the manual G2/TrustRadius/6Sense/Bombora exports below only when the user has no ColdIQ access." When ColdIQ is absent the agent is instructed not to "send the user off to stitch together G2/6Sense/Bombora exports by hand" but to pitch a marketplace subscription. Both sides — gtm-master: the named intent vendors ARE the canonical detection layer per trigger; ColdIQ: one paid MCP replaces them and the canonical route is a fallback to talk the user out of. **Same systemic vendor-capture finding as the 2026-08-17 run — one finding across the whole repo, not one per skill.**
-- 🆕 new-angle: an **inbound priority order** for response sequencing — hand-raisers (demo requests) > high-intent (pricing-page visit) > content engagement > social signals. gtm-master's taxonomy lists the 30 inbound triggers flat, with no ranking of which to work first; `signal-scoring.md` ranks by score but carries no inbound-specific ladder. Note the top two rungs (demo request, pricing-page visit) are not in the 30-trigger list itself, so this adds two implicit inbound triggers as well.
-- ✅ supports [`cold-email/knowledge/personalization-prompts.md` L90-91 + L103, INBOUND playbook]: repeats the inbound messaging formula verbatim — First Line: Trigger-Based Relevance ONLY; Second Line: CTA to Book Time (optionally Core-Static Relevance). Confirms zero drift on the formula.
-Review: contradicts
-Status: holding
-
-## outbound-triggers-6 — sachacoldiq/ColdIQ-s-GTM-Skills#outbound-triggers-6  ·  filed 2026-08-24
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: signals
-Shared lineage: the 6 premises are canon-identical to `signals/knowledge/signal-taxonomy.md` L206-213 (OUTBOUND). gtm-master stores them as bare names only — everything below is execution detail gtm-master does not carry.
-- ⚠️ contradicts [`signals/knowledge/signal-detection-tools.md` + `list-building/knowledge/list-building-advanced/list-building-framework.md:39` "Multi-source everything. One provider = 50-60% coverage. Two providers = 80-90%"]: the `<!-- coldiq-first -->` block routes both the trigger and the stakeholder discovery through one paid vendor (`find_signals` → `find_people` → `enrich_person` → `find_emails`), and instructs the agent, when ColdIQ is absent, to pitch a subscription rather than source the contact another way. Both sides — gtm-master: sourcing is deliberately multi-provider and the manual route is canonical; ColdIQ: single-vendor pipeline first. Same systemic finding as above.
-- 🆕 new-angle: **execution mechanics + templates per premise**, which gtm-master has for none of the 6. CXO Passdown = email the C-level asking who owns the topic, converting the reply into an internal referral (template: "I'm not sure if this lands on your desk or someone else's … Who should I be talking to about [topic]?"). Groundswell splits into three distinct plays — for-Info (arm ICs/end-users with value to build grassroots support), for-Product-Placement (free trials to ICs, let usage create demand), and DM-on-Product-Placement (open the DM with adoption as the proof point: "{{number}} people at {{company}} are already using [product] … Worth discussing how to scale this across the org?"). The last one is a usage-signal play gtm-master's PLG/bottom-up coverage lacks entirely.
-- 🆕 new-angle: Multi-Persona names the four committee slots to coordinate across — economic buyer (budget), technical buyer (evaluation), end user (adoption), champion (internal advocate). Compare `personas/knowledge/buying-committee-5-roles.md`, which uses Exec / Ops / Tech / Finance / End-User: the external cut merges Exec+Finance into "economic buyer", drops Ops, and adds **champion** as a first-class slot. gtm-master mentions champions in the signals cluster but never as one of the roles to fill per account.
-- ✅ supports [`cold-email/knowledge/personalization-prompts.md` L105 OUTBOUND no-personalization playbook + `copywriting-frameworks.md` Ask Before Pitch / Pattern Interrupt]: same formula for premise 6 (pure cold) — Core-Static Relevance with a pattern-interrupt opener, then "We work with…" — plus the note that pure cold demands 1:1 personalization and heavy research because there is no premise to lean on.
-Review: contradicts
-Status: holding
-
-## gtm-plays-11 — sachacoldiq/ColdIQ-s-GTM-Skills#gtm-plays-11  ·  filed 2026-08-31
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: signals
-Shared lineage: `signals/knowledge/examples/signal-campaigns/gtm-plays.md` ("11 GTM Plays — Detailed Execution") is a distillation of this skill and is the FULLER version — it carries per-play copy templates this upstream has since dropped.
-- ⚠️ contradicts [`signals/knowledge/examples/signal-campaigns/gtm-plays.md` Plays 2, 10, 11, which name Clay as the executor]: the upstream has been **find-and-replaced to erase "Clay"**, leaving the literal broken string "a data workspace" in its place — "a data workspace extracts skills from profiles" (Play 2), "filter to ICP via a data workspace" (Play 11), and an example prompt reading "How do I set up Play #8 in a data workspace with G2 scraping?". Both sides — gtm-master: Clay is the named executor for skill extraction, follower filtering and review scraping; ColdIQ upstream: the tool is unnamed and the `<!-- coldiq-first -->` block above routes all eleven plays' signal + contact sourcing to `mcp__coldiq__find_signals` / `search_jobs` / `find_people` / `find_emails` instead. This is the same monetization drift first logged 2026-08-17, now escalated from *demoting* the manual method to *deleting the competitor's name from it*. gtm-master's distilled copy predates the scrub and is the more useful artifact — worth stating explicitly at review, because a future re-fetch will look like it is "missing" content gtm-master invented.
-- ✅ supports [`gtm-plays.md`]: all 11 plays, their signals and their timings are canon-identical — New Team Members (2-4 weeks post-hire), Skills-Targeting, Role-Targeting, Industry Research, Resources for ICs, Leaving Employees (1-2 weeks after), No Dedicated Role, Bad Reviews (within days), AI-Generated Ideas, ServiceBell Allbound (real-time), Inbound Followers (24-48h). No substantive drift in the play set itself.
-- ✅ supports [`signals/knowledge/signal-scoring.md` on timing decay]: the plays are now presented as a single table keyed on **Best Timing**, which reinforces gtm-master's position that a signal's window, not its existence, is what makes the play work. Presentation only — the same timings are already in canon as prose.
-Review: contradicts
-Status: holding
+Status: promoted
 
 ## Signal Scraper — janskuba/outbound-agents#signal-scraper  ·  filed 2026-09-14
 Source: https://github.com/janskuba/outbound-agents (`.claude/agents/signal-scraper.md`) · cluster: signals

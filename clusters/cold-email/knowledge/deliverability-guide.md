@@ -111,6 +111,8 @@ Value: v=DMARC1; p=reject; rua=mailto:dmarc@yourdomain.com
 | 12+ weeks | Established | Full operations. Monitor ongoing. |
 | 6+ months | Mature | Can push slightly higher volumes if reputation supports. |
 
+- Evidence (2026-10-11): aged/parked domains outperform fresh domains warmed 2 weeks. Buy sending domains months before needed, no inboxes, then activate; keep 50-100% extra domains pre-staged at the registrar so a burned domain is swapped the same day with no campaign downtime (Nowoslawski). [#326, #759]
+
 **Minimum before first cold email: 4 weeks** (2 weeks aging + 2 weeks warmup)
 **Ideal: 6-8 weeks** (2-4 weeks aging + 4 weeks warmup)
 
@@ -325,6 +327,7 @@ Value: [provided by your email tool]
 2. **Re-verify lists older than 30 days.**
 3. **Remove "unknown" and "catch-all" results** or treat with extreme caution.
 4. **Remove role-based emails** (info@, admin@, sales@).
+   **Counter-view (2026-10-11):** (single-case: local SMB, Nowoslawski) info@ is a valid target for local businesses, where the owner, a spouse or the sole office manager reads it; open "Hey [Name]" when the owner name is known. Keep the role-based filter for mid-market and up. [#765]
 5. **Remove free email providers** for B2B outreach.
 6. **Budget rule:** Verification costs ($0.005-0.01/email) are trivial vs damaged reputation.
 
@@ -356,3 +359,15 @@ Value: [provided by your email tool]
 - [ ] Unsubscribes processed within 24 hours
 - [ ] Mailbox rotation across campaigns
 - [ ] Re-verify lists older than 30 days
+
+## Creator-radar 2026-10-11
+
+- **Deep body spintax:** (single-case: Eric Nowoslawski agency) ~3 options per body line let Google pattern-match near-identical mails and sender bounces hit ~50%; ~20 variations per line restored delivery. Spintax body lines deeply, not only subjects. [#314]
+- **Auto-reply placement probe:** send to real unmonitored inboxes that auto-reply; ~80% should return an auto-reply, materially lower = landing in spam. Grow the probe list by having Claude classify inbound replies and save auto-reply addresses. [#1246]
+- **Weekly domain cull:** domains with 200+ sends and <0.7% overall reply rate are scheduled for cancellation; a bot outputs the replacement count, a human audits and orders replacements (Hypertide). Human only at purchase. [#1262]
+- **Reply rate by ESP pair:** report reply rate by sender ESP x recipient ESP (Google-to-Outlook etc.); placement gaps per provider pair stay invisible in aggregate reply/open metrics. [#1461]
+- **ZapShield (vendor claim):** (single-case: Eric Nowoslawski test) Zapmail ZapShield routes inboxes through Google Cloud enterprise IPs; tested 20-50% reply-rate lift per campaign on Gmail-to-Gmail sending. Pilot on one campaign before rollout. [#327]
+- **Counter-view (2026-10-11):** disputes `email-infra-step-by-step.md` "Domain Forwarding Setup" (forward each secondary domain to the root domain). Per Nowoslawski, secondary-to-root forwarding is now flagged by some blacklists (Barracuda, Proofpoint); put a simple microsite on each sending domain instead of a forward. [#1257]
+
+## Source
+creator-radar review 2026-10-11, cards from Supabase insight_cards.

@@ -9,6 +9,7 @@ Google's job in B2B: **capture demand that already exists**, not create it. Dema
 1. **Brand** ("[brand]", "[brand] pricing"): cheapest CPL, highest CVR, always run (competitors will bid on it otherwise; exception: sole bidder + organic dominance, test pausing and watch TOTAL brand conversions).
 2. **High-intent non-brand** ("cold email software", "ABM platform"): the profit center, most budget. One clean profitable Search campaign beats five half-built ones.
 3. **Competitor** ("[competitor] alternative"): higher CPC, lower CVR, valuable pipeline; run selectively.
+   - Evidence (2026-10-11): competitor and adjacent-term conquesting (rivals, agencies, partial-solution tools) converts 10-20% form-to-SQL vs 5-15% generic; clicks cost 30-50% more but cost per opp lands 20-40% lower. [#1756]
 4. **Problem-aware** ("how to scale outbound"): longer payback, expand only after 1-2 work.
 5. **Demand-gen/awareness** (broad, Display, YouTube): last, with spare budget and patience.
 
@@ -21,10 +22,11 @@ Separate campaigns by intent with separate budgets: Brand / Non-brand high-inten
 ## Keywords and Match Types
 
 Exact = tightest (still matches close variants). Phrase = the B2B workhorse. Broad = only with Smart Bidding + solid conversion signal + tight negatives, in that order; otherwise it torches budget. Progression: start Phrase + Exact on money terms -> mine search terms weekly (winners to keywords, junk to negatives) -> introduce Broad after 30+ conversions/month. Research from buyer language ("stop leads going cold"), not product language ("lead lifecycle automation"); 50 searches/month with clear intent beats 5,000 mixed. Tag keywords by intent tier for ladder-level reporting. Never run the same keyword at the same match type in multiple places; route each query to one home with negatives.
+- **Zero-click query harvest:** pull Search Console queries with 100+ impressions, CTR <1% and commercial modifiers, and run them as exact-match ads at $5-20/day; buys the click from buyers already seeing you while the organic fix ships. [#2023]
 
 ## Negatives (half the job)
 
-Universal junk list, day one, shared across non-brand campaigns: free, cheap, jobs, salary, hiring, career, intern, student, course, tutorial, training, certification, pdf, reddit, wiki, crack, torrent; research terms ("what is", "examples", "meaning") unless intentionally problem-aware; category-share words with different intent (selling "sales engagement" = negative "employee engagement"); brand terms as negatives in non-brand campaigns. Match types: negative broad requires ALL words present in any order ("free trial" does not block "free" alone); negative exact for context-dependent terms. Weekly ritual on the search terms report (the #1 lever): waste (spend, no conversions, 3+ clicks -> negative), winners (converting terms -> Exact/Phrase keywords), intent drift (tighten match or negative). Do not over-negative in low-volume B2B: cut the clearly wrong, let the uncertain run.
+Universal junk list, day one, shared across non-brand campaigns: free, cheap, jobs, salary, hiring, career, intern, student, course, tutorial, training, certification, pdf, reddit, wiki, crack, torrent; research terms ("what is", "examples", "meaning") unless intentionally problem-aware; category-share words with different intent (selling "sales engagement" = negative "employee engagement"); brand terms as negatives in non-brand campaigns. Match types: negative broad requires ALL words present in any order ("free trial" does not block "free" alone); negative exact for context-dependent terms. Weekly ritual on the search terms report (the #1 lever): waste (clearly wrong intent -> negative now; relevant intent -> negative once cost reaches 1x target CPA with 0 conversions) [superseded 2026-10-01: was "3+ clicks", which at $8-40 B2B CPCs negates terms long before they have spent one CPL; cost-relative rule from aditya-sriram/google-ads-audit], winners (converting terms -> Exact/Phrase keywords), intent drift (tighten match or negative). Do not over-negative in low-volume B2B: cut the clearly wrong, let the uncertain run.
 
 ## Bidding by Conversion Volume
 
@@ -36,6 +38,7 @@ Universal junk list, day one, shared across non-brand campaigns: free, cheap, jo
 | Revenue values tracked | tROAS (real deal values only) |
 
 Move targets in 10-15% steps, wait 1-2 weeks between; aggressive-low tCPA chokes delivery. Expect a 1-2 week learning period after any big change; do not panic-edit inside it. The B2B trap: Smart Bidding optimizes to whatever you call a conversion; import offline conversions (SQL, opportunity, closed-won via GCLID) so it learns toward pipeline; value conversions differently (demo > ebook). A day can spend up to 2x daily budget (monthly balancing). Budget-capped converting campaigns: raising budget often LOWERS CPA. Brand needs little budget; cap it.
+- **Bayesian pause/scale rule:** before pausing or scaling a keyword, blend its data with the account prior: (revenue + expected_return x K) / (cost + K), K = account prior weighted by spend. Cut only at 80% probability that true CPA > 1.5x target. Apply the same to audiences, ad sets and placements. [#795]
 
 ## RSAs and Landing Pages
 

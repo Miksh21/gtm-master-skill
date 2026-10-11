@@ -16,6 +16,7 @@ Ask all at once before starting:
 2. **Sales call transcripts or recordings** (pull via a connected call-recording MCP, or pasted). The richest input; say explicitly if none
 3. **Other materials**: onboarding form, client comms, named competitor list, content inventory or sitemap, positioning docs, stated ICP exclusions
 4. **Tool access**: Ahrefs (or equivalent) is required for volumes/KD/SERP data; GSC/CMS/analytics MCPs if connected
+   - **Counter-view (2026-10-01):** without an SEO tool, difficulty can be read from the SERP alone (niche domains and <1,500 words = low; authority domains and >3,000 words = high; brands own the top 10 or content type mismatch = very high), and never quote volume/DA/traffic you did not measure. Use as the no-Ahrefs fallback. [alon-goldenberg/seo-intel]
 5. **Output path** for the final plan (default `./topic-plan-[domain]-[date].md`)
 
 ## Principles (non-negotiable)

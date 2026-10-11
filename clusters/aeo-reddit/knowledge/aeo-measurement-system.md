@@ -29,6 +29,8 @@ Never run content effort without the loop. An AEO motion without measurement is 
 
 **Prompt drift:** buyer language evolves. Refresh seeded prompts periodically or the panel measures yesterday's questions.
 
+**Breadth over repeats (2026-10-11):** once each prompt has 7-8 runs over weeks, add distinct prompts (intents, personas, engines) rather than more repeats; depth is recoverable, breadth gaps are blind spots the dashboard hides. [#1924]
+
 ## 3. Read the results
 
 Three readouts per topic, always together:
@@ -40,6 +42,8 @@ Three readouts per topic, always together:
 | **Sentiment explain** | How the brand is characterized when it does appear. Visible-but-mispositioned needs different work than invisible |
 
 Report per topic: visibility vs named competitors, trend, top cited sources, one concrete content action per gap.
+
+**Counter-view (2026-10-11):** mention/citation counts conflate two problems. Split AEO into retrieval (access, structure; table stakes) and synthesis (third-party consensus, recency, public answers to deal-killing objections); a citation inside an answer recommending a rival is a loss, not a hit. [#1968]
 
 **Rules:**
 - MUST seed prompts in buyer language, not brand language.
@@ -69,6 +73,7 @@ Every scan result carries an analysis version. Before reading any long-term tren
 - MUST inspect raw answers before disputing or explaining an individual scan.
 - NEVER report a score movement without naming which scans drove it.
 - The overlooked failure: averaging over the split that matters. Per-engine and per-country movements cancel out in the aggregate and hide the real story.
+- Daily swings are mostly noise: Lantern research (3,300+ AI responses) found ~80% of brand visibility unchanged; day-level moves are mostly model variability. Never react to a day; read trends over sampled windows. [#1998]
 
 A defensible audit answers "why did the number move" with named prompts, engines, and cited (or newly missing) sources, and quotes the raw answer for every contested scan.
 
@@ -93,8 +98,11 @@ Open the complete AI responses behind the key citations: answer text, engine, br
 - **Competitor intelligence:** heavily-cited competitor content reveals the structure AI engines prefer. Reverse-engineer the format, not just the topic. (This matches the comparison-page play in `reference/aeo-and-ai-buyer-discovery.md`: detailed LLM-visibility comparison pages drive organic AI citation.)
 - **Content targets:** high-citation third-party properties (review sites, community threads) are where presence is earned. Rank them by citation count × plausibility of getting the brand added.
 - **Reputation watch:** new domains entering the citation mix signal category coverage shifting before any score moves.
+- **Retrieved-but-not-cited sweep:** filter your own pages that engines retrieve or mention but do not cite, refresh them with real edits (~20 min each), and track them as one cohort; they already cleared the retrieval pool. [#1926]
+- **Review brief:** send happiest customers 3 short ideas to cover in G2/LinkedIn reviews so the third-party sources LLMs cite carry your narrative phrasing. [#1813]
 
 **Deliverable, always:** a hit-list of 5-10 URLs with citation counts, what each is cited for, and the concrete action per URL (earn a listing, update the thread, build the missing comparison page).
+  - Evidence (2026-10-11): to earn a listing, pitch the listicle author an update, not a placement: flag their stale data points and supply current pricing plus one 2026 stat they can cite. ~85% of commercial brand mentions come from third-party pages. [#1818]
 
 **Rules:**
 - MUST drill to the URL level before recommending any content action.
@@ -106,6 +114,15 @@ Success criterion: content effort lands on pages that measurably enter the citat
 
 Citation mining routinely surfaces Reddit threads among the top cited sources for commercial prompts. When it does, the content action is not a blog post: it is earned participation in those threads and communities. That work has its own discipline. Load `clusters/aeo-reddit/knowledge/reddit-gtm-system.md` for the motion and `clusters/aeo-reddit/knowledge/reddit-account-safety.md` before touching any account.
 
+**Counter-view (2026-10-11):** ChatGPT Reddit citations fell to 0.5% from 3.8% in one week as it shifted to official sites. Own pricing (real numbers), vs-competitor and first-sentence-answer FAQ pages before Reddit work. [#2015]
+
 ## 8. Tooling note
 
 The source workflows ran on a vendor CLI (ReddGrow's AEO module: brands, topics, prompt batches, visibility timelines, citation and sentiment explains). The system above is tool-agnostic: any AI-visibility tracker that stores per-scan raw answers works, and a manual prompt panel (same prompts, same engines, run on a schedule, results logged with dates and raw answer text) covers a pre-launch product at zero tool cost. The non-negotiable capability whatever the tool: access to the raw answer text per scan. Without it, the audit drill and level 3 of the citation drill are impossible, and every score is unfalsifiable.
+
+**Never measure through LLM APIs (2026-10-11):** repeated API prompts accumulate history and API output differs from the consumer UI. Run scheduled bots on the real platforms in fresh sessions, and ask vendors which method they use. [#2007]
+
+## Creator-radar 2026-10-11
+
+- **Get AI referrals out of 'Direct':** ~70% of AI/chatbot referral traffic lands in GA4 as Direct. Put a free-text 'how did you hear about us?' on every form, tag AI referrers into their own source, and run AI search as a channel: answer share, dual mention+citation rate, tagged AI-referral conversion, CRM pipeline influenced. Tagging alone surfaced 4 opps, ~180K influenced pipeline in 3 weeks. [#1232, #1820]
+- **Pre/post with a control set:** baseline at kickoff, then compare pre/post windows against a flat control prompt set; lift vs control is your work, category-wide lift is weather. Add free-text demo-form attribution and win rate on assistant-involved deals. [#1967]

@@ -6,6 +6,7 @@ Recipe for restarting a conversation with a contact who went cold 3+ months ago,
 
 - Lead went silent 3+ months ago after at least one engaged interaction
 - Closed-lost deal where the disqualifier may have changed (timing, budget, competitor)
+  - Evidence (2026-10-11): a closed-lost agent re-reads every lost deal from the last 12 months (notes, calls), names the real objection, then checks whether that blocker changed (funding, stack, blocker person left). Only changed blockers get outreach, referencing the change. [#1583]
 - Old MQLs, expired trials, churned customers worth a second look
 - Old list of "interested but not ready" contacts
 

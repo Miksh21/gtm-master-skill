@@ -29,6 +29,8 @@ $1,000,000 ÷ $50,000 = 20 deals
 20 ÷ 0.25 ÷ 0.75 ÷ 0.18 ÷ 0.32 ÷ 0.55 = ~3,367 accounts
 ```
 
+**Rep capacity check:** activities per day x days / (touches per contact x contacts per account) lands near 200 accounts per rep per year; set list size and scoring before handing over, never 2,000 accounts per rep. [#1973]
+
 ### Stage Conversion Benchmarks (ABX Benchmarks)
 
 | Stage | Definition | Conversion to Next |

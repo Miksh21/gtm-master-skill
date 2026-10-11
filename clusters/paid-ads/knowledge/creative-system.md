@@ -94,6 +94,8 @@ The ad that makes money is often NOT the one with the best CTR/CPL. Process: lau
 | Ad Relevance "Below Average" any metric | Quality issue | WARNING |
 | CPA up with stable targeting | Rule out other causes first | MONITOR |
 
+**Counter-view (2026-10-01):** high frequency alone is not fatigue; act only when frequency rises AND CTR falls over 14+ days, and never use frequency caps on conversion objectives. (meta-operating-system.md already pairs frequency with cost +40%.) [aditya-sriram/meta-ads-audit]
+
 Frequency bands by campaign type: cold safe 1.0-2.5, warning 2.5-3.5, critical > 4.0. Retargeting safe 2.0-4.0, warning 4.0-5.5, critical > 6.0. ABM safe 2.0-5.0, warning 5.0-7.0, critical > 8.0 (reinforcement is intentional, but diminishing past 5-6/person/week).
 
 Weekly workflow: pull frequency (7d + 14d), CTR trend vs prior 2 weeks (-15-20% = fatigue; stable CTR + rising frequency = preemptive refresh within 7 days), CPM trend, relevance diagnostics; classify each ad healthy / warning (replacement within 7 days) / urgent (replace in 24-48h) / depleted (4+ weeks, frequency > 5.0, well below baseline: pause, never iterate).

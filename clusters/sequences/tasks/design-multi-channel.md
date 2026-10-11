@@ -30,7 +30,7 @@ Day 2:  Email — Step 1 (signal opener; if LinkedIn not accepted, omit referenc
 Day 3:  LinkedIn — if accepted, send follow-up message 1
 Day 5:  Email — Step 2 (problem expand)
 Day 7:  LinkedIn — follow-up message 2 (if no email reply yet)
-Day 10: Email — Step 3 (final email, direct close)
+Day 10: Email, Step 3 (final email, direct close; Day 10 = multichannel cadence, Day 17 = email-only cadence) (updated 2026-10-11: was "Day 10: Email, Step 3 (final email, direct close)", creator-radar review L3-05)
 Day 14: LinkedIn — soft close or resource share (if no response on either channel)
 ```
 

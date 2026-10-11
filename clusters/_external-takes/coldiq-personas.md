@@ -7,7 +7,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: personas
 - 🆕 new-angle: apply the ICP "narrowness test" at PERSONA level — a good persona yields 500-5,000 buildable contacts (too few = over-narrow, millions = too broad).
 - ✅ supports [personas/knowledge/buying-committee-5-roles.md]: classify each persona as economic buyer / champion / influencer / blocker; use exact titles not departments; map PERSONAL pain ("what gets them in trouble with their boss") + individual KPIs, not company-wide issues.
 Review: additive
-Status: holding
+Status: promoted-unvalidated
 
 ## Pain Identifier — l3mpire/claude-skills/pain-identifier  ·  filed 2026-08-10
 Source: https://github.com/l3mpire/claude-skills · cluster: personas
@@ -17,7 +17,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: personas
 - 🆕 new-angle: absence-of-tool as a pain signal, not just presence — "has Salesforce but no SEP → manual outreach pain", "no data enrichment tool → manual research". gtm-master's `signals/knowledge/buying-signals.md` tech-stack signal reads adoptions and changes, not gaps.
 - ✅ supports [`personas/tasks/build-persona.md` "what makes them look bad" — flagged there as the most important field]: pain-identifier splits every pain into **Business impact** (cost/lost revenue, quantified) and **Personal impact for [role]** (job/bonus/career), operationalising the same fear-over-hope premise at account level rather than role level.
 Review: additive
-Status: holding
+Status: promoted-unvalidated
 
 ## Persona Insights Analysis — l3mpire/claude-skills/persona-insights-analysis  ·  filed 2026-08-10
 Source: https://github.com/l3mpire/claude-skills · cluster: personas
@@ -51,4 +51,4 @@ Note: the Outbound Agents rows ship as Claude Code subagent definitions, not `SK
 - 🆕 new-angle: `recommended_approach` compressed to a single routing string `channel | message_type | timing` (email/linkedin/phone/multi-channel · direct/educational/social-proof/challenge · immediate/this week/next month/event-triggered) — a machine-readable handoff to `sequences/knowledge/tiered-routing-template.md`, which currently routes on tier alone.
 - ✅ supports [`lead-scoring/tasks/score-and-prioritize.md` tiering]: research effort is explicitly tiered — TIER_1/TIER_2 get the detailed analysis, TIER_3/TIER_4 stay short but complete. Same discipline gtm-master applies to send priority, applied to research spend.
 Review: additive
-Status: holding
+Status: promoted-unvalidated

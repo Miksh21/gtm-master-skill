@@ -18,6 +18,7 @@ Meta (Facebook/Instagram) works for B2B SaaS, including $30K+ ACV, when two cond
 | Best for | Enterprise, ABM, precise ICP | Large TAM, SMB/mid-market, remarketing, acceleration |
 
 They are complementary: LinkedIn for precision prospecting and ABM, Meta for cheap remarketing and reach. Bridge them with UTM-based cross-channel retargeting.
+- Evidence (2026-10-11): Meta stays mispriced for B2B (CPM ~$7-15 vs $31+ on LinkedIn); turn on work-email validation in instant forms to kill personal-Gmail leads and pair it with ICP custom audiences, closed-won lookalikes and customer suppression. [#1759]
 
 ## The Algorithm: Andromeda + Gem
 
@@ -33,6 +34,7 @@ Implication by TAM: large TAM (SMB) = feed creative volume, lean on automation. 
 **Tier 1: First-party CRM data.** Seed = customers who paid the most, bought quickest, stayed longest (your top 5% of buyers). Upload as Custom Audience, build a 1% lookalike, validate quality, then expand to 2%. Feed only the cream; closed-won + late-stage pipeline is fine, early-stage leads dilute.
 
 **The match-rate problem:** Meta matches poorly on business emails (often <5%). Enrich the list with personal emails + mobile numbers before upload; that is what Meta actually matches on (MAIDs are a minor assist post-ATT). Tools: Clay/Freckle for enrich + auto-sync, ZoomInfo/Clearbit for appends.
+- Evidence (2026-10-11): Clay Ads builds audiences from CRM, warehouse and 200+ providers, appends hashed personal emails for match rate, auto-suppresses customers and open opps, and syncs to LinkedIn, Meta and Google. [#1836]
 
 **Tier 2: Third-party data.** Primer, Metadata.io (MetaMatch, ~40% match, 1.5B email graph). Define firmographic/technographic criteria, tool matches against its identity graph, uploads matched contacts as a Custom Audience. Gives LinkedIn-like precision ("VP Marketing at SaaS 200-500 using Salesforce") at Meta costs. Also the way to extend LinkedIn ABM lists onto Meta.
 

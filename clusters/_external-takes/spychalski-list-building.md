@@ -11,4 +11,4 @@ Shelf-life (stated by author): "only alpha for the next 4-8 months past Septembe
   - *Public-record / regulated* → the scraping lane above.
 - 🆕 new-angle: **data is a race to the bottom on price** — datasets that were $50k/yr are now a few hundred $/mo unlimited (cites Adam Robinson's ~$30/mo unlimited). Operational consequence: **Blitz API at ~$500/mo unlimited LinkedIn data** replaces bloated 5-6-figure SaaS data plans at "the same data quality" for most ICP-on-LinkedIn list building — stop over-paying for the seed layer, spend enrichment budget on depth instead.
 Review: additive
-Status: holding
+Status: promoted-unvalidated

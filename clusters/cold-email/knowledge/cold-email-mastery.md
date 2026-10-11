@@ -5,11 +5,10 @@
 ## Email Infrastructure
 
 **Volume per inbox:**
-- 30 emails max per inbox
+- 30 emails/day max per new inbox; 50 ceiling for established (updated 2026-10-11: was "30 emails max per inbox", creator-radar review L3-01)
 - Scale horizontally (more inboxes, not more volume per inbox)
 
-**Open rate targets:**
-- 40-60% = good
+**Open rate = deliverability diagnostic only** (Apple MPP distorts it; report reply and positive-reply rate instead) (updated 2026-10-11: was "Open rate targets: 40-60% = good", creator-radar review L3-07):
 - <30% = deliverability problem
 - Solution: new domains, warm up 3 weeks, restart
 
@@ -52,7 +51,7 @@ Stack signals with Clay:
 ## Best Triggers
 
 **2023: Recently Joined Company**
-- "Hey congrats on the new role, as you're taking over..."
+- "As you're taking over {{department}}..." (one clause on the move at most, led by the consequence; no congrats opener) (updated 2026-10-11: was "Hey congrats on the new role, as you're taking over...", creator-radar review L3-04)
 - Still reliable but somewhat overused now
 
 **2024+: Social Signals (THE BEST)**
@@ -140,11 +139,11 @@ Line 4: CTA (Would you want to chat next Thursday?)
 ## Performance Benchmarks
 
 **2X Levers (metrics you can realistically double):**
-- Cold email reply rate: 0.5-1.0%
-- Email open rate: 20-40%
+- Untargeted cold email reply rate: 0.5-1.0% (updated 2026-10-11: was "Cold email reply rate: 0.5-1.0%", creator-radar review L3-07)
+- Email open rate: 20-40% (deliverability diagnostic only, never an optimization target) (updated 2026-10-11: was "Email open rate: 20-40%", creator-radar review L3-07)
 - Email click rate: 2-5%
 
 **Signal-based benchmarks:**
-- Cold outreach: 6-8% reply rate
+- Targeted, signal-light list: 6-8% reply rate (updated 2026-10-11: was "Cold outreach: 6-8% reply rate", creator-radar review L3-07)
 - Signal-based: 18-22% reply rate
 - Multi-signal stacked: 35-40% reply rate

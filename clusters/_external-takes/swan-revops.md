@@ -12,7 +12,7 @@ On-demand health check of a trial or customer account across five lanes: use-cas
 - 🆕 new-angle: messaging architecture audited by READING workflow instructions word-for-word, never titles or usage counts: every outreach-drafting workflow listed by name with where its voice rules live; inline voice rules = architecture flag (correct pattern: play workflows own signal/hook/research, the central voice layer owns voice); an unconfigured voice-governance layer is an immediate flag; zero saved message examples for any connected sender is a HARD flag with exact counts per sender.
 - 🆕 new-angle: output economics: per-section character caps (750 / 1,000 / 500 / 1,000 / 1,000 / 1,000), sections strictly scoped (alerting section never assesses sequence approval status, that belongs to messaging), and every flagged finding in the summary pairs with one concrete intervention mapped from a fixed failure→intervention table (dead workflows → re-enable session with the champion; binary scoring → tiering working session; persistence gap → wire workflows to call the scoring workflow; post-disqualification spend → repair the gate; non-actionable alerts → rebuild alert bodies with context + stakeholders + drafted outreach; inline voice → consolidate; zero examples → save approved sends; declining logins → champion check-in + onboard users).
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Expansion opportunity analysis — swan-gtm/gtm-skills/skills/jeremy-hurst/expansion-opportunity-analysis · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: revops
@@ -24,7 +24,7 @@ Single-customer expansion deep dive: adoption read → commercial decomposition 
 - 🆕 new-angle: five expansion signal patterns tested in order, each requiring cited account data: repeated overage purchases (3+ in a cycle at the standard overage rate); customer-initiated capacity request ("the warmest signal; treat as a commercial conversation, not support", and never pitch a specific plan in the first reply, get the trajectory call first); upgrades + aggressive overage (2+ upgrades AND multiple overages in 90 days); ceiling hit + roadmap signal (≥90% utilization AND a conversation pointing at higher future usage); strong relationship + low realization (senior believer + acknowledged under-utilization + point-tool usage, the play is use-case expansion, not volume). No forced matches: propose a NEW named pattern (title ≤40 chars, definition ≤300 chars) when none fit.
 - 🆕 new-angle: committee and motion rails: each target's message maps to a role-relevant gap from the Part 1 whitespace map (practitioner = daily workflow gap; ops = data/process gap; GTM leader = pipeline gap; founder = point-tool-vs-platform framing), gaps must be audit-grounded never generic; relationship-led plays confirm the champion list with the expansion owner BEFORE building; timing calls are explicit (go now on customer requests same week and pre-renewal windows; wait on unresolved escalations, departed champions, one-hot-month spikes, "one hot month is not a trend"); every motion ends with an internal escalation at ~10 days of silence (to the owner with a suggested next move, "never another message to the customer"); zero placeholder numbers in sendable copy; one active expansion play per account, tag cleared on reply or close.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Reverse ETL Activation — swan-gtm/gtm-skills/skills/austin-hay/reverse-etl-activation · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: revops
@@ -32,4 +32,14 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: revops
 - 🆕 new-angle: sequencer enrollment is NEVER automatic off a warehouse sync; a bad upstream filter becomes a mass mis-send, so enrollment is always a separate explicitly gated step (default cadence: CRM near-realtime, ad audiences hourly, sequences on-enroll only).
 - 🆕 new-angle: authority split per field: warehouse is authoritative for computed traits (scores, tiers, segments), CRM is authoritative for rep-owned fields; a sync must never overwrite a rep-owned field. If identity resolution cannot clear the floor for a meaningful share, fix the upstream model (missing keys), do not lower the floor.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
+
+## Revenue engine maturity diagnostic — swan-gtm/gtm-skills/skills/scott-wueschinski/revenue-engine-maturity-diagnostic · filed 2026-10-05
+Source: https://github.com/swan-gtm/gtm-skills · cluster: revops
+A read-only diagnostic scoring six dimensions (ICP definition, lead scoring, outreach, data quality, feedback loops, automation) against five levels (Foundation, Systemized, Orchestrated, Predictive, Compound). Overlaps the capability scoring in diagnostic-framework.md:154 but adds a hard gating rule and evidence discipline.
+- 🆕 new-angle: overall level = the lowest dimension score, never an average; no partial credit ("rolling it out" = not met). The signal to watch is the spread between best and worst dimension, which predicts wasted spend better than the average (sequencer on an undefined ICP, AI personalization on duplicate-ridden data).
+- 🆕 new-angle: hard prescription gate: never recommend automation, AI messaging or predictive scoring to a company below Level 3 on data quality or ICP definition. The binding gap is the unmet criterion in the lowest dimension that most other dimensions consume (usually data quality or ICP). The advancement plan covers one level up only, in dependency order, and advancement is claimed only when every next-level criterion is met.
+- 🆕 new-angle: score from artifacts, not answers (ICP doc, live sequence, CRM duplicate count, notes of the last optimization review); a capability that cannot be shown scores absent, because self-assessment runs high. Level 5 carries a forecast-variance target under 15%.
+- ✅ supports [revops/knowledge/diagnostic-framework.md:154]: fix the weakest enabling constraint first (Governance at 1 makes other fixes pointless), same logic as the lowest-dimension rule.
+Review: additive
+Status: promoted-unvalidated

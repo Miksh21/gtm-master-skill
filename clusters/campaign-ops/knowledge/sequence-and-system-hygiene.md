@@ -44,3 +44,10 @@ Every live campaign gets one short page:
 - **After every change to the live system**, update the docs it touches in the same session. Keep a short "if you changed X, update Y" map so nobody has to remember the cross-references.
 - **Log it.** Keep a changelog entry: what changed, why, and what is left open.
 - **Tell the team** when shared docs change, so nobody works from a stale copy.
+
+## Creator-radar 2026-10-11
+
+- **One suppression source of truth.** Keep unsubscribe/blacklist in one place (e.g. EmailBison) synced to every sending tool, and hardcode a check against it in Claude Code before any send. Cross-tool suppression drift is a compliance and deliverability failure. [#1640]
+- **Cadence state outside the sequencer.** A Supabase row per contact with last_email, last_re_reach, last_touch_month; every campaign checks it so nobody is hit more than once a quarter, then feeds Clay via webhook. [#1260]
+- **Monitor for missing output, not only errors.** A scheduled job producing nothing looks identical to success. Send a nightly digest of pending items and wait times. [#798]
+- **Stale context misleads agents.** Auto-close stale GitHub issues and context after ~1 month: humans discount old info, agents consume it as current. Context hygiene is a correctness issue. [#510]

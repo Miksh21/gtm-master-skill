@@ -22,7 +22,7 @@ Master router for B2B GTM/outbound work. Knowledge is split into **15 clusters**
 2. **Match intent to a task** — each cluster has a task routing table; load the matching `tasks/<x>.md` file
 3. **Tasks are self-contained** — they include inputs, process, output format, pass criteria. They reference `knowledge/` only when depth is needed.
 4. **Multi-cluster workflows** chain tasks — typical chain: `icp/build-icp` → `signals/map-signals-to-icp` → `list-building/build-prospect-list` → `enrichment/run-email-waterfall` → `lead-scoring/score-and-prioritize` → `cold-email/reframe-offer` → `cold-email/write-first-email` → `cold-email/stress-test-sequence` → `campaign-ops/setup-campaign-platform`
-5. **External takes — second opinions, never doctrine.** 11 clusters end with a pointer to `{SKILL_BASE}/clusters/_external-takes/`: 101 third-party positions collected by the ColdIQ and Swan radars from other people's GTM skills, plus manually-filed digests from GTM creator videos (`spychalski-*.md`, filed 2026-09-03). One further digest, `spychalski-tooling-and-architecture.md`, targets the top-level `reference/` docs rather than a cluster, so it has no cluster pointer. They are **UNREVIEWED and NOT canonical gtm-master positions.** Never auto-load them. Load one only when (a) the user asks for alternatives or a second opinion, (b) the user pushes back on a position this skill just gave, or (c) you are about to give advice on a topic and want to check whether a competing view was filed. When you use one: **attribute the source skill and author, say it is an unreviewed external take, and keep it visibly separate from the gtm-master position.** The marker `⚠️ contradicts` inside those files flags a take that directly disagrees with canonical doctrine here — surface both sides and let Jan decide; never resolve it silently.
+5. **External takes — second opinions, never doctrine.** 11 clusters end with a pointer to `{SKILL_BASE}/clusters/_external-takes/`: 13 third-party positions (holding after the 2026-10-11 review) collected by the ColdIQ and Swan radars from other people's GTM skills, plus manually-filed digests from GTM creator videos (`spychalski-*.md`, filed 2026-09-03). One further digest, `spychalski-tooling-and-architecture.md`, targets the top-level `reference/` docs rather than a cluster, so it has no cluster pointer. They are **UNREVIEWED and NOT canonical gtm-master positions.** Never auto-load them. Load one only when (a) the user asks for alternatives or a second opinion, (b) the user pushes back on a position this skill just gave, or (c) you are about to give advice on a topic and want to check whether a competing view was filed. When you use one: **attribute the source skill and author, say it is an unreviewed external take, and keep it visibly separate from the gtm-master position.** The marker `⚠️ contradicts` inside those files flags a take that directly disagrees with canonical doctrine here — surface both sides and let Jan decide; never resolve it silently.
 6. **Client-specific rules are not in this skill.** Hard client bans (e.g. one client's ban on value-based CTAs) live in Jan's memory scoped by client, not here. Nothing in this skill or in `_external-takes/` overrides a client rule, and no take should ever be promoted into a cluster as general doctrine if its evidence is a single company, market, or ICP.
 
 ## The 15 clusters — index
@@ -76,7 +76,7 @@ Master router for B2B GTM/outbound work. Knowledge is split into **15 clusters**
 
 Knowledge index: **human voice** (the final pass on every message: say-it-aloud test, rough edges without errors, no sequence-narrating openers, mirroring, reader's verbs, defensible claims, sender integrity) → `{SKILL_BASE}/clusters/cold-email/knowledge/human-voice.md`; 13 named copywriting frameworks, ATL/BTL messaging, ColdIQ playbook, e-commerce playbook, sequence theory, deliverability deep guide, email infra (3 files), personalization prompt library, campaign playbooks, email template library. Browse `{SKILL_BASE}/clusters/cold-email/knowledge/` for the full map.
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **22, the largest holding in the skill**: `{SKILL_BASE}/clusters/_external-takes/swan-cold-email.md` (12), `{SKILL_BASE}/clusters/_external-takes/coldiq-cold-email.md` (9), `{SKILL_BASE}/clusters/_external-takes/spychalski-cold-email.md` (1). Several carry `⚠️ contradicts` against positions above, including CTA framing, agent-written copy, and per-inbox send volume.
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **0**: `{SKILL_BASE}/clusters/_external-takes/swan-cold-email.md` (0), `{SKILL_BASE}/clusters/_external-takes/coldiq-cold-email.md` (0), `{SKILL_BASE}/clusters/_external-takes/spychalski-cold-email.md` (0). The cold-email contradictions (CTA framing, per-inbox volume, word bands, sequence length) were all ruled on at the 2026-10-11 review. Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/cold-email/knowledge/swan-cold-email.md`. Unvalidated digest of promoted ColdIQ takes (attributed, not doctrine): `{SKILL_BASE}/clusters/cold-email/knowledge/coldiq-cold-email.md`.
 
 ---
 
@@ -93,7 +93,7 @@ Knowledge index: **human voice** (the final pass on every message: say-it-aloud 
 
 Knowledge index: 6 core buying signals + benchmarks, 137-trigger taxonomy, 30-trigger detection-tools matrix, signal scoring framework, tool setup (RB2B/Trigify/Common Room/Bombora/Koala/Warmly/6sense/BuiltWith), 11 executable GTM plays, job-change tracking. Plus: **signal activation architecture** (13-step capture→…→track→enablement pipeline + 5-field metadata schema + rep-routing table) → `{SKILL_BASE}/clusters/signals/knowledge/signal-activation-architecture.md`. Plus: **engagement-on-external-content signal class** (competitor followers / brand mentions / influencer engagement / keyword listening / own-content engagement / employee LinkedIn — 6 surfaces) → `{SKILL_BASE}/clusters/signals/knowledge/engagement-on-external-content.md`. Plus: **intent signal tools 2026 catalog** (18 signal categories × 50+ specific vendor recommendations, organized by 1st/2nd/3rd party) → `{SKILL_BASE}/clusters/signals/knowledge/intent-signal-tools-2026.md`. **Visual:** see `{SKILL_BASE}/visual-library/the-signal-playbook.md` — radial 3-ring diagram showing 1st/2nd/3rd party signals with 16+ signal types around the perimeter. Plus: **go-to-market alpha** (the signal-originality test — "can a competitor buy this exact signal off the shelf?"; Canva / Mercado / recruitment-client ex-employer + job-posting worked examples) → `{SKILL_BASE}/clusters/signals/knowledge/go-to-market-alpha.md`. Browse `{SKILL_BASE}/clusters/signals/knowledge/`.
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **20**: `{SKILL_BASE}/clusters/_external-takes/swan-signals.md` (18), `{SKILL_BASE}/clusters/_external-takes/coldiq-signals.md` (1), `{SKILL_BASE}/clusters/_external-takes/spychalski-signals.md` (1).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **4**: `{SKILL_BASE}/clusters/_external-takes/swan-signals.md` (3), `{SKILL_BASE}/clusters/_external-takes/coldiq-signals.md` (1), `{SKILL_BASE}/clusters/_external-takes/spychalski-signals.md` (0). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/signals/knowledge/swan-signals.md`. Unvalidated digest of promoted ColdIQ takes (attributed, not doctrine): `{SKILL_BASE}/clusters/signals/knowledge/coldiq-signals.md`. Unvalidated digest of promoted Spychalski takes (attributed, not doctrine): `{SKILL_BASE}/clusters/signals/knowledge/spychalski-signals.md`.
 
 ---
 
@@ -108,7 +108,7 @@ Knowledge index: 6 core buying signals + benchmarks, 137-trigger taxonomy, 30-tr
 
 Knowledge index: Sales Navigator guide, lead sources guide, data validation, beginner Clay workflow, qualification workflow, ABM account-selection framework, persona-mapping framework, 62+ underused data sources, 100+ industry directories, 8-phase quality framework. Browse `{SKILL_BASE}/clusters/list-building/knowledge/`.
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **9**: `{SKILL_BASE}/clusters/_external-takes/swan-list-building.md` (6), `{SKILL_BASE}/clusters/_external-takes/coldiq-list-building.md` (2), `{SKILL_BASE}/clusters/_external-takes/spychalski-list-building.md` (1).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **1**: `{SKILL_BASE}/clusters/_external-takes/swan-list-building.md` (0), `{SKILL_BASE}/clusters/_external-takes/coldiq-list-building.md` (1), `{SKILL_BASE}/clusters/_external-takes/spychalski-list-building.md` (0). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/list-building/knowledge/swan-list-building.md`. Unvalidated digest of promoted ColdIQ takes (attributed, not doctrine): `{SKILL_BASE}/clusters/list-building/knowledge/coldiq-list-building.md`. Unvalidated digest of promoted Spychalski takes (attributed, not doctrine): `{SKILL_BASE}/clusters/list-building/knowledge/spychalski-list-building.md`.
 
 ---
 
@@ -132,7 +132,7 @@ Knowledge index — clay-engineer (operational reference, lazy-loaded):
 - Platform: formula-syntax, table-mechanics → `{SKILL_BASE}/clusters/enrichment/clay-engineer/platform/`
 - Providers (13 files): databases (Clay Find Companies), contact-finding (email-waterfall, phone), enrichments (Apify, BuiltWith+Sumble, Crunchbase, Enrich Person, HTTP API, Professional Posts, SEMrush), sequencers (Instantly, HeyReach), crm (HubSpot, Salesforce), other (Google Sheets) → `{SKILL_BASE}/clusters/enrichment/clay-engineer/providers/`
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **5**: `{SKILL_BASE}/clusters/_external-takes/swan-enrichment.md` (4), `{SKILL_BASE}/clusters/_external-takes/coldiq-enrichment.md` (1).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **0**: `{SKILL_BASE}/clusters/_external-takes/swan-enrichment.md` (0), `{SKILL_BASE}/clusters/_external-takes/coldiq-enrichment.md` (0). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/enrichment/knowledge/swan-enrichment.md`.
 
 ---
 
@@ -147,7 +147,7 @@ Knowledge index — clay-engineer (operational reference, lazy-loaded):
 
 Knowledge index: ICP scoring deep theory lives in `clusters/list-building/knowledge/templates/qualification-workflow.md` and `clusters/list-building/knowledge/abm/account-selection-framework.md`. The build-icp task now includes a **backtest validation step** ("do wins cluster in Tier 1 and losses cluster in Tier 3?") — this is what separates predictive ICPs from aspirational ones.
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **7**: `{SKILL_BASE}/clusters/_external-takes/coldiq-icp.md` (3), `{SKILL_BASE}/clusters/_external-takes/swan-icp.md` (3), `{SKILL_BASE}/clusters/_external-takes/spychalski-icp.md` (1).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **0**: `{SKILL_BASE}/clusters/_external-takes/coldiq-icp.md` (0), `{SKILL_BASE}/clusters/_external-takes/swan-icp.md` (0), `{SKILL_BASE}/clusters/_external-takes/spychalski-icp.md` (0). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/icp/knowledge/swan-icp.md`. Unvalidated digest of promoted ColdIQ takes (attributed, not doctrine): `{SKILL_BASE}/clusters/icp/knowledge/coldiq-icp.md`. Unvalidated digest of promoted Spychalski takes (attributed, not doctrine): `{SKILL_BASE}/clusters/icp/knowledge/spychalski-icp.md`.
 
 ---
 
@@ -161,7 +161,7 @@ Knowledge index: ICP scoring deep theory lives in `clusters/list-building/knowle
 
 Knowledge index: **5-role buying committee + per-role messaging strategy** (Exec / Ops / Tech / Finance / End-User — Gartner says 6-10 stakeholders per B2B deal) → `{SKILL_BASE}/clusters/personas/knowledge/buying-committee-5-roles.md`. Buying-committee/persona-mapping framework lives in `clusters/list-building/knowledge/abm/persona-mapping-framework.md`. ATL/BTL messaging in `clusters/cold-email/knowledge/atl-btl-messaging.md`.
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **2**: `{SKILL_BASE}/clusters/_external-takes/coldiq-personas.md` (1), `{SKILL_BASE}/clusters/_external-takes/swan-personas.md` (1).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **2**: `{SKILL_BASE}/clusters/_external-takes/coldiq-personas.md` (2), `{SKILL_BASE}/clusters/_external-takes/swan-personas.md` (0). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/personas/knowledge/swan-personas.md`. Unvalidated digest of promoted ColdIQ takes (attributed, not doctrine): `{SKILL_BASE}/clusters/personas/knowledge/coldiq-personas.md`.
 
 ---
 
@@ -174,8 +174,9 @@ Knowledge index: **5-role buying committee + per-role messaging strategy** (Exec
 | Score and prioritize leads | `{SKILL_BASE}/clusters/lead-scoring/tasks/score-and-prioritize.md` |
 
 Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/signals/knowledge/signal-scoring.md`. Plus: **awareness-stage model** — 5-stage state framework (Identified → Aware → Interested → Considering → Selecting) with HubSpot-specific OR-criteria filter mechanics + priority-branch workflow → `{SKILL_BASE}/clusters/lead-scoring/knowledge/awareness-stage-model.md`. Score = number; stage = state with a play attached. Use both.
+Creator-radar field tactics (closed-won regression scoring, two-pass AI qualification, confidence lanes, unknown-dimension rule, below-cutoff agent lane) → `{SKILL_BASE}/clusters/lead-scoring/knowledge/creator-radar-lead-scoring.md`.
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **6**: `{SKILL_BASE}/clusters/_external-takes/swan-lead-scoring.md` (5), `{SKILL_BASE}/clusters/_external-takes/spychalski-lead-scoring.md` (1).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **0**: `{SKILL_BASE}/clusters/_external-takes/swan-lead-scoring.md` (0), `{SKILL_BASE}/clusters/_external-takes/coldiq-lead-scoring.md` (0), `{SKILL_BASE}/clusters/_external-takes/spychalski-lead-scoring.md` (0). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/lead-scoring/knowledge/swan-lead-scoring.md`. Unvalidated digest of promoted ColdIQ takes (attributed, not doctrine): `{SKILL_BASE}/clusters/lead-scoring/knowledge/coldiq-lead-scoring.md`.
 
 ---
 
@@ -186,8 +187,9 @@ Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/
 | Intent | Load |
 |---|---|
 | Handle a sales objection | `{SKILL_BASE}/clusters/objections/tasks/handle-objection.md` |
+| Late-stage blockers, CFO/security veto, pricing before the call, build-vs-buy (creator-radar) | `{SKILL_BASE}/clusters/objections/knowledge/creator-radar-objections.md` |
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **5**: `{SKILL_BASE}/clusters/_external-takes/swan-objections.md` (4), `{SKILL_BASE}/clusters/_external-takes/coldiq-objections.md` (1).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **0**: `{SKILL_BASE}/clusters/_external-takes/swan-objections.md` (0), `{SKILL_BASE}/clusters/_external-takes/coldiq-objections.md` (0). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/objections/knowledge/swan-objections.md`. Unvalidated digest of promoted ColdIQ takes (attributed, not doctrine): `{SKILL_BASE}/clusters/objections/knowledge/coldiq-objections.md`.
 
 ---
 
@@ -202,7 +204,7 @@ Knowledge index: detailed scoring framework + weights + SLAs lives in `clusters/
 
 Knowledge index: **Tiered routing template** — canonical 3-tier pattern (Tier 1 multichannel from C-level email + AE LinkedIn + supporting connection requests + Slack alert; Tier 2/3 automated) plus 4 variations by signal type (own-content engagement → cold call; website deanon → stakeholder expansion; inbound signup → multi-thread; customer alumni → 1:1 AE-led) → `{SKILL_BASE}/clusters/sequences/knowledge/tiered-routing-template.md`.
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **8**: `{SKILL_BASE}/clusters/_external-takes/swan-sequences.md` (4), `{SKILL_BASE}/clusters/_external-takes/coldiq-sequences.md` (3), `{SKILL_BASE}/clusters/_external-takes/spychalski-sequences.md` (1).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **3**: `{SKILL_BASE}/clusters/_external-takes/swan-sequences.md` (0), `{SKILL_BASE}/clusters/_external-takes/coldiq-sequences.md` (3), `{SKILL_BASE}/clusters/_external-takes/spychalski-sequences.md` (0). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/sequences/knowledge/swan-sequences.md`. Unvalidated digest of promoted ColdIQ takes (attributed, not doctrine): `{SKILL_BASE}/clusters/sequences/knowledge/coldiq-sequences.md`. Unvalidated digest of promoted Spychalski takes (attributed, not doctrine): `{SKILL_BASE}/clusters/sequences/knowledge/spychalski-sequences.md`.
 
 ---
 
@@ -236,7 +238,7 @@ Knowledge index — strategic-architectural references (load when designing or a
 - **Inbound orchestration** — zero-leakage form → enrichment → CRM → meeting prep pipeline (2-field Webflow form, HeyReach pre-meeting warmup, Slack-as-CRM approval) → `{SKILL_BASE}/clusters/campaign-ops/knowledge/inbound-orchestration.md`. Visual: `{SKILL_BASE}/visual-library/inbound-orchestration.md`
 - **Ad spend management via Claude Code** — 12 skills (4 per platform) managing $300K/mo Google + Meta + LinkedIn ads at consistent 4× ROAS+. Operational rhythm + setup. Worth $3K-$8K/mo recovery per $50K Google Ads account → `{SKILL_BASE}/clusters/campaign-ops/knowledge/ad-spend-management-claude-code.md`
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **13**: `{SKILL_BASE}/clusters/_external-takes/swan-campaign-ops.md` (9), `{SKILL_BASE}/clusters/_external-takes/coldiq-campaign-ops.md` (4).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **1**: `{SKILL_BASE}/clusters/_external-takes/swan-campaign-ops.md` (0), `{SKILL_BASE}/clusters/_external-takes/coldiq-campaign-ops.md` (1). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/campaign-ops/knowledge/swan-campaign-ops.md`. Unvalidated digest of promoted ColdIQ takes (attributed, not doctrine): `{SKILL_BASE}/clusters/campaign-ops/knowledge/coldiq-campaign-ops.md`.
 
 ---
 
@@ -313,7 +315,7 @@ Organized by category (not the usual `tasks/` layout). Load the matching file:
 
 Knowledge index: full diagnostic framework (3-layer system, IFA, Six Stages, triage tree, crisis 4-week protocol + 30-60-90) in `{SKILL_BASE}/clusters/revops/knowledge/diagnostic-framework.md`. Portable CRM principles (lifecycle vs deal stage vs lead status, time-in-stage workarounds, HubSpot-vs-Salesforce decision table) → `{SKILL_BASE}/clusters/revops/reference/crm-platform-portable-principles.md`. ICP/scoring deltas ONLY (ECP customer-count thresholds, 7-dimension ICP audit, account-level ABM engagement scoring with decay + buying-group handover gate) → `{SKILL_BASE}/clusters/revops/reference/icp-and-scoring-notes.md`; the `icp` and `lead-scoring` clusters own that canon.
 
-**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **4**: `{SKILL_BASE}/clusters/_external-takes/swan-revops.md` (3), `{SKILL_BASE}/clusters/_external-takes/spychalski-revops.md` (1).
+**External takes** (UNREVIEWED, not canonical — see "How to use this skill" step 5) — **1**: `{SKILL_BASE}/clusters/_external-takes/swan-revops.md` (0), `{SKILL_BASE}/clusters/_external-takes/spychalski-revops.md` (1). Unvalidated digest of promoted Swan takes (attributed, not doctrine): `{SKILL_BASE}/clusters/revops/knowledge/swan-revops.md`.
 
 ---
 
@@ -390,7 +392,8 @@ Knowledge index: **newsletter system** (analysis-format 8 steps, value-prop form
 ### Reply rate benchmarks
 | Approach | Reply rate |
 |---|---|
-| Cold (no signal) | 6-8% |
+| Targeted, signal-light list (updated 2026-10-11: was "Cold (no signal)", creator-radar review L3-07) | 6-8% |
+| Untargeted cold | 0.5-1% |
 | Single signal | 18-22% |
 | Multi-signal (3+) | 35-40% |
 | Job change response lift | 3x baseline |
@@ -413,6 +416,8 @@ Knowledge index: **newsletter system** (analysis-format 8 steps, value-prop form
 | 40-69 | 2 | Standard sequence, send within 1 week |
 | < 40 | 3 | Hold or discard |
 
+**Counter-view (2026-10-11):** run two independent scores, a slow firmographic fit score and a fast signal score, and let only the signal score drive the SLA [spychalski youtu.be/3jIhI-joTMc]. Canon already runs the heat score above separately from this fit score: a Hot or Red Hot heat score (100+) can promote a Tier 2 fit account into the Tier 1 queue (creator-radar review L3-03).
+
 ### Campaign performance tiers (interest rate)
 | Interest rate | Tier | Action |
 |---|---|---|
@@ -422,9 +427,10 @@ Knowledge index: **newsletter system** (analysis-format 8 steps, value-prop form
 
 ### Deliverability hard limits
 - 30 emails/day max per new mailbox; 50 ceiling for established
+  - **Counter-view (2026-10-11):** 15-20 emails/day per inbox and at most 3 inboxes per account is the conservative option, not the rule [spychalski youtu.be/3jIhI-joTMc] (creator-radar review L3-01)
 - 3-5 outreach domains (NEVER cold from main domain)
 - 14-day warmup minimum before first cold send
-- Bounce rate < 2% (above this, sender reputation drops fast)
+- Bounce rate ladder: target < 1%, launch gate / hard limit < 2% (above this, sender reputation drops fast), pause campaigns > 3% (updated 2026-10-11: was "Bounce rate < 2% (above this, sender reputation drops fast)", creator-radar review L3-02)
 - Email decay: 22-30% annual = re-verify lists older than 30 days
 - Cold sending Mon-Thu only
 

@@ -28,6 +28,7 @@ Field creation process: document (name, type, why, system of record) → review 
 Deprecation timeline: ANNOUNCE 2 weeks (notify users, document replacement) → MIGRATE 4 weeks (formula/bulk/API; audit 100% migrated) → HIDE 2 weeks (remove from views/forms/workflows, keep readable; test reports) → DELETE after 6 months (archive export first; 12-month hide for revenue/date/identifier fields).
 
 The proliferation problem: scale-ups accumulate 500+ fields, 200 unused. Prevention: conventions make duplicates obvious, approval adds good friction, quarterly audit of fields untouched 3+ months, delete aggressively.
+- Evidence (2026-10-11): point an agent (CRM MCP) at objects and fields to list unused ones by last-updated date and % records populated: minutes vs ~5 h for a manual field audit. [#1870]
 
 ## Data Quality Operations
 
@@ -53,6 +54,8 @@ Track monthly. Target 85%+ org-wide. Below 85% on any dimension: fix completenes
 ## Deduplication and Records
 
 Detection: exact match (email; account domain; phone) high confidence; fuzzy match ("Acme Corp" ≈ "ACME CORPORATION"; "John Smith"+@acme.com ≈ j.smith@acme.com) requires review. Merge protocol: contact survivor = most complete + recent activity, preserve all activities/relationships, keep audit trail; account survivor = usually the older record, move all children, never merge parent into subsidiary, log everything. Prevention at creation: email lookup on contact forms, fuzzy name+country match on account creation with logged override. Hierarchy: parent = ultimate legal entity; on acquisition create a parent relationship, don't delete; every contact maps to exactly one primary account.
+
+**Entity resolution tail:** deterministic rules (domain, name normalisation) settle ~90%; for the rest an agent tests several research paths (10-K subsidiary lists, press releases via Exa, ZoomInfo) and scores confidence. Seed the rules from 5 known-wrong pairs, then scan the DB. [#417]
 
 ## Integration Flows
 
@@ -104,6 +107,10 @@ Roles: DATA OWNER (executive; VP Sales owns stage accuracy; mandates corrections
 Maturity: L1 CHAOS (no standards, 500+ fields, "we don't trust reports"; 3-6 months to fix) → L2 REACTIVE (some conventions, ad-hoc cleanup; 6-12 months with a council) → L3 PROACTIVE (monthly council, prevention enforced, automated scoring; target within 12 months) → L4 OPTIMIZED (automated enforcement, real-time monitoring; needs data engineering resource).
 
 AI-readiness prerequisites: single source of truth for intelligence (warehouse) with CRM as operational layer; sales/marketing/product/third-party data joined; defined quality minimums before training anything; converged definitions. If the data foundation isn't ready, escalate to exec level rather than bolting AI onto broken infrastructure. Agent guardrails when agents write to the CRM: no writes to immutable fields (account_name, created_date, closed-won revenue); validate all mutable writes against allowed ranges; merges surfaced as candidates only, human-approved; escalate to a human below a confidence threshold on stage changes and data writes; log every agent action append-only (what it read, decided, wrote, when); >15% escalation rate per agent = broken prompt or broken upstream data.
+
+**Counter-view (2026-10-11):** skip the whole-CRM cleanup: find where you win and lose first, then document and clean only the 2-3 fields each AI use case needs. With ~300 fields the model cannot pick the right amount field unbriefed. [#1871]
+
+**CRM-update agent allowlist:** pre-set the fields it may overwrite (MEDDIC, next step), route every other write to Slack approval, and never let it set Closed Lost. [#1908]
 
 ## GDPR Essentials for Revenue Data
 

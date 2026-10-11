@@ -15,9 +15,21 @@ Standalone ops hacks not covered by the Claude-Code GTM operating model: tool-in
 
 ## Sales enablement governance
 - **Battlecard confidence tiers:** tag every claim HIGH / MEDIUM / LOW / UNVERIFIED with a source URL, so reps know what survives a live fact-check. The source-URL requirement forces accountability + freshness and prevents the credibility collapse from a publicly disproved claim mid-demo. [#108]
+  - Evidence (2026-10-11): add a separate adversarial fact-check agent that flags, not fixes: each claim Grounded (in source), Third-party verified (URL plus quote) or Unsubstantiated. It caught six invented details a "do not invent" prompt missed. [#1937]
 
 ## Offbeat brand-reach surface
 - **Airport/flight targeting (Sam Blond):** use SF airports/flights as a B2B brand surface instead of expensive billboards — airports concentrate high-density B2B buyers in a captive, attentive environment at lower CPM than traditional OOH; routes act as geo/demo filters. [#134]
+
+## Creator-radar 2026-10-11
+- **Fewer, real experiments:** AI made variants free, so teams split data across too many campaigns. Run three real experiments (different audience, channel, offer) instead of ten variants of one idea; cut campaigns to keep samples readable. [#1760]
+- **PMF Pulse skill:** every 20 prospect calls, output verbatim quotes, counts ("7 of 20"), a discovery-question scorecard, an experiment log vs the last report, and three assigned changes. [#2033]
+- **Enablement asset rating:** reps rate each asset across 5 situations (cold touch, discovery follow-up, objection, multi-stakeholder, stalled deal). Finding: reps prefer 3-4 min clips over full webinars and still use one-pagers most. [#1809]
+- **Logos by visitor identity:** group customer logos as "Migrated off Zendesk", "Under 50 employees" instead of one wall; run a one-star "too advanced" review as an ad to repel wrong-fit buyers. [#1745]
+- **Trojan-horse add-on (single-case: Gorgias):** ship a free add-on inside the competitor's platform that diagnoses their customers' accounts (e.g. Zendesk tickets); proves value on their data and feeds battlecards with real findings. [#1932]
+- **Switcher play:** an employee posts a free top-plan offer to anyone who cancels a named competitor (proof screenshot, DM to claim, 24h deadline); each claim opens a private DM, ask why they cancelled. [#1747]
+- **Dinner agent (single-case: Merge):** automates invite lists (closed-lost accounts as invitees) and seating charts; field dinners went from 1-2 per quarter to 3-5 per month. [#1952]
+- **VC perk portals:** get listed with a standing discount, including funds that passed or have not invested; evergreen distribution to every portco they touch. [#2002]
+
 
 ## Source
 creator-radar 2026-06; card ids in [#77 #125 #126 #81 #84 #108 #134].

@@ -16,6 +16,7 @@
    - Pre-filled calendar invites / templates.
    - The list, already enriched + scored + routed to the right rep.
 3. **Enable for complex / new plays.** If it's a use case the rep has never sold, run a 30–60 min session on *why the buyer cares* before asking them to send anything. Skipping this is how a good play dies on contact.
+   - **Exam loop (2026-10-11):** auto-generate each rep's exam from their weakest topics (product docs + battlecards); cluster missed questions weekly and feed them back into the question bank. [#412]
 4. **Make the value to the rep explicit.** What's in it for *their* number — more meetings, warmer leads, less admin?
 5. **Instrument adoption.** Track whether reps actually used it; chase non-adoption as a real failure mode, not a "they'll get to it."
 

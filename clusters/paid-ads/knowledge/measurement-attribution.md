@@ -32,6 +32,9 @@ ABM measurement tracks **accounts through a journey**, not leads through a funne
 | Hybrid (multiple models in parallel) | Yes |
 
 Account-based multi-touch: track ALL touchpoints at account level, distribute credit across marketing touches before opportunity creation. Weighting when scoring touches: BDR meeting 2x, content download 1.5x, ad click 1x, ad impression 0.5x, email open 0.25x. Hybrid usage: first-touch answers "which channels create awareness", last-touch-before-opp answers "which content converts", linear for optimization, W-shaped for exec reporting. B2B attribution windows: 7-day click minimum (28 if available); Meta touches buyers early and last-click erases it; send closed-won back via CAPI; use self-reported attribution ("how did you hear about us") beside impression-based to catch dark social (the CMO who never clicked but sent the ad to the team).
+- Evidence (2026-10-11): add explicit LLM options (ChatGPT, Perplexity, Claude) to "how did you hear about us": one team found 8x more AI-driven acquisition than UTMs showed; LLM-referred users arrive via direct or branded search. [#910]
+- **ABM attribution window = ~2x the sales cycle** (e.g. 6 months for a 3-month cycle): 37% of opps convert in the quarter AFTER first touch, and a cycle-length window drops them (Finn Thormeier). [#226]
+- **Define "influenced" once with sales:** confirmed buying-committee member, substantive engagement, before opp creation or during the cycle. Report win rate by influence tier (none/low/medium/high), not a marketing-influenced %. [#1940]
 
 ## ROI Formulas
 
@@ -97,3 +100,4 @@ Proxy metrics: "% of [users] who do at least [threshold action] by [time]"; must
 ## Incrementality (holdout testing)
 
 Split the target list 80% exposed / 20% holdout; compare engagement, opportunity creation, win rate, deal velocity; never evaluate before 21+ days. Automated by Primer, 6sense, Demandbase. Win-rate lift +10-30% and cycle -10-20% are the classic acceleration-campaign reads.
+- Evidence (2026-10-11): holdout works from ~5,000 people: push the audience with an equal unexposed control and compare conversion. 225 geo tests put branded search at 0.70x incremental ROAS, so platform attribution overstates it. [#1755]

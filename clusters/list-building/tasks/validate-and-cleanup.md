@@ -32,7 +32,7 @@ User asks to verify emails, validate a list, fix bounce rate, dedupe, refresh st
 - Departed contacts go into a NEW list under their new company (high-intent — see `clusters/signals/knowledge/timing/job-change-tracking.md`)
 
 ### 4. Sender protection
-- Bounce rate must stay < 2% (above this, sender reputation drops fast)
+- Bounce rate ladder: target < 1%, launch gate / hard limit < 2% (above this, sender reputation drops fast), pause > 3% (updated 2026-10-11: was "Bounce rate must stay < 2% (above this, sender reputation drops fast)", creator-radar review L3-02)
 - If list bounce-projection > 2%, hold the list — verify again before send
 - Pre-launch: send first 50 to a new mailbox or warm-up account, monitor bounce, then scale
 

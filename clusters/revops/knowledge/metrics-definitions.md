@@ -107,6 +107,8 @@ Growth by stage (YoY): €1-5M ARR 100-200% | €5-15M 70-120% | €15-50M 40-80
 
 Revenue per AE = f(pipeline quality × conversion × velocity × capacity utilization). Low revenue/AE: pipeline quality → ICP drift; conversion → qualification gaps; velocity → process friction; utilization → AEs prospecting instead of closing (AEs who mostly close produce 3-4x revenue per head).
 
+**Rep ranking:** compare reps only within one lead source and by deals won per 100 leads received, not win rate on deals they chose to open; gaps inside random variance are a tie (Jordan Crawford). [#1787]
+
 ## Predictability Metrics
 
 - Forecast variance: target <10% coefficient of variation.
@@ -129,6 +131,8 @@ Revenue cohorts: group customers by acquisition quarter, track revenue at month 
 - **RevOps** (weekly): data quality score, process compliance (stage gates, methodology fields), forecast accuracy trend, velocity trend, integration sync health, field usage. Question: is the system working as designed?
 
 Cascade rule: every rep metric rolls up to a manager metric rolls up to an executive metric. No path to a north star = stop tracking it.
+
+**Stored metric queries:** write the exact SOQL/SQL for every board number once and have agents run that stored query; ad hoc Claude pipeline queries returned two different values for the same metric. [#1872]
 
 ## Deal Health: 6 Dimensions (score each 0-3, sum 0-18)
 
@@ -163,3 +167,5 @@ Seven views that turn pipeline data into intelligence: competitor mentions + win
 ## AI-Native Product Metrics (if AI is the product)
 
 Four signal layers: explicit feedback (thumbs, surveys) → implicit behavior (edit intensity, copy/send rate of AI drafts) → adoption (messages per DAU, depth over frequency) → business impact (resolution rate, automation rate, work completed, time saved). Metric shifts: seats → digital capacity / FTEs augmented; DAU/MAU → work completed per user; NPS → output quality + resolution rate; ARR per customer → consumption per customer. When AI agents run outreach or calls, separate agent metrics from human metrics on every dashboard; blended numbers hide whether lift comes from targeting, message quality, or volume.
+- **AI ROI in three stages:** capacity released, capacity redeployed, value realized. Never book saved hours as cash savings until headcount, spend, output or revenue actually changes. [#1680]
+- **Agent cost = cost per accepted outcome:** (model + platform + human oversight + rework) / accepted completed outcomes; track beside acceptance rate, cycle time and intervention rate, not token spend. [#1681]

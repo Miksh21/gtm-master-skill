@@ -135,7 +135,9 @@ Named frameworks with templates and examples. Each framework is battle-tested an
 >
 > If I can create a list for your team of Accounts researching competitors like Salesforce would it be worth a conversation?
 >
-> Either way, congrats on recently being named Top Sales Coach!
+> Either way, a Top Sales Coach award usually means the playbook is about to be scaled to the whole team!
+
+(updated 2026-10-11: was "Either way, congrats on recently being named Top Sales Coach!", creator-radar review L3-04)
 
 ---
 
@@ -332,14 +334,14 @@ Trigger-based message with soft CTA. Pick your trigger:
 
 ## Workflows.io Modular Cold Message Framework
 
-A more granular construction approach. Pick from finite menus per section, mix-and-match. Under 70-80 words total.
+A more granular construction approach. Pick from finite menus per section, mix-and-match. Word ceiling: BTL 60-90, ATL 40-70 (see `tasks/write-first-email.md`) (updated 2026-10-11: was "Under 70-80 words total", creator-radar review L3-06).
 
 ### First line — pick ONE of 3 types
 | Type | Pattern |
 |---|---|
 | **Relevancy** | Why this message is meant for them ("Reaching out because [Company] is doing [thing] which is exactly the pattern we see with our best customers...") |
 | **Observation** | A signal / action / behavior you noticed ("Saw your team just hired 3 SDRs in the last 6 weeks...") |
-| **Recency** | A recent event / update / news item ("Congrats on the Series B yesterday...") |
+| **Recency** | A recent public event, one clause max, led by the consequence ("A Series B usually means the sales team doubles before the process does..."); never a congrats opener (updated 2026-10-11: was "Congrats on the Series B yesterday...", creator-radar review L3-04) |
 
 ### Body — pick 1-4 of 11 components
 Mix-and-match based on context. Don't use all 11 — pick the right 1-4.
@@ -373,7 +375,7 @@ Use intentionally for:
 Many readers read the P.S. FIRST. Use it as a second hook, not throwaway content.
 
 ### Hard constraint
-**Under 70-80 words total** including subject line, body, CTA, PS. If it's longer, cut.
+**BTL ceiling 60-90 words; ATL 40-70** including subject line, body, CTA, PS. If it's longer, cut. (updated 2026-10-11: was "Under 70-80 words total", creator-radar review L3-06)
 
 ### Hook formula (from a different but compatible source)
 Hook = under 140 characters. Use one of three patterns:

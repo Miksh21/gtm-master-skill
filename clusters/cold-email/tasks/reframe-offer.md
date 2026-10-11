@@ -43,6 +43,8 @@ Work through these in order. Stop at the first one that fits, do not stack them.
 | **Lead with the asset** | The thing IS the email, no pitch needed | "I pulled 400 founders hiring SDRs. Want the file?" |
 | **Bound it in time** | Free, narrow, and it expires | "Audit back to you by Friday. No call, no charge" |
 
+- **Gate on "Lead with the asset" (2026-10-11, creator-radar review L3-13):** it promises a deliverable, so the house ban on deliverable-promising CTAs applies (SKILL.md step 6): only when the asset already exists and ships same day; never for a client under the value-CTA ban.
+
 Two rules that survive every version of this:
 
 - **Never put the price in the email.** It kills curiosity and turns the prospect into a
@@ -57,8 +59,8 @@ Two rules that survive every version of this:
   theater). The reframe must describe something that is literally true of the sender's
   business. If the exclusivity, the producer, or the eager influencers do not actually exist,
   the move is off the table.
-- **Layering with canon:** this task fixes WHAT is offered. `write-first-email` still leads
-  sentence 1 with the signal, keeps one soft CTA, and holds the word counts. The reframe
+- **Layering with canon:** this task fixes WHAT is offered. `write-first-email` still opens
+  per its signal identity rule (alpha signal named, commodity signal as intent only), keeps one soft CTA, and holds the word counts. The reframe
   becomes the offer/CTA half of that skeleton, not a replacement for it.
 
 ## The checklist

@@ -83,6 +83,7 @@ Only add a filter if a data tool can return it with 95%+ accuracy, consistently 
 - **Business types** (Clay dropdown) — not accurate
 - **Revenue streams** (Clay dropdown) — not accurate
 - **Department headcount** — not accurate at scale
+  - **Counter-view (2026-10-01):** as a list FILTER at scale it stays banned, but for reading one account by hand, workforce composition by function is core brief input ("60% engineering sells differently than 60% sales"). [amir-baldiga/account-research-brief]
 - **Growth rate** — estimated, never factual
 - **Funding raised** — strip this from broad searches (>500 expected results), use only for niche searches (<500 results)
 

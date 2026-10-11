@@ -18,6 +18,7 @@ User received an objection in reply to outbound (cold email, LinkedIn) and asks 
 - Don't push. Acknowledge + leave door open.
 - Format: 1 sentence validating their call + 1 sentence planting a seed for later
 - Mark contact as "contacted, not now". No follow-up after this reply.
+- **Counter-view (2026-10-11), live calls only:** on a spoken "not interested", ask one clarifying probe before closing ("is it the timing, or is [problem] just not a priority right now?") [swan alex-vacca/cold-call-scripts]. Email stays as above: no reframe, no follow-up (creator-radar review L3-15).
 
 ### "We already have a solution / vendor"
 - Don't attack the incumbent (reads as defensive)

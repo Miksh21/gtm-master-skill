@@ -72,13 +72,14 @@
 
 | Signal Type | Reply Rate |
 |-------------|------------|
-| Cold outreach (no signal) | 6-8% |
+| Targeted, signal-light list (updated 2026-10-11: was "Cold outreach (no signal)", creator-radar review L3-07) | 6-8% |
+| Untargeted cold | 0.5-1% |
 | Single signal-based | 18-22% |
 | Multi-signal stacked (3+) | 35-40% |
 
 ## Signal Workflow Tips
 
-- **Don't mention signal explicitly in email** (prospects get these constantly)
+- **Opener identity rule:** tracked or anonymous signals are never named; public events get one clause max, consequence first; self-declared signals (form fill, download, prior conversation) are named plainly (see `cold-email/tasks/write-first-email.md`) (updated 2026-10-11: was "Don't mention signal explicitly in email", creator-radar review L3-04)
 - **Act fast** (hot signals expire in 3-7 days)
 - **Stack signals for heat scoring** (3+ signals = reach out same day)
 - **Signal-based outreach = 3-4x higher contract values**

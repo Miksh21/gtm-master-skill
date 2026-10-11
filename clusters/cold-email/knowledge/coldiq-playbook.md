@@ -106,8 +106,8 @@ Would it make sense to see what {{company}} qualifies for?
 ## ColdIQ Principles (from 250K+ Emails)
 
 1. **Write for the 97%** — Optimize for the majority who won't reply, not the 3% who will
-2. **70-90 words optimal** — Keep it tight
-3. **2-step sequences work best** — Don't over-sequence
+2. **60-90 words is the BTL ceiling; ATL 40-70** (see `tasks/write-first-email.md`) (updated 2026-10-11: was "70-90 words optimal", creator-radar review L3-06)
+3. **2 is often enough, 3 is the cap**, don't over-sequence (updated 2026-10-11: was "2-step sequences work best", creator-radar review L3-05)
 4. **13X gap** between worst and best email variants — testing matters enormously
 5. **Subject + Preview = Complete thought** — They work together
 6. **Position yourself as a potential customer** in the subject line
@@ -119,10 +119,10 @@ Would it make sense to see what {{company}} qualifies for?
 
 | Metric | Target |
 |--------|--------|
-| Open rate | 50%+ |
+| Open rate | Deliverability diagnostic only: < 30% = check infra, never a target (updated 2026-10-11: was "50%+", creator-radar review L3-07) |
 | Positive reply rate | 5-8% |
 | Meeting book rate | 2-4% |
-| Emails per inbox/day | 50-100 max |
+| Emails per inbox/day | 30 new / 50 established, per the SKILL.md hard limit (updated 2026-10-11: was "50-100 max", creator-radar review L3-01; historical ColdIQ figure) |
 
 ---
 

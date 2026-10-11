@@ -182,6 +182,8 @@ Day 7-10: Finance (after others have engaged, frame around their validated ROI s
 
 If any one role replies positively, **escalate that account** — they're a potential champion. Engage other roles with reference to the champion's interest.
 
+**Enter via the tool owners** (single-case: selling revenue tooling): multithread into RevOps and enablement, who own and evaluate the tools, before the CRO; the CRO then hears it from their own team. [#1866]
+
 ---
 
 ## Cross-references
@@ -194,3 +196,10 @@ If any one role replies positively, **escalate that account** — they're a pote
 ## Source
 
 Workflows.io "The 7-Step Outbound GTM Framework" blog (Step 5 — Contact Sourcing), 2026-05-13 crawl. Gartner 6-10 stakeholder benchmark cited in source.
+
+## Creator-radar 2026-10-11
+- **Persona gap test:** read the 10 newest Reddit threads in the buyer's community (sort by new), note the recurring objection, and check whether the persona doc has it; a missing one = untested messaging. [#1883]
+- **Counter-view (2026-10-11):** disputes "persona panels as a research method" (`_external-takes/coldiq-personas.md`, LLM personas answering as respondents): an LLM playing your ICP returns the average, your own stereotype and agreement. Anchor personas to traceable public threads, weight specificity and recency, exclude vendor content, cluster on problem language. [#1885]
+- Evidence (2026-10-11): backs `personas/tasks/build-persona.md` (power phrases from actual job postings or LinkedIn activity): when the owner's title varies by company (webinar or events lead, not CMO), find the real decision owner per account by cross-referencing titles, relevant job postings and LinkedIn activity. [#1996]
+
+Source: creator-radar review 2026-10-11, cards from Supabase insight_cards.

@@ -9,14 +9,7 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
 - 🆕 new-angle: symptom → cause → fix diagnostic table (low opens = subject/deliverability, opens-no-replies = relevance, replies-no-meetings = weak CTA or qualification, high unsubscribe = frequency or wrong ICP) as a compact triage layer above gtm-master's weekly-report metric tree.
 - ✅ supports [signals benchmarks + deliverability canon]: cold 6-8% / signal 18-22% / multi-signal 35-40% / website visitor 25-30% / champion job change 20-25% reply; bounce <2% warning 2-5% critical >5%; spam <0.1%; unsubscribe <0.5%.
 Review: contradicts
-Status: holding
-
-## GTM Philosophy — swan-gtm/gtm-skills/skills/alex-vacca/gtm-philosophy · filed 2026-07-28
-Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops (philosophy.md is the diff target)
-Lineage: gtm-master philosophy.md is a strict SUPERSET of this skill.
-- ✅ supports [philosophy.md sections 1-3]: all 6 swan principles (scale top performers, BIPSY, signals 3-4x contract value, can't burn your TAM, lead with pain incl. the HockeyStack line, Gorgias 200→10 sequences), the 5-channel coordination table (ads warm before outreach, email day 1, LinkedIn day 2-3, phone after engagement, referrals throughout), and the key mindsets (100 signal-based > 1,000 cold, 14-45 day job-change peak, 24-48h website-visitor SLA, 2-4 week funding wait, humor reduces tension) are verbatim-equivalent to canon. gtm-master additionally has principles 7 (funnel-as-factory) and 1b (business model dictates channels), attribution, scaling gates, and tool-stack discipline that swan lacks. Zero import value; confirms no drift in the shared core.
-Review: corroboration
-Status: holding
+Status: promoted
 
 ## Outreach execution — swan-gtm/gtm-skills/skills/jeremy-hurst/outreach-execution · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
@@ -30,7 +23,7 @@ Production outreach rails: voice loading, path selection, sender assignment, app
 - 🆕 new-angle: operational details with teeth: markdown-wrapped links render as duplicated text in outreach channels, always plain-text URLs; never attachments, a single resource library is the only source of shareable URLs; contacts with 10,000+ followers or visible LinkedIn activity default to LinkedIn-only sequences; LinkedIn capacity planning at ~40 DMs/day, ~25 connection requests/day, ~120/week per sender with the projected calendar surfaced before staging; duplicate-sequence check before drafting (edit unsent drafts, archive stale ones, stop on multiple active); approved sends are saved back into the voice library and unapproved drafts never are.
 - ✅ supports [cold-email/tasks/write-first-email.md hook discipline + campaign-ops/tasks/optimize-cta.md soft asks]: no hook, no send ("if the hook is generic — 'drum up pipeline', 'stay top of mind' — push back"); one CTA; follow-ups always bring a new angle; voice loaded from the sender's own guide and past approved messages, never copied from another org or generic templates; written outreach rationale (who, why, what hook) attached to every staged sequence.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Post-meeting execution — swan-gtm/gtm-skills/skills/jeremy-hurst/post-meeting-execution · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
@@ -42,18 +35,7 @@ Full post-call production loop: transcript → classify → rescore → BANT →
 - 🆕 new-angle: resilience rails: memory/enrichment/CRM write failures are non-blocking (logged in the review item, run continues; only a missing meeting record blocks); metrics-log writes get read-after-write verification with one retry and a visible "manual entry required" warning on failure; the LinkedIn connection-request step ALWAYS executes as its own action (blank note, actual attendees only, skipped on no-fit outcomes) so an earlier error can never silently drop it.
 - ✅ supports [campaign-ops/tasks/score-meeting-intent.md speed + CRM discipline]: absent-but-named stakeholders ("you'll need to loop in our CISO") get created, enriched, and associated to the deal as buying-committee members with a note; scoping calls capture pain, workflows-to-test with expected outputs, trial participants, and success criteria verbatim, pushed to onboarding pre-trial.
 Review: additive
-Status: holding
-
-## Handle reply — swan-gtm/gtm-skills/skills/ido-goldberg/handle-reply · filed 2026-07-28
-Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
-Inbound-reply processing for outbound sequences: classify intent, draft the right response or stop action, update CRM state, never auto-send. Full taxonomy extracted because reply-engine builds depend on it.
-- ⚠️ contradicts [gtm-master "not interested" handling, objections/tasks/handle-objection.md:17-21 ("Don't push. Acknowledge + leave door open... Mark contact as 'contacted, not now'. No follow-up after this reply.")]: here "'not interested' is an objection, not a stop", the Objection bucket gets a drafted reframe ("acknowledge the concern in one sentence, reframe with one specific data point or case, propose one small next step: 15-min call, async loom, one-page brief"); only an explicit unsubscribe intent stops the sequence. Both sides. gtm-master: a "not interested" reply closes the thread with a seed planted; Swan/Ido: it is a reframeable objection class, and conflating it with unsubscribe over-suppresses.
-- 🆕 new-angle: the 6-bucket classification table, exactly one bucket per reply, one-line classification: Interested (question / meeting request / pricing ask / "tell me more" → fast positive reply, propose two time windows, name a concrete next step) · Objection (price, fit, timing, "not now", "we use X" → reframe + one small next step) · Wrong person ("not me", "talk to X" → route to the new contact, ask for the warm intro, thank them; "the referral is the highest-leverage outcome", never ignore it) · Unsubscribe ("stop emailing", "remove me" → stop sequence, do-not-contact flag, NO reply) · Out of office (auto-reply with return date → no reply, pause sequence to the return date, route alt contact if given) · Neutral / soft no ("reaching out later", "send info", vague → one short value follow-up tied to a specific account signal, "don't pile on", push to next sequence step). Ambiguous replies go to the human: "ask the user which bucket fits — don't guess."
-- 🆕 new-angle: per-bucket CRM write map: unsubscribe → stop + do-not-contact flag + note with reason; wrong person → find/create the referred contact, associate to company, note the referral on the original contact; interested/objection → 1-2 line note + lifecycle stage move if warranted + follow-up task; ALL buckets → company record updated when the reply reveals new facts (use case, current vendor, timing). "MUST log a note on every classified reply so the next touch has context."
-- 🆕 new-angle: batch mode thresholds: more than ~5 replies switches CRM writes to one batched actions file; more than 20 unread switches classification itself to code (dump list, classify into an intent column, print per-bucket counts, process one bucket at a time).
-- ✅ supports [campaign-ops/tasks/analyze-replies.md categories + score-meeting-intent.md]: OOO is a delay not a close; drafted replies are always shown and never auto-sent; voice anchored in sender instructions and approved message examples, with a one-time voice setup demanded rather than a generic-tone fallback.
-Review: contradicts
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Multi-thread deals — swan-gtm/gtm-skills/skills/ido-goldberg/multi-thread-deals · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
@@ -63,7 +45,7 @@ Finds single-threaded open deals, names the missing buying-committee personas, a
 - 🆕 new-angle: candidate selection preferences: most senior unengaged persona match; direct counterparts to already-engaged contacts (same level, complementary function); anyone showing intent signals; contacts engaged in the last 30 days excluded from suggestions. A fresh business event on the company (last 30 days) becomes the angle for the new thread. Single-threaded AND the one contact has gone silent = a stalled-deal-revival problem, not a threading problem.
 - ✅ supports [sequences/knowledge/tiered-routing-template.md committee logic]: per-deal approval before drafting anything; a note + memory line written after outreach so the next pipeline review knows the deal got threaded.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Pipeline review — swan-gtm/gtm-skills/skills/ido-goldberg/pipeline-review · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
@@ -72,7 +54,7 @@ Pre-forecast pipeline health pass: flag stuck/skipped/regressing/at-risk deals, 
 - 🆕 new-angle: action economics: one action per flag, lightest first (signal-based re-engagement if a fresh event exists, else a manual task); fresh-signal lookup runs ONLY for flagged deals; recommendations hard-capped at 10-15 per review ("bigger lists won't get acted on"), top 10 surfaced with the rest offered as a follow-up pass; explicit approval gate before any CRM task is created.
 - 🆕 new-angle: slice discipline: deals pulled in pages of 20, >40 deals switches aggregation to code, mid-funnel only by default (early discovery and closed excluded), horizon = this-quarter closes plus anything aging >30 days regardless of close date.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Brief — swan-gtm/gtm-skills/skills/ido-goldberg/brief · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
@@ -80,7 +62,7 @@ One-page executive account brief before sponsor syncs, deal reviews, QBRs. No gt
 - 🆕 new-angle: fixed one-page structure: ACCOUNT / OPPORTUNITY / OWNER header → THE PICTURE in 3 sentences (what they're trying to do, why now, why us) → buying committee with per-person one-word sentiment (engaged / neutral / cold / hostile), never invented ("NEVER cite sentiment without a quote or a specific behavior") → WHERE WE ARE (last meaningful touch, outstanding commitment, current gating step) → RISKS 3-5 max, each cited to a source ("raised by CFO on the 3/15 call" beats "budget concerns"; stakeholder / commercial / competitive / execution classes) → ASKS ("an exec brief without an ask is a status update", air cover, an intro, a discount approval, an exec on a call).
 - 🆕 new-angle: anti-padding rule: a section with nothing real says "no current risk" rather than inventing content; CRM-vs-reality discrepancies are surfaced as findings ("deal stage in CRM is X but last call suggested Y"); engagement history read from meetings + calls only, routine emails dropped; a final pressure-test pass cuts any vague or unsourced line.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Conference recommendation — swan-gtm/gtm-skills/skills/dave-engel/conference-recommendation · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
@@ -90,4 +72,17 @@ Scores which conferences/trade shows to attend, exhibit, or sponsor next. gtm-ma
 - 🆕 new-angle: famous-event bias as the named failure mode: discovery must cover six categories via active web search (industry flagship / vertical-specific summit / regional flagship / FREE one-day vendor conferences, "the most under-utilized circuit in B2B field sales" / emerging years-1-3 events / side events and unofficial gatherings, "frequently higher density than the main floor"); every marquee event must justify itself in one line against a targeted alternative or get cut; final cross-client check: "would this same list appear for a different client? If yes, it's too generic."
 - 🆕 new-angle: budget is noted but NEVER scored ("a cheap event that reaches the wrong buyers is worse than an expensive one that reaches the right ones"); descriptions are two dense sentences, ~30-45 words: sentence 1 = conference texture with numbers and named buyer types, sentence 2 = the client-specific buying case that "must NOT be interchangeable across clients or events." Post-cycle recalibration: compare actual buyer-conversation yield per event against predicted tier and re-weight.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
+
+## Meeting prep — swan-gtm/gtm-skills/skills/alon-goldenberg/meeting-prep · filed 2026-09-28
+Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
+Produces a per-meeting attendee briefing before any call. In gtm-master this only shows up as `campaign-ops/knowledge/inbound-orchestration.md:117` (prep doc stored as a HubSpot property) and `gtm-engineer-field-notes.md:43` (someone else's Slack pre-call brief). The existing takes on the brief spec (janskuba, 500-word/11-field, BANT ban; coldiq-campaign-ops.md) and on sourced sentiment (ido-goldberg/brief) are not repeated here.
+- 🆕 new-angle: meeting type decides the shape of the brief. The types are sales/discovery, partnership, board/investor, interview, internal and general. Value Positioning appears only for the first three. With no signal in the request the rule is "Ask, don't guess". Each type also gets one extra section: "Qualification signals" for sales, "Alignment opportunities" for partnership, "Key metrics to reference" for investor, "Assessment angles" for interview. Internal meetings skip company research.
+- 🆕 new-angle: each person and company keeps a running file, with freshness tiers. Under 24h: offer to reuse it. Under 30 days: load it as known facts and research only what changed since. Over 30 days: full refresh. After each brief, cross-references are written both ways. The research threads get the known facts passed in so they don't re-report them. Open items from earlier meetings are called "the highest-value content in the entire briefing".
+- 🆕 new-angle: a fixed search budget per attendee. About 7 searches in two groups. Group 1: name+company, people-index search, linkedin.com site search, and "interview OR podcast OR talk". Group 2: X over the past month, github/medium/substack, and conference/panel. At most 2 page extractions. Attendees are researched in parallel. The two-group split keeps parallel threads under rate limits. With fewer than 3 results, drop the date filters and try name variants.
+- 🆕 new-angle: identity rules to avoid "Role Unknown". If you have the calendar-invite email, search "[first] [last] [email-domain]" on linkedin.com; the domain disambiguates much better than the name. If several people share the name, stop and let the user pick from the candidates, never research the wrong one silently. If nothing turns up, write "could not confirm role, ask for their LinkedIn URL". Research threads should hunt for shared employers, schools and boards while they run, to build the relationship map, rather than comparing results afterwards.
+- 🆕 new-angle: date the event, not the article. "Last year" or "back in Q3" in a fresh article is background, never recent news. Multi-word company names go in quotes or get anchored to the domain. Fewer than 3 news hits: retry without the date window.
+- 🆕 new-angle: grounding rules for value positioning. Every mapping line reads "They [sourced finding] → your [specific capability]", or it gets cut. Integration hooks are listed only when confirmed on both sides. A displacement angle needs actual evidence that they use the competitor. Omit a reference customer rather than force a weak match. Seniority sets the frame: an economic buyer hears outcomes and reference customers, a hands-on evaluator hears integration hooks and workflow detail.
+- ✅ supports [enrichment/knowledge/prompts/claygent-guide.md:369-372]: when a match is ambiguous, return "Not Found" or hand it to the human, never pick a guess. Every external claim carries a URL.
+Review: additive
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)

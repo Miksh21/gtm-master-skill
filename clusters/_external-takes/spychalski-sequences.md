@@ -8,4 +8,4 @@ Shelf-life (stated by author): "only alpha for the next 4-8 months past Septembe
 - 🆕 new-angle: **the human touch measurably beats AI on the SAME pipeline.** Even with identical sourcing/enrichment, man-in-the-loop out-converts fully-automated because a human writes casually ("hey we got this thing, want to try it?") and can pick up the phone — the formal/formulaic AI register underperforms. Argues against defaulting to full automation for anything but the two fits above.
 - 🆕 new-angle: **in-person-event play (one of The Kiln's highest-conversion motions, "underrated").** Scrape every LinkedIn post mentioning the event (e.g. Dreamforce) → Claude filter to who is ACTUALLY attending (drop "breaking news, Dreamforce next week") → Clay-qualify to real ICP fits → 1:1 "saw you'll be at X, I'll be there too, compare notes?" Reported result: a client got ~30 positive replies from ~100-200 messages and was over-booked. (Companion tool detail in spychalski-signals.md / LinkedIn scraping.)
 Review: additive
-Status: holding
+Status: promoted-unvalidated

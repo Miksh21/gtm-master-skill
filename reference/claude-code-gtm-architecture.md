@@ -378,15 +378,26 @@ Fresh field patterns layered on the 2026-05 model above. Source: creator-radar c
 
 - **5-layer variant + governance split** (Alex Vacca/ColdIQ). The 4-layer OS extended to 5: **Identity → Rules → Skills → Agents → Memory**, with a **brain/muscle governance rule: execution agents never rewrite their own rules.** Prevents drift across sessions (the system compounds instead of degrading). [#65]
 - **Clay AND Claude Code, by altitude** (refines "When CC beats Clay"). Not either/or: **Clay = team-level cloud orchestration; Claude Code = individual-contributor local multiplier.** Pick by altitude, not feature. [#72]
+  - Evidence (2026-10-11): Clay shipped a public API, CLI and Agent Plugin (MCP plus skills) on 8 July on all plans, same credit burn, no API tax. Agents (Claude Code, n8n) can build workflows, functions, claygents and audiences, keeping Clay as the shared enrichment layer inside UI-less workflows; tables deliberately are not agent-buildable. Verify endpoint scope and credit cost before building. [#645, #1945]
 - **Replace-Clay build path** (Joe Rhew): Claude Code isn't a drop-in Clay replacement — it *builds the tools* that replace Clay. Progressive: **Contexts → Skills → Scripts → Observability → closed feedback loops.** Each step compounds the last; adopt gradually. [#95]
 - **Feed vs Build taxonomy** (Michel Lieben): classify every tool in the stack as **feed** (supplies data/API input) or **build** (the agent/orchestration layer). Removes integration confusion when assembling a CC GTM stack. [#48]
 - **Tool retention test** (Alex Vacca): keep a tool only if **an agent can run it autonomously.** If it needs ~5 human clicks / a dashboard, drop it. Reframes stack evaluation from UI quality → agent-operability. [#60]
+  - Evidence (2026-10-11): pick tools by whether an agent can drive them end to end. Notion MCP now rate-limits by plan tier, so keep business logic and context committed in your repo and fetch only live data. [#1662]
 - **Infra layer (May 2026)** (Joe Rhew) — beyond enrichment providers, the code-based GTM stack: **Claude Code, Trigger.dev, Supabase, Railway, E2B, Spider, OpenRouter, Posthog.** (Extends the Trigify Trigger.dev+Supabase note above.) [#102]
 - **Open-source CC GTM repos** to clone (add API keys, run): Michel Lieben/ColdIQ — 32 hooks, 15 integrations, 18 content prompts, targets Apollo/Instantly/Gmail/Slack [#58]. See also Workflows.io company-os-starter-kit (above).
 - **Mini-tools as lead magnets** (Michel Lieben): ship free niche GTM mini-tools with Claude Code to collect emails + visitor-ID (Instantly/Vector/Midbound) for outbound re-engagement — PLG × outbound, distinct from content nurture. [#49]
 - **Agency anatomy benchmark** (Michel Lieben): a real $7M/yr GTM agency mapped traffic → lead capture → sales → delivery, with named plays, team roles, retainer ranges, and tool stack per layer — usable as a campaign-ops architecture template. [#54]
 
 **See also:** `clusters/campaign-ops/knowledge/agentic-gtm-patterns.md` (loop/eval/context engineering), `clusters/campaign-ops/knowledge/n8n-claude-code-workflows.md` (n8n+CC builds).
+
+---
+
+## Creator-radar 2026-10-11
+
+- **Second brain = two stores:** `context/` overwritten with current truth (positioning, ICP); `record/` append-only dated entries with source and confidence, contradictions kept, no recency ranking. Overwriting alone loses why things changed. [#1789]
+- **Workspace as code:** declare the GTM workspace (connectors, models, plays) as code files that deploy with a diff (Cargo MCP, TypeScript): every change has what/when/who, and agents leave the same trail as people. [#1714]
+- **Cache-read price decides list-run cost:** ICP, rubric and company brain are resent per record, so on list-based agent runs the cached-input rate dominates the bill: Astra $1.00 vs Fable 5.1 $0.25 per M cached tokens; Astra doubles rates past 272k tokens. [#1763]
+- **Crawl cheap, extract paid:** Spider MCP (free local Rust crawler, `cargo install spider_mcp`) enumerates site URLs first; spend Firecrawl or Exa credits only on the shortlisted pages. [#1930]
 
 ---
 

@@ -86,7 +86,7 @@ Recommended default: [A/B/C] — [one-line reason]
 
 - Run **spintax** across the top 3 (`clusters/cold-email/tasks/add-spintax.md`) so the same variant doesn't fire repeatedly
 - Track open rate per subject variant (not campaign overall)
-- If open rate < 40% after launch, the subject is the first thing to swap — don't touch the body yet
+- Open rate is a deliverability diagnostic only (Apple MPP distorts it): < 30% = check infra first; judge subject variants on reply rate, not opens (updated 2026-10-11: was "If open rate < 40% after launch, the subject is the first thing to swap, don't touch the body yet", creator-radar review L3-07)
 
 ## Deeper knowledge (load only when needed)
 

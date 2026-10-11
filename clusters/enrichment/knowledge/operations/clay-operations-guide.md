@@ -13,6 +13,9 @@ For credit optimization deep dive, see [clay-operations-credit-optimization.md](
 
 Don't guess which provider is best — use [Clay's Data Tests](https://www.clay.com/data-tests) to see real performance by use case, region, and input type.
 
+- Evidence (2026-10-11): benchmark contact providers for your niche against Sales Navigator as the answer key (most providers resell LinkedIn data; Sales Nav is freshest). No licence: Apify Harvest API scrapes Sales Nav at ~$0.004/lookup. [#1389]
+- Evidence (2026-10-11): blind test of 8 providers on 646 leads: Apollo returned 440 valid emails vs Prospeo 424, but 28 of Apollo's died on independent verification vs 1 of Prospeo's. Rank providers on verified survivors, not raw returns, and keep per-field provenance. [#1978]
+
 ### Best Providers by Category (2025)
 
 **Mobile Phone — By Region:**
@@ -117,6 +120,8 @@ The best tool for each data point, with cost and notes.
 ## Waterfall Strategy
 
 For any data point, use multiple providers in sequence — stop when you get a result.
+
+- **Test providers outside the waterfall (2026-10-11):** benchmark phone and email providers independently on the same buyer list, never inside a waterfall: later providers only see leftovers, so waterfall return rates are order-biased. Keep the failures, then set order by added numbers per cost. [#1917]
 
 ### Email Waterfall Example
 

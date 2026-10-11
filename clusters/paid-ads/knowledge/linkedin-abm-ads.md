@@ -89,10 +89,13 @@ Priority order: intent, persona, region/company size, seniority. Regions: US alw
 - **Retargeting audiences are NOT retroactive.** Create ALL of them before launching anything: website visitors 30/90/180d, video viewers 50% (30/90d) and 97% (30d), image-ad engagers 90d, company page 180d/lifetime, Lead Gen Form openers-not-submitters 90d, demo/pricing visitors 30+90d, conversation-ad clickers 90d.
 - **Impression capping via Company Engagement dynamic exclusion:** build a dynamic audience of companies with 500+ impressions in the last 7 days and exclude it; accounts rotate in and out automatically. Tune 300-750 by fatigue vs reach.
 - ABM remarketing lists stay separate from general remarketing (different messaging, higher acceptable CPAs).
+- **API tier check:** a LinkedIn developer-tier API connection cannot use custom audiences, so spend leaks to mega-accounts and BDR titles ($1,800/lead case). Confirm Marketing API tier in writing, exclude mega-companies and SDR/BDR titles. [#2024]
 
 ## Frequency and Orchestration
 
 Target ~4 impressions per person per week inside target accounts; BOF accounts near decision can run up to ~15 per 30 days. Sustained frequency only works with 3-4 rotating creatives; ~8+/week of a single creative = rotate or expand, do not just pause. The prospect should meet the brand 7-10 times across channels before the sales conversation: ads carry awareness and mid-funnel, sales carries direct engagement; coordinate email sequences, events, direct mail on the same account list.
+
+**Counter-view (2026-10-11):** for Thought Leader Ads on a target account list (~$5k/month), optimise for 8-12 post impressions per stakeholder per 30 days, well below the ~4/week ad-led rule, because TLAs read as organic posts (Finn Thormeier). [#230]
 
 Multi-account setups (regional ad accounts): upload the list once, share via Business Manager "Share Audiences" instead of maintaining copies.
 

@@ -18,6 +18,8 @@ Cost is U-shaped across tiers; trust is inverted-U. Strategy is finding where th
 
 **Mid-tier expert is the default allocation**: practitioners with a real job title in the buyer's field (a RevOps lead posting about attribution, a CFO posting about SaaS spend). Their audience is 60-80% ICP-dense because expertise filters followers. A macro creator's audience is broad by construction. Note the sourcing skill's complementary finding: in the 1K-10K range creators get treated as peers rather than media, which shows up directly in click intent; ten aligned micro-creators typically beat one mega-creator.
 
+**Counter-view (2026-10-11):** tier bands are platform-specific. On YouTube the B2B sweet spot is 100K-250K subscribers (50K+ on Instagram), cast across 10+ creators/month regardless of budget to get test signal (GTM Engineer newsletter). [#906]
+
 ## Lock the brief before any creator name
 
 Restate every engagement as WHO + WHAT + PROOF + BUDGET:
@@ -67,6 +69,8 @@ The three are layers and stages, not rivals. The one-question fork: **do the peo
 
 **Founder-led is the default start, with a ceiling.** A founder posting 3-5×/week on a personal account (3-5× the reach of a company page) can drive 5-25 inbound demos/month, and outbound referencing a founder's post replies at ~40% vs ~5% cold. Saturation arrives around 15-25K followers: engagement-to-reach declines, demo inbound plateaus, and the comment section shifts from buyers to peer founders. Run the founder's math honestly: 8 h/week at €200/h is ~€6,400/month; if that yields ~10 demos, the same budget on creators typically produces more qualified clicks in a fraction of the founder's time, while founder posts keep converting best downstream. Keep the founder posting; stop the founder being the only channel.
 
+- Evidence (2026-10-11): LinkedIn company page reach fell ~66% in two years (ColdIQ); default distribution to founder and employee accounts, use the page for hiring and reposting team posts. [#1225]
+
 When each wins: **founder** for early credibility, high-trust categories, the voice no one can outsource; **employees** for warm-intro enterprise motions, launch moments, recall inside existing networks; **creators** for net-new buyer reach, pipeline economics, verticals where the founder has no standing.
 
 **The 30-45 day transition (founder → creator-augmented).** Week 1: pick the 1-2 verticals where founder reach is thinnest. Week 2: match ~5 creators; brief the narrative arc, not the sales deck. Week 3: stagger creator posts alongside (not replacing) the founder cadence. Week 4: measure per creator, keep the top 3, retire the rest. Creator-driven pipeline typically matches the founder's own within 60 days, from audiences the founder never reached. Never stop founder posting to fund creators: layer, don't swap. Never judge the three motions on the same metric (founder on demo conversion and reply-rate lift, advocacy on recall, creators on cost per qualified lead). The overlooked failure: reading founder saturation as "LinkedIn stopped working" and cutting the channel.
@@ -85,6 +89,8 @@ Provide exactly: one angle (from audience mapping, not three), one proof element
 6. Re-run four-axis scoring quarterly; audiences and expertise decay.
 
 Expect concentration: the top third of creators generates the majority of qualified clicks. The program's job is finding them fast and doubling down.
+
+**Creator test signal (2026-10-11):** if the creator's sponsored video beats the average of their last 10 videos, the messaging works; the creator's own baseline controls for audience and format. [#908]
 
 ## The 90-day program arc
 
@@ -118,3 +124,7 @@ Week-one leading indicators, before pipeline exists: CTR ≥ 8%, landing-page bo
 - Adding new creators while proven ones post once a month.
 - Skipping the week-8 cut (sentiment keeps underperformers funded).
 - Reporting 7-day last-click numbers in an ads template and concluding creators "don't perform".
+
+## Creator-radar 2026-10-11
+
+- **Borrowed-list webinars** (single-case: ColdIQ): co-host monthly webinars with large GTM platforms (Instantly, Apollo) to borrow their list: 2K-4K registrants per event with zero paid media. [#587]

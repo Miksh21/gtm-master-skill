@@ -12,6 +12,7 @@ User asks to write a LinkedIn sequence, connection request, LinkedIn DM, InMail,
 - Signal the outreach is built around
 - Hypothesis and angle
 - Number of steps (default: connection request + 2 follow-ups)
+  - Evidence (2026-10-11): 3-message LinkedIn sequences reply at 9.8%; 5+ messages fall below sending a single message (Expandi H2 2026). Default 3, never 5+. [Waxman #2040]
 
 ## LinkedIn-specific rules (different from email)
 
@@ -21,13 +22,16 @@ User asks to write a LinkedIn sequence, connection request, LinkedIn DM, InMail,
 - One sentence on why you're connecting + one light hook
 - NO "I came across your profile" (overused, instant-template signal)
 - Reference their company or a specific signal if possible
+- **Counter-view (2026-10-11):** connection requests always go blank; no-note requests accept at higher rates [swan jeremy-hurst/outreach-execution; ariel-cohen/linkedin-engagement-handler; ido-goldberg/reach-out]. Run it as an A/B: default blank for automated volume, crafted note for Tier 1 manual. No measured number in either corpus yet (creator-radar review L3-12).
 - NO URLs (LinkedIn flags as spam)
+- Evidence (2026-10-11) for `knowledge/swan-sequences.md` "warm touches BEFORE the connection request": a follow, profile view or post like before the request lifts acceptance by a reported 30.2%. [#1087]
 
 ### Follow-up message 1 (after connection accepted)
 - Lead with what you noticed, not who you are. Same hook-vs-intent rule as email (`clusters/cold-email/tasks/write-first-email.md`): alpha signal → name it; commodity signal (funding, job change, hiring) → name the situation it implies, not the trigger
 - One sentence on what it implies for them
 - Soft CTA: a question, not a demo ask
 - **Under 150 words**
+- **Counter-view (2026-10-11):** LinkedIn messages under 150 CHARACTERS get 22% more replies, and 3+ step campaigns 42% more than single messages (Expandi, 100K conversations); tighten follow-up 1 from 150 words to 150 characters. [Lieben #1086]
 
 ### Follow-up message 2 (3-5 days after message 1, no reply)
 - Don't just "follow up" — add a new angle or piece of info
@@ -90,6 +94,7 @@ Word count: [n] / 100 max
 - If acceptance rate < 30% after 100 connection requests, the note OR the targeting is wrong — diagnose:
   - Open the note, paste it into the audit, look for a specific reason for low acceptance
   - Check if the persona is right (junior reports often get high acceptance, decision-makers lower — adjust by persona)
+  - Evidence (2026-10-11): ColdIQ LinkedIn targets are ~33%+ connection acceptance, ~20% reply rate, 7.5%+ positive reply rate; below these, kill or rework the campaign early. [#1089]
 
 ## Deeper knowledge
 

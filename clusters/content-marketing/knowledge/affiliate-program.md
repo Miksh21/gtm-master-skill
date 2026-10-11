@@ -8,6 +8,8 @@ Building or fixing a B2B SaaS affiliate program. Operating thesis: **affiliates 
 
 Reverse-engineer the buyer journey: where do ideal customers hang out online, and who influences them there? Typical IPPs: micro-influencers on LinkedIn and YouTube, agencies and consultancies serving the ICP, niche communities, newsletters, content and review sites, high-performing partners of competitors.
 
+- Evidence (2026-10-11): Ideal Partner Profile, 3 tests: talks to your ICP regularly, talks about your topic organically, benefits directly and immensely. Prefer partners whose own number depends on your work (PE/VC operating partners); a $500 credit means nothing against a $1M quota. [#1875]
+
 **Ignore coupon sites.** They attract deal-hunters, not high-value buyers, and take credit for sales that would have happened anyway.
 
 ## 2. Commission structure from unit economics
@@ -67,3 +69,8 @@ Full partner audit twice a year: tag partners by type, potential, activity; reac
 ## What good looks like
 
 Small and active, not large and dead: a gated partner base matching the IPPs, activation well above the sub-5% norm, the top 20% on a first-name basis with the team, revenue attributable to partners who created demand rather than intercepted it. Failing-program tells: signup counts celebrated as a KPI, coupon sites in the list, a flat commission tier, nobody owning partner relationships.
+
+## Creator-radar 2026-10-11
+
+- **Referral readiness:** a customer referral program needs 2 of 3 (high LTV, fast time to value, high engagement); under ~500 MAU is the death valley, run affiliates instead. [#1990]
+- **Referral build:** lead with a reward cap ('earn up to $3,000'), pay cash, ask payout details only after the referrer earns, relaunch at primed moments (NPS 9+, closed ticket). Non-corporate referrers over $2,000 need KYC/tax forms. [#1991]

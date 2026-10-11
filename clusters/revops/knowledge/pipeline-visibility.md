@@ -128,3 +128,5 @@ Capture weekly (or per forecast call): period, snapshot date, rep, Commit value,
 - Warehouse-native pattern: canonical pipeline truth in the warehouse, computed scores synced back to CRM via reverse ETL; reduces "1 in 4 GTM leaders distrust real-time CRM data". Routing and scoring misfire on 10%+ of records when any critical field falls below 90% population; audit field completion first.
 - Human-in-the-loop beats set-and-forget for AI deal scoring; deploy one agent per scoring use case with human review, never autonomous deal closure.
 - Managed pipeline health pays: teams actively managing these metrics see 18% higher win rates and 28% more accurate forecasts (Salesforce research).
+- **Quiet-deal test before trusting a CRM connector/MCP:** ask which deals went quiet in 14 days, then hand-check 3 it skipped; connectors often sample ~30% of records while answers still sound complete. [#2031]
+- **Daily push, not dashboards** (single-case: XBOW "Daily Bolts"): a Slack bot sends each seller their most urgent open opps every morning with one action to take today. [#1826]

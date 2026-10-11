@@ -72,6 +72,7 @@ Track at company, segment, and rep level. Snapshot weekly (period, date, rep, co
 Benchmarks: ±5% elite | ±10% strong | ±15-20% average | ±25%+ broken (structural fix needed).
 Only ~7% of companies reach 90%+ accuracy (Gartner via ORM).
 ```
+- Evidence (2026-10-11): (single-case: author observation) snapshot each rep forecast weekly for 13 weeks; typical shape: week 4 first honest read, drift up weeks 5-8, commit slips around weeks 9-10. Deviations from that shape flag a skipped sales step. [#1835]
 
 **Diagnosing misses by direction:**
 - Consistent over-forecast: Commit criteria loose, optimistic close dates, weak qualification. Fix: tighten Commit validation, deal review rigor.

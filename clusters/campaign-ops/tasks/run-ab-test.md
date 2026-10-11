@@ -30,7 +30,9 @@ A test is only conclusive for the LAYER where the variants diverged. Don't attri
 |---|---|
 | < 50 | Inconclusive — note it, don't act |
 | 50-100 | Directional — signal, not proof |
-| 100+ | Statistically meaningful — act on it |
+| 100+ | Directional, large effects only (updated 2026-10-11: was "Statistically meaningful, act on it", creator-radar review L3-08) |
+
+**Minimum detectable effect (2026-10-11, creator-radar review L3-08):** 100 sends per variant only catches roughly 2x differences in reply rate. A 20% relative lift on a 5% baseline needs ~7,000 sends per variant. Fix the sample size before launch; never extend a running test because an interim peek looked close.
 
 ## Process
 
@@ -70,6 +72,7 @@ Hypothesis: [what you expect to happen and why]
 - Both variants have ≥ 50 sends (else mark inconclusive)
 - Divergence layer correctly attributed (don't blame subject line for interest rate change)
 - Winner only declared if ≥ 100 sends per variant
+**Counter-view (2026-10-11):** for cold campaigns, judge only after 1,000 emails: 0 positive replies = kill; 1 positive = extend to 3,000 before deciding. [#1251]
 - Next test is a NEW variable, not a repeat
 
 ## Common failures
@@ -78,10 +81,12 @@ Hypothesis: [what you expect to happen and why]
 - **Declaring winner on open rate alone** — open rate can be gamed by subject tricks that don't convert downstream
 - **Both variants in Kill territory (interest < 17%)** — the problem is the hypothesis, not the variant. Stop testing variants on a dead hypothesis.
 - **Testing same variable twice** — when the first test was conclusive, move on. Variant fatigue wastes cycles.
+- **Copy A/B blind to deliverability (2026-10-11):** send each variant to a probe list of unmonitored inboxes; the variant that returns more auto-replies is landing in inbox more. Isolates the deliverability effect of copy from persuasion (Eric Nowoslawski). [#1248]
 
 ## What to do after
 
 - Conclusive winner → roll into production, kill the loser, log result for institutional memory
-- Directional → run another 50 sends per side to reach significance
+- Directional: treat as directional; do not top up a running test to reach significance (updated 2026-10-11: was "Directional → run another 50 sends per side to reach significance", creator-radar review L3-08; peek-then-extend deleted)
 - Inconclusive → don't act; either gather more data or pick a different test
+- **Watch (2026-10-11):** add Watch beside ship/kill when the commercially important downstream metric (meetings, pipeline) is laggy and small-sample; hold the verdict instead of manufacturing certainty. [#1625]
 - All tests → log in `tasks/setup-second-brain.md` hypothesis log

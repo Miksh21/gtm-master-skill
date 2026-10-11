@@ -22,5 +22,11 @@ n8n webhook (ESP reply) → Supabase/Clay (store) → frontier-model sentiment (
 ## HubSpot CLI + Claude Code [#33]
 The HubSpot CLI + Claude Code auto-wires complex multi-node workflows from client docs + CRM context — ~80% of RevOps admin (properties, segments, workflows) drops from hours to minutes. Shifts the valuable skill to strategy. Use for client onboarding / RevOps delivery at scale.
 
+**Counter-view (2026-10-11):** the Salesforce CLI gives Claude Code direct provisioning, password resets and scoped writes; the HubSpot API is comparatively closed and caps agentic RevOps. Weigh CLI depth in CRM choice for agent-run GTM. [#1635]
+
+## Creator-radar 2026-10-11
+- **Hands-off outbound via 4 cron jobs over a state DB (single-case, Eric Nowoslawski):** 1) lead refill before lists run dry, 2) send-volume check, 3) swap inboxes with failing deliverability, 4) weekly cull of chronic low-reply domains; 80-100 positive replies/day untouched. [#1259]
+
+
 ## Sources
 creator-radar 2026-06. Michel Lieben (ColdIQ): #53 · Dan Rosenthal (Workflows.io): #33 #38. Full URLs in creator-radar Supabase by card id.

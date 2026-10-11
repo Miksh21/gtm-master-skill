@@ -23,6 +23,10 @@ Workflows.io tested 350+ tools, kept 78 across 17 categories. Three explicit cut
 
 **Operating principle:** "A 30-tool stack used well outperforms a 60-tool stack used at 30 percent."
 
+**Vendor eval for agent-operability (creator-radar 2026-10-11):**
+- For each weekly action, probe headless access (API/CLI/MCP) live, require raw-record data egress, and get agent-vs-human seat pricing in writing; set pass/fail criteria before onboarding. Backs the tool retention test in `reference/claude-code-gtm-architecture.md`. [#2051]
+- Check the vendor's MCP server is live and read/write across the full data model, then compare its writes with the REST API: servers often skip updates, write to logs not records, or miss custom objects. [#2050]
+
 ---
 
 ## The 17 working categories
@@ -98,6 +102,7 @@ Patterns that shifted:
 - **Standalone copywriting tools** folded into the Claude Code LinkedIn post writer + outbound copywriter skills.
 - **Manual research tools shrank** — Claude Code + Firecrawl + Serper MCPs replace most one-off research.
 - **Agent infrastructure grew** — n8n + Trigger.dev central; Cursor hosts most Claude Code sessions.
+- **Stack by company size (2026-10-11):** smaller companies run Claude/Codex + Deepline + Getleads + CRM + sequencer (pay-per-use, no Clay seat); ~$30M+ revenue companies go straight to Clay for team-level orchestration. [#621]
 
 ---
 

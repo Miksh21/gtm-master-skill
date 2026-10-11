@@ -35,7 +35,7 @@ Sequence:
 5. Clay native patterns
 
 ### Step 5: Email Verification
-- MillionVerifier bulk verification (primary)
+- Validation per `clusters/enrichment/clay-engineer/providers/contact-finding/email-waterfall.md` (Icypeas validation 0.1 cr; Dropcontact rows carry status inline) (updated 2026-10-11: was "MillionVerifier bulk verification (primary)", creator-radar review B3 / S11)
 - Clay native verification (backup)
 - Remove: invalid, disposable
 - Flag: risky emails for manual review
@@ -56,16 +56,8 @@ Sequence:
 
 ### Step 8: Scoring & Segmentation
 
-Lead Score Components (100 points total):
-- Company size match: 25 pts
-- Recent signals: 25 pts
-- Email deliverability: 25 pts
-- ICP fit: 25 pts
-
-Tier Assignments:
-- Tier 1 (80-100): Immediate outreach
-- Tier 2 (60-79): Nurture sequence
-- Tier 3 (<60): Long-term nurture
+Score with `clusters/lead-scoring/tasks/score-and-prioritize.md` (ICP fit 40 / Signal 40 / Persona authority 20 + economic-buyer override; Tier 1 70-100, Tier 2 40-69, Tier 3 < 40). Email deliverability is a gate (Step 5 validation, Sending Gate), not a fit component.
+(updated 2026-10-11: was "4 x 25 pts: company size, recent signals, email deliverability, ICP fit; tiers 80-100 / 60-79 / <60", creator-radar review L3-03)
 
 ### Step 9: Export & Integrate
 - Export to Instantly/LemList

@@ -154,6 +154,10 @@ What happens once the infrastructure exists: awareness segments become ads retar
 | Event invites | Event CTAs outperform other offers in cold outbound to enterprise. Start with webinars on trending topics → then IRL (small dinners) in SF/NY-type hotspots |
 | Manual outreach | Automate 90%+; reserve manual for dream + high-intent accounts where a lower conversion rate is unacceptable. Hyper-personalize (custom microsites). Where manual vastly outperforms → **human-in-the-loop AI sequencing** to scale it |
 
+Evidence (2026-10-11) for the 1:1 rows above:
+- **Warm intros:** map targets to each investor's portfolio, ghostwrite the CEO-to-CEO intro per named company, and give investors a click-to-intro dashboard; a single forwardable ask gets sent. [#2001]
+- **Gifting (Ashby, via Waxman):** one deeply researched gift per prospect on narrow lists: 25% gift-to-meeting, 14.6x pipeline to spend. [#2037; see also #423]
+
 ### 1:many channels (Tier 2/3)
 
 | Channel | Lesson |

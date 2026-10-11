@@ -8,7 +8,7 @@ Shared lineage: all 11 framework/knowledge references are byte-identical or rebr
 - 🆕 new-angle: bounce escalation is asymmetric across the swan set: list-architect holds gtm-master's <1% target (matching data-validation.md) while cold-email-strategist SKILL says <2%. Same 1%-vs-2% lineage split the 2026-07-13 ColdIQ take recorded; swan ships both numbers in sibling skills without reconciling.
 - ✅ supports [list-building canon wholesale]: 2,500 Sales Nav search cap (segment to bypass); 22-30% annual email decay; re-verify lists older than 30 days; >3% bounce = pause immediately; verification price table (ZeroBounce $0.008, MillionVerifier $37/10K, Bouncer $8/1K EU); 100-pt tiers A 90-100 / B 70-89 / C 50-69 / D <50 with the 7-criterion weighting (Industry 20, Size 15, Revenue 15, Geo 10, Tech 15, Growth 10, Intent 15); ABM 10-50 Tier 1 accounts; account-search 95-100% match vs 30-70% contact upload; lookalike from top 10-20 customers; beginner 7-step Clay workflow.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## List Building Tips — swan-gtm/gtm-skills/skills/alex-vacca/list-building-tips · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: list-building
@@ -16,13 +16,7 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: list-building
 - 🆕 new-angle: manual-vs-Clay effort benchmarks for scoping: 100 prospects = 8-10h manual vs 30min Clay; 500 = 40h+ vs 1-2h; 1,000 = 80h+ vs 2-3h. Useful for client quotes; no equivalent table in gtm-master.
 - ✅ supports [data-validation.md + waterfall canon]: mix sources, scraping is step 1 not the list, verify before send, over-filtering shrinks TAM / under-filtering wastes sends, modular templates over rebuilds.
 Review: additive
-Status: holding
-
-## Lead Sources Guide (standalone) — swan-gtm/gtm-skills/skills/alex-vacca/lead-sources-guide · filed 2026-07-28
-Source: https://github.com/swan-gtm/gtm-skills · cluster: list-building
-- ✅ supports [list-building/knowledge/lead-sources-guide.md]: body is byte-identical to canon (frontmatter and Frontal footer are the only additions). Source-by-use-case matrix, Clay templates, import methods, all unchanged. Nothing to import.
-Review: corroboration
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Build list — swan-gtm/gtm-skills/skills/ido-goldberg/build-list · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: list-building
@@ -36,7 +30,7 @@ Swan's list-building verb as a "column ladder": every list is a table where each
 - 🆕 new-angle: completion contract: the plan (columns + `icp_pass` definition) is shown BEFORE running; final summary shows size, tier breakdown, column completeness, and estimated credit cost for explicit approval; "the skill is not done until the list is saved or explicitly abandoned — don't end on 'want me to proceed?' with no list object created."
 - ✅ supports [build-prospect-list.md multi-source + ICP-validation-before-enrichment, data-validation.md role-based removal, enrichment waterfall ordering]: dedupe by normalized domain then verified email; ≥50 rows moves processing into code instead of chat context.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Map contacts — swan-gtm/gtm-skills/skills/ido-goldberg/map-contacts · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: list-building
@@ -46,7 +40,7 @@ Buying-committee mapping for a NAMED account from relationship history first, pr
 - 🆕 new-angle: movers are the headline: every past contact no longer at the account gets a current-employer check, because "a closed-lost champion now at a new target account is the highest-signal person to reach this quarter", if that person doesn't top the recommendations, "the skill missed the highest-value signal it exists to surface"; recently-joined current contacts flagged as new-to-role warm paths; intent is declared up front (net-new ABM / renewal prep / champion-tracking / de-single-threading) and shifts the weighting.
 - 🆕 new-angle: gap honesty and credit thrift: personas with no candidate or weak coverage flagged at the TOP of the map, never buried; enrichment only for the slice the user is about to act on ("NEVER enrich every net-new contact"); the map is keyed strictly to the org's saved persona model ("never invent personas").
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## VC portfolio research — swan-gtm/gtm-skills/skills/brad-smith/vc-portfolio-research · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: list-building
@@ -57,4 +51,4 @@ Brad Smith's production Zapier workflow: paste a VC/PE portfolio URL, get a part
 - 🆕 new-angle: match-quality honesty: ambiguous domain matches are disclosed in a dedicated appendix "rather than silently counted", a rule worth porting to Jan's domain-matching step, which currently has no ambiguity ledger.
 - ✅ supports [Jan's portfolio-prospecting core doctrine + list-building/knowledge/lead-sources-guide.md]: public portfolio pages as the source of truth (with JS-render fallbacks and pasted-list fallback when scraping fails); email-domain as the join key.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)

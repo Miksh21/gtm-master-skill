@@ -49,6 +49,7 @@ Define signals per stage. Examples:
 - Single deanonymized website visit
 
 ### Aware → Interested
+- **Gate (2026-10-11, creator-radar review L3-11):** needs 2+ distinct engaged contacts at the account; anonymous activity counts toward Aware only. A genuine hand-raise or booked meeting skips the gate.
 - Multiple LinkedIn ad clicks
 - Multi-page website visit (deanon)
 - Positive reply to outbound email
@@ -67,6 +68,8 @@ Define signals per stage. Examples:
 
 ### Anti-progression: account stays cold or de-stages
 - 30+ days no activity → demote
+  - Scope (2026-10-11, creator-radar review L3-11): this auto-demote serves one-shot outbound lists; always-on account tiering uses lazy decay and no silent demotion.
+  - **Counter-view (2026-10-11):** never regress on a weak or new signal; demote only when decay drops evidence below threshold AND the account is past a 90-day stale window, surfaced for review [swan steve-armenti/account-progression-staging]
 - Negative reply / "unsubscribe" → exit funnel
 - Closed-lost flag → strip from active list
 
@@ -96,7 +99,7 @@ This is where the model gets operationally real. HubSpot-specific but translates
 
 ### 3. Build 5 HubSpot lists (one per stage)
 
-Each list uses **OR criteria** (not AND) — a single strong signal advances stage. AND would require too many signals to align before any action triggered.
+Each list uses **OR criteria** (not AND), a single strong signal advances stage, except the Aware → Interested gate (2+ distinct engaged contacts, see above) (updated 2026-10-11: was "a single strong signal advances stage", creator-radar review L3-11). AND would require too many signals to align before any action triggered.
 
 **Example: Aware-stage list**
 - Outbound Email Open completed ≥3 times in last 30 days OR

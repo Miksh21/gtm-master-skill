@@ -12,6 +12,8 @@ How to wire an inbound form so every submission becomes an enriched, CRM-ready, 
 ## The leakage problem
 
 Inbound forms with 8+ fields = 60% drop-off. Booking happens but with no prep, no enrichment, no warm pre-call touch. Reps walk into discovery cold. The lead's been engaged for 48 hours but the rep just learned about them.
+- Evidence (2026-10-11): inbound-leak fix: a live untouched-leads tab plus a daily alert naming the owning rep, SLA touch within 48 h; one CRO built it in a night, ~100 demos booked. [#1897]
+- Benchmark (2026-10-11, Clay GTM Engineering Benchmark): agents filled 6,346 demo forms; 32% got any email reply, ~7% from a person, 4% got a call; typical speed to lead 15-24 h, only 5% replied within 5 minutes. Usable as benchmark and sales hook. [#1976]
 
 This pipeline collapses the leakage by automating capture → qualify → CRM-create → assign → outreach within seconds, and uses the time between booking and meeting to prep the rep.
 
@@ -50,6 +52,7 @@ Sybill records meeting → transcripts feed sales process
 - **Tally application form** auto-qualifies based on rules (job title, company size, etc.).
 - **Qualified** → instant Cal.com booking page (no friction between qualification and meeting).
 - **Email-only submissions** (no Tally completion) → Slack for manual review + outreach.
+- **Book-a-demo form (2026-10-11):** work email only, enrich the rest, no open text field (dropdown if context is needed). Each required field costs completions. [#2066]
 
 ### 2. Routing — humans only when humans add value
 
@@ -134,6 +137,10 @@ This branch logic is what most form-routing pipelines skip — they treat every 
 - **Customer.io** — pre-frame email automation
 - **Slack** — approval interface + rep notifications
 - **Sybill** — meeting recording + intelligence layer
+
+## Creator-radar 2026-10-11
+- **PLG signup enrichment:** warehouse signup feed, classify email type; personal email goes to LinkedIn reverse lookup then work-email find (LeadMagic converts Gmail to work email), then company + contact enrich, Claude score, HubSpot, then sales or ads. [#717]
+
 
 ## Cross-references
 

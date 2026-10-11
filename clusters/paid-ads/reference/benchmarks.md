@@ -65,3 +65,5 @@ Smart Bidding needs ~30 conversions per 30 days per campaign to learn.
 ## Audience Size Minimums
 
 Meta: lookalike seed 500 accounts (1,000+ optimal), broad 500K-2M, ABM list 1,000+ accounts, ABM retargeting 100+. LinkedIn: 300 matched members hard floor, 1:1 ad set band 300-1,000 (max ~2,000), cold campaigns 15K minimum, cold sweet spot ~50K (10-20K on small budgets), MOF 1K-30K, BOF 1K-5K.
+
+**Identity resolution before upload:** work-email match on Meta/Google/Reddit is 2-10%, rising to about 80/50/70% after resolution. Reddit matches 70-80% for IT/engineering but ~4% for legal/procurement; pick the channel by persona match rate. [#1754]

@@ -7,6 +7,8 @@ description: Write the message of a LinkedIn connection request that gets accept
 
 A connection request without a note has a 30 to 40% acceptance rate. With the right note, it climbs to 70%+. This skill writes that note.
 
+**Counter-view (2026-10-11):** across 200+ personal brands, blank connection requests to an ICP Sales Nav list accept at 35-50%, and notes lower acceptance unless hyper-personalized; 100 blank requests/week compounds to ~2,400-2,600 ICP connections/year. Write a note only when there is a specific shared context. [#1159]
+
 ## When to trigger
 
 The user says "write me a connection request to X", "I want to connect with Y", "what should I say in my invite", "help me invite this person".

@@ -39,6 +39,7 @@ All numbers here are **published**, not internal speculation.
 | Medrio ABM program | **$1.3M ABM-attributed pipeline in 4 months** | Workflows.io published case (Growth Unhinged, 2026-05) |
 | Workflows.io itself | Bootstrapped **$2.5M ARR in 10 months**; 80% of deals at least indirectly attributed to LinkedIn content; ABM gifting play (Freckle, 60 accounts) generated 140k impressions | Growth Unhinged, 2026-05 |
 | Full TAM map + account research cost | **$2,000+** across data providers + Clay + AI credits (30+ custom data points) | Workflows.io implementation benchmark |
+| Cold-channel benchmarks 2025-26 | ~370 dials per meeting; 28% LinkedIn accept rate; LinkedIn reply rate down 32% to 22%; ~34 email replies per 1K sent. Justifies stacking channels on one list [#1487] | Alex Vacca/ColdIQ (creator-radar 2026-10-11) |
 
 ---
 
@@ -53,6 +54,7 @@ All numbers here are **published**, not internal speculation.
 - $500,000 closed-won revenue (16.7% pipeline-to-close conversion — strong for enterprise B2B)
 - Consistent month-over-month improvement in conversion rates
 - Remaining pipeline still in various sales cycle stages at 6mo mark (total revenue will grow)
+- Evidence (2026-10-11): AirOps update: LinkedIn ads + outbound on the identical account list reached $7.83M qualified pipeline in 10 months with no SDR hire. [#1484]
 
 **TAM funnel:**
 - 15,000 companies (broad TAM)

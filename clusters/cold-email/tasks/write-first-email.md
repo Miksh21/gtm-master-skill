@@ -16,6 +16,7 @@ If any of these are missing, ask before drafting:
 - **Persona seniority** — VP/C-Level (ATL) vs Manager/IC (BTL). Tone changes.
 - **Channel** — cold email vs LinkedIn InMail
 - **Optional**: existing brand voice samples, prior winning copy
+  - Evidence (2026-10-11): make prior winners mandatory input where they exist. The model reads your own best-performing sequences before drafting; otherwise it returns the average of every cold email ever written. [Vacca #598]
 
 ## Principles (non-negotiable)
 
@@ -26,6 +27,7 @@ If any of these are missing, ask before drafting:
   - **Commodity signal** (funding, generic hiring, job change, tech install): everyone opens with it, so naming it reads as mass outreach ("congrats on the round"). Use it as intent only: it picks *who* and *when*; sentence 1 names the operational situation the signal implies for this company, not the signal.
   - **Alpha signal** (derived from your product's value or first-party data, e.g. Canva's brand-guidelines-vs-latest-post mismatch): lead with it. That is the whole point of having it.
   - A client's playbook may fix this per signal; that decision wins over this default.
+  - **Opener identity rule (2026-10-11, creator-radar review L3-04):** tracked or anonymous signals (website or pricing visits, intent data, profile views, deanonymized traffic) are never named in the copy. Public commodity events (funding, job change, hiring, expansion) get at most one clause, led by the consequence, never a congrats opener. Self-declared signals the prospect knows they gave (form fill, download, webinar attendance, prior conversation or objection) are named plainly.
 - **One CTA only** — soft ask, not a hard sell
 - **Pain over features** — name the problem the signal implies, not your solution
 - **No vanity openers** — never "I came across your profile…", "hope you're well", "quick question"

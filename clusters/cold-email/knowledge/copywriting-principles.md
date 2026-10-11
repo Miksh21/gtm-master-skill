@@ -66,7 +66,7 @@ What you noticed about them. This is your hook — it must be relevant.
 - Remote-first setup (if selling remote collaboration tools)
 - Average employee tenure (if selling retention tools)
 
-**The observation becomes your opener:**
+**The observation shapes your opener** (apply the opener identity rule in `tasks/write-first-email.md`: tracked signals never named; public events one clause, consequence first; self-declared signals named plainly) (updated 2026-10-11: was "The observation becomes your opener", creator-radar review L3-04):
 - "Hey, I was looking at {{company}} on LinkedIn, and I noticed the average tenure is below 6 months"
 - "Saw that Reach's latest blog post doesn't include a Meta tag which can affect its online visibility"
 - "Noticed you have over 50 open positions on your job portal"
@@ -144,7 +144,7 @@ If you have existing clients, ask:
 | Increasing ad spend | Growing acquisition efforts | Selling marketing/creative services |
 | Tech stack changes | Open to new vendors | Selling competing/complementary tools |
 
-**The signal becomes the opener. The opener draws attention because you're highlighting an issue they know they have.**
+**The signal informs the opener: lead with the issue the signal implies, which they know they have. Name the signal itself only per the opener identity rule (`tasks/write-first-email.md`).** (updated 2026-10-11: was "The signal becomes the opener", creator-radar review L3-04)
 
 ---
 

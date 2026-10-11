@@ -44,6 +44,7 @@ User wants to build a signal tracking plan from scratch, decide which signals to
 ### Timing signals (variable)
 - End of fiscal quarter approaching
 - Recent layoffs (budget consolidation = opportunity for cost-saver positioning)
+**Counter-view (2026-10-11):** a negative timing signal (layoffs, hiring freeze) caps the account at a relationship/nurture track regardless of fit and authority; reserve the cost-saver opening only for genuine ROI-replacement offers. [#1653]
 - Competitor went down, had outage, raised prices
 
 ## Process
@@ -53,6 +54,8 @@ User wants to build a signal tracking plan from scratch, decide which signals to
 3. For each signal: identify the best detection method + tool
 4. Rank by intent strength (1 = highest)
 5. Flag automatable (Clay/Trigify enrichment) vs manual research (LinkedIn deep dive)
+
+- **Discover triggers backwards (2026-10-11):** ask closed-won cold buyers what was happening pre-purchase (e.g. 10+ certifications due, no owner, past citation) and mine what they never said. Situational changes beat firmographic filters. [#1957]
 
 ## Output format
 

@@ -98,6 +98,7 @@ A complex multi-stage attribution model is harder to maintain and harder to quer
 
 **Old:** Reply rate → meetings booked → pipeline → revenue. Linear, replies-as-gating-step.
 **New:** Reply rate is one metric; influenced signups are another. Track both. Often the influenced signups dwarf the reply-driven pipeline, especially for accounts with prior content exposure.
+- Evidence (2026-10-11): keep comp on sourced pipeline, but report to leadership on three lines: sourced (flat), influenced vs a shown threshold, win-rate trend over 3-4 quarters. Decouples the comp fight from reporting. [#1941]
 
 ---
 

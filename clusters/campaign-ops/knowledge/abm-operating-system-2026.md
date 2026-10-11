@@ -13,6 +13,8 @@ ABM is **architectural, not theoretical.** "Most teams don't struggle with ABM s
 
 **The qualification gate (when to recommend ABM at all):** ACV $50k+ AND a constrained addressable market of < 20,000 qualified companies. Below that TAM, volume channels can't be relied on in silos and every % of TAM coverage matters.
 
+**All-in ABM budgets 2026 (Waxman, 2026-10-11):** sub-50-account pilot $25-50k, mid-market $50-400k, enterprise $400k-1.5M; target 5-10x influenced pipeline in year one, 15-25x by year three. [#2036]
+
 **For the hands-on build** (cost math, evergreen CRM enrichment, HubSpot mechanics, channel lessons, the 6 reports): `clusters/campaign-ops/knowledge/abm-engine-implementation.md`.
 
 ---
@@ -100,6 +102,7 @@ Aggregate all into Clay → see `clusters/campaign-ops/knowledge/outbound-master
 - Tier 1: Strong fit / Tier 2: Good fit / Tier 3: Okay fit
 - Push tier property to CRM
 - **Backtest validation:** Do historical wins cluster in Tier 1, losses in Tier 3? If not, refine.
+- **Activate in monthly slices (single-case: UserGems, 2026-10-11):** rank the full SAM (10K) with a ~40-signal algorithm, activate the top 500/month with BDRs plus ads together: 1 BDR per 150-180 accounts, ~$10K/mo LinkedIn ads per 500. 12% opp conversion, 30% of net-new ARR; a random 500 converted 30% lower. [#222]
 
 For HubSpot-specific mechanics (re-enrollment, fallback for missing tier, monthly/quarterly review cadence), see the HubSpot tiering recipe pattern from workflow 11.
 
@@ -166,6 +169,8 @@ Must-win accounts deserve focused attention + personalized experience that build
 
 - **Warm intros** via investors / customers / partners (The Swarm, Commsor)
 - **Custom gifting** / direct mail tailored to key stakeholders
+  - **Follow-up SLA (single-case: Samsara, 2026-10-11):** direct mail only pays when the rep calls within 1 hour of delivery; it built a 10%+ of pipeline channel. Rep-triggered sends (CRM-fed gift suggestion) beat quarterly batch mailers. [#660]
+  - **Gift budget rule (Crawford, 2026-10-11):** spend about 1% of ACV on something physical (~$500 on a $50K account); with $10-15K to land the deal that keeps roughly the 3:1 LTV-to-CAC floor. [#1741]
 - **Personalized microsites** / landing pages per account (HubSpot)
 - **Short tailored video** from AE or founder (Sandcastles AI for at-scale, Loom/Vidyard for manual)
 - **Private event invites** / exclusive webinars
@@ -223,6 +228,7 @@ CRM and Slack shouldn't work in isolation. The most effective systems run **bi-d
 - Send daily/weekly summaries (Tier 1 Account Digest)
 - Trigger Slack messages when awareness stages change
 - Slack bots / emoji reactions to assign or confirm next actions
+- **Weekly agent-scored account health (2026-10-11):** purple/green/yellow/red into the CRM; yellow requires real engagement within 30 days (reply, call over 60s, intent event, pricing visit). The Slack alert names the signal that moved, so updates get worked. [#1994]
 
 This loop is what separates measured ABM (continuous data flow + reps acting on real-time insights + leadership visibility) from one-way data hoarding.
 

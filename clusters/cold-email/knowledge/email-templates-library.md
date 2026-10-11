@@ -50,10 +50,11 @@ Also curious: how are you currently handling {{problem}}?
 ```
 Subject: {{years}} years
 
-Congrats on {{years}} years at {{company}}.
+{{years}} years in, you have seen {{pain_point}} from both sides.
 
 Quick q: Has {{pain_point}} gotten easier or harder since you started?
 ```
+(updated 2026-10-11: was "Congrats on {{years}} years at {{company}}.", creator-radar review L3-04)
 
 ### #6 Visual Email Template
 - Include screenshot/gif showing their problem
@@ -109,7 +110,7 @@ Does {{new_company}} have something similar in place?
 ```
 Subject: first 90
 
-{{firstName}}, congrats on the {{title}} role.
+{{firstName}}, the first 90 days in a new {{title}} role usually set the agenda.
 
 Most new {{title}}s I talk to are focused on {{common_priority}}.
 
@@ -117,6 +118,7 @@ Happy to share what {{similar_company}} did in their first quarter.
 
 Interested?
 ```
+(updated 2026-10-11: was "{{firstName}}, congrats on the {{title}} role.", creator-radar review L3-04)
 
 ### #21 Job Change (Beanworks Style)
 - References career shift context

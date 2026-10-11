@@ -276,4 +276,5 @@ Sales Navigator shows max 2,500 results per search. Bypass strategies:
 2. Analyze common attributes (industry, size, geography, tech stack)
 3. Build lookalike search in Sales Navigator
 4. Use "Similar Companies" feature on company pages
+   - **Counter-view (2026-10-01):** a black-box "similar to this" feed fails the "why is this row here?" test; prefer lookalikes built from explicit attributes (step 2) you can state per row. [amir-baldiga/icp-lookalike-expansion]
 5. External tools: Ocean.io, Clearbit, Apollo.io, Clay

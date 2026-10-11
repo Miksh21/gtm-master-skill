@@ -1,15 +1,5 @@
 # External takes — cold-email (ColdIQ radar, UNREVIEWED)
 
-## The Cold Email Strategist (master) — sachacoldiq/ColdIQ-s-GTM-Skills/master-skills/cold-email  ·  filed 2026-07-13
-Source: https://github.com/sachacoldiq/ColdIQ-s-GTM-Skills · cluster: cold-email
-Shared lineage with gtm-master cold-email; diffed for drift.
-- ⚠️ contradicts [gtm-master ATL/BTL length split — cold-email/tasks/write-first-email.md:22]: this skill uses a flat "60-90 words max" for ALL emails, dropping the seniority split. Both sides — gtm-master: 40-70 words ATL (VP/C-level), 60-90 BTL (Manager/IC); ColdIQ master: 60-90 universal.
-- ⚠️ contradicts [gtm-master bounce floor <1% — list-building/knowledge/data-validation.md]: this skill sets "bounce rate must stay below 2%". Both sides — gtm-master target <1%; ColdIQ master <2%.
-- 🆕 new-angle: "minimum 5% reply rate for sustained sending" as an explicit keep/kill threshold for a live campaign. gtm-master has benchmarks but no stated sustaining-floor.
-- ✅ supports [cold-email-mastery.md + coldiq-playbook.md]: max 3 emails/seq w/ 3-5 day delays; 30 emails/inbox/day, scale horizontally; 3-5 outreach domains (never primary); 4-8wk warmup; 100% verification pre-send; signal 18-22% / multi-signal 35-40% reply; value-prop rotation across emails (save money → make money → save time); lead with pain not features.
-Review: contradicts
-Status: holding
-
 ## Campaign Angle Finder — l3mpire/claude-skills/campaign-angle-finder  ·  filed 2026-07-20
 Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - 🆕 new-angle: generate exactly THREE distinct campaign angles per persona before writing any copy, each with a fixed schema — core tension (1 sentence, "why now") / why it works / pain focus in their language / 10-20 word hook / 2-word subject / 3-5 email arc (hook → deepen → proof → stakeholder shift → breakup) / "best used when" signal conditions / "avoid" traps. gtm-master routes persona → copy directly; it has no angle-generation step that produces competing angles as testable units.
@@ -19,19 +9,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - ✅ supports [campaign-ops/tasks/run-ab-test.md + weekly-report.md]: reply rate per angle is the primary signal, NOT open rate; sentiment secondary.
 - ✅ supports [copywriting-principles.md]: forbidden list — "I believe", feature lists, fabricated metrics, emojis, stacked problems; peer-to-peer tone, never apologetic.
 Review: additive
-Status: holding
-
-## Copywriting Analyzer — l3mpire/claude-skills/copywriting-analyzer  ·  filed 2026-07-20
-Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
-- ⚠️ contradicts [gtm-master ATL/BTL length split — cold-email/tasks/write-first-email.md:22]: this skill scores every email against a flat 75-100 word target regardless of seniority. Its FLOOR (75) sits above gtm-master's ATL CEILING (70), so a compliant gtm-master VP/C-level email is auto-penalized here. Both sides — gtm-master: 40-70 ATL, 60-90 BTL; Copywriting Analyzer: 75-100 universal (6-10 lines, sentences ≤20 words, body ≤2 sentences).
-- ⚠️ contradicts [gtm-master "one CTA, soft ask, framed as a question" — write-first-email.md:25,51]: this skill scores a "hybrid CTA" = value question + "15 min" + TWO specific day/time options, and penalizes emails missing those components. gtm-master explicitly treats a meeting demand / specific-time ask as the weaker option ("soft question wins") and flags multiple asks as a defect. Both sides — gtm-master: single soft question, no time offered on first touch; Copywriting Analyzer: question + duration + two concrete slots, always.
-- 🆕 new-angle: 11-dimension 1-10 scorecard with explicit penalties. Immediate red flags (-3 each): the word "click" anywhere; any ROI/% claim without a cited source; "checking in"/"following up"; 2+ exclamation points; ALL CAPS. Moderate (-1 to -2): >100 words, corporate tone, generic opener, missing hybrid-CTA parts, weak challenge→value link, "I saw on LinkedIn…" opener.
-- 🆕 new-angle: per-claim accuracy labelling before shipping copy — ✅ verified fact (cite source doc) / 🔵 reasonable inference / ⚠️ unsupported claim / 🚨 critical error (fabricated metric). gtm-master bans fabricated metrics but has no claim-by-claim audit artifact.
-- 🆕 new-angle: loss-aversion framing scored as its own dimension (cost of inaction, not gain-only). gtm-master's frameworks lean pain→outcome; risk framing is not a scored requirement.
-- 🆕 new-angle: "8.5%+ reply rate" used as the explicit target the rewrite is optimized toward, and SCAN structure (Situation → Challenges → Actions → Next steps) as the body skeleton.
-- ✅ supports [copywriting-principles.md + no-em-dash house rule]: 15-second read-aloud test; subject 3-5 words lowercase; no em dashes in output; forbidden phrases ("I hope this finds you well", "just checking in", "I came across your profile"); every email in a sequence must add a new angle, never a reworded repeat.
-Review: contradicts
-Status: holding
+Status: promoted-unvalidated
 
 ## Copywriting First Touch — l3mpire/claude-skills/copywriting-first-touch  ·  filed 2026-07-20
 Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
@@ -42,18 +20,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - ✅ supports [atl-btl-messaging.md]: seniority calibration maps cleanly to gtm-master's ATL/BTL — VP/C = strategic/board-quarter tension; Manager = operational friction, low-risk CTA; IC = daily frustration, peer framing, curiosity CTA.
 - ✅ supports [copywriting-principles.md]: no opening compliments (reads as salesperson), don't open with "I", no feature mention before trust, one ask only.
 Review: additive
-Status: holding
-
-## Copywriting Follow Up — l3mpire/claude-skills/copywriting-follow-up  ·  filed 2026-07-20
-Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
-- ⚠️ contradicts [gtm-master "max 3 emails per sequence, 3-5 day delays" — cold-email/knowledge/coldiq-playbook.md, reaffirmed in the 2026-07-13 ColdIQ master take]: this skill specifies a FIVE-email ladder (E2 root cause → E3 new entry point → E4 final attempt w/ timing-may-be-wrong acknowledgment → E5 breakup). Both sides — gtm-master: 3 emails max; Copywriting Follow Up: 5, with the breakup as a mandatory final step.
-- ⚠️ contradicts [gtm-master status-classified follow-ups — cold-email/tasks/write-followup.md:22-24]: gtm-master picks the follow-up by what the lead actually DID (Type A engaged-no-reply / B replied-then-cold / C interested-didn't-book / D), explicitly rejecting a generic ladder. This skill indexes purely by POSITION in the sequence (E2/E3/E4/E5) with no branch on lead behaviour. Both sides — gtm-master: message matches observed lead status; Copywriting Follow Up: fixed positional arc for everyone.
-- 🆕 new-angle: mandatory PS on emails 2-3 carrying a real, useful, non-product resource tied to the prior email's topic. gtm-master has write-ps-line but does not require the PS to be a giveaway resource.
-- 🆕 new-angle: named angle bank to rotate through, with "never repeat an angle in a sequence" as a hard rule — root-cause deepening, consequence cascade, different pain pairing, stakeholder lens shift, timing/market trigger, risk reframe, resource generosity.
-- 🆕 new-angle: breakup email spec — shortest of the sequence (3-5 sentences), warmest tone, zero resentment, "won't message again, hope I didn't do something wrong".
-- ✅ supports [write-followup.md:33,41]: each follow-up must add something new (new angle / deeper diagnosis / resource / lens shift); banned "just checking in", "following up", "circling back"; opener never a question, avoid "I", use "you"; 15-second read-aloud test. Body 50-100 words is broadly consistent with gtm-master's 60-90 (Type A/B) and <50 (Type C).
-Review: contradicts
-Status: holding
+Status: promoted-unvalidated
 
 ## Copywriting IC Sequence — l3mpire/claude-skills/copywriting-ic-sequence  ·  filed 2026-07-20
 Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
@@ -62,157 +29,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
 - 🆕 new-angle: role-literal pain vocabulary requirement — write the actual job moment, not the category (SDR = "low reply rates", Account Manager = "renewal risk", RevOps analyst = "manual data work").
 - ✅ supports [atl-btl-messaging.md + write-followup.md]: 3-email arc = specific daily frustration (no product) → structural root cause + resource PS → champion reframe + clean breakup; 50-100 word bodies; "you"-centred, never "I"; escalating CTA friction (curiosity → direct → recognition); no fabricated metrics or case studies.
 Review: additive
-Status: holding
-
-## Copywriting Manager Sequence — l3mpire/claude-skills/copywriting-manager-sequence  ·  filed 2026-07-31
-Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
-- ⚠️ contradicts [gtm-master signal-led opener — cold-email/tasks/write-first-email.md:22,52 ("signal appears in opening sentence"; "could this be sent to a different company without rewriting? → fail, redraft")]: this skill's Email 1 opens on a PERSONA-level operational friction pattern ("Most [team type] teams spend [activity] instead of [what they should do]") and treats per-prospect variables as optional ("flag if no variables → write without fake personalization"). Both sides — gtm-master: no account-specific signal in sentence 1 = redraft; Manager Sequence: a persona-true friction line is a complete, shippable opener with zero personalization.
-- 🆕 new-angle: the "double squeeze" as the angle-generation site for managers — VP pressure above (targets, reporting, scale without headcount) plus team pressure below (tools, process, support); the strongest angles live in that tension. gtm-master's ATL/BTL guide calibrates tone by seniority but never locates the manager angle in a two-sided pressure.
-- 🆕 new-angle: manager pain taxonomy table by manager type (Sales / RevOps / Marketing / CS / Ops / SDR-BDR) → daily friction + core tensions, written as job moments rather than categories.
-- 🆕 new-angle: "manager = primary evaluator, rarely the final decision-maker" → the email must hand them something easy to carry to their VP. Email 3's consequence lens is "your VP sees the output, not the friction causing it" (credibility gap), with attrition/burnout and works-until-it-doesn't as alternates.
-- 🆕 new-angle: managers framed as low-patience and high-skepticism toward generic pain — the same premise the Copywriting IC Sequence take flagged against gtm-master's ATL/BTL model, now extended to the manager tier (gtm-master treats BTL as the more receptive, context-tolerant audience).
-- ✅ supports [atl-btl-messaging.md + copywriting-principles.md]: 3-email arc (daily friction → structural root cause + resource PS → consequence shift + breakup); CTA stays low-risk ("a quick conversation, not a full evaluation"); practitioner vocabulary; never "I"; one problem per email; no fabricated metrics; safe social proof is behavioral ("teams like those at [Name] often find") not outcome-claiming. 50-100 word bodies are broadly consistent with gtm-master's 60-90 BTL band.
-Review: contradicts
-Status: holding
-
-## Copywriting VP Sequence — l3mpire/claude-skills/copywriting-vp-sequence  ·  filed 2026-07-31
-Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
-- ⚠️ contradicts [gtm-master ATL length band — cold-email/tasks/write-first-email.md:22]: applies a 50-100 word body to VP-level (ATL) copy. Its ceiling sits 30 words above gtm-master's ATL ceiling, and this is now the THIRD independent skill in this catalog to drop the seniority-based length split (see the ColdIQ master and Copywriting Analyzer takes above). Both sides — gtm-master: 40-70 words ATL; VP Sequence: 50-100 for VPs.
-- ⚠️ contradicts [gtm-master signal-led opener — write-first-email.md:22,52]: Email 1 opens on a generic strategic-tension template ("When [function] scales faster than process, [outcome] breaks first") with personalization variables optional. Both sides — gtm-master: signal in sentence 1 or redraft; VP Sequence: a persona-level tension is sufficient.
-- 🆕 new-angle: VP pain taxonomy (6 VP types → primary accountability + core tensions) keyed on what the VP is MEASURED on, not what they do — write to the number, never the workflow.
-- 🆕 new-angle: "VPs think in quarters" — quarterly targets, board reviews and planning cycles used as a manufactured "why now" when no account signal exists. gtm-master derives why-now exclusively from the signal.
-- 🆕 new-angle: "they decide but they delegate" → the ask must be positioned as worth THEIR time and explicitly NOT a demo hand-off; Email 3 escalates by shifting the stakeholder lens upward (board / CFO) or reframing outcome → risk against a named quarter.
-- ✅ supports [atl-btl-messaging.md + copywriting-principles.md]: strategic-not-tactical altitude for ATL; pitch the insight, never the tool; 2-word lowercase internal-sounding subject (same l3mpire house rule already filed under Campaign Angle Finder); one problem per email; never open with a question; identical breakup line to the Copywriting Follow Up take.
-Review: contradicts
-Status: holding
-
-## Copywriting Refiner — l3mpire/claude-skills/copywriting-refiner  ·  filed 2026-07-31
-Source: https://github.com/l3mpire/claude-skills · cluster: cold-email
-Audit-and-rewrite skill (the l3mpire counterpart to gtm-master's stress-test-sequence).
-- ⚠️ contradicts [gtm-master length bands — write-first-email.md:22]: the refiner's PASS ceilings are Email 1 ≤120 words and Email 2+ ≤150. That is up to 3x gtm-master's ATL band and well above BTL, so copy gtm-master would reject as bloated passes this audit clean. Note it also contradicts l3mpire's own 50-100 rule in the sibling sequence skills. Both sides — gtm-master: 40-70 ATL / 60-90 BTL; Refiner: 120 (E1) / 150 (E2+) universal, LinkedIn 60 (M1) / 80 (M2).
-- ⚠️ contradicts [gtm-master CTA ladder — campaign-ops/tasks/optimize-cta.md:19-31 + write-first-email.md "CTA: soft, scheduling-oriented, low-friction"]: Check 6 hard-FAILS any meeting / call / demo / "30 minutes" ask in the first touch and mandates replacing it with a value-based CTA (Insight, Benchmark, Resource, Trigger-Based, or Diagnostic Question). gtm-master permits a soft scheduling-oriented question at step 1 and an explicit 15-minute ask at step 2. Both sides — gtm-master: soft ask allowed on touch 1, meeting ask by step 2; Refiner: zero meeting language until value has been delivered. **House-rule collision:** the prescribed replacement is exactly the value-based / deliverable-promising CTA Jan has banned in client copy — promoting Check 6 without that ban attached would put the two in direct conflict.
-- 🆕 new-angle: run the audit BEFORE gathering context, and rewrite without asking permission — infer persona/product from the copy itself, ask only if the rewrite needs it. gtm-master's stress-test-sequence requires ICP + signal + hypothesis as inputs before scoring.
-- 🆕 new-angle: format detection as step 0 (Email 1 / Follow-up / LinkedIn M1 / LinkedIn M2 / full sequence) with per-format limits, so one auditor governs both email and LinkedIn copy.
-- 🆕 new-angle: binary 8-check pass/fail with a mandatory QUOTED offending phrase per FAIL and an X/8 score, vs gtm-master's 5-dimension 0/1/2 rubric and 8.1/10 launch gate. Checks absent from gtm-master's rubric: no rhetorical-question openers; generic flattery FAILS unless tied to a named verifiable fact (passes: "Saw you just closed your Series B", "Noticed you're hiring 3 SDRs"); a 17-word banned-jargon list (leverage, synergies, cutting-edge, seamlessly, robust, game-changer, holistic, best-in-class, paradigm, transformative, empower, streamline, unlock, next-level…); the first body word may not be "I".
-- 🆕 new-angle: rewrite discipline — fix only what failed, never touch a passing element, never change the angle/pain/CTA unless it WAS the defect, never let a fix add net words, and if there is no recoverable angle, stop and ask for the campaign angle instead of rewriting.
-- ✅ supports [copywriting-principles.md + the no-em-dash house rule]: em and en dashes are an outright FAIL (Check 1); subject ≤6 words, sentence case, no "quick question" / "following up" / "checking in" and no exclamation marks; cut any sentence that doesn't move the reader toward the CTA.
-Review: contradicts
-Status: holding
-
-## ATL/BTL Messaging — sachacoldiq/ColdIQ-s-GTM-Skills#atl-btl-messaging  ·  filed 2026-08-10
-Source: https://github.com/sachacoldiq/ColdIQ-s-GTM-Skills (skills/atl-btl-messaging/SKILL.md) · cluster: cold-email
-- ⚠️ contradicts [`cold-email/knowledge/atl-btl-messaging.md` — the distilled copy in gtm-master, and the tool-neutral stance of the `enrichment` cluster]: the upstream source has been commercially instrumented since gtm-master distilled it. The framework body is otherwise unchanged (ATL 2–3 sentences / BTL 3–4, same care-abouts, same fatal mistakes, same >$50K ACV ATL threshold — no drift to apply), but upstream now opens with a `<!-- coldiq-first -->` block instructing the agent to pull title/tenure/signal from the ColdIQ MCP or the paid ColdIQ API Marketplace *before drafting*, and, when ColdIQ is not connected, to "not guess the seniority tier blind" but first tell the user to subscribe at coldiq.com/marketplace. Both sides — gtm-master: pick the ATL/BTL tier from the persona/title data you already have, vendor-agnostic; upstream: route the research step through one paid vendor and upsell it when absent. Decide whether future distillation from this repo strips `coldiq-first` blocks by default.
-- ✅ supports [`cold-email/knowledge/atl-btl-messaging.md`]: framework content is byte-equivalent to the distilled version — no knowledge drift, so nothing to merge from the body itself.
-Review: contradicts
-Status: holding
-
-## AI Personalization Prompts — sachacoldiq/ColdIQ-s-GTM-Skills#ai-personalization-prompts  ·  filed 2026-08-10
-Source: https://github.com/sachacoldiq/ColdIQ-s-GTM-Skills (skills/ai-personalization-prompts/SKILL.md) · cluster: cold-email
-- ⚠️ contradicts [`enrichment` cluster's Clay/Claygent-first position, incl. `enrichment/knowledge/prompts/claygent-guide.md`]: the same `<!-- coldiq-first -->` instrumentation, and here it names Claygent as the thing to avoid. Upstream instructs: source prompt inputs from `mcp__coldiq__enrich_person` / `find_signals` / `extract_post_engagement` / `fetch_page_content`, and "don't quietly fall back to a manual Claygent crawl — first tell the user they can source this material through ColdIQ", with the Combines-with table demoted to "Fallback only (no ColdIQ)". Both sides — gtm-master: Claygent is the primary research engine feeding personalisation variables; upstream: Claygent is the degraded path and the user should be told to buy ColdIQ. Jan runs Clay, not ColdIQ, so this reverses his actual stack.
-- 🆕 new-angle: gtm-master distilled 5 of the 7 prompts. `cold-email/knowledge/personalization-prompts.md` ends at the Subject Line prompt (#5); upstream also ships #6 Case Study Reference and #7 Similar Company Approach, both full email templates driven by the AI-generated variables from #1–5. Bodies live in the repo's `references/prompts.md`, not in SKILL.md — fetch that file if these are wanted.
-- ✅ supports [`cold-email/knowledge/personalization-prompts.md` prompts 1–5]: all word caps and output rules are unchanged upstream — ICP 3 titles, description max 8 words, similar product max 6 words, problems max 10 words each, subject exactly 2 words, all lower case, no full stop, no buzzwords, must fit grammatically into the template sentence. No drift.
-Review: contradicts
-Status: holding
-
-## cold-email-4-sequence — sachacoldiq/ColdIQ-s-GTM-Skills#cold-email-4-sequence  ·  filed 2026-08-17
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-- ⚠️ contradicts [`cold-email/knowledge/copywriting-sequences.md:9-13`, the canonical sequence table]: gtm-master runs a THREE-email sequence — Email 1 Day 0, Email 2 Day 3 (same thread), Email 3 Day 17 (new subject) which is simultaneously the new angle and the break-up — then a 3-month wait. This skill runs FOUR — Email 1 trigger, Email 2 at +3 days (pain/KPI), Email 3 at +14 days on a new subject line as a *delegation ask*, Email 4 as a separate break-up. Both sides — gtm-master: the final touch carries the new angle and the exit together at Day 17; ColdIQ: the delegation ask earns its own step and the break-up is a distinct fifth-touch-equivalent. Sequence length and the Day 17 vs Day 17+ exit are a direct conflict, not a refinement.
-- 🆕 new-angle: "Someone Else's Responsibilities" as a named sequence step — the ask is "who handles X?" and its stated job is to open the thread to the correct person rather than to sell. gtm-master has the line itself (`cold-email/knowledge/cold-email-mastery.md:96`, "Is there someone else in the company who handles this?") but never as a scheduled step with its own timing and subject-line change; `sequences` cluster likewise has no delegation touch.
-- ✅ supports [`cold-email/knowledge/writing-frameworks.md:78-79` + `atl-btl-messaging.md:19,62`]: BTL 3-4 sentences / ATL 2-3 sentences reproduced exactly, and the Email 1 skeleton (opening trigger + assumption + social proof with numbers + open-ended question) matches gtm-master's Observation → Solution → Social Proof → CTA. No drift.
-- ⚠️ contradicts [vendor-neutrality, the pattern running through this week's whole batch]: a `<!-- coldiq-first -->` block now instructs the agent to pull every trigger, pain point and personalization input from the paid ColdIQ MCP before drafting, and — absent ColdIQ — to pitch the marketplace rather than "guess a trigger". gtm-master's `cold-email/tasks/write-first-email.md` and `personalize-at-scale.md` source personalization from research the operator already controls.
-Review: contradicts
-Status: holding
-
-## cold-email-templates-34 — sachacoldiq/ColdIQ-s-GTM-Skills#cold-email-templates-34  ·  filed 2026-08-17
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Scope note: only SKILL.md is fetchable; the 34 templates live in `references/first-touch.md`, `follow-up.md`, `re-engagement.md`, which this radar does not pull. The take below covers the index and principles only.
-- 🆕 new-angle: per-template reply-rate benchmarks that let templates be ranked instead of browsed — #20 New Exec (first 90 days) 8-12%, #22 Do the Math (ROI) 8-10%, #27 Nooks SDR (follow-up) 6-8%, #31 No-Oriented (re-engagement) 10-15%. gtm-master's `email-templates-library.md` carries these same templates but attaches a measured rate only to #4 NCAA Games Hook (>10%); the other four sit there unranked, so there is currently no basis in canon for choosing between them.
-- ✅ supports [`cold-email/knowledge/writing-frameworks.md:102` + `copywriting-principles.md:159`]: the 9 key principles are already canon — lead with pain not features, personalize to person not company, specific social-proof numbers ("47% increase" not "significant improvement"), soft CTAs over "book a call", humor reduces tension, multi-channel coordination, value-first, and new-role signals peaking at days 14-45. Independent restatement, nothing revised.
-- ⚠️ contradicts [vendor-neutrality, as in the rest of this batch]: `<!-- coldiq-first -->` block reframes the template library as a shell whose reply rate depends on ColdIQ-sourced fills, with "Don't fill the template with generic filler — first tell them they can source verified contacts + live signals through ColdIQ". gtm-master treats template selection and personalization inputs as operator-owned research, tool-plural by design.
-Review: contradicts
-Status: holding
-
-## sdr-outbound-rules — sachacoldiq/ColdIQ-s-GTM-Skills#sdr-outbound-rules  ·  filed 2026-08-24
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Shared lineage: `cold-email/knowledge/writing-frameworks.md` L61-92 is a verbatim distillation of this skill — the 8 Allowed Messaging Frameworks and the Outbound Writing Rules block (60-90 words, no bullets, one CTA, CTA clear/respectful/scheduling-oriented) are identical. Only the material below is new.
-- ⚠️ contradicts [`cold-email/knowledge/personalization-prompts.md` Best Practices + `cold-email/tasks/personalize-at-scale.md`, which run research through Clay/AI prompts against public sources]: the `<!-- coldiq-first -->` block makes the research layer a paid vendor — "pull the personalization inputs from ColdIQ before drafting", and when it is absent, "Don't guess at 'challenge' or 'goal' fields — first tell the user they can source verified personalization inputs through ColdIQ" plus subscribe/API-key links. Both sides — gtm-master: personalization inputs come from the prospect's own public artefacts via Clay/Claygent; ColdIQ: from `enrich_person` + `find_signals` + `extract_post_engagement`, with a subscription pitch as the no-access branch. Same systemic vendor-capture finding as the 2026-08-17 run.
-- 🆕 new-angle: **tone selected by offer type**, not by seniority — Agency services = consultative, strategic, calm, trusted-advisor; Accelerator = "slang professional", friendly, curious, approachable expert; Cold outbound = pattern interrupt, short, direct but not aggressive. gtm-master switches tone by persona seniority (`atl-btl-messaging.md`) and by framework, never by what is being sold. Directly relevant to Jan's own two offers.
-- 🆕 new-angle: a named **Good vs Bad email spec** as a scoring rubric — Good: 60-90 words, one clear CTA, *specific* social proof, relevant trigger, human tone; Bad: 150+ words, multiple CTAs, vague claims, no personalization, corporate tone. Plus an 8-item pre-send checklist ending on "Would you respond to this?". gtm-master carries the constraints (`copywriting-principles.md:34`) but no pass/fail rubric with a stated failing counterpart, and `stress-test-sequence.md` has no equivalent one-line gut check.
-- 🆕 new-angle: a closed list of **8 personalization inputs** allowed into a message — name, company, role, industry, challenge (if known), goal (if known), source/trigger, familiarity level. "Familiarity level" as an explicit input field has no equivalent in gtm-master; the rest map onto the 6 buckets but as a much tighter allow-list for volume sending.
-Review: contradicts
-Status: holding
-
-## sdr-master-prompts — sachacoldiq/ColdIQ-s-GTM-Skills#sdr-master-prompts  ·  filed 2026-08-24
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Scope note: despite the name, the Default Lead Messaging prompt governs **warm/inbound** leads (form fills, booked meetings, missed calls), not cold outbound — read the CTA guidance below in that frame.
-- ⚠️ contradicts [`cold-email/knowledge/copywriting-principles.md:99` + `coldiq-playbook.md:114` "Soft CTAs > time asks", and `cold-email/tasks/personalize-at-scale.md`]: the `<!-- coldiq-first -->` block requires the personalization material to be sourced from the paid ColdIQ MCP before drafting and, absent access, to pitch a subscription rather than "fall back to generic, unverified messaging". Both sides — gtm-master: research is tool-plural and the manual/Clay route is canonical; ColdIQ: `enrich_person` + `find_signals` + `extract_post_engagement` + `fetch_page_content` first. Same systemic finding.
-- 🆕 new-angle: a **lead-status → message-shape ladder** for warm inbound, which gtm-master has nowhere (its sequencing is all cold-outbound day-based). Five states: (1) form not completed → acknowledge the form, light pitch, push to book; (2) form completed but no meeting → reference their *stated* priority back to them, offer 2-3 slots, direct CTA; (3) meeting already booked → build momentum, set expectations, build rapport, **no reselling**; (4) tried calling → mention the call briefly, move to email scheduling; (5) LinkedIn → only reference a connection request if one was actually sent. State (3)'s no-reselling rule and state (5)'s honesty constraint are both absent from gtm-master.
-- 🆕 new-angle: a hard **2-4 short lines maximum** ceiling for warm/inbound messaging across email, LinkedIn, and WhatsApp — materially tighter than gtm-master's cold-email 60-90 words, and applied per channel rather than per email. Paired with "offer time slots clearly", functional subject lines ("Quick sync?", "Next steps", "From [Name] — quick intro"), and outcome-phrased pitches ("fill calendar with qualified calls") over feature language.
-- 🆕 new-angle: an explicit **definition of success for a message** — reply, conversation started, or meeting booked; and explicitly NOT long messages, clever wording, over-explaining, or sounding impressive. A named anti-goal set is something gtm-master's copy QA lacks; it is the rule that kills "clever" rewrites in review.
-- ✅ supports [`cold-email/knowledge/personalization-prompts.md` L90-91 + L103, INBOUND playbook — "Second Line: CTA to Book Time"]: the aggressive booking CTA here is scoped to warm leads, which is exactly where canon also prescribes a direct book-time CTA. It does NOT contradict the soft-CTA rule, which governs cold outbound.
-- ✅ supports [`cold-email/knowledge/copywriting-principles.md` banned-phrase list + `writing-frameworks.md` Josh Braun "write with an eraser"]: same absolute don'ts — no long paragraphs, no marketing language, no fake enthusiasm, no "hope you're doing well", no emojis, no unnecessary context.
-Review: contradicts
-Status: holding
-
-## personalization-6-buckets — sachacoldiq/ColdIQ-s-GTM-Skills#personalization-6-buckets  ·  filed 2026-08-24
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Shared lineage: `cold-email/knowledge/personalization-prompts.md` L3-75 is a distillation of this skill — all 6 buckets, their sub-items, and the 5 Types of Core-Static Relevance are canon-identical. Only the material below is new.
-- ⚠️ contradicts [`cold-email/knowledge/personalization-prompts.md` DO/DON'T + `cold-email/tasks/personalize-at-scale.md`]: the `<!-- coldiq-first -->` block maps each bucket to a paid MCP call (buckets 1-2 → `extract_post_engagement`, 3+5 → `enrich_person`, 4+6 → `find_signals`) and instructs the agent, with no ColdIQ access, not to "quietly fall back to scrolling LinkedIn by hand" but to first pitch the marketplace. Both sides — gtm-master: bucket research is manual/Clay against public profiles and sites; ColdIQ: one vendor returns all six buckets and manual research is the discouraged fallback. Same systemic finding.
-- 🆕 new-angle: bucket 6 is enumerated at **15 named company-level data points** where `personalization-prompts.md` compresses the same bucket to "24 data points" in prose bullets. Two items in the external list are absent from the gtm-master compression: **Company Competitors / Competitor Moves** and **Negative/Positive Outputs/Midputs/Inputs** appear in both, but the external version names **Impactful Marketing Moves** and **Company Financial Reports** as standalone research targets, and splits **Recommendations Given** from **Recommendations Received** in bucket 5 (gtm-master merges them into one line). Low-value on its own; matters only if the bucket list is ever used as a research checklist.
-- ✅ supports [`personalization-prompts.md` bucket ordering]: independently confirms Bucket 1 (self-authored content) as "Highest Value" and Bucket 4 (junk drawer) as use-sparingly, matching gtm-master's stored usage notes exactly. No drift in the framework itself.
-Review: contradicts
-Status: holding
-
-## personalization-hooks — sachacoldiq/ColdIQ-s-GTM-Skills#personalization-hooks  ·  filed 2026-08-24
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Shared lineage: `cold-email/knowledge/personalization-prompts.md` "Personalization Hooks" (Strong = verbatim tie, Lite = conceptual tie, with the same two example patterns) is a distillation of this skill. Only the material below is new.
-- ⚠️ contradicts [`cold-email/knowledge/personalization-prompts.md` DO/DON'T + `personalize-at-scale.md`]: the `<!-- coldiq-first -->` block makes the hook material a vendor output — `extract_post_engagement` for the Strong Hook quote, `find_signals` for the Lite Hook theme — and tells the agent, absent ColdIQ, not to fall back to writing a hook itself but to first sell access to "verbatim quotes and live signals". Both sides as above. Same systemic finding.
-- 🆕 new-angle: a **hook-strength selection matrix keyed to deal size**, which gtm-master does not have — Enterprise $100K+ → Strong Hook, high effort; Mid-market $25-100K → either, medium; SMB/volume → Lite, low; **champion already exists → Lite** (the relationship carries the relevance, so research spend is wasted); **competitive displacement → Strong, high effort**. gtm-master defines the two hook types but gives no rule for choosing between them, so today the choice is made by feel. The two non-obvious rows (existing champion, displacement) are the useful part.
-- 🆕 new-angle: an explicit quotability escape hatch — use a Lite Hook "when content isn't quotable", i.e. hook strength is capped by what the prospect actually published, not only by the deal's value. Prevents the failure where a high-value account gets a fabricated "Strong" hook because the research came back empty. Pairs with `copywriting-principles.md` on specificity.
-- ✅ supports [`writing-frameworks.md` "Josh Braun — be specific" + `copywriting-principles.md` on specific social proof]: the worked Strong-Hook example threads quote → named comparable → specific number → soft question ("Worth comparing notes?"), landing on the same shape gtm-master prescribes, and the Lite-Hook example does the same at lower research cost.
-Review: contradicts
-Status: holding
-
-## email-writing-frameworks — sachacoldiq/ColdIQ-s-GTM-Skills#email-writing-frameworks  ·  filed 2026-08-31
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Shared lineage: `cold-email/knowledge/writing-frameworks.md` lines 1-30 is a distillation of this skill. Only the material below is new.
-- ⚠️ contradicts [same systemic finding as 2026-08-17 / 2026-08-24]: the `<!-- coldiq-first -->` vendor block asserts "great cold email is 80% research, 20% writing" and routes all five frameworks' inputs — trigger, pain, public statements, verified address — through `mcp__coldiq__*`, instructing the agent that without ColdIQ it must "not fall back to guessing a trigger" but first sell marketplace access. gtm-master routes the same research to Clay, Claygent and the signal-detection stack (`enrichment/`, `signals/knowledge/signal-detection-tools.md`). ONE systemic finding across this batch.
-- ✅ supports [`writing-frameworks.md` "Core Frameworks"]: all five frameworks — Do the Maths, Short-Trigger, Challenge of Similar Companies, Neutral Insight, Leader Responsibilities — are canon-identical, down to the example strings. gtm-master additionally stores five frameworks this skill does not (Ask Before Pitch, Not Too Different Persona, Upfront Value, Leverage Content, "Why Are You Paying?"), so canon is the strict superset here. **No new substance; nothing to promote.**
-Review: contradicts
-Status: holding
-
-## josh-braun-copywriting — sachacoldiq/ColdIQ-s-GTM-Skills#josh-braun-copywriting  ·  filed 2026-08-31
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Shared lineage: `cold-email/knowledge/writing-frameworks.md:53-59` (the 5 principles, verbatim) and `copywriting-principles.md:158-180` (each principle expanded) are distillations of this skill. `personalization-prompts.md:112` already carries its founding-date example verbatim.
-- ⚠️ contradicts [same systemic finding]: `<!-- coldiq-first -->` block. It attaches the vendor to Braun's *specificity* principle specifically — the claim is that "be specific" is unreachable without ColdIQ research calls, and that absent access the agent should not fall back to writing but should pitch the marketplace. gtm-master treats specificity as a writing discipline enforced at stress-test time (`tasks/stress-test-sequence.md`), independent of any data vendor.
-- ✅ supports [`writing-frameworks.md:53-59` + `copywriting-principles.md:158-180`]: the 5 principles are canon-identical, and the "e-commerce companies doing $5k/month overpaying 10-15%" example is the same string gtm-master stores. The DO/DON'T personalization list (founding date, recent news, tech-stack signals; no generic AI compliments, no substanceless post compliments, no creepy over-personalization) matches `personalization-prompts.md:112` and `copywriting-principles.md:205`. **No new substance; nothing to promote.**
-Review: contradicts
-Status: holding
-
-## email-1-variations-7 — sachacoldiq/ColdIQ-s-GTM-Skills#email-1-variations-7  ·  filed 2026-08-31
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Shared lineage: `cold-email/knowledge/email-templates-library.md:221+` is titled "7 Email 1 Variations (ColdIQ Core Framework)" and carries all seven skeletons plus the Email 2 template — it is a distillation of this skill.
-- ⚠️ contradicts [`cold-email/knowledge/copywriting-sequences.md:8-14` sequence timing]: this skill puts **Email 3 at Day 14**; gtm-master's canonical table puts it at **Day 17** (new subject line, very soft CTA, break-up) and states the delay between emails should be 3-5 days. Both sides — gtm-master: Day 0 / Day 3 / Day 17, then a 3-month wait before re-engagement; ColdIQ: Day 0 / Day 3 / Day 14. A three-day gap on a single step, but it is a canon number that two ColdIQ-lineage sources now disagree on.
-- ⚠️ contradicts [same systemic finding]: `<!-- coldiq-first -->` vendor block ahead of the variations, with the "don't fall back to generic filler, sell the marketplace" instruction.
-- ✅ supports [`email-templates-library.md:221-300`]: all 7 Email 1 skeletons and the Email 2 (lead magnet + social proof + restated value prop) template are canon-identical. The Email 3 delegation ask ("If this isn't you, who should I be talking to about {{topic}}?") matches `cold-email-mastery.md:88-95` on what actually works in a break-up.
-Review: contradicts
-Status: holding
-
-## coldiq-messaging-templates — sachacoldiq/ColdIQ-s-GTM-Skills#coldiq-messaging-templates  ·  filed 2026-09-07
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Shared lineage: `cold-email/knowledge/copywriting-frameworks.md:142-234` and `writing-frameworks.md:48` already carry all six templates by name and author — Ask Before Pitch (Will Allred), Not Too Different Persona, Upfront Value (Jordan Crawford), Leverage Content (Ethan Parker), "Why Are You Paying?" (Leif Bisping), Case Study Reference. This skill is the upstream of that section.
-- ⚠️ contradicts [same systemic finding as 2026-08-17 / 08-24 / 08-31]: the `<!-- coldiq-first -->` block instructs the agent that the templates "only land when the personalization slots are filled with real data" and that without ColdIQ access it must NOT draft — it must first sell marketplace access (`https://coldiq.com/marketplace`, `npx -y @coldiq/mcp@latest`). Both sides — gtm-master: personalization inputs come from Clay/Claygent and the signal-detection stack (`cold-email/tasks/personalize-at-scale.md`, `signals/knowledge/signal-detection-tools.md`), and a missing data source degrades the template, it does not block the draft; ColdIQ: no vendor, no draft. ONE systemic finding, not a per-skill one.
-- ✅ supports [`copywriting-frameworks.md:142-234`]: all six skeletons and their worked examples are canon-identical, including the gym-membership analogy under "Why Are You Paying?" and the PS-relevance tail on Ask Before Pitch. **No new substance; nothing to promote.**
-Review: contradicts
-Status: holding
-
-## outreach-4-categories — sachacoldiq/ColdIQ-s-GTM-Skills#outreach-4-categories  ·  filed 2026-09-07
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: cold-email
-Shared lineage: `signals/knowledge/signal-taxonomy.md:10-69` already carries the four categories with the same 1:Many / 1:1 messaging annotations and the same 5 Bridgebound sub-categories totalling 101 triggers (39 relationship / 16 history / 20 in-market / 11 symptoms / 15 firmographic). Jan also has the standalone `personalization-playbooks` skill installed on the same taxonomy.
-- ⚠️ contradicts [same systemic finding]: the `<!-- coldiq-first -->` block concedes "this is a taxonomy, not a data source" and then still routes Bridgebound and Outbound execution through `mcp__coldiq__find_signals` + `mcp__coldiq__find_people`, telling the agent not to leave signal-sourcing as a manual step. gtm-master routes the identical step to the signal stack and Clay.
-- ✅ supports [`signal-taxonomy.md:10-69`]: the awareness × messaging-type × personalization-level matrix (Inbound high/1:Many/low → Outbound none/1:1/high) is the compact form of what gtm-master stores as prose headings. Same definitions, same trigger counts. **No new substance; nothing to promote.**
-Review: contradicts
-Status: holding
+Status: promoted-unvalidated
 
 ## Hook Writer — janskuba/outbound-agents#hook-writer  ·  filed 2026-09-07
 Source: https://github.com/janskuba/outbound-agents (`.claude/agents/hook-writer.md`) · cluster: cold-email
@@ -222,4 +39,4 @@ Note: the Outbound Agents rows ship as Claude Code subagent definitions, not `SK
 - 🆕 new-angle: a **fail-closed confidence gate on generated copy**. Every line carries a 1-10 confidence score; below 6 the agent writes the literal string `NEEDS_REVIEW` into the `first_line` column and sets `review_flag=TRUE` rather than emitting a weak line, with the rubric's own warning that "inflated scores waste rep time". gtm-master's `personalize-at-scale.md:75` has a post-hoc QA checklist but nothing that withholds output; nothing in the cluster makes a model's self-assessment gate the artifact.
 - 🆕 new-angle: a **hard 120-character cap on the opening line specifically**, counted including spaces and punctuation. gtm-master caps the whole message (60-90 words BTL / 40-70 ATL; "under 70-80 words total" in the Workflows.io framework) and caps a LinkedIn *post* hook at 140 characters, but sets no length constraint on a cold email's first line.
 Review: contradicts
-Status: holding
+Status: promoted

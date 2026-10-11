@@ -163,6 +163,8 @@ Warm-up not enabled. Click the flame icon to enable.
 5. Day 5–7: increase to 75%
 6. Day 8+: return to 100%
 
+- Evidence (2026-10-11) for the ">3% bounce = domain risk" threshold (`reference/2026-tool-stack-and-mcps.md`): Hunter 2026, 31M cold emails, average bounce 3.6%, mostly from unverified contact data. The industry average already breaches the threshold, so verify every address before send. [#1372]
+
 ### Blacklisted
 
 **Critical:** Stop all sending from affected domain immediately.
@@ -245,6 +247,17 @@ When something goes wrong, ask:
 3. MXToolbox "Check DNS" feature (shows exactly what's missing)
 4. ColdIQ community (share screenshots, hide sensitive values)
 5. Tag @Louis or @Nik for urgent issues
+
+---
+
+## Creator-radar 2026-10-11
+
+- **Alert on drop size, not level:** a domain or inbox falling day-over-day from ~1.5% to 0.2% reply is a deliverability break: same-day review, pull and cancel the domain, swap in a pre-warmed spare. A campaign that was always low is a list/offer problem, not infra. [#1261, #1385]
+- **Weekly inbox triage:** stack up to 5 extra inboxes on outlier domains with the best reply rate; cut any inbox under 1% reply rate (typically 10-15% of infra each week) (Eric Nowoslawski). [#328]
+- **Underperforming inbox ladder, cheapest first:** 1) pull and re-warm 2 weeks, 2) recreate the inbox on the same domain, 3) recreate it on a new domain. Automate the checks (n8n + Claude) so nobody nukes domains early (Dan Rosenthal). [#721]
+- **Free warming via parked nameservers:** (2026-10) Hypertide warms domains free for paying customers: park domains on its nameservers and switch the Google Workspace subscription on only when ready to send, so no paid inboxes sit idle in warmup. [#1117]
+
+Source: creator-radar review 2026-10-11, cards from Supabase insight_cards.
 
 ---
 

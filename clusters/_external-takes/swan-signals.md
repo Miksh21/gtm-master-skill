@@ -1,26 +1,12 @@
 # External takes — signals (Swan radar, UNREVIEWED)
 
-## The Signal Sourcer (orchestrator + 16 references) — swan-gtm/gtm-skills/skills/alex-vacca/signal-sourcer · filed 2026-07-28
-Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
-Shared lineage: 7 core references (signal-scoring, signal-taxonomy, signal-detection-tools, buying-signals, tool-setup-guides, job-change-tracking, gtm-plays) byte-identical to gtm-master signals knowledge. The 9 per-signal sub-skill files are new packaging that EXTENDS the canon point table; that is where the drift is.
-- ⚠️ contradicts [signals/knowledge/signal-scoring.md:35 "3+ pricing page visits in 7 days = 80"]: swan's website-visitors page-scoring table awards 80 points for a SINGLE pricing page visit, 100 for a demo/trial PAGE visit (canon's 100 is a demo/pricing REQUEST, an action not a pageview), 60 for a competitor-comparison page. Both sides, gtm-master: sustained or explicit actions earn hot scores; swan: one high-intent pageview is enough. Materially inflates heat on thin evidence.
-- ⚠️ contradicts [signal-scoring.md Tier 3 "Company news (expansion) = 15"]: swan's company-events sub-skill scores new-region expansion at 25 points and adds IPO at 50 as "highest-scoring company event". Both sides, gtm-master: expansion is a 15-pt cool signal; swan: 25, with IPO outranking every Tier 2 signal.
-- ⚠️ contradicts [cold-email/tasks/write-first-email.md:24,49 "Lead with the signal... signal appears in opening sentence"]: swan's clay-buying-signals-5 headline rule is "Don't mention signal explicitly, use signal to inform timing and angle, reference the underlying pain not the trigger" (and job-changes.md: never say "I saw you moved to..."). Lineage nuance: canon buying-signals.md:81 carries the same don't-mention line, so this is an intra-canon tension between the signals cluster and the cold-email task that swan's packaging elevates to a headline rule. Needs a canon-side resolution: signal-informed vs signal-stated.
-- 🆕 new-angle: per-signal score extensions absent from canon's tier table: competitor removed from tech stack = 45 ("they need a replacement NOW", the highest tech signal), bad G2/Capterra review = 50, post COMMENT = 35 with "commenters are 2x more valuable than likers", M&A = 35, CRM migration = 30 (6-12 month tool-buying window), tech change generally 35-45 by relevance.
-- 🆕 new-angle: job-change day-window multiplier table: days 0-13 too early (monitor only, they are settling in), days 14-45 peak x1.5, days 46-90 x1.0, 90+ x0.7 declining. Canon states the 14-45 peak but has no windowed multiplier or explicit do-not-touch early window.
-- 🆕 new-angle: per-signal REPLY-RATE ladder (clay-buying-signals-5 priority matrix): website visitor 25-30%, job change 20-25%, funding 18-22%, hiring 15-20%, tech change 15-18%. Canon publishes only cold 6-8 / signal 18-22 / multi-signal 35-40 / website 25-30.
-- 🆕 new-angle: count-based stack heuristic beside the point model: 1 signal = standard priority, 2 = high, 3+ = reach out same day. Simpler operator rule than the 150/100/50/20 point ladder for teams without scoring infra.
-- ✅ supports [signal-scoring.md + buying-signals.md + tool-setup-guides.md + signal-taxonomy.md]: full 5-tier action ladder incl. sub-100 buckets (confirms the 2026-07-13 ColdIQ holding take), recency multipliers 1.5x/1.2x/1.0x/0.7x/0.3x, 21x qualify lift at 5-min response, hot signals expire 3-7 days, 6 ranked buying signals with vendor-amnesty framing, RB2B free/$99 pricing + US-only person-level + pixel 40-45% vs IP 35-40% match, funding wait 2-4 weeks and never open with "congrats on the raise", 137-trigger taxonomy, "recency beats signal count: 1 fresh Tier 1 > 3 stale Tier 2".
-Review: contradicts
-Status: holding
-
 ## Bridgebound trigger family (5 skills) — swan-gtm/gtm-skills/skills/alex-vacca/bridgebound-relationship-39 (+ -history-16, -in-market-20, -symptoms-11, -firmographic-15) · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
 Family entry: 5 skills = the 101 Bridgebound triggers, one skill per category.
 - 🆕 new-angle (marginal): full enumeration of the 14 trigger names canon compresses into ranges (signal-taxonomy.md abbreviates triggers 20-33 as "20-22. Referrals, Engagement, Mutual Connections" etc.); the skills spell each out with a one-line gloss. Only import-worthy if the taxonomy is ever used programmatically.
 - ✅ supports [signals/knowledge/signal-taxonomy.md:69-204]: category structure and all trigger names match canon exactly (Relationship 39, History 16, In-Market 20, Symptoms 11, Firmographic 15). Repackaging, not new knowledge.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Trigger and play packs (outreach-4-categories, buying-signals-6, clay-buying-signals-5, inbound-triggers-30, outbound-triggers-6, gtm-plays-11) — swan-gtm/gtm-skills/skills/alex-vacca/buying-signals-6 (+ 5 siblings) · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -28,7 +14,7 @@ Family entry: 6 pack skills, all slices of canon files (buying-signals.md, signa
 - 🆕 new-angle: outbound-triggers-6 adds execution detail canon lists only as names (signal-taxonomy.md:206-212): CXO Passdown gets a template ("I'm not sure if this lands on your desk or someone else's... Who should I be talking to about [topic]?"), and the Groundswell ladder is spelled out (info-gathering → product placement in IC hands → DM approach built on internal adoption metrics).
 - ✅ supports [buying-signals.md + gtm-plays.md + signal-taxonomy.md]: 6 signals ranked by purchase correlation with former-customers highest; the 11 plays incl. ServiceBell 2-min call SLA and skills-targeting; 30 inbound triggers; benchmarks tables identical. gtm-plays-11's templates.md is a subset of canon gtm-plays.md (7 of 11 plays).
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Handle LinkedIn profile view signal — swan-gtm/gtm-skills/skills/ariel-cohen/handle-linkedin-profile-view-signal · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -52,7 +38,7 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
 - 🆕 new-angle: reporting shape: one dedicated top-level per-lead post immediately after each scoring (not batched), full scoring detail in the thread reply, then a final digest that reconciles exactly: total engagers → ICP-fit → scored → skipped with reasons. Active-deal accounts get flagged as "warm signal on active deal", never re-scored, never stage-downgraded.
 - ✅ supports [engagement-on-external-content.md Surfaces 2-3 + filter discipline]: engager capture on influencer posts is a valid signal class; ICP gate before enrichment; cheap business-search before paid firmographics; per-company processing one at a time.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## LinkedIn DM signal classifier — swan-gtm/gtm-skills/skills/ariel-cohen/linkedin-dm-signal-classifier · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -66,7 +52,7 @@ Daily scan of a team member's LinkedIn DMs into an 11-bucket routed signal strea
 - 🆕 new-angle: mandatory end-of-run digest even on zero-signal days: "silence must mean a failure, never 'nothing found'." Memory-full writes are skipped, flagged in the post, and counted, never trimmed to make room.
 - ✅ supports [campaign-ops/tasks/analyze-replies.md categories + score-meeting-intent.md routing]: MQL posts reuse the org's ONE standard alert format with DM context woven in (never a second layout per signal type); OOO handling pauses to return date; wrong-person referral treated as high-leverage.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## LinkedIn post engagement handler — swan-gtm/gtm-skills/skills/ariel-cohen/linkedin-engagement-handler · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -77,7 +63,7 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
 - 🆕 new-angle: lead-magnet URL discipline: the skill only ever shares a URL literally written into its own current config for the active lead magnet; if none is configured it shares nothing, never an inferred or remembered link.
 - ✅ supports [engagement-on-external-content.md comment>like weighting + never move stages backwards]: acknowledge-but-skip flow for customers/pipeline/closed-lost; Aware-stage mark never regresses an account; alerts always include what the person actually said.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Champion move detection — swan-gtm/gtm-skills/skills/ariel-cohen/champion-move-detection · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -90,7 +76,7 @@ Monthly deterministic sweep over Closed Won accounts detecting champion/heavy-us
 - 🆕 new-angle: both sides of the move are plays: the old account gets a churn-risk flag when the departed person was primary user/champion, escalating to critical on 2+ departures (compound-departure rule); multiple movers into the SAME destination are ONE stronger signal scored once; moves into competitors or other existing customers are logged, never scored.
 - ✅ supports [customer-alumni-play.md core premise + signal-scoring.md:36 champion-move 75 pts]: champion move is a top-conversion signal; new company scored independently against ICP with a tier floor for genuine champions; self-serve and gate precedence never overridden by the floor; task routing surfaces the prior relationship owner as a recommendation, not an auto-assignment.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Closed-won replication play — swan-gtm/gtm-skills/skills/ariel-cohen/closed-won-replication-play · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -115,7 +101,7 @@ A pure interpretation layer between raw signal and tier-scoring: returns relevan
 - 🆕 new-angle: hiring-signal corroboration ladder (job + high-intent visit strongest; job + funding <60d; job + intent spike; job + competitor engagement; job + prior job signal = cluster forming) and the rule that hiring clusters outrank single hires on both strength and confidence.
 - ✅ supports [signal-scoring.md first-party > third-party + no-creepy-wording rule in gtm plays]: relevance gate phrased as "does this signal create or reveal operational complexity we solve"; never say "we saw someone visit your pricing page"; persona-by-signal-domain mapping for contact selection.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Warm intro intelligence — swan-gtm/gtm-skills/skills/din-arbel/warm-intro-intelligence · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -128,7 +114,7 @@ On-demand "who can intro me into [company]" play over the org's relationship gra
 - 🆕 new-angle: infer-first, confirm-second human intake: a Slack prompt goes ONLY to the rep who initiated the play and only for an Inferred edge involving them, one message per pair ever; responses map yes-personally → Verified, yes-via-someone → Moderate, no → soft-delete with no re-prompt; flags expire in 180 days and surface as stale rather than deleted. The gap-triggered prompt (all paths Low) lives in the card, no Slack.
 - 🆕 new-angle: output card contract: under 250 words, top 2 paths preferring different personas, mandatory [!] limitation line per path, mandatory sources-checked footer ("the rep needs to know what was and wasn't checked"), never an empty result ("the best available paths are always returned, fully labeled"), and suggested paths are options: "X may be able to connect you", never "ask X to intro you."
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Signal to campaign — swan-gtm/gtm-skills/skills/bojan-berisavljevic/signal-to-campaign · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -140,7 +126,7 @@ Turns an observed market event into a launch-ready signal-led campaign package: 
 - 🆕 new-angle: the expert tell is RESISTANCE: actively look for evidence the signal does NOT imply pain; mediocre work "celebrates a data match, enriches hundreds of contacts, then writes personalisation from one keyword." Launch package must define what a positive reply would validate about the thesis (reply-learning goal).
 - ✅ supports [signals/knowledge/buying-signals.md + signal-scoring.md play structure]: funding/generic-hiring/tech-use become useful only combined with current evidence of the relevant workflow; context lines react to the situation, never exhibit scraped facts or announce surveillance; staged for human approval.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Track contact job changes — swan-gtm/gtm-skills/skills/jorge-macias/track-contact-job-changes · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -151,7 +137,7 @@ CRM-wide job-change sweep: verify each contact's real current employer, refresh 
 - 🆕 new-angle: net-new employer tiering is deterministic and auditable: score only the criteria the operator actually defined (blank criterion = not a filter); all-pass = propose account creation; any fail = skip-and-flag but STILL update the contact's new company/title "so the record is honest"; nothing scorable = non-fit by default, never auto-promote. Opt-out rules (customer, competitor, disqualifying) stop outreach and record the move.
 - ✅ supports [customer-alumni-play.md:135 "score the new company independently" + job-change-tracking.md signal value]: leavers to fit accounts surface as new opportunities; still-there contacts get quiet title/tenure refreshes; low-confidence single-signal evidence never opts a contact out or overwrites a role.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Competitive intelligence radar — swan-gtm/gtm-skills/skills/sabahudin-murtic/competitive-intelligence-radar · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -161,7 +147,7 @@ Standing weekly competitor watch (pricing, SERP, positioning, news, sentiment, f
 - 🆕 new-angle: two parallelism primitives kept deliberately distinct: amnesiac scout subagents (one per competitor, capped 8, never talk to each other) for the gather; a real agent team for the war room, where four analysts (pricing, product-gap, threat-sentiment, devil's advocate) debate by name and "a move that can't survive the devil's-advocate challenge gets cut or downgraded." Hiring signals read as a leading indicator of product direction.
 - 🆕 new-angle: cost checkpoints: gather runs autonomously, but Notion schema creation and the token-heavy council always require an explicit yes; batch tools preferred, expensive scraping browser only as fallback for blocked pages; stale data labeled "as of <date>", never presented as current.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Community radar — swan-gtm/gtm-skills/skills/ido-goldberg/community-radar · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -172,7 +158,7 @@ Brand/competitor/pain-language mention monitoring across LinkedIn, X, Reddit, HN
 - 🆕 new-angle: tighten-over-time loop: after 10-20 fires, keep brand + competitor + only the 3-5 highest-signal pain phrases; switch signals and comparison shopping usually outconvert pain mentions; "Reddit often outperforms X for B2B signal."
 - ✅ supports [engagement-on-external-content.md Surface 4 buyer-language monitoring]: keyword classes = brand terms + competitor names + pain language; author identified and ICP-checked before pursuing; converting mentions logged by source as highest-ROI tracking.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Event radar — swan-gtm/gtm-skills/skills/ido-goldberg/event-radar · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -182,7 +168,7 @@ Event attendance → qualification → contextual follow-up. gtm-master scores w
 - 🆕 new-angle: rich-data personalization hierarchy: sessions watched, questions asked, booth visits logged = "the personalization gold"; reps capture booth context during the event for the follow-up to use. CRM cross-check per attendee routes: active sequence → flag rep don't re-fire; customer → CSM advocacy signal; open deal → owner as acceleration signal; net-new → cold play with the event as anchor. Sequences capped at 2-3 touches because event freshness fades.
 - 🆕 new-angle: 100+ ICP-fit attendees switches to bulk-personalized batch mode (code-driven, batches ≤50) instead of one-at-a-time; post-event conversion tagged by event name so the org learns which event classes yield.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Post radar — swan-gtm/gtm-skills/skills/ido-goldberg/post-radar · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
@@ -204,4 +190,25 @@ Website/content engagement → qualified contextual follow-up, with signal-stren
 - 🆕 new-angle: active-sequence collision check: a known prospect already in a sequence gets NO new outreach ("let the sequence breathe"), the engagement surfaces to the rep instead; engagement earns "a conversation, not a demo booking", single soft touch first.
 - ✅ supports [signal-scoring.md response-time table + awareness-stage-model.md content-to-play mapping]: speed correlates with conversion; content-type performance feeds back to marketing.
 Review: contradicts
-Status: holding
+Status: promoted
+
+## Competitor monitoring — swan-gtm/gtm-skills/skills/alon-goldenberg/competitor-monitoring · filed 2026-09-28
+Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
+This is a recurring briefing on what competitors are doing, with a memory of what was already reported. gtm-master treats competitor moves as a trigger category (signal-taxonomy.md:202 "Competitor Made an Impactful Move", signal-detection-tools.md:35-43) but has no process for validating or deduping them. It overlaps the existing competitive-intelligence-radar take (swan-signals.md) and adds date and source discipline that the radar take lacks.
+- 🆕 new-angle: every signal carries two dates, the article date and the event date, and only the event date counts toward freshness. Syndicated and recap pieces put fresh publish dates on old events. The event date is resolved from the page body in this order: explicit past reference, then relative time ("last quarter", resolved against the article date), then present-tense "today announces" (event date = article date), then the dateline. If none of those work, extract the full page. Date-filtered search returns pages by publication date, so it "never establish[es] truth".
+- 🆕 new-angle: source hierarchy is PRIMARY (the company's own domain, a press release or a filing) > WIRE > MAJOR bylined reporting > DERIVATIVE. Mandatory P1 corroboration gate: a P1 signal (M&A, a C-suite or VP move, funding >$10M, a directly competing launch) that has only a derivative source or low date confidence must be matched to a primary source. If the primary source dates it inside the window, it is NEW. If outside, it is STALE and dropped. If no primary source exists, it is UNCERTAIN and dropped. The verification budget scales with priority: P1 always gets a page extraction plus corroboration, P2 only when the date or source is shaky, and P3 never gets an extraction.
+- 🆕 new-angle: four freshness classes: NEW, UPDATED, STALE, UNCERTAIN. Only NEW and UPDATED may enter the report or the per-competitor memory file. STALE or UNCERTAIN entries in memory "poison every future dedup". Each research thread receives the known-signals list from memory so it can skip those at the source. Signals come back in a fixed record (SIGNAL, ARTICLE_DATE, EVENT_DATE, URL, SOURCE_TYPE, DATE_CONFIDENCE, NEEDS_CORROBORATION, TYPE, PRIORITY) because free-form prose cannot be deduped. Within a run, the same event is merged across sources on company + event type + approximate date. Keep the highest-ranked URL, and count distinct sources as a confidence booster.
+- 🆕 new-angle: the per-competitor search is five queries run in parallel: news, "funding OR acquisition OR hiring", a changelog or release-notes search restricted to the competitor's domain, x.com/linkedin.com restricted to the past week (social lands days before press), and G2/Capterra. Extracting the competitor's own changelog page is the cheapest primary-source signal of the run: it is already dated and has no derivative risk. Fallback when queries 1-2 return fewer than 3 results: drop the date filter and apply date checks by hand. Cap each competitor at about 8 actions per run, and turn anything deeper into a follow-up. Put concrete dates in the query text rather than relative phrasing.
+- 🆕 new-angle: run modes are keyed to the last-run date. More than 14 days ago means a full run over a 14-day window. Within 14 days means a quick refresh over the period since the last run, with a 7-day floor because "near-empty windows read as false quiet". A same-day repeat requires asking first. Quiet competitors are listed explicitly ("naming the quiet ones is what makes the reader trust the loud ones"). The briefing contrasts the user's own changelog and news with the competitors'. A cross-competitor patterns section, for moves converging across 2+ rivals, is flagged as often the most valuable part.
+- ✅ supports [signals/tasks/detect-signals-from-list.md:62]: drop stale signals rather than dress them up. The swan skill goes further and bans STALE items even as "background context". Its only concession is a clearly labelled 1-3 line "Older context" section taken from memory.
+Review: additive
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
+
+## LinkedIn event attendee monitor — swan-gtm/gtm-skills/skills/brianne-thomas/linkedin-event-attendee-monitor · filed 2026-10-05
+Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
+A scheduled scan of LinkedIn posts from people and companies announcing they will attend a named event, routed by existing funnel stage. gtm-master lists conference/event attendance as a signal (signal-detection-tools.md:52, window -14 to +7 days) but has no play for harvesting it or for routing by account relationship.
+- 🆕 new-angle: route by funnel stage BEFORE any ICP check. A person whose employer is Customer or Opportunity gets an FYI to the account owner only (name, title, employer, owner, post URL), never prospecting copy or a coffee ask. Company-page posts are tagged as event attendees on the account and, for Customer/Opportunity, FYI only. Only non-customer employers go through the full ICP check (segment, size threshold, buying-committee persona), with the bar not loosened because it is a local networking event.
+- 🆕 new-angle: mechanics: search several event phrases and hashtags in one Apify post-search run (week window, sorted by date, ~40 posts per query), run every 3 days so the week window overlaps, dedupe by post URL in a dated "processed posts" note on a record the scheduled run can reliably write to, prune entries older than 14 days.
+- 🆕 new-angle: the human-touch output is two drafts: a short "see you there, {first name}" comment that states only the shared attendance (no fake reaction to post content) and a connection note with a coffee ask, with a standing caveat that the note only sends if the sender has Sales Navigator. The agent never likes, comments or connects, and no sequence is built until a sender is explicitly assigned.
+Review: additive
+Status: promoted-unvalidated

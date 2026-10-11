@@ -85,6 +85,7 @@ REMEDIATION (ordered by severity)
 
 - All four DNS records (SPF/DKIM/DMARC/MX) PASS before any cold sending
 - Zero blacklist entries
+**Counter-view (2026-10-11):** Google says it ignores public blacklists and uses its own placement signals; a blacklist hit matters mainly for gateway filters (Barracuda, Proofpoint, Mimecast). Prioritize delisting only when the list skews to enterprise-gateway recipients. [#1258]
 - All mailboxes ≥ 14 days old + warmed
 - Daily volume ≤ 50/mailbox
 

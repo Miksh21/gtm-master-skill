@@ -37,6 +37,8 @@ For the full 62 data sources table, see [list-building-data-sources.md](list-bui
 ## Golden Rules
 
 1. **Multi-source everything.** One provider = 50–60% coverage. Two providers = 80–90%. The math is simple.
+   - **Discovery wide, activation narrow (2026-10-11, creator-radar review L3-14):** cast the wide net in discovery (Phases 2-4) for coverage; activate a smaller, tighter list (Phases 7-8).
+   - **Counter-view (2026-10-11):** every list-building decision should serve a smaller, more targeted list, not a bigger one [l3mpire/claude-skills/list-builder]; replace weak rows instead of padding a cohort to hit a volume target [swan bojan-berisavljevic/signal-to-campaign]
 2. **Enrich before you reach out.** Raw lists convert at 1–2%. Enriched, scored, personalized lists convert at 5–15%.
 3. **Dedupe religiously.** Duplicates kill deliverability and credibility. Always dedupe at company AND people level.
 4. **Validate emails.** 30–40% of emails in databases are invalid. Validation saves your sender reputation.
@@ -125,6 +127,9 @@ For the full ICP deep dive (how to build, examples, common mistakes), see [list-
 | International (Asia, LATAM) | Apollo | LinkedIn Sales Nav | Local directories |
 | Non-tech (Manufacturing, Retail) | Apollo | LinkedIn Sales Nav | Industry directories |
 | Niche markets | Web scraping/Claygent | Apollo | Industry associations |
+| Regulated / credentialed (licensed, certified, registered) | Regulatory, certification and association registries | Clay Find Companies / Apollo | LinkedIn Sales Nav |
+
+(added 2026-10-11: niche registries are a primary source for regulated or credentialed ICPs, creator-radar review L3-14 [l3mpire/claude-skills/niche-data-finder])
 
 ### Primary Sources
 

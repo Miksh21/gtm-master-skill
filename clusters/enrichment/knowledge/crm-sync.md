@@ -49,6 +49,7 @@ Clay integrates with:
 - Use "ignore blank values" to protect clean fields
 - Automate via API connections for continuous sync
 - Test with one row first before bulk operations
+- Match CRM write depth to touchpoint value: routing touches 1-2 fields, an inbound conversion justifies 30-40 enrichment fields, full refresh ~every 90 days. Never enrich every record to max depth. [#1861]
 
 ## CRM Enrichment Example — Salesforce Cleanup
 

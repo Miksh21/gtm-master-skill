@@ -37,8 +37,13 @@ Export all **closed-won deals from the past 12-24 months**:
 - Company domain
 - Deal value (ARR/ACV) — for prioritizing high-value alumni later
 - All primary buyer contacts (champions, decision-makers, key users — not just deal owner)
+  - **Realized-value gate for Tier 1 (2026-10-11, creator-radar review L3-10):** only closed-won champions or materially active users count; exclude contacts on deals that never closed and moves out of an origin Closed Lost within 90 days.
+  - **Counter-view (2026-10-11):** a named contact on a never-closed deal, or a user of a never-activated workspace, is warm familiarity, not a champion [swan ariel-cohen/champion-move-detection]
 
 Combine into the **Alumni Seed List**. This is your hidden goldmine — every contact already understands your value proposition.
+
+- **Widen to past-employer overlap (2026-10-11):** enrich target lists with full work history and match against your customer list; anyone who ever worked at a customer carries familiarity, even outside your relationship window. Wider than product-user alumni. [#1494]
+- **Seed beyond your CRM:** scrape every public customer case study (a competitor's too), extract named champions, check who moved (Gong: 142 case studies, 12 moved champions), verify new contacts. Agent-cheap persistence work. [#1888]
 
 **Cleanup pass before Clay:**
 - Remove bounced/inactive emails
@@ -55,10 +60,11 @@ In Clay, use **"Include Past Companies"** in people-search:
 5. Filter for qualified titles (RevOps, GTM, Product, Data, Leadership, etc.)
 6. Capture: new company + new role + seniority + job-change recency + LinkedIn URL
 
-**Optimal recency filter: 90-180 days post-job-change.**
-- Too early (< 30 days): not yet settled, no buying authority
+**Timing, one rule** (updated 2026-10-11: was "Optimal recency filter: 90-180 days post-job-change. Too early (< 30 days): not yet settled, no buying authority", creator-radar review L3-10):
+- First weeks: relationship touch only (acknowledgment, no pitch)
+- Day 14-45: sell (peak engagement)
+- Day 90-180: re-check for budget; they're in onboarding mode, looking for tools, fresh budget cycle
 - Too late (> 180 days): honeymoon over, urgency faded
-- 90-180 days = the sweet spot — they're in onboarding mode, looking for tools, fresh budget cycle
 
 ### Step 3 — Qualify their NEW company
 
@@ -105,6 +111,8 @@ Optional: Run an LLM pass (ChatGPT or Claude) over the enriched dataset for a sa
 HubSpot workflow logic:
 - Tier 1 scored contact → create AE task with the alumni context (former company + new company + ICP score reason)
 - Tier 2/3 → auto-sync into pre-built Instantly/HeyReach sequences
+- **Tier 1 = rep decides (2026-10-11, creator-radar review L3-10):** a known person (champion migration) is an intro path handed to the rep, never auto-sequenced; auto-sync applies to Tier 2/3 only.
+- **Counter-view (2026-10-11):** champion-migration hits are decision support only and never contact anyone automatically [swan din-arbel/warm-intro-intelligence]
 
 ### Step 6 — Run it on a schedule
 
@@ -112,6 +120,7 @@ The play is **always-on**, not a one-shot campaign:
 - Re-run Clay search weekly (or daily for high-velocity teams)
 - New job changes trigger fresh alumni leads automatically
 - HubSpot workflows route them without manual intervention
+- Track champions and users, not just signatories. When one moves: update the CRM record and queue two plays, the mover at the new company and the vacated seat at the customer (a replacement who does not know you = churn risk). [#1584]
 
 ## Output format
 
@@ -138,6 +147,7 @@ A live HubSpot view + Slack notification per Tier 1 alumni signal:
 
 - **3-5x higher reply rates** than cold list outbound
 - **15-30% increase in qualified pipeline per quarter** without additional headcount, tools, or budget
+**Counter-view (2026-10-11):** trigger and intent stats trace to vendors and conflict (champion-move lift: UserGems 114% vs Champify 17%). Trust direction, not multiples; measure intent-sourced accounts yourself on CAC payback and LTV:CAC before buying the platform. [#1792]
 - "Shorter sales cycles" (qualitative — alumni know the product so discovery is faster)
 
 ## What to do after

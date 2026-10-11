@@ -30,6 +30,8 @@ Most "buying signals" are commodities: funding, hiring, job changes, tech instal
 - **An IT-recruitment client (anonymized) — two proven first-party signals (from the live audit):**
   - *Ex-employer placement signal* — HR at a company where you recently placed a candidate. Pure first-party relationship data; competitors can't see it. Measured **16.9% reply rate** vs 3–5% on generic HR lists.
   - *Active job-posting signal* — HR at a company posting a role you can fill, scraped from the market's biggest board. **15.9% reply rate.**
+- **Physical-asset alpha (2026-10-11):** scrape Google Street View or maps imagery to detect equipment you service (e.g. trash compactors in a state). Works in verticals with no digital intent data; competitors cannot buy it. [#1639]
+- **Regulatory enforcement actions (2026-10-11):** consent orders, penalties and citations are a government-stated, dated problem: ground-truth trigger for compliance, safety, environmental, licensing and legal sellers. Public datasets can also feed backtested predictive models (e.g. mine safety incidents). [#1901]
 
 ## How to derive your own
 

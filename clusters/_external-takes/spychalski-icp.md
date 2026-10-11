@@ -7,4 +7,4 @@ Shelf-life (stated by author): "only alpha for the next 4-8 months past Septembe
 - 🆕 new-angle: **retention DURATION, not just win/loss, is the ICP target variable.** Worked counterexample (Chobani-launches-B2B-SaaS): inbound form-fills skew 90% early-stage, but those accounts churn at 3-4 months while the rare enterprise fills retain ~5 years. Volume/interest points at the wrong ICP; LTV/retention points at the right one. Feed deals that have "run their course or run a while" and let the LLM find what predicts long tenure — a signal human heuristics (and raw inbound counts) systematically miss.
 - 🆕 new-angle: **test-messaging as an ICP proxy when you lack ~100 closed-won deals** (common for early-stage / high-ACV). Run different messaging at candidate ICPs; a high response rate means that segment feels the pain you solve. Explicitly framed as a fallback, and as a deliberate exception to the video's own "messaging isn't everything" line — used only because retention data doesn't yet exist to mine.
 Review: additive
-Status: holding
+Status: promoted-unvalidated

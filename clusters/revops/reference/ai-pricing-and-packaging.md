@@ -68,6 +68,8 @@ Show the arithmetic: a buyer who can re-derive the number defends it internally;
 
 **Price increases**: lock increases into annual contracts at signature; 90-day notice for month-to-month; value-driven framing ("the efficiency we shipped saves you more than the 8% increase costs") beats naked increases; segment increases by usage-value cohort. Communicate 60+ days ahead: proactive communication cuts increase-driven churn roughly from 15% to 5%.
 
+**Billing frequency drives churn** via re-evaluation moments: monthly ~10%, quarterly ~5%, yearly ~2% churn (ProfitWell/Paddle data). Default to annual or quarterly billing; every invoice is a cancel decision. [#436]
+
 **Quarterly billing data-quality audit**: event dedup rate <0.5%; customer-mapping accuracy 99.9%+; 99% of events processed within 24 h; 100% invoice-to-metering match; rounding variance under a fixed monthly cap; 98%+ valid payment methods; spot-check 20 contracts/month against master data.
 
 Market context: 77% of the largest software companies use consumption-based pricing somewhere; ~43% of companies run hybrid models heading toward ~61%; usage-based standard in ~38% of SaaS heading to ~70% (Gartner/BVP). 78% of IT leaders report unexpected consumption or AI charges in the past year: transparency dashboards are retention infrastructure, not a nice-to-have.

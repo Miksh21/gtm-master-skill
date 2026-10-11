@@ -15,6 +15,8 @@ This file describes the role: what they do, why it's exploded, the tool stack, a
 
 The role sits at the intersection of sales, data, and automation. **NOT a fancy title for an SDR. NOT a RevOps manager.** It's a builder who creates the systems that generate pipeline.
 
+**Two mandates by company size (2026-10-11):** companies under ~200 employees hire a GTM Engineer to BUILD the outbound motion; 201+ hire one to make the existing motion reliable, governed and measured. Write the JD and screen for the matching mandate (Joe Rhew, job-spec scan). [#1013]
+
 ### Pillar 1 — Data Aggregation
 Pulling signals from CRMs, intent data platforms, enrichment databases, and 5+ sources into a single working environment. Decides which signals matter, connects sources, builds the infrastructure to keep everything flowing in real time.
 
@@ -116,6 +118,8 @@ GTM Engineers who can deliver pipeline at scale are not sitting on job boards. T
 
 Indicators of a real GTM Engineer (vs a "growth hacker" with a LinkedIn bio):
 
+**Hire by audition (2026-10-11):** interviews can't separate fluency from competence. Run a paid 90-min live build or a 3-h take-home on real input with a wrong answer available; grade scoping, what they cut, tradeoffs, and whether it runs live. [#1801]
+
 ### Hard skills
 - **Clay fluency:** can describe a multi-step Clay workflow with conditional logic + AI columns + waterfall enrichment from memory
 - **Outreach platform fluency:** has run sequences on Instantly OR lemlist with sender-rotation + warmup understanding
@@ -130,6 +134,7 @@ Indicators of a real GTM Engineer (vs a "growth hacker" with a LinkedIn bio):
 
 ### Red flags
 - Calls themselves a "GTM Engineer" but can't describe a real workflow they built
+  - Evidence (2026-10-11): screen tells: red = answers start with the stack, never killed a tool, waits for a spec; green = boring about tech, precise about output numbers. [#1805]
 - Treats AI as magic ("we used ChatGPT for personalization") without describing the prompts, the model, the cost optimization
 - Has only worked at one company / one motion — limited pattern recognition across segments
 

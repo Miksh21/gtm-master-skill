@@ -48,6 +48,8 @@ Round-robin mechanics: rotate through the rep list by counter; weighted = expand
 
 Common failures: cherry-picking (route directly to owner, never a shared pick-queue), queue rot (SLA timer + auto-reassignment), uneven distribution (audit counter and filters), new-rep flooding (weight down during ramp), timezone gaps (time-aware or follow-the-sun).
 
+**Territory assignment as a loop:** an algorithm drafts scores, sales leaders review in a spreadsheet, override and lock rows ("all robotics to rep X"), feed the locks back to the LLM; converges in ~8 iterations. [#1305]
+
 ## Speed-to-Lead SLA Framework
 
 | Tier | Definition | First-touch SLA | Escalation |
@@ -91,6 +93,8 @@ Expansion costs ~$0.27 per $1 ACV vs ~$1.16 for new logos; 50-60% of new ARR at 
 A cross-sell into a completely new buying group is a new-logo sale inside a known company; trust sits with the account, not the group. Forcing it into the short pipeline poisons win-rate and velocity data. Litmus test: "Would losing the contract in unit A affect closing in unit B?" If no, treat as new logo with a customer-referral source.
 
 Ownership by ACV (define thresholds in governance; ambiguity = nobody closes): small deals CSM closes end-to-end; mid deals AM/AE closes with CSM in the room; large deals AE runs the full cycle, CSM introduces and advises.
+
+**Expansion attribution before anyone sells:** write CS-vs-sales expansion credit and handoff rules up front, never mid-year. Weight bookings 70/30 sales/CS in greenfield territories and 30/70 in mature ones, keeping OTE equal (Jeff Ignacio). [#1650]
 
 Expansion signals: usage (80%+ of seat limits, new feature adoption, rising DAU), relationship (champion promoted, new stakeholder, strong NPS), commercial (headcount growth, new budget cycle, cross-functional interest), outcomes (value ahead of schedule, ROI exceeded, new use cases). Handback flow: CSM flags signal → workflow creates deal → assigns AE → CSM prepares brief (health, usage, stakeholders, whitespace) → joint meeting → clear rules of engagement.
 

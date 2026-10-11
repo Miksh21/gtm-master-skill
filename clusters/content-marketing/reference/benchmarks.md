@@ -116,3 +116,7 @@ Split two jobs with different reliability bars: **deterministic data** (stats, r
 | Revenue concentration | top 20% of partners ≈ 80% of revenue |
 | Audit cadence | twice a year |
 | Super-affiliate threshold (warm-intro tier) | capable of $50K+/month |
+
+## Creator-radar 2026-10-11
+
+- **YouTube sustained algorithmic push:** needs ~33%+ view retention and 9-10%+ CTR from search; ~11% search CTR kept one B2B channel (Able) in the top 3 results. [#904]

@@ -124,6 +124,8 @@ Worth exploring?
 - No "Content Manager" + $5M+ revenue = Content gap
 - No "DevOps Engineer" + Growing engineering team = DevOps need
 - No "SDR Manager" + SDR team exists = Management gap
+  - Evidence (2026-10-11): missing-function trigger = raised in last 6 months AND >8 employees AND no dedicated revenue/growth hire; a live posting for that role confirms the gap. Beats plain hiring signals, which everyone fires on. [#1771]
+- **Job-opening variant (2026-10-11):** scan JDs for keywords, then pitch the department head on making the incoming hire productive faster, never on replacing the role. Removes defensiveness and matches the hiring manager's success criteria. [#1103]
 
 ## Play 8: Bad Reviews Targeting
 

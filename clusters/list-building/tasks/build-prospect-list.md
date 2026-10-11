@@ -74,8 +74,8 @@ Next step: [push to clusters/campaign-ops/tasks/setup-campaign-platform.md OR ru
 - **Single source only** — Apollo alone misses 30-40% ICP fit, mostly non-US
 - **Skipping ICP validation** — guarantees 30-40% wasted sends
 - **Tier 1 + Tier 2 in same campaign** — they need different copy. Split.
-- **Tier 1 < 50 contacts** — signal filters too narrow OR ICP too tight. Loosen one.
-- **Skipping email verification** — bounces > 2% destroy sender reputation
+- **Tier 1 < 50 contacts**: surface it to the user first; then change the source path or loosen one filter; never pad (updated 2026-10-11: was "signal filters too narrow OR ICP too tight. Loosen one.", creator-radar review L3-14)
+- **Skipping email verification**: bounce ladder target < 1%, launch gate / hard limit < 2%, pause > 3%; above 2% destroys sender reputation (updated 2026-10-11: was "bounces > 2% destroy sender reputation", creator-radar review L3-02)
 
 ## What to do after
 

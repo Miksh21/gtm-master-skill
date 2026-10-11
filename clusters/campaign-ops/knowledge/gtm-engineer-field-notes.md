@@ -5,6 +5,7 @@ Real-world GTM-engineering plays from The GTM Engineer (podcast + newsletter): C
 
 ## 1. Claude Code for owned media / site & content builds
 - **Website in <6 hrs:** feed 500 call transcripts (Fireflies API) → cross-ref closed-won (HubSpot) → extract the messages that actually closed → 40+ design screenshots → CC writes design + copy skill files → builds 80% in one session. [#183]
+  - Evidence (2026-10-11): mine closed-won calls only for the top 10 narratives (ranked, with deal names and quotes), then map them in a matrix: narratives as rows, 9 asset types as columns, status per cell, plus priority and LLM-prompt columns. [#1807]
 - **No-code CMS → Next.js + Claude Code:** ~$4,500/yr saved, pages in hours, ABM landing pages without new vendors. Pull legacy content via official API (Webflow Data API) to keep editorial; full-site localization (every page/slug/field) in one CC pass — no Weglot. [#139 #143 #140]
 - **CC ABM ads:** 100 personalized LinkedIn ads (account logo + competitor logo via Logo.dev API, no code) → **5-6% CTR vs 0.4% benchmark (~10x)**. Needs ≥300 targetable employees/account (mid-market+); the competitor-logo dynamic field injects FOMO. [#170 #171 #174 #175]
 - **Release → content:** GitHub CLI + CC auto-summarize merged PRs weekly, classify internal/external, draft LinkedIn copy per release (context file = objective + personas/value-props + grouping rules). [#121 #122]
@@ -13,6 +14,7 @@ Real-world GTM-engineering plays from The GTM Engineer (podcast + newsletter): C
 
 ## 2. Org-wide AI-agent adoption — the multiplayer lesson
 - **Claude Skills failed for team rollout** — single-player/local: no shared bug visibility, no prompt sharing. For org-wide, pick a **multiplayer** platform. [#132]
+**Counter-view (2026-10-11):** skills can be multiplayer: put the instructions in a shared skill in a repo and have the scheduled cloud routine only call it. What fails the vacation test is a local skill or instructions living inside the routine. [#1749]
 - **Dust pattern:** multiplayer agent platform (50+ GTM tools, no-code builder, admin usage analytics, SSO/SCIM). Vanta let 900+ employees build agents. [#133 #137]
 - **Adoption as a prioritization engine:** let reps prototype agents, watch adoption analytics, productionize winners; when multiple reps build the same agent (account research, prioritization, drafting), merge into one production-grade unified agent. [#149 #147 #153]
 - **Roles/culture:** hire a post-sales "AI Product Manager" to monitor usage + drive adoption; CRO public shoutouts for reps who ship useful agents. [#151 #152]
@@ -20,6 +22,7 @@ Real-world GTM-engineering plays from The GTM Engineer (podcast + newsletter): C
 
 ## 3. Data & tool infra for agents
 - **Clean before consume:** Gong → Snowflake (clean transcripts) → LLM extract action items → then the agent layer. Build custom MCPs on Gong/Snowflake to gate rep data access + strip garbage. [#127 #150]
+  - Evidence (2026-10-11): tag and enrich call transcripts into a database as they land; a VoC skill filters by tags before reading any raw transcript, which cuts tokens and stops vague answers. Works for support tickets too. [#1702]
 - **MCP from undocumented endpoints** (e.g. Gamma): give agents tool-calling without waiting for an official MCP; supply endpoint context + example payloads in prompts so agents don't hallucinate fields. [#128 #129]
 - **Buy raw datasets** (S3/Snowflake/SFTP) over API access when feasible — SQL beats API calls for iteration speed/scale. [#188]
 - **Semantic layer via MCP** (e.g. Omni) → BDRs plain-text query intent stacks + auto-build lists in their sales tool. [#194]
@@ -38,6 +41,7 @@ Real-world GTM-engineering plays from The GTM Engineer (podcast + newsletter): C
 ## 6. Strategy / positioning
 - **Salesforce over modern CRMs at scale:** GTM alpha lives in offers/content/SDR tooling, not CRM differentiation; CC lowers SF maintenance (CLI updates) shifting the build/maintain calc. [#161 #165]
 - **Human SDRs before AI outbound** — validate channel ROI first; AI failure conflates channel vs execution. [#162]
+  - Evidence (2026-10-11): SaaStr survey: only 3% of firms got revenue from autonomous AI SDRs, 83% got nothing; SaaStr's own success needed ~3 hrs/day of human oversight plus tight campaigns. Budget supervision into any AI SDR plan. [#1793]
 - Most $10M+ companies have **zero lead-routing logic** — Clay + n8n + HubSpot enrich+route is a fast agency win; map it in Miro first. [#181]
 - Product launches: lead with what's newly possible, make the customer the hero, stay in one lane. [#160]
 - **End-to-end CC sales agent:** Slack pre-call brief 2 hrs ahead → post-call follow-up in founder tone w/ relevant case studies → auto-creates HubSpot records. [#184]
@@ -45,6 +49,11 @@ Real-world GTM-engineering plays from The GTM Engineer (podcast + newsletter): C
 - **GTME hiring signal:** engineers learning GTM AND GTM folks learning engineering (not pure hybrids day 1); unstructured Loom screen ("make me want to interview you") + unanimous 5-6 peer committee. [#169 #187]
 - Git-blame referral gamification: infer social-graph distance from commit data, reward cross-team referrals. [#196]
 - One Valley GTM person drives ~$1M/mo pipeline via content engine + signal-based OB + personalization + lead capture + affiliate + ads. [#167]
+
+## Creator-radar 2026-10-11
+- **Build-vs-buy test:** annual cost saved / hours to build = effective hourly rate. Build only if it beats your hourly floor; otherwise buy or skip. [#633]
+- **Test skills on juniors before rollout (single-case: Hightouch):** an asset-building skill doing 40-50% of the work was rolled back because new hires could not tell which half was theirs, so the people who needed help got amplified slop. [#1665]
+- **One customer-supplied number under every logo** (Clay: "+140% outbound pipeline"): email each customer asking for one quotable result. Stronger: link the logo to a real artifact your product produced. [#1743]
 
 ## Source
 creator-radar 2026-06, The GTM Engineer (podcast + newsletter). Card ids in [#]; full post/episode URLs in creator-radar Supabase by id.

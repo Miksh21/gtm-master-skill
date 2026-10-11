@@ -199,6 +199,8 @@ For weighted scoring tables + recency multipliers: `clusters/signals/knowledge/s
 
 3. **Add new data sources (same pipeline).** New Apollo segments. Lookalike expansion via Ocean.io / DiscoLike. Niche Apify scrapes. New geographies / sub-industries. **Each new input goes through the SAME ICP → TAM → Research → Scoring → Contact Sourcing → Messaging → Testing pipeline.** No shortcuts.
 
+**Campaign portfolio (2026-10-11):** run three campaign types side by side: Volume (whole TAM every 2-3 months, 1-3 steps), Micro (small targeted lists), Signal-based (evergreen trigger flows). [#1458]
+
 ---
 
 ## Channel role within the system

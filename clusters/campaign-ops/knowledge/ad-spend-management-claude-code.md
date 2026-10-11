@@ -16,8 +16,10 @@ How ColdIQ manages **$300,000+/month in ad spend** across Google, Meta, and Link
 The shift from dashboard-based to terminal-based ad management changes three things:
 
 1. **Speed.** Tasks that took 2-3 hours per client now take 15-20 minutes. Across a portfolio, this compounds into days saved per week.
+   - Evidence (2026-10-11, single-case: Ramp): the paid search owner built a custom Google Ads MCP over Snowflake; a full campaign launch went from 10-15 h to 15 min. Start with Google Ads: its short spend-to-revenue loop makes evals easy. [#662]
 2. **Consistency.** Skills execute the same checks every time. No steps get skipped because someone was rushing before a meeting.
 3. **Scale.** Adding a new client account doesn't proportionally increase workload. Same skills run on one account or twenty. **Marginal cost of additional spend → zero.**
+   - Evidence (2026-10-11): honest benchmark: Slack's 12-week SEM automation cut CPA 18% while raising spend and dropped management from 8-10 hrs/week to ~1. Use as the realistic ceiling against inflated AI-ads claims. [#803]
 
 ---
 
@@ -144,6 +146,14 @@ ColdIQ's own numbers:
 - **No data hygiene** — skills surface issues but don't fix structural problems with your conversion tracking, attribution, or pixel setup
 
 ---
+
+## Agent guardrails for ad accounts (creator-radar 2026-10-11)
+- **Automation order:** deterministic campaign builds (naming, structure, boolean targeting) first, bidding logic second, ad copy last. Builds are instantly verifiable and remove the costliest launch errors. [#799]
+- **Backtest every budget/bid rule** against 30/60/90/180-day history before shipping: rules that read sensibly misallocate depending on lookback window, and teams otherwise find out ~3 weeks after launch. [#797]
+- **Scoped keys per agent:** one key per agent, read-only by default, draft before live, one-click disconnect, every write logged with the prompt that caused it. [#2027]
+- **Changes ship as PRs:** every AI-proposed ad account change (bids, pauses, builds) goes out as a GitHub PR, reviewed with a diff skill, so every change is auditable. [#796]
+- **Decision engine between subagents and the account:** it scores and filters proposals so a bid change, a pause and a copy test on the same keyword do not collide. Most ideas should die there. [#802]
+
 
 ## Cross-references
 

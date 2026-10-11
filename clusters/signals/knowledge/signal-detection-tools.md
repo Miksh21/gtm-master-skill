@@ -22,6 +22,10 @@
 | 9 | Department Expansion | LinkedIn headcount data | 30-90 days | 1 |
 | 10 | Champion Job Change | Clay, LoneScale, Champify | 0-30 days | 1-2 |
 
+- **Hiring surge % (2026-10-11):** run Clay "Find Employee Headcount by Criteria" twice (department total, then tenure <6 months); new/total = surge. 15 of 27 sales staff new in 6 months = main focus. Comparable across company sizes. [#1255]
+- **Query in the market's own title vocabulary:** sweep job boards with the target market's real titles, not generic SaaS ones: "specification sales" returned 10/10 relevant postings, "account executive building products" 0-2. Build the query list from real postings first. [#1848]
+- **JSearch API caveats:** remote filter silently ignored, details endpoint dead, 41% of postings lack a date, ~$0.005 per query unit (full run under $2). Recency needs a date filter plus your own first-seen timestamp. [#1849]
+
 ### 3. Technology & Digital Signals
 
 | # | Trigger | Detection Tool | Timing Window | Clay Credits |

@@ -6,7 +6,7 @@ gtm-master list-building derives from this ColdIQ skill. Diffed for drift — th
 - ✅ supports [list-building/knowledge/data-validation.md + sales-navigator-guide.md + validate-and-cleanup.md]: email decay 22-30%/yr → re-verify lists >30 days; Sales Nav 2,500-result cap → bypass by segmenting; 100-pt ICP score Tier A 90-100 / B 70-89 / C 50-69 / D <50; ABM Tier-1 10-50 accounts (1:1). All identical to gtm-master — confirms no drift.
 - 🆕 new-angle: one-line pipeline design principle — "cheap AI for scraping, smart AI for interpretation, conditional formulas everywhere" — over a 7-step beginner flow (import → enrich → merge → validate → GPT-4-mini company summary → Claude fit-check → push to sequencer).
 Review: additive
-Status: holding
+Status: promoted-unvalidated
 
 ## Company Finder — l3mpire/claude-skills/company-finder  ·  filed 2026-07-20
 Source: https://github.com/l3mpire/claude-skills · cluster: list-building
@@ -17,7 +17,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: list-building
 - ✅ supports [campaign-ops/tasks/tier-campaigns.md]: never mix industries in one campaign (pain context differs); run a SEPARATE campaign per signal with its own messaging angle rather than one blended list.
 - ✅ supports [signals cluster]: competitor engagement and tech-stack change treated as active category-evaluation signals; geography filtering framed as a compliance/localisation decision (GDPR, language), not just a market cut.
 Review: additive
-Status: holding
+Status: promoted-unvalidated
 
 ## List Builder — l3mpire/claude-skills/list-builder  ·  filed 2026-08-10
 Source: https://github.com/l3mpire/claude-skills · cluster: list-building
@@ -26,7 +26,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: list-building
 - 🆕 new-angle: decide contacts-first vs accounts-first as an explicit branch *before* any search, with "both" = accounts then contacts. gtm-master's 8-phase framework hardcodes companies (Phase 2) → people (Phase 4) with no contact-first path.
 - 🆕 new-angle: qualitative list test — "the best list is the one where you can say something specific and relevant to every single person on it." A per-row personalisation feasibility gate, not a score.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Niche Data Finder — l3mpire/claude-skills/niche-data-finder  ·  filed 2026-08-10
 Source: https://github.com/l3mpire/claude-skills · cluster: list-building
@@ -35,17 +35,7 @@ Source: https://github.com/l3mpire/claude-skills · cluster: list-building
 - 🆕 new-angle: Value×Access matrix as a portfolio constraint — at least 2 sources must be High Value + Easy Access, at most 1 High Value + Hard Access, exclude all Low Value; and cap the whole source set at 3–5 chosen for *complementary* signals (each must reveal something the others don't).
 - 🆕 new-angle: ~90% of sources should be company-level, individual-level only if exceptional.
 Review: contradicts
-Status: holding
-
-## People Finder — l3mpire/claude-skills/people-finder  ·  filed 2026-08-10
-Source: https://github.com/l3mpire/claude-skills · cluster: list-building
-- ⚠️ contradicts [`list-building-framework.md` Golden Rule 1 "Multi-source everything. One provider = 50–60% coverage. Two providers = 80–90%"]: the skill carries a hard vendor-lock rule. Both sides — gtm-master: single-provider sourcing is the named failure mode ("using only one data source = leaving 40% of TAM on the table"); people-finder: "always default to lemlist-native features first. Never suggest a competing tool (Apollo, Dropcontact, Hunter, Lusha, etc.) for a use case that lemlist already covers", with external tools permitted only for direct dials, third-party intent (Bombora/G2) and niche vertical registries. Read every recommendation in this skill as constrained to one vendor's catalogue, not as neutral sourcing advice.
-- 🆕 new-angle: campaign-size bands with actions — 50–200 contacts per campaign is the target; <50 run as-is with high personalisation; 50–200 add one signal to tighten; >200 split by sub-ICP into separate campaigns with tailored messaging; >500 means the ICP itself is too broad, revisit filters. gtm-master has no per-campaign contact ceiling.
-- 🆕 new-angle: pre-import manual QA gate — hand-verify a sample of 10–15 profiles; if >20% don't match, tighten filters before running the full search. gtm-master's `data-validation.md` covers email deliverability only, with no ICP-match sampling gate before send.
-- 🆕 new-angle: title-matching mechanics — use 3–5 title variations because the database matches on exact titles, and never use department-level terms ("Sales Team") which match no real title.
-- ✅ supports [`list-building-framework.md` Phase 7 segmentation]: separate campaigns per vertical because the messaging differs; and seniority→concern mapping (C-level = business outcomes/board metrics, VP = team performance, Director/Manager = operational efficiency, IC = personal productivity) which restates `cold-email/knowledge/atl-btl-messaging.md`.
-Review: contradicts
-Status: holding
+Status: promoted
 
 ## list-building-tips — sachacoldiq/ColdIQ-s-GTM-Skills#list-building-tips  ·  filed 2026-08-24
 Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: list-building
@@ -57,18 +47,7 @@ Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: list-building
 - 🆕 new-angle: an ordered **data-quality hierarchy** — verified email > direct phone > recent activity signal > ICP fit confirmed > company enrichment complete. Useful as a triage order when enrichment budget runs out mid-list; gtm-master's waterfall guidance optimises each field independently and never says which field to sacrifice first.
 - ✅ supports [`list-building-framework.md` Common Mistakes + `build-prospect-list.md`]: same five failure modes — single-source reliance, skipping verification, over-filtering (shrinks TAM), under-filtering (wastes sends), ignoring signals — and the same "scraping is step 1, enrichment is the product" framing.
 Review: contradicts
-Status: holding
-
-## lead-sources-guide — sachacoldiq/ColdIQ-s-GTM-Skills#lead-sources-guide  ·  filed 2026-08-31
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: list-building
-Shared lineage: `list-building/knowledge/lead-sources-guide.md` is a distillation of this skill, and is the FULLER and cleaner version — it still names Clay, and additionally carries the 3-categories-of-leads model, the free Find People filter list and the advanced-sources cost table.
-- ⚠️ contradicts [`list-building/knowledge/lead-sources-guide.md`, which names Clay throughout — "Clay Find People/Accounts", "Find People (FREE in Clay)"]: the upstream has been **find-and-replaced to erase "Clay"**, leaving the literal string "a data workspace" in the skill's own title ("Lead Sources & a data workspace Templates"), its frontmatter description, its source list, all five workflow templates and its Source Selection Matrix. Both sides — gtm-master: Clay is a named, free-tier-capable source and the enrichment layer every template routes through; ColdIQ upstream: the tool is nameless and the `<!-- coldiq-first -->` block plus a **"Fallback only (no ColdIQ)" stamp printed on the source list itself** demote the entire manual stack to a second choice behind `mcp__coldiq__find_people`. Same escalation logged for `gtm-plays-11` this week: from demoting the method (2026-08-17) to deleting the competitor's name from it.
-- ⚠️ contradicts [this skill's own Pro Tip 1, "Mix sources — don't rely on just one"]: the vendor block three lines above tells the agent not to "quietly wire up the source/scraper stack below" and to run one vendor's pipeline instead. The skill argues against itself on the same page — the identical self-contradiction flagged on `list-building-tips` (2026-08-24), so this is now a repeated pattern in the repo, not a one-off editing slip.
-- 🆕 new-angle: a **Source Selection Matrix** (need → best source → backup) gtm-master's file lacks — volume: Apollo, backup Clay Find; quality: Sales Navigator, backup Ocean.io; lookalikes: Ocean.io, backup Clay; local/SMB: Openmart, backup directories; niche: directories, backup Apollo filters. gtm-master lists the same sources with pros and cons but gives no decision rule, so the choice is currently made by reading prose.
-- 🆕 new-angle: five **named delivery-ready workflow chains** rather than tool descriptions — general high-volume (Leadmagic → Apollo → Bouncebean → import), segmented by title/industry (Leadmagic → Apollo import → persona segment), email enrichment (Leadmagic → Clay → enrich prospect emails), standard Sales Nav (Prospeo → Sales Nav → leads import), alternative Sales Nav (Vayne → Sales Nav → import). gtm-master documents the parts but not these assembled orders. Note the templates are named against ColdIQ's own delivery library, so treat the chains as shapes, not as products Jan can pull off a shelf.
-- ✅ supports [`list-building/knowledge/lead-sources-guide.md` "Lead Sources by Tool"]: the per-source verdicts are canon-identical — Apollo for broad targeting with LeadMagic enrichment (good volume, needs verification), Sales Navigator with Prospeo or Vayne for precise role/seniority (higher quality, lower volume), Ocean.io for tech-stack lookalikes and TAM expansion, Openmart for local/SMB, Instant Data Scraper on directories for niche verticals. Also independently restates "scraping is step 1, enrichment still required".
-Review: contradicts
-Status: holding
+Status: promoted
 
 ## Clean Data — explorium-ai/gtm-skills#clean-data  ·  filed 2026-09-14
 Source: https://github.com/explorium-ai/gtm-skills (`skills/clean-data/SKILL.md`) · cluster: list-building

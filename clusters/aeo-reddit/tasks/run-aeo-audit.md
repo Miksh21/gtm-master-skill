@@ -26,6 +26,7 @@ A pre-launch brand needs no paid tracker to start. Build the panel once and run 
 - 10-30 prompts per topic, buyer language, frozen between runs (changes = new version, note it)
 - Same engines, same countries, every run; log per scan: date, prompt, engine, country, brand mentioned (y/n), competitors mentioned, citations (URLs), and the full raw answer text saved verbatim
 - Weekly cadence is enough to see movement; the saved raw answers are what make later audits possible
+- Prompt content (2026-10-11): use the specific, slightly embarrassing questions buyers ask the week before signing, and test three-turn conversations: brands named in turn one get eliminated in follow-ups. Weight engines by buyer usage. [#1971]
 
 This IS the tool for the process below; "pull the scans" then means "read the log".
 

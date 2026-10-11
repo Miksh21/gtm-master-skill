@@ -34,6 +34,9 @@ Four selection criteria: targeting options (can you reach the ICP), media cost (
 
 Channels by stage: Create = YouTube, LinkedIn, Meta, display. Capture = Google, Microsoft, Capterra, SoftwareAdvice. Accelerate/Revive/Expand = LinkedIn, Meta, display retargeting.
 
+- **LLM ads (2026-10):** ChatGPT ads early CPM ~$60, about 3x Meta; Perplexity shut its ad program. Treat LLM ads as a small capped experiment line; B2B ICP targeting unproven. [#1761]
+- **Category creators buy education:** Primer benchmark (379 advertisers): AI-native category creators put 43% of paid in LinkedIn (vs 13% typical) and 38% in Google (vs 69%); new categories have little search to capture. [#1894]
+
 **Cross-channel budget split:**
 
 | Total monthly | Split |

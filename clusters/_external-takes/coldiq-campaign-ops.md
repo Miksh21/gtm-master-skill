@@ -6,7 +6,7 @@ Benchmark verdict engine on lemlist data (244k campaigns / 249M emails). NOTE: t
 - 🆕 new-angle: fixed metric-triage ladder for diagnosing a campaign — (1) deliverability/warmup [foundation] → (2) reply rate [main KPI] → (3) accept rate [entry point] → (4) positive reply rate [pipeline quality] → (5) open rate [weak signal]. Fix upstream before downstream. gtm-master campaign-ops has weekly-report + analyze-replies but no single ordered triage ladder.
 - ✅ supports [campaign-ops deliverability stance]: open rate is a weak/unreliable signal (post-MPP) and should never be the primary optimization target.
 Review: additive
-Status: holding
+Status: promoted-unvalidated
 
 ## A/B Testing — coreyhaines31/marketingskills/ab-testing  ·  filed 2026-07-20
 Source: https://github.com/coreyhaines31/marketingskills · cluster: campaign-ops
@@ -21,20 +21,7 @@ Context caveat before reading the contradiction: this skill is written for web/C
 - ✅ supports [run-ab-test.md:77]: one variable per test, or attribution is impossible; changing variants/traffic/tracking mid-test invalidates the result; a no-difference outcome means test bolder changes, not more of the same.
 - ✅ supports [run-ab-test.md:79 kill-the-hypothesis rule]: distinguishes statistical significance from practical significance — a real but tiny effect may not justify implementation.
 Review: contradicts
-Status: holding
-
-## CTA Designer — l3mpire/claude-skills/cta-designer  ·  filed 2026-07-31
-Source: https://github.com/l3mpire/claude-skills · cluster: campaign-ops
-Permissionless Value Promise (PVP) model for outreach CTAs.
-- ⚠️ contradicts [gtm-master CTA ladder — campaign-ops/tasks/optimize-cta.md:19-31 + "CTA types by step" table]: gtm-master escalates step 1 soft question → step 2 "worth a quick 15 minutes?" → step 3 direct close with a calendar link. This skill forbids proposing a book-a-call CTA at all, puts a Diagnostic Question at step 3, and defers the direct 15-minute ask to step 4+ ("only once trust is built"). Both sides — gtm-master: meeting ask by step 2, booking link at step 3; CTA Designer: Insight/Benchmark → Resource → Diagnostic Question, direct ask not before step 4.
-- ⚠️ contradicts [Jan's standing copy rule — house rule, not a gtm-master file]: the PVP model is built on the CTA promising a specific deliverable ("put together a quick breakdown / a checklist / a one-pager / the full benchmark — want me to send it?"). Jan has a hard ban on deliverable-promising CTAs in client copy. Both sides — house rule: a CTA may only ask for a call, a chat, or a couple of details; CTA Designer: the CTA IS the deliverable promise. If promoted, it needs an explicit gate — only when the asset already exists and can ship same-day.
-- 🆕 new-angle: 5 named CTA types (Insight / Benchmark / Resource / Trigger-Based / Diagnostic Question) with a situation → type selection table: strong trigger → Trigger-Based; data-driven persona (ops, finance, analytics) → Benchmark; recurring concrete problem → Resource; LinkedIn DM → Diagnostic or Trigger-Based; step 3+ → Resource, to justify why you're back.
-- 🆕 new-angle: generate 5 CTA options per message, each labelled with a friction rating (🟢 low / 🟡 medium), with at least 3 low-friction required before recommending the top 1-2. gtm-master's optimize-cta returns 3 variants scored /6 but has no friction label and no minimum.
-- 🆕 new-angle: "never use the same CTA type twice in a row" across a sequence — a type-rotation rule parallel to the value-prop rotation gtm-master already requires across steps.
-- 🆕 new-angle: PVP pass bar — the prospect could use the thing even if they never buy; the product is not mentioned; a one-word reply suffices; it could not be sent to 1,000 random people; no implied urgency or pressure.
-- ✅ supports [optimize-cta.md red-flag table]: "Would you be open to a 30-minute call?" is high-friction and seller-centric; one ask only; the goal of touch 1 is a REPLY, not a booked meeting.
-Review: contradicts
-Status: holding
+Status: promoted
 
 ## GTM Action Thinker — l3mpire/claude-skills/gtm-action-thinker  ·  filed 2026-07-31
 Source: https://github.com/l3mpire/claude-skills · cluster: campaign-ops
@@ -46,7 +33,7 @@ Idea-stress-testing skill; no gtm-master task currently occupies this slot.
 - 🆕 new-angle: MVP-first execution blueprint with dependencies triaged Already resolved / Easy to resolve / Hard blocker, a week-by-week sequencing map with a deliverable per week, and a scale path (what gets automated, hired for, templatized; what breaks at 10x that must be solved now).
 - ✅ supports [campaign-ops + philosophy.md]: reply rate > open rate, meeting booked > click, revenue influenced > leads generated; every motion needs a "why now" that isn't "we need pipeline"; specificity over generality; a good idea that ships next week beats the best idea that needs three months of engineering.
 Review: additive
-Status: holding
+Status: promoted-unvalidated
 
 ## email-metrics-benchmarks — sachacoldiq/ColdIQ-s-GTM-Skills#email-metrics-benchmarks  ·  filed 2026-08-31
 Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: campaign-ops
@@ -61,7 +48,7 @@ Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: campaign-ops
 - ✅ supports [`cold-email/tasks/write-first-email.md:22` and `writing-frameworks.md:78-84`]: the seniority length caps (BTL 3-4 sentences / 90 words, ATL 2-3 sentences / 60 words) sit inside gtm-master's stated ranges (BTL 60-90, ATL 40-70) with identical sentence counts — independent agreement, no conflict.
 - ✅ supports [`signals/knowledge/signal-scoring.md:217-219`]: the 6-8 / 18-22 / 35-40 progression is canon-identical (see the first bullet for the caveat that the same page also contradicts it).
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Meeting Prep — janskuba/outbound-agents#meeting-prep  ·  filed 2026-09-07
 Source: https://github.com/janskuba/outbound-agents (`.claude/agents/meeting-prep.md`) · cluster: campaign-ops
@@ -72,7 +59,7 @@ Coverage check: campaign-ops owns `score-meeting-intent.md` (scoring a REPLY for
 - 🆕 new-angle: **BANT questions hard-banned in discovery** — no budget, no "who's the decision maker", no timeline, no "are you evaluating other vendors". Replaced with questions that surface impact of the pain, the prospect's vision of "good", and the consequences of inaction. gtm-master's `personas/knowledge/buying-committee-5-roles.md` maps who is in the room but never rules on what to ask them; nothing in the skill bans BANT.
 - 🆕 new-angle: **success metrics declared before the call** (2-3 named outcomes, e.g. "contact volunteered internal champion"), making the meeting pass/fail rather than subjective. gtm-master defines pass criteria per task but not per meeting.
 Review: additive
-Status: holding
+Status: promoted-unvalidated
 
 ## ABM Campaign — explorium-ai/gtm-skills#abm-campaign  ·  filed 2026-09-14
 Source: https://github.com/explorium-ai/gtm-skills (`skills/abm-campaign/SKILL.md` + `references/01-account-list.md`, `02-enrich-score.md`, `06-campaign-management.md`) · cluster: campaign-ops

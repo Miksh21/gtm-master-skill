@@ -49,6 +49,8 @@ Every approved discount records: reason (competitive / strategic / volume / loya
 
 Velocity: quote approval times vs SLA, % within SLA (80%+), deal velocity trend. Quality: discount leakage < 2% ARR, margin of desk-reviewed deals ≥ target, renewal hold-rate on custom-priced cohorts, **win rate of desk-reviewed deals ≥ non-reviewed** (if lower, the desk slows deals instead of improving them). Compliance: 100% documented discount reason, 100% explicit expiry, 100% strategic exceptions with documented outcome. Review velocity + compliance weekly, quality monthly.
 
+**Close-rate pricing heuristic** (single-case: Finn Thormeier, unsourced): a close rate near 35% maximises lifetime gross profit; consistently above it means raise prices, below it means improve offer value. [#435]
+
 Maturity: Level 1 ad-hoc (CRO approves everything, discounts undocumented) → formalize in 6-12 weeks (matrix, CPQ, 30-60 day discount audit). Level 2 formalized (matrix + SLAs) → add discount dashboard, cohort renewal strategy, consumption templates, monthly Finance governance review. Level 3 strategic (RevOps + Sales + Finance + Product; desk feeds pricing strategy: "the €50-100K segment sees 30% discounts, raise list price"): leakage <1.5% ARR, desk cost <1-2% of revenue managed.
 
 ## PART 2: DEAL VELOCITY
@@ -103,6 +105,8 @@ Advancement must reflect **buyer actions**, not seller activities ("they schedul
 | EB access | 10% | met+engaged=10, identified=5, unknown=0 |
 
 Bands: 80-100 healthy | 60-79 watch (coach in next 1:1) | 40-59 at risk (manager intervention this week) | <40 critical (likely zombie, triage now). Compute nightly; surface <60 deals in the weekly pipeline review.
+
+**Cumulative deal intelligence:** before analysing call n, a context builder reads calls 1..n-1 into a running MEDDICC state (plus stage history, contact roles, exit criteria); per-call summaries raise false gaps. [#1982]
 
 ### Multi-Threading
 

@@ -8,7 +8,7 @@ gtm-master's handle-objection.md covers 6 EMAIL-reply objection types; this cove
 - 🆕 new-angle: hard stop rule: "No" three times in one call = move on; every call still builds familiarity, leave the door open.
 - ✅ supports [handle-objection.md principles]: never argue, acknowledge first, questions over rebuttals, keep replies short, always leave the door open, "we already have a solution" gets the how-is-that-working gap probe rather than an incumbent attack.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Call scorecards — swan-gtm/gtm-skills/skills/kevin-kd-dorsey/call-scorecards · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: objections
@@ -19,7 +19,7 @@ Behavior-based scorecards per conversation type (prospecting, discovery, demo, p
 - 🆕 new-angle: closing-card specifics: the first question to ask a rep about any deal is "what problem did they agree they have?", problem agreement is the core of discovery; confirm they are sold BEFORE showing pricing; get agreement that something has to change (that agreement is the first close); ABS-style recommendation with benefits restated inside it (not "you get all these seats" but "the API connection that streamlines your security review, and onboarding that cuts ramp from three months to two"); ask for the money or the concrete next step ("Julie's the CFO, right? When can we get her on a call?") instead of ending the call waiting; navigation section = champion personally sold, decision process mapped, and what matters to the decision-maker captured, a scored miss there is an early warning to go back to the champion BEFORE the decision call.
 - 🆕 new-angle: scoring cadence economics: SDRs (2-3 convos/day) and AEs (7-8 demos/month) can score EVERY call; reps self-score, managers score a sample, trends tracked so a 90-day line shows which chunk is dragging; scoring doubles as proactive deal rescue (a scored miss names exactly what to go get before the next call); transcript-scoring rule: one line per item with the quoted moment that earned the score or the absence that cost it, "NEVER invent moments — cite the transcript or mark the item unobserved."
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Sales playbook foundations — swan-gtm/gtm-skills/skills/kevin-kd-dorsey/sales-playbook-foundations · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: objections
@@ -28,7 +28,7 @@ Playbook skeleton (the five P's) plus a fully drafted People section, "the part 
 - 🆕 new-angle: the People section's four blocks: (1) Expectations with every target broken into re-derivable math ("$100K per quarter" = $10K average deal x 10 deals at 25% close, inbound covers it if the rep self-sources 5 opportunities) plus promotion AND termination criteria known from day one; (2) Standards of excellence: the org's own virtues ("how you behave") separate from wall values ("what you believe"), each defined with a real example, ending in a signature page, "that signature is what the first hard conversation points back to"; (3) personal goals set at start; (4) stories and records: the legends, comeback stories, last-second deals, failures, one top tip per rep, and the records (fastest ramp, biggest deal), "new people need to identify with those who came before."
 - 🆕 new-angle: adoption tests: the remaining P's are built from real calls, real deals, real rep language, never the ideal process nobody runs; never fully outsourced ("outside help is fine, but the leader stays heavily involved or it won't be adopted"); owner + review cadence assigned before shipping; the acceptance test: "could a rep who joins after the leader has left succeed from this document alone?"
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Battlecard — swan-gtm/gtm-skills/skills/ido-goldberg/battlecard · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: objections
@@ -37,4 +37,4 @@ Creates or updates a competitor battlecard saved into org competitive knowledge.
 - 🆕 new-angle: evidence bars: strengths and weaknesses must cite real evidence or be left out; rumored weaknesses labeled ("reported in G2 reviews"); no legally sensitive claims without citation; cheap-signals-first gathering (homepage + pricing headline/CTA/named segment, customers page pattern, LinkedIn posting cadence and hiring areas, traffic order of magnitude, funding events), skip fetches the user already has fresh.
 - 🆕 new-angle: the ghost-competitor check: a "competitor" with under 1,000 monthly visitors and no LinkedIn presence gets flagged, "usually means the user is fighting a ghost. Suggest they reassess whether this competitor is worth a battlecard." Existing notes mean update-not-recreate: "preserve what's true; only revise what's stale"; the card is always saved to shared competitive knowledge, "a battlecard that lives only in chat history is wasted."
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)

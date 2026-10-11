@@ -42,6 +42,8 @@ User asks to score leads, rank prospects, prioritize a contact list, decide who 
 
 **Override rule:** A clear economic buyer (20 pts persona) at perfect ICP fit (40 pts) with zero signal still scores 60 — but move them to **Tier 1** anyway. Too valuable to wait for a signal.
 
+**Heat override (2026-10-11, creator-radar review L3-03):** the signal heat score (`clusters/signals/knowledge/signal-scoring.md` Step 5, SKILL.md heat tiers) runs separately from this fit score; a Hot or Red Hot heat score (100+) can promote a Tier 2 fit account into the Tier 1 queue.
+
 ## Process
 
 1. Score each contact across the 3 dimensions
@@ -92,6 +94,8 @@ List health: [Healthy / Weak — recommendation]
 - Tier 2 → standard cadence via `clusters/sequences/tasks/design-multi-channel.md`
 - Tier 3 → either drop OR feed to `clusters/signals/tasks/score-multi-signal.md` to wait for signal trigger
 - After 60 days → re-score (signal decay)
+  - Scope (2026-10-11, creator-radar review L3-11): the calendar re-score is for one-shot outbound lists. Always-on account tiering uses lazy decay (applied when a new signal arrives, no batch rescore) and no silent demotion.
+  - **Counter-view (2026-10-11):** never batch-rescore on a schedule; decay applies only when a run happens anyway, and multi-contact composition is interpreted, not summed [swan ido-goldberg/score]
 
 ## Deeper knowledge
 

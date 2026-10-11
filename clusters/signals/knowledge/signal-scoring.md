@@ -9,6 +9,7 @@
 - Product usage (feature adoption, usage spikes)
 - Email engagement (opens, clicks, replies)
 - Content downloads (whitepapers, case studies)
+  - Evidence (2026-10-11): tag content assets by narrative; when one account consumes several assets in the same narrative, alert the SDR with a one-line opener for that narrative. Narrative clustering beats raw page-view counts as intent. [#1812]
 - Event attendance (webinars, demos)
 
 **Second-Party Signals (Strong)**
@@ -27,7 +28,9 @@
 
 ### Step 2: Assign Weights
 
-#### Tier 1 — Hot Signals (50-100 points)
+Per-signal weight bands are not heat levels. Heat comes only from the summed, recency-weighted score in Step 5 (one 80-point signal alone = Warm, not Hot). (updated 2026-10-11: weight bands renamed from Hot / Warm / Cool, creator-radar review L3-09 / S7)
+
+#### Tier 1: High-weight signals (50-100 points each)
 
 | Signal | Points | Rationale |
 |--------|--------|-----------|
@@ -39,7 +42,9 @@
 | G2 comparison with competitors | 60 | Active vendor comparison |
 | 5+ website visits in 2 weeks | 50 | Sustained interest |
 
-#### Tier 2 — Warm Signals (20-49 points)
+**Counter-view (2026-10-11):** at 1,000+ employee accounts even stacked anonymous pricing-page visits stay mid-tier; the top tier needs a named, verified senior buyer or 2+ first-party signals from named people [swan amos-bar-joseph/account-tier-scoring]
+
+#### Tier 2: Mid-weight signals (20-49 points each)
 
 | Signal | Points | Rationale |
 |--------|--------|-----------|
@@ -51,7 +56,10 @@
 | Webinar attendance | 25 | Category interest |
 | 3+ blog post visits | 20 | Early research |
 
-#### Tier 3 — Cool Signals (5-19 points)
+**Counter-view (2026-10-11):** funding strength comes from the stated use of funds, not the round size; no stated use of funds = Low [swan din-arbel/signal-interpreter]
+**Counter-view (2026-10-11):** LinkedIn engagement alone never lifts an account above the second-lowest tier and never triggers outreach on its own [swan ariel-cohen/influencer-post-engager-capture]
+
+#### Tier 3: Low-weight signals (5-19 points each)
 
 | Signal | Points | Rationale |
 |--------|--------|-----------|
@@ -90,6 +98,10 @@
 | 20-49 | Cool | Marketing nurture campaigns |
 | 0-19 | Cold | Monitor for signal changes |
 
+- **Corroboration rule (2026-10-11, creator-radar review L3-09):** intent-only, engagement-only or anonymous-only stacks never trigger outreach alone, whatever the score; require one named or first-party corroborator (named visitor, hand-raise, hiring, business event).
+
+- **Tuning window (2026-10-11):** run the model a fixed 30 days before touching weights; if >40% of "hot" accounts produced no pipeline, tighten the signal criteria. The fixed window stops you tuning on noise. [#1600]
+
 ### Implementation Tools
 
 - **Common Room**: Built-in scoring across 50+ sources
@@ -115,24 +127,24 @@ Replace volume-based prospecting with intent-driven outreach. Instead of 1,000 c
 | Signal | Action | Channel | Owner |
 |--------|--------|---------|-------|
 | Demo request | Personal follow-up + calendar link | Email + Phone | AE |
-| 3+ pricing page visits (VP+) | Personalized email referencing pricing | Email | SDR |
-| Champion job change to target | Congratulations + re-engagement | LinkedIn + Email | AE |
+| 3+ pricing page visits (VP+) | Personalized email on the likely pain; never name the visit (tracked signal) (updated 2026-10-11: was "Personalized email referencing pricing", creator-radar review L3-04) | Email | SDR |
+| Champion job change to target | Re-engagement on the past relationship, no pitch in the first weeks; one clause on the move at most, no congrats opener (updated 2026-10-11: was "Congratulations + re-engagement", creator-radar review L3-04 / L3-10) | LinkedIn + Email | AE |
 | Multiple stakeholders from same company | Map buying committee, multi-touch | All channels | AE + SDR |
 
 #### Tier 2: Act-Today Signals (< 24 hours)
 
 | Signal | Action | Channel | Owner |
 |--------|--------|---------|-------|
-| Funding round ($10M+) | "Congratulations" + relevant case study | Email | SDR |
+| Funding round ($10M+) | Consequence-led opener (what the money must deliver), one clause on the round at most, + relevant case study (updated 2026-10-11: was "'Congratulations' + relevant case study", creator-radar review L3-04) | Email | SDR |
 | Relevant job posting | Connect hiring pain to your solution | LinkedIn + Email | SDR |
-| Bombora surge score 70+ | Reference their research area | Email | SDR |
+| Bombora surge score 70+ | Corroborate first (named visit, hiring, event); never reference the research activity (updated 2026-10-11: was "Reference their research area", creator-radar review L3-09) | Email | SDR |
 | G2 comparison activity *by target-account-domain employees* | Send competitive battlecard | Email | SDR |
 
 #### Tier 3: Act-This-Week Signals (< 72 hours)
 
 | Signal | Action | Channel | Owner |
 |--------|--------|---------|-------|
-| Funding round (<$10M) | Lighter congratulations + nurture | Email | Marketing |
+| Funding round (<$10M) | Light consequence-led touch + nurture, no congrats opener (updated 2026-10-11: was "Lighter congratulations + nurture", creator-radar review L3-04) | Email | Marketing |
 | 3+ content articles read | Send related premium content | Email | Marketing |
 | Webinar attendance | Recording + related offer | Email | SDR |
 | Industry news mention | Comment on news + soft touch | LinkedIn | SDR |
@@ -151,7 +163,7 @@ Replace volume-based prospecting with intent-driven outreach. Instead of 1,000 c
 |-------------|--------------|-----------------|--------|
 | Inbound demo | < 5 minutes | 42 hours | 21x more likely to qualify at 5 min vs 30 min |
 | Website visitor (high intent) | < 1 hour | 24-48 hours | 10x higher conversion same-day |
-| Champion job change | < 24 hours | 1-2 weeks | 3x higher win rate as first mover |
+| Champion job change | Relationship touch within the first weeks; sell from day 14-45; re-check at 90-180 days for budget (updated 2026-10-11: was "< 24 hours", creator-radar review L3-10) | 1-2 weeks | 3x higher win rate as first mover |
 | Funding announcement | < 72 hours | 1-2 weeks | Window closes as competitors swarm |
 | Intent surge | < 24 hours | Not tracked | 50% of value lost after 7 days |
 
@@ -170,9 +182,9 @@ Each play includes:
 ```
 TRIGGER: Past customer/champion changes jobs to target account
 QUALIFICATION: New company fits ICP (size, industry, tech)
-TIMING: Within 24 hours
+TIMING: Relationship touch within the first weeks (no pitch); sell from day 14-45; re-check at 90-180 days (updated 2026-10-11: was "Within 24 hours", creator-radar review L3-10)
 SEQUENCE:
-  Day 0: LinkedIn connection request + congratulations
+  Day 0: LinkedIn connection request, no congrats opener (updated 2026-10-11: was "LinkedIn connection request + congratulations", creator-radar review L3-04)
   Day 1: Email referencing past relationship + how you helped before
   Day 3: Share relevant case study for their new industry
   Day 7: Phone call attempt
@@ -214,7 +226,12 @@ Bombora (intent)   -->   (CRM + scoring)  -->   Slack (real-time
 
 | Approach | Reply Rate | Contract Value |
 |----------|-----------|---------------|
-| Cold outreach (no signal) | 6-8% | Baseline |
+| Targeted, signal-light list (updated 2026-10-11: was "Cold outreach (no signal)", creator-radar review L3-07) | 6-8% | Baseline |
+| Untargeted cold | 0.5-1% | n/a |
 | Single signal-based | 18-22% | 2-3x baseline |
 | Multi-signal stacked (3+) | 35-40% | 3-4x baseline |
 | Signal + ABM multi-touch | 36% meeting rate | Highest |
+
+Uplift multiples here and in SKILL.md (signal ~3x, job change 3x) are against the targeted, signal-light 6-8% baseline, not untargeted cold (0.5-1%), where the gap is roughly 20-40x. (added 2026-10-11, creator-radar review L3-07)
+
+**Counter-view (2026-10-11)** to the "Multi-signal stacked (3+) 35-40%" row: (single-case: Emir Atli) spraying the whole TAM with the same three emails beat hyper-personalized signal sequences; only ~3% of a market buys now, so 50 perfect accounts bets on timing you cannot see. [#1931]

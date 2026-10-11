@@ -133,3 +133,7 @@ Rules: score honestly (a topic that scores 8 scores 8). Volume is NOT a scoring 
 - Kill freely in Phase 4; a short qualified list beats a bloated one that passes everything.
 - Never invent volume, KD, or product facts. Label every data source and date.
 - A great plan makes the client say "yes, these are our buyers".
+
+## Creator-radar 2026-10-11
+
+- **Programmatic pages + mini-tools** (single-case: ColdIQ): 1,000s of programmatic GTM-tool pages + free mini-tools (phone finder) + tool directories drive 40K+ monthly visitors converting to signups and calls. Pairs with the mini-tools lead-magnet play in `reference/claude-code-gtm-architecture.md`. [#1574]

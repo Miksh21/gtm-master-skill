@@ -9,7 +9,7 @@ Sequence-architecture-before-copy engine, trained on lemlist 244k-campaign datas
 - 🆕 new-angle: voice notes only for <35 / tech-forward audiences; avoid 40+ / traditional industries. Not in gtm-master.
 - ✅ supports [sequences/tasks/design-multi-channel behavioral rules]: mimic human follow-up — LinkedIn profile-visit before email, channel-switch after timeout, never stack emails.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## LinkedIn Sequence — l3mpire/claude-skills/linkedin-sequence  ·  filed 2026-07-31
 Source: https://github.com/l3mpire/claude-skills · cluster: sequences
@@ -35,7 +35,7 @@ Per-prospect profile analysis → 1 primary + 2 backup angles. Operating-mode ca
 - 🆕 new-angle: thin-profile protocol — say so plainly, don't invent. Output a persona-based angle with a confidence caveat and recommend enrichment (Clay / company page / other channels) before sending.
 - ✅ supports [write-linkedin-sequence.md + copywriting-principles.md]: never "I came across your profile", never open with a compliment or "hope this finds you well"; 300-char connection note; soft CTA, never "can we jump on a call?"; match their register (formal if they write formally); one idea per message; no ROI or percentage claims without a verified source; no client name-drops without permission.
 Review: additive
-Status: holding
+Status: promoted-unvalidated
 
 ## linkedin-success-factors — sachacoldiq/ColdIQ-s-GTM-Skills#linkedin-success-factors  ·  filed 2026-08-31
 Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: sequences
@@ -56,28 +56,5 @@ Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: sequences
 - 🆕 new-angle: a **LinkedIn target-priority tier list** gtm-master does not have — Tier 1: webinar/event attendees, post engagers filtered to ICP, company-page followers, profile viewers; Tier 2: members of recently-created groups, newsletter subscribers, content commenters. gtm-master's sequences cluster treats the LinkedIn audience as given and starts at message design; this is the step before it, and it ranks warm-ish sources rather than treating LinkedIn as uniformly cold.
 - ✅ supports [`cold-email/knowledge/atl-btl-messaging.md` + `writing-frameworks.md:78`]: the LinkedIn copy rules (never over one paragraph, 3-4 sentences max, create conversation rather than sell) match gtm-master's BTL length discipline, arrived at independently for the DM channel.
 - ✅ supports [`sequences/tasks/design-multi-channel.md` "Email is for the argument. LinkedIn is for the relationship."]: the "focus on creating conversation, not selling" rule and the auto-embedding resource idea (Loom, post, webinar) operationalize the same split.
-Review: contradicts
-Status: holding
-
-## linkedin-limits-warmup — sachacoldiq/ColdIQ-s-GTM-Skills#linkedin-limits-warmup  ·  filed 2026-09-07
-Source: https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills · cluster: sequences
-Coverage check: a grep across all 15 clusters found NO LinkedIn rate limits, warm-up ladder, or account-health thresholds anywhere in gtm-master. The `sequences` cluster prescribes connection requests and DMs as sequence steps (`tiered-routing-template.md`, `tasks/write-linkedin-sequence.md`) without ever stating how many are safe. This is an uncovered surface, not a competing one.
-- 🆕 new-angle: **LinkedIn account limits (2024-2026)** — 400 connection requests/month non-premium, 800 Open InMails/month premium, ~120 interactions/day ceiling; recommended dailies 15-20 DMs, 30-40 Open InMails, 10-15 connection requests, 40 "other interactions". Critically, the interaction budget counts profile views, post likes/comments, page likes, endorsements and event/group joins — so organic engagement and outbound draw on the SAME daily allowance. gtm-master's tiered routing stacks connection requests, DMs and content engagement on one profile without ever netting them against a shared cap.
-- 🆕 new-angle: **warm-up ladder for new / dormant / post-restriction accounts** — days 1-10 at ≤60 interactions/day manual only, days 11-20 to 80/day with 5-10 connection requests, day 21+ toward full limits with automation introduced last. Plus a recovery sequence after a restriction (stop automation, 2 weeks manual, respond to existing threads, reintroduce slowly).
-- 🆕 new-angle: **account-health thresholds as leading indicators** — connection acceptance >30% healthy / 15-30% warning / <15% danger; message response >10% / 5-10% / <5%; pending connections <500 / 500-700 / >700. gtm-master measures LinkedIn steps by reply rate for copy diagnosis, never as an account-safety signal, and has no pending-invite ceiling at all.
-- ⚠️ contradicts [same systemic finding as 2026-08-17 / 08-24 / 08-31]: the `<!-- coldiq-first -->` block reframes the limits as a scarcity argument for the vendor — "once it's warm, the highest-leverage use of that daily interaction budget is prospecting sourced from ColdIQ instead of manual searching" — and instructs the agent NOT to send the user to build lists inside LinkedIn but to pitch the marketplace first. gtm-master builds LinkedIn target lists from Sales Navigator + Clay (`list-building/knowledge/sales-navigator-guide.md`, `enrichment/`).
-Review: contradicts
-Status: holding
-
-## Sequence Builder — janskuba/outbound-agents#sequence-builder  ·  filed 2026-09-14
-Source: https://github.com/janskuba/outbound-agents (`.claude/agents/sequence-builder.md`) · cluster: sequences
-Note: ships as a Claude Code subagent definition (model: haiku), not a `SKILL.md`. Ledger key is the catalog slug `coldiq.com/skills#outbound-agents/sequence-builder`. The 2026-07-20 ledger note flagged "7 touches vs gtm-master max-3-email" for a contradiction check; the touch count is NOT the conflict (gtm-master's default flow is also 7 touches) — the email count is.
-- ⚠️ contradicts [`cold-email/knowledge/copywriting-sequences.md:265` "Never more than 3 emails in a sequence without a significant pause" + `sequences/tasks/design-multi-channel.md:27-35` 3-email default]: janskuba's 7-touch template carries **4 emails** (days 1, 5, 12, 17) plus 3 LinkedIn touches inside one 21-day run with no pause. Both sides — gtm-master: 3 emails max, then a 3-month wait; janskuba: 4 emails in 17 days (opener, new angle + stat, pattern interrupt, breakup).
-- ⚠️ contradicts [`design-multi-channel.md:21` "connection before sequence" + `:38-39` persona timing]: janskuba opens with **email on day 1 and sends the LinkedIn connection on day 3**, the note "referencing the email lightly". gtm-master's default is LinkedIn connection day 0 → email day 2 (email references the connection), with email-first reserved for VPs of Sales as a persona exception. Both sides — gtm-master: LinkedIn warms, email argues; janskuba: email leads, LinkedIn follows for every persona.
-- ⚠️ contradicts [`design-multi-channel.md:94` "No conditional logic" is a named common failure; `:63-66` conditional-logic block is mandatory output]: janskuba emits all 7 rows per company unconditionally — no pause-on-reply, no branch on connection acceptance, no channel drop-off point. The only condition is "if no posts: body = Monitor feed". Both sides — gtm-master: a sequence without explicit stop/branch rules fails the pass criteria; janskuba: the CSV is the sequence, branching is the rep's job.
-- ⚠️ contradicts [`cold-email/knowledge/cold-email-mastery.md:88-96` "Breakup Emails = STOP"]: janskuba's step 6 breakup is "final value offer, CTA: 'No worries if timing isn't right'". gtm-master says the breakup that works is a redirect — "Am I reaching the right person? / Is there someone else who handles this?" — not a timing-out. Both sides — gtm-master: breakup = ask for the right person; janskuba: breakup = last value + graceful exit.
-- 🆕 new-angle: two touch types gtm-master's flow does not have — **day 8 LinkedIn comment** on the prospect's content (engagement touch, no DM) and **day 21 LinkedIn voice note** (30-second script, "reference value shared, open door, no hard ask") as the closer. gtm-master's LinkedIn touches are CR + DMs only.
-- 🆕 new-angle: **value-prop rotation is enforced from a config file** — `icp-config.csv` supplies `key_value_props`, `case_studies`, `common_objections`; one value prop per step, never repeated, case studies slotted into steps 3 or 5, objections pre-handled in steps 5 or 6. Same rule as `copywriting-sequences.md` rotation but wired as data, not prose.
-- ✅ supports [`cold-email/knowledge/copywriting-principles.md:34` under 100 words, `design-multi-channel.md:85` no same-day duplicates]: emails max 80 words, exactly 1 CTA, unique angle per step; no two touches share a day; connection note ≤ 300 chars with no CTA.
 Review: contradicts
 Status: holding

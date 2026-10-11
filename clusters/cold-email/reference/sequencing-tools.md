@@ -86,3 +86,10 @@ Would [alternative time] work better?"
 - Meeting booked
 
 **NOT:** Long messages, Clever wording, Over-explaining, Sounding impressive
+
+## Creator-radar 2026-10-11
+
+- **Instantly Lead Finder agent:** auto-refills a campaign with new leads when active leads drop below a set minimum, so evergreen campaigns keep volume without manual list refreshes. [#466]
+- **Clay Sequencer (GA):** buy alt domains and inboxes with Clay credits, warm up in-platform, per-domain bounce rates, lead eligibility rechecked at send time; enrichment, sending and domain health share one stack. [Waxman #1764]
+
+Source: creator-radar review 2026-10-11, cards from Supabase insight_cards.

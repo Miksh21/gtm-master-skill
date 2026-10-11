@@ -3,16 +3,6 @@
 Auto-filed by coldiq-radar-collect. NOT canonical, NOT in gtm-master routing. Promote/keep/reject at
 `/creator-radar-review`. ⚠️ = contradicts a canonical gtm-master position (never auto-resolved).
 
-## Lead Prioritizer — janskuba/outbound-agents#lead-prioritizer  ·  filed 2026-09-07
-Source: https://github.com/janskuba/outbound-agents (`.claude/agents/lead-prioritizer.md`) · cluster: lead-scoring
-Note: the Outbound Agents rows ship as Claude Code subagent definitions, not `SKILL.md` files. Extraction used the agent file at the path above; earlier runs recorded these as unfetchable.
-- ⚠️ contradicts [`lead-scoring/tasks/score-and-prioritize.md:16-36` the three scoring axes]: both models are 100 points and both give ICP fit 40, but the third axis differs entirely. gtm-master: ICP 40 / Signal strength 40 / **Persona authority 20** (influencer 5 → economic buyer 20), with an override that promotes a perfect-fit economic buyer carrying ZERO signal to Tier 1 because seniority alone justifies the send. janskuba: ICP 40 / Signal 35 / **Engagement potential 25** — LinkedIn activity 10, content engagement 8, approachability 7 — and buyer seniority is not scored anywhere. Under janskuba a CRO who never posts is scored DOWN on the third axis; under gtm-master that same contact is the maximum. Directly opposed weightings of who to contact first.
-- ⚠️ contradicts [`score-and-prioritize.md:37-43` tier cutlines]: gtm-master runs 3 tiers — Tier 1 = 70-100 (send within 48h), Tier 2 = 40-69 (within a week), Tier 3 = <40 (hold or discard). janskuba runs 4 — TIER_1 = 80-100 (work today), TIER_2 = 60-79 (work this week), TIER_3 = 40-59 (nurture, monitor for stronger signals), TIER_4 = 0-39 (deprioritize). Same scale, different cutlines: a lead scoring 72 is a 48-hour priority send under gtm-master and a work-this-week TIER_2 under janskuba, and gtm-master's Tier 3 "hold or discard" is split into an explicit monitor bucket versus a drop bucket.
-- 🆕 new-angle: a **missing-data ceiling rule** — if a scoring category has no data, cap that category at 50% of its maximum rather than scoring it 0 or imputing (missing LinkedIn activity → engagement capped 12/25; no signal data → signal capped 17/35; missing industry/headcount → ICP capped 20/40). This makes sparse records rank below verified ones deterministically instead of silently. gtm-master has no missing-data rule; its only calibration guard is the after-the-fact cross-check "if EVERYTHING scores 40-50, the list is weak OR weights need calibration" (`score-and-prioritize.md:52`).
-- ✅ supports [`score-and-prioritize.md:52,86-87` calibration guards]: janskuba requires a 1-2 sentence `scoring_reasoning` per row and a per-dimension score breakdown, making drift auditable at the row level rather than only at the list level.
-Review: contradicts
-Status: holding
-
 ## Score Leads — explorium-ai/gtm-skills#score-leads  ·  filed 2026-09-14
 Source: https://github.com/explorium-ai/gtm-skills (`skills/score-leads/SKILL.md`) · cluster: lead-scoring
 Note: despite the name it deliberately does NOT score — it resolves, enriches and packages one evidence row per lead plus the rule set, and hands composite scoring + Hot/Warm/Cold tiering to the caller. Vendor-steered (Explorium match/enrich/events calls), but the resolution rules are tool-agnostic.
@@ -22,4 +12,4 @@ Note: despite the name it deliberately does NOT score — it resolves, enriches 
 - ✅ supports [`score-and-prioritize.md:24-27` signal recency bands + `clusters/signals/knowledge/signal-scoring.md:64-72` decay]: default trigger lookback 90 days, every event tagged with age in days, trigger weights defined as event-type weight × recency decay; event-attribution sanity check (events must tie to the matched business, not blended parent/subsidiary).
 - ✅ supports [`score-and-prioritize.md:29-33` persona authority axis]: persona match is title list ∩ seniority set ∩ department set — "a title-only filter is loose and returns near-matches at the rim"; the mapped canonical seniority is echoed in the output so scoring math is auditable.
 Review: additive
-Status: holding
+Status: promoted-unvalidated

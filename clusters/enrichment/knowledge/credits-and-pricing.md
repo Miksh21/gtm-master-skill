@@ -110,3 +110,6 @@
 1. Access to enterprise tools (HG Insights = $100K+/year normally)
 2. No signup for each provider
 3. Waterfall = max coverage at min cost
+
+## Creator-radar 2026-10-11
+- **Price web-research agents per row before swapping out Claygent** (Saruggia): no web + GPT-mini = $0.01-0.05/row; full browser + GPT-mini = $0.05-0.50/row. Pick the research tier per column, then compare against Claygent before moving runs to Claude Code/Deepline. [#332]

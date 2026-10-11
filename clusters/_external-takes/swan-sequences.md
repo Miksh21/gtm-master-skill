@@ -11,7 +11,7 @@ Family entry: 3 skills covering LinkedIn outreach volume, warmup, and campaign s
 - 🆕 new-angle: target tiering by conversion likelihood: Tier 1 = webinar/event attendees, post engagers (ICP-filtered via Clay), company-page followers, profile viewers; Tier 2 = new group members, newsletter subscribers, commenters; with "Posted within last 30 days" as the mandatory active-user filter to avoid wasting the 400/month budget on dead accounts.
 - ✅ supports [sequences/tasks/write-linkedin-sequence.md]: no pitch in the connection request, 3-4 sentence messages max, 2-3 follow-ups then stop, acceptance benchmark pivots at ~30% (swan: >30% healthy, 25/35/45 acceptable/good/great; canon: <30% after 100 sends = diagnose note or targeting), conversation-first not selling.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Cold Call Scripts — swan-gtm/gtm-skills/skills/alex-vacca/cold-call-scripts · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: sequences
@@ -20,13 +20,13 @@ gtm-master has no phone-script coverage anywhere (design-multi-channel treats Ph
 - 🆕 new-angle: no-show recovery script (no guilt, assume good intent, offer one alternative slot) and a sub-20-second voicemail spec ending "I'll shoot you an email with some times", pairing the call with the email thread instead of requesting a callback.
 - ✅ supports [sequences/tasks/design-multi-channel.md]: phone slots in after engagement signals; multi-channel coordination with email and LinkedIn; signals feed the relevance step.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Frontal SDR lead-status ladder (cross-ref) — swan-gtm/gtm-skills/skills/alex-vacca/sdr-master-prompts · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: sequences
 - 🆕 new-angle: pointer entry, full take filed in swan-cold-email.md: the 5-state inbound lead-status messaging ladder (form not completed / form completed no meeting / meeting booked / tried calling / LinkedIn) belongs in any speed-to-lead sequence design next to campaign-ops/knowledge/inbound-orchestration.md, which wires the plumbing but not the per-state messages.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Reach out — swan-gtm/gtm-skills/skills/ido-goldberg/reach-out · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: sequences
@@ -42,4 +42,4 @@ Swan's master outreach verb plus its 9 motion reference pages (targeted, website
 - 🆕 new-angle: sequence hygiene rules: every follow-up is shorter than the last, stands alone, and brings a genuinely new angle "or gets skipped"; last touch is a 25-50 word breakup with the door open and no new pitch, "and once sent, honored"; never the same email twice into one company; existing unsent sequences get edited, never duplicated; a channel missing its contact data gets fixed or dropped; drafts ship in the language the org sells in ("a wrong-language sequence is an error, not a style choice"); NEVER auto-send unless said in this conversation; never attach files.
 - ✅ supports [cold-email/tasks/write-first-email.md hook discipline + write-followup.md new-value rule + coldiq-playbook.md soft CTAs]: hook ladder trigger > relationship > their content > company initiative > persona pain (usable but declared); no hook = push back before drafting, never invent a signal; one researched detail reacted to rather than exhibited; one attributed proof point sized to the company; altitude pitching (C-level hears risk/strategy, VP performance, director operational pain); offering something concrete beats asking for time.
 Review: contradicts
-Status: holding
+Status: promoted

@@ -90,6 +90,8 @@ Scale when ALL true: proven ad count >= budget/$5K for next level, account frequ
 
 Meta needs 50 conversion events per ad set per week. Minimum daily budget = (target CPA x 50) / 7 (CPA here = the optimization event cost, usually pixel lead, not TCPL): $20 CPA -> $143/day, $50 -> $357, $100 -> $714. Resets learning: audience change, budget +>30%, creative change inside the ad set, optimization event change, bid strategy change. Does NOT reset: <10% budget tweaks, copy tweaks, pause <24h. Stuck: optimize an upper-funnel event, consolidate ad sets (1 x $500/day beats 5 x $100/day), verify Pixel + CAPI both firing (CAPI recovers 20-30% of conversions).
 
+**Counter-view (2026-10-01):** the 50/week rule applies only to brand-new accounts; accounts with history exit learning on spend (2x AOV or 4x CPA, whichever is higher). Unproven for B2B lead gen, AOV is an ecommerce metric. [aditya-sriram/meta-ads-audit]
+
 ## 8. Weekly Cadence
 
 - **Monday (decision day):** pull 14d data per ad; run Stage 2 on testing ads past Stage 1; fatigue-check scaling ads; execute swaps/graduations; flag warnings and start replacements; check CRM lead quality; name the top 3 ads and why.

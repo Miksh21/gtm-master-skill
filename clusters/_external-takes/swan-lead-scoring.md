@@ -1,14 +1,5 @@
 # External takes — lead-scoring (Swan radar, UNREVIEWED)
 
-## Clay Lead Scoring (clay-expert sub-skill) — swan-gtm/gtm-skills/skills/alex-vacca/clay-expert/references/scoring.md · filed 2026-07-28
-Source: https://github.com/swan-gtm/gtm-skills · cluster: lead-scoring
-- ⚠️ contradicts [lead-scoring/tasks/score-and-prioritize.md:39-43]: swan's model is 4 equal components x 25 pts (company size, recent signals, email deliverability, ICP fit) with tiers at 80-100 / 60-79 / <60 and no overrides. gtm-master's task weights ICP fit 40 and persona 20, sets Tier 1 at 70-100, and mandates the economic-buyer override (perfect-fit economic buyer with zero signal scores 60 but still goes Tier 1, "too valuable to wait for a signal"). Both sides, gtm-master: unequal weights + override + Tier 1 >= 5% sanity check; swan: equal weights, higher cutoff, no override. Equal weighting is exactly the failure mode Jan's delegation trigger 4 names.
-- ⚠️ contradicts (position) [score-and-prioritize.md weighting philosophy]: swan makes email deliverability 25% of lead QUALITY. gtm-master treats deliverability as a gate (Sending Gate, validation status), not a fit component; a valid email says nothing about buying likelihood. Worth an explicit canon note so the 4x25 model in enrichment canon (clay-enrichment-workflows.md Step 8, same lineage) does not leak into prioritization work.
-- 🆕 new-angle: per-campaign score reweighting with concrete splits: ABM campaign = company fit 40 / signals 30 / deliverability 20 / size 10; volume outbound = deliverability 30 / size 25 / ICP 25 / signals 20; separate scoring columns per campaign, views filtered per tier. gtm-master allows custom weights but publishes no campaign-type presets.
-- ✅ supports [enrichment/knowledge/templates/clay-enrichment-workflows.md Step 8 + formulas canon]: scoring as formula columns at 0 credits, scoring runs LAST after all enrichment, ready-to-paste Clayscript for component scores and tier ternary.
-Review: contradicts
-Status: holding
-
 ## Customer expansion scoring — swan-gtm/gtm-skills/skills/ariel-cohen/customer-expansion-scoring · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: lead-scoring
 Sub-skill scoring a paying customer for expansion (usage depth + persona quality + headroom → tier). gtm-master's lead-scoring cluster is pre-sale only; post-conversion scoring has no canon counterpart.
@@ -18,7 +9,7 @@ Sub-skill scoring a paying customer for expansion (usage depth + persona quality
 - 🆕 new-angle: signal stack ranked for expansion specifically: completed meeting (new departments, budget conversations, advanced use cases) > product depth > chatbot/support advanced questions > post-signup website visits (pricing = plan-upgrade signal) > LinkedIn engagement with founder content (advocacy). Tier ladder: Diamond = deep multi-user usage + high ACV + "could 3-5x in ARR"; Gold = 1-2 integrations + medium-high ACV; Silver = shallow or low ceiling; Bronze = barely active, re-engage before expanding.
 - ✅ supports [lead-scoring/tasks/score-and-prioritize.md persona-authority weighting]: persona quality as multiplier (VP building on the product beats a junior IC doing the same); output disciplined to tier + 2-3 actionable sentences citing all dimensions, never essay-length reasoning; parent ACV assessment referenced, never re-researched.
 Review: additive
-Status: holding
+Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
 
 ## Account progression staging — swan-gtm/gtm-skills/skills/steve-armenti/account-progression-staging · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: lead-scoring
@@ -32,7 +23,7 @@ Deterministic account-stage assignment (Unaware → Aware → Engaged → Qualif
 - 🆕 new-angle: tunable defaults exposed as parameters: ads >3 impressions/14d or ≥2 visits/14d for Aware; ≥2 key-page views or ≥2 email clicks/14d for Engaged; engagement half-life 30d, ads half-life 14d; stuck-in-Aware >30d feeds a batch activation list (not per-account pings); no stage change = no alert; only Sales Ready transitions page a rep, with buying-group summary + recommended next action.
 - ✅ supports [awareness-stage-model.md stage-beats-score principle + priority-branch assignment]: exactly one stage tag, highest qualifying stage wins by precedence; write-verify-retry on the stage tag with honest FAILED status; identity resolution before staging (never stage an orphan event); Sales-Ready alert includes relationship history and unengaged exec stakeholders.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Account tier scoring — swan-gtm/gtm-skills/skills/amos-bar-joseph/account-tier-scoring · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: lead-scoring
@@ -47,7 +38,7 @@ Production Bronze/Silver/Gold/Diamond scoring: pre-conversion on intent + ACV po
 - 🆕 new-angle: write discipline: exactly one tier tag and one ACV tag per run, ACV committed and verified BEFORE tiering, tag writes re-read and retried once with `TIER_TAG_STATUS = VERIFIED | FAILED` carried into the alert ("never report a tag as applied that wasn't confirmed"); Bronze/Silver stay silent, Gold/Diamond alert in the org's one standard format; already-being-worked accounts route to the active-deals channel as one line instead.
 - ✅ supports [score-and-prioritize.md persona + ICP + signal composite and signal-scoring.md multi-stakeholder weighting]: multiple buyer personas from one company = significant multiplier; ICP fit judged by motion and use case, not industry label ("classify Bronze only if you can articulate WHY your product can't help"); vendor/partner/investor exclusion checks with partner-signup exception; buying-committee enrichment to 3+ persona-matched contacts on alerting tiers.
 Review: contradicts
-Status: holding
+Status: promoted
 
 ## Score — swan-gtm/gtm-skills/skills/ido-goldberg/score · filed 2026-07-28
 Source: https://github.com/swan-gtm/gtm-skills · cluster: lead-scoring
@@ -61,4 +52,4 @@ Swan's core qualification verb: a 2x2 (intent strength x deal size) producing Go
 - 🆕 new-angle: alert semantics per tier: Silver alerts exist for score VERIFICATION (full signal stack posted to a QA channel, "purpose is score verification, not action"); Gold alerts are the action alert; Bronze/Non-ICP log only. Tech stack is a multiplier never a substitute: "strong tech stack + no intent → note it, do not inflate the tier."
 - ✅ supports [score-and-prioritize.md bias and audit trail]: when ambiguous, err toward the higher tier ("a rep reviewing a Silver-quality Gold is better than missing a real one" mirrors canon's economic-buyer override instinct); every run writes a structured CRM note + prepended memory snapshot (signals strongest-first, persona, deal size, change delta) as the human-readable audit trail.
 Review: contradicts
-Status: holding
+Status: promoted

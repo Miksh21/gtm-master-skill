@@ -83,6 +83,7 @@ CHECKS
 
 - 3-5 spintax points per step (high volume) or 3 per step (low volume)
 - 2 variants minimum per point (low/mid volume), 3 variants (high volume)
+- **Counter-view (2026-10-11):** high-volume spintax floor is 20 subject variants, 20 unsubscribe variants, signature variants, 3-4 body versions and an option every ~5 words, 5-10x what most add. [Nowoslawski #763]
 - No spintax inside signal references, numbers, or proof points
 - Total possible permutations per step: 2^5 = 32 (low) to 3^5 = 243 (high)
 
