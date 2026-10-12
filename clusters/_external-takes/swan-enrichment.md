@@ -34,3 +34,12 @@ A one-page pre-meeting / ABM account brief for an AE. It overlaps the existing k
 Review: contradicts
 Resolved 2026-10-01 (Jan): #13 counter-view added; 🆕 bullets in swan-enrichment.md
 Status: promoted
+
+## Company domain resolver — swan-gtm/gtm-skills/skills/boaz-descalo/company-domain-resolver · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: enrichment
+- ⚠️ contradicts [enrichment/knowledge/operations/clay-operations-credit-optimization.md:46]: the free Clearbit autocomplete endpoint always returns something for common words ("Clay" returns five Clayton-somethings, no Clay), so a non-blank top result is not a resolved domain; every row needs a confidence label and weak/ambiguous rows go to review. Both sides — gtm-master: `IF(Clearbit Domain = blank, Run Google Search, "Skip")`, fallback only on blank; swan: fallback/review on low confidence, not on blank.
+- 🆕 new-angle: strip legal suffixes BEFORE the lookup query, not just for copy: "Stripe Inc." returns stripe-inc.jp (wrong company), "Bright Data Ltd" returns [], bare names resolve cleanly; match also strips domain prefixes get/try/join/use so getharvest.com scores as "Harvest".
+- 🆕 new-angle: six-label confidence scale (exact / strong / plausible / ambiguous / weak / none); if weak + none exceed a third of the list, report the input as bad (internal shorthand, DBA names); never write weak, ambiguous or none rows to CRM unattended; record empty `[]` as no-match, distinct from not_fetched.
+- ✅ supports [enrichment/knowledge/operations/clay-formula-mode.md:115]: domain lookup returns an explicit "unknown" when not high confidence, never a silent guess.
+Review: contradicts
+Status: holding

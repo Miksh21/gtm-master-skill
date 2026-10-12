@@ -53,3 +53,23 @@ Swan's core qualification verb: a 2x2 (intent strength x deal size) producing Go
 - ✅ supports [score-and-prioritize.md bias and audit trail]: when ambiguous, err toward the higher tier ("a rep reviewing a Silver-quality Gold is better than missing a real one" mirrors canon's economic-buyer override instinct); every run writes a structured CRM note + prepended memory snapshot (signals strongest-first, persona, deal size, change delta) as the human-readable audit trail.
 Review: contradicts
 Status: promoted
+
+## ICP fit and buying readiness — swan-gtm/gtm-skills/skills/brian-carroll/icp-fit-and-buying-readiness · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: lead-scoring
+- ⚠️ contradicts [lead-scoring/tasks/score-and-prioritize.md:43]: fit with zero readiness signal is Watch, never a priority. Both sides — gtm-master: economic buyer at perfect ICP fit with no signal scores 60 but moves to Tier 1 anyway; swan: Investigate requires all fit must-haves Yes plus an active readiness signal, fit alone = Watch.
+- ⚠️ contradicts [lead-scoring/tasks/score-and-prioritize.md:29]: title is not authority. Both sides — gtm-master: persona authority scored 5/10/15/20 by title (CRO/CFO/CEO = 20 economic buyer); swan: NEVER infer executive sponsorship from title alone, sponsor is a discovery criterion confirmed only in conversation.
+- ⚠️ contradicts [lead-scoring/tasks/score-and-prioritize.md:26]: no universal decay rule. Both sides — gtm-master: one age ladder for every signal (under 60 days = 30 pts, 60-90 days = 20 pts); swan: windows set per event type from own closed deals (leadership change lasts months while in diagnostic mode, M&A during integration, migration peaks at go-live, small intent dies in weeks).
+- 🆕 new-angle: the no-decision cohort is the key dataset: compare wins vs good-fit opps that engaged then did nothing; signals more frequent in wins than no-decisions become the weighted signals (one case: CEO saying "innovation" in filings/calls = 400% higher buy rate; another: same team, deal size $60k to $80k, revenue +20%). Every criterion sorted into exactly one of fit / readiness / discovery / disqualifier, each disqualifier tested against wins (absent in wins = hard Pass, present = watch flag with a probe question), every Watch/Pass carries a flip condition.
+- ✅ supports [lead-scoring/knowledge/creator-radar-lead-scoring.md:14]: Unknown is neither pass nor fail; 3 Yes + 2 Unknown is a research task, each Unknown produces the next question, never an assumption.
+Review: contradicts
+Status: holding
+
+## Audience ICP filter — swan-gtm/gtm-skills/skills/erwann-lefevre/audience-icp-filter · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: lead-scoring
+- 🆕 new-angle: coverage gate before the ICP conversation: measure field fill rates first and drop criteria the data cannot support (geo filter on 12% location coverage routes everyone to review); quote enrichment cost on `leads_needing_enrichment` (rows actually missing a field), not list size, and get an explicit yes.
+- 🆕 new-angle: exclusion leaks 3 ways, so match across company, both emails, bio and company URL: empty company+email (only "Client Partner @ Acme" in bio), job-changers (hit on EITHER company or email domain excludes), collapsed spellings (punctuation-stripped compare, only for terms over ~5 chars); always seed own company + domain; a competitor name in a bio is usually a tool, exclude only when it is employer or domain.
+- 🆕 new-angle: four buckets match / review / no_match / excluded with a reason per lead and counts reconciling to input; excluded ("we must not") kept separate from no_match ("we chose not to"); noise titles (student, intern, investor, open-to-work) go to no_match, not review.
+- 🆕 new-angle: pass 2 reviews only a bounded flagged queue (15-25 leads on a clean list: bio-inferred matches AND bio-inferred drops, agency/freelance matches, geo/industry-label misses), not the list (re-reading 250 leads took 8 min, changed ~nothing); a queue of 60+ is a diagnosis (unenriched list or unanswered "do founders qualify regardless of function", which alone moved ~15 of 150 leads).
+- ✅ supports [lead-scoring/knowledge/coldiq-lead-scoring.md:9]: no row silently dropped, deterministic matching before judgement, uncertain rows flagged rather than guessed or given a confidence score.
+Review: additive
+Status: holding

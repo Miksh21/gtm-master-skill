@@ -43,3 +43,13 @@ A read-only diagnostic scoring six dimensions (ICP definition, lead scoring, out
 - ✅ supports [revops/knowledge/diagnostic-framework.md:154]: fix the weakest enabling constraint first (Governance at 1 makes other fixes pointless), same logic as the lowest-dimension rule.
 Review: additive
 Status: promoted-unvalidated
+
+## MEDDPICC gap audit — swan-gtm/gtm-skills/skills/amit-rotstein/meddpicc-gap-audit · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: revops
+- ⚠️ contradicts [revops/knowledge/data-governance.md:113]: CRM write permission for qualification fields. Both sides — gtm-master: a CRM-update agent gets a pre-set allowlist and may overwrite MEDDIC and next-step fields directly, only other writes go to Slack approval; swan: a live connection is never permission, every MEDDPICC write needs an explicit request plus per-field confirmation (field, current value, proposed value, citation), and an uncited value is never written even on request.
+- 🆕 new-angle: grade each component on two independent axes, defensibility (exact quote, never paraphrase or restated field) and favorability; a well-cited "no budget" is a confirmed risk, not verified; same defensibility test applied to the existing CRM value.
+- 🆕 new-angle: speaker-side check: a seller line describing the product is never evidence of buyer pain or criteria; unconfirmed content-cue speaker guesses may not support any mapping.
+- 🆕 new-angle: CRM vs transcript disagreements are surfaced, never silently resolved, and typed as hard factual conflict (number, name) vs qualitative maturity mismatch; a gap at verbal-commit or contract-out stage is reported as its own stage/qualification mismatch.
+- ✅ supports [revops/knowledge/deal-desk-and-velocity.md:109]: read calls chronologically into a running MEDDICC state; swan adds that a reversal (champion cooling, budget unconfirmed) is its own finding citing both lines, while non-conflicting added detail is enrichment.
+Review: contradicts
+Status: holding

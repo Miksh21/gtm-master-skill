@@ -70,3 +70,13 @@ Value-first cold email built to earn replies: the reader gets something useful f
 - ✅ supports [copywriting-principles.md give-first rules + write-first-email.md anatomy]: 50-90 word first touch scannable on a phone; subject 2-5 words referencing the signal or problem, never the product; line order relevance → empathy → payoff → ask; link-light plain-text first touches; one ask; kill hedges, "just", jargon, and em dashes; self-edit checklist ending "would I reply to this?"
 Review: contradicts
 Status: promoted
+
+## Give-first cold email — swan-gtm/gtm-skills/skills/dima-bilous/give-first-cold-email · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
+- ⚠️ contradicts [cold-email/tasks/write-first-email.md:48]: the first-email CTA must not be a call. Both sides — gtm-master: CTA is soft, scheduling-oriented, low-friction (copywriting-principles.md:107-108 lists "Worth a chat?", "Open for a quick call this week?"); swan: NEVER make a call the price of value in email 1, the ask is a yes to receiving the give ("Should I send it?"), propose a time only once something real is in their hands.
+- ⚠️ contradicts [cold-email/knowledge/copywriting-principles.md:112]: a no-ask email is valid. Both sides — gtm-master: always end with a question, it invites a reply; swan: for an awareness goal send the value and end with no CTA at all, remembered because nobody does it.
+- ⚠️ contradicts [cold-email/knowledge/cold-email-mastery.md:87]: a final exit touch is prescribed. Both sides — gtm-master: "Breakup Emails = STOP", use a right-person ask instead; swan: ladder ends touch 5 with a friendly clean exit, door open (touch 4 is the only allowed one-line nudge).
+- 🆕 new-angle: give menu by account tier, with the give produced by agents BEFORE writing (email reports what you found, never what you would find): Tier 1 run test or mini tool (their numbers, no signup wall), Tier 2 first slice of the deliverable, Tier 3 borrowed lens (your data explaining a cheap check on THEIR case; a raw segment stat is not a give). High-ticket: sell the free step's outcome only, engagement and price stay out of email 1.
+- ✅ supports [cold-email/tasks/write-followup.md:31]: every follow-up delivers the next piece of value (second finding, next slice, the tool link), never "just checking in".
+Review: contradicts
+Status: holding

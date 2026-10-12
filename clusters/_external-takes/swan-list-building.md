@@ -52,3 +52,12 @@ Brad Smith's production Zapier workflow: paste a VC/PE portfolio URL, get a part
 - ✅ supports [Jan's portfolio-prospecting core doctrine + list-building/knowledge/lead-sources-guide.md]: public portfolio pages as the source of truth (with JS-render fallbacks and pasted-list fallback when scraping fails); email-domain as the join key.
 Review: additive
 Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
+
+## Source candidates who look like your best hire — swan-gtm/gtm-skills/skills/amir-baldiga/lookalike-candidate-sourcing · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: list-building
+- 🆕 new-angle: person-level lookalike from ONE exemplar profile (real title, skills, location), not a written description; push role family, country, city, current-role-only into the search query, never filter client-side; drop the exemplar before ranking (it scores 100).
+- 🆕 new-angle: transparent 100-point decomposed score: title 40 (exact 40, same family 25), skills overlap 30 (shared/exemplar skills x 30), seniority 15 (same level 15, one off 7), location 15 (city 15, metro 10, country 5); every row shows the breakdown, never a bare number.
+- 🆕 new-angle: enrich 20, not 200, until shortlist direction is confirmed; if enrichment is skipped, say the list is keyword-ordered and scores were not computed.
+- ✅ supports [list-building/tasks/build-prospect-list.md:77]: a zero or thin result is a query problem; loosen one filter at a time and say which, never pad.
+Review: additive
+Status: holding

@@ -8,3 +8,13 @@ Shared lineage: persona-mapping-framework.md is canon-identical (rebrand only).
 - ✅ supports [list-building/knowledge/abm/persona-mapping-framework.md]: budget allocation by persona (Champions 40-50%, Economic Buyers 20-30%, End Users 15-20%, Technical Evaluators 5-10%, Blockers monitor-only); persona attributes to capture (title patterns, JTBD, pains, success metrics, content preferences, buying role); LinkedIn targeting approach 2 recommended (company list + native filters, 95-100% match vs 30-70% for contact uploads); campaign naming [Campaign]-[Persona]-[AdType]-[JTBD]-[Stage] for intent detection from engagement.
 Review: additive
 Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
+
+## Positioning and messaging — swan-gtm/gtm-skills/skills/chris-rodde/positioning-and-messaging · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: personas
+- 🆕 new-angle: fixed four-stage order, Evidence (Moesta) -> Decision (Dunford) -> Expression (Fletch) -> Narrative (Raskin), each with a gate; starting from narrative is the named failure (invented world, several heroes, no differentiation).
+- 🆕 new-angle: evidence = 6-12 transcribed customer conversations weighted toward losses and stalls, switchers from the last 90 days mapped on Four Forces (push + pull must beat anxiety + habit); any term no customer said is house language and banned from the website. Goes beyond build-persona.md:17-18, which sources language from LinkedIn posts and job descriptions.
+- 🆕 new-angle: table-stakes test run live by web search against the top 2-3 competitors' current marketing (a claim they already make is not a differentiator); every value claim laddered to money, risk or time; one-liner "For [segment] trying to [job], we're better than [alternative] because [differentiation]"; the real alternative is usually the status quo.
+- 🆕 new-angle: never recommend inventing a category without capital and runway, choose an existing frame with demand; tension with the unvalidated luke-shalom category-of-one take in icp/knowledge/swan-icp.md:23-28 (external vs external, not gtm-master doctrine). Acceptance test: a rep who missed the workshop writes an on-message email from the doc in 5 min.
+- ✅ supports [personas/tasks/build-persona.md:24]: fear outweighs hope; swan's "over-serving pull" rule says messaging with no answer to anxiety and habit loses to no-decision.
+Review: additive
+Status: holding

@@ -38,3 +38,23 @@ Creates or updates a competitor battlecard saved into org competitive knowledge.
 - 🆕 new-angle: the ghost-competitor check: a "competitor" with under 1,000 monthly visitors and no LinkedIn presence gets flagged, "usually means the user is fighting a ghost. Suggest they reassess whether this competitor is worth a battlecard." Existing notes mean update-not-recreate: "preserve what's true; only revise what's stale"; the card is always saved to shared competitive knowledge, "a battlecard that lives only in chat history is wasted."
 Review: additive
 Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
+
+## Call KPI scoring — swan-gtm/gtm-skills/skills/amit-rotstein/call-kpi-scoring · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: objections
+- ⚠️ contradicts [revops/knowledge/metrics-definitions.md:154]: talk-ratio band differs and is call-type specific. Both sides — gtm-master: rep share 40-60% on every call, >60% = pitching; swan: default 35-55%, Discovery 33-48%, Demo/Technical 52-72% (a demo above 60% is on target).
+- ⚠️ contradicts [revops/knowledge/metrics-definitions.md:155]: tighter monologue cap. Both sides — gtm-master: longest monologue <2.5 min (150 s); swan: 0-120 s default, 0-200 s only for Demo/Technical calls.
+- 🆕 new-angle: classify call type from transcript content first (Discovery / Demo-Technical / Commercial / General, calendar or CRM label only a hint), score against that type's band; question rate 14-26/hr default, 20-34/hr Discovery; talking speed 140-160 WPM.
+- 🆕 new-angle: split 9 KPIs into conversation-quality vs forward-motion (agenda set, next step agreed, next meeting booked) and make any divergence the headline, never an average or "N of 10 green"; recompute every KPI from raw transcript, never adopt the CI tool's own numbers; without timestamps estimate talk ratio and monologue (words at 150 WPM, labelled estimate) but never estimate talking speed or question rate.
+- ✅ supports [revops/knowledge/metrics-definitions.md:161]: talk ratio and question rate are the lead coaching metrics.
+Review: contradicts
+Status: holding
+
+## Pre-call script — swan-gtm/gtm-skills/skills/dyanesh-perumal/pre-call-script · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: objections
+- ⚠️ contradicts [cold-email/reference/sequencing-tools.md:48]: the opener. Both sides — gtm-master: "Hey {{firstName}}, this is [Name] from [Company]" pattern interrupt, then a segment-level problem line ("I work with [ICP] who are struggling with [problem]", :56) and a yes/no CTA (:62); swan: NEVER open with a greeting followed by a pitch or company intro, every line traces to a researched fact about this one named person, a script readable to anyone in the segment is the mediocre version, the opener ends on a question inviting more than yes/no.
+- 🆕 new-angle: call is 2-3 min and sells only the meeting; frame = one signal ranked by how directly it maps to a KPI the prospect personally owns, ties broken by recency; prospect must answer "why you, why now" within 20 s; past 3 min = drifted into selling the product, pull back to booking.
+- 🆕 new-angle: never say the category word ("software", "platform", "tool", "AI") on cold calls to conservative industries, it triggers a reflex no; a flat correction of the frame ("not really our situation") = drop straight to the ask, never defend it.
+- 🆕 new-angle: voicemail ≤75 words (~30 s), first name, one role-specific reason, one ask, no percentages; retry opener references the earlier note and asks "two minutes now or a better time this week"; derive objections by inverting ICP disqualifiers ("under size floor" -> "we're too small"); tag each frame landed / fell flat / not reached and let ~12 calls of tags outrank instinct.
+- ✅ supports [sequences/knowledge/tiered-routing-template.md:37]: a warm route (engagement, referral, mutual) leads the call because the prospect already recognizes you.
+Review: contradicts
+Status: holding

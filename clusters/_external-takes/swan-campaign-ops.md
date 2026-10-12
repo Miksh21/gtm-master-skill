@@ -86,3 +86,63 @@ Produces a per-meeting attendee briefing before any call. In gtm-master this onl
 - ✅ supports [enrichment/knowledge/prompts/claygent-guide.md:369-372]: when a match is ambiguous, return "Not Found" or hand it to the human, never pick a guess. Every external claim carries a URL.
 Review: additive
 Status: promoted-unvalidated (2026-10-01, knowledge/swan-<cluster>.md)
+
+## Personalized outbound A/B test — swan-gtm/gtm-skills/skills/amir-baldiga/personalized-outbound-ab-test · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
+- ⚠️ contradicts [campaign-ops/tasks/run-ab-test.md:35]: swan treats a 100 control vs 100 personalized split as enough to "state the lift as a number" and ship the winner to the holdout. Both sides, gtm-master: 100 sends per variant only catches roughly 2x reply-rate differences, a 20% lift on a 5% baseline needs ~7,000 per variant; swan: 100/100 plus holdout yields a defensible read.
+- 🆕 new-angle: three-arm design (control generic, personalized, holdout waits for the winner) with enrichment spent only on the personalized arm, halving research cost; do-not-contact list (open threads, active deals, recently sequenced) built BEFORE enrichment so no credits go on uncontactable leads.
+- 🆕 new-angle: six-check gate per generated message (account-safe: no links or phone numbers; every personal fact traces to retrieved data; no AI tells; not over-familiar; length/CTA/banned-word rules; hook only that person would recognize); failures silently drop to the generic baseline, expect 10-30% dropped, a gate that never rejects is not enforced.
+- 🆕 new-angle: sequencer fallback: set the generic message as the default value of the personalized variable so a missing field degrades to proven copy instead of sending a raw {PERSONAL_MSG} token.
+- ✅ supports [campaign-ops/knowledge/agentic-gtm-patterns.md:41]: never trust the model's self-report; recompute length, dash count, CTA position, name casing and banned phrases in code after generation.
+Review: contradicts
+Status: holding
+
+## Event room intelligence — swan-gtm/gtm-skills/skills/ariel-cohen/event-room-intelligence · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
+- 🆕 new-angle: attendee-export to floor dossier, run 1-3 days pre-event: 4-rung company mapping waterfall (business email domain, form company field, manual alias list, prior-event roster name match) with the matched rung shown as card confidence; dedup on domain plus normalized name, approved row beats invited.
+- 🆕 new-angle: LinkedIn-verify every registrant and committee contact; 25-35% of CRM contacts had changed jobs at the last run, untitled and first-name-only rows hid 39 Director+ people (254 registrants, 170 mapped to 132 companies, 47 dossiers); cost ~$4 per ~130 lookups, checkpoint per batch so retries never re-spend.
+- 🆕 new-angle: the group delegation (several registrants from one company, especially a manager plus team) is the strongest room signal; play = group demo slot; cards ordered hunt tier in room, warm, large (200+ employees or $50M+ raised), open deals, customers, then by approved attendee count; competitors get a watch-list line, never a card.
+- 🆕 new-angle: hand-authored committee per card ranked decision maker, exec sponsor, champion, influencer, in the room, Left (with new employer, cross-referenced as a warm start there); on the day open with the champion and ask for the intro up; after the event cross LinkedIn connection requests against the roster within 48 h.
+- ✅ supports [campaign-ops/knowledge/agentic-gtm-patterns.md:47]: treat a CRM title or employer as a hint; the person and the job are separate records, so a moved contact is labelled moved, never approached under the old company.
+Review: additive
+Status: holding
+
+## Handle a demo request — swan-gtm/gtm-skills/skills/ariel-cohen/handle-demo-request · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
+- ⚠️ contradicts [campaign-ops/knowledge/inbound-orchestration.md:106]: swan sends every out-of-ICP or self-serve demo request a 3-4 sentence free-trial email ("silence is a worse answer than the wrong door"). Both sides, gtm-master: not-qualified company = tag and park, don't burn rep time; swan: no fit still gets one trial email.
+- ⚠️ contradicts [campaign-ops/knowledge/inbound-orchestration.md:142]: swan stops on any consumer domain (gmail, outlook, icloud, proton) before enrichment or CRM write, logging only a low note. Both sides, gtm-master: personal email goes to LinkedIn reverse lookup then work-email find; swan: personal address on a demo form = student, competitor or bot, never enrich (context differs: gtm-master line is PLG signups).
+- 🆕 new-angle: decide persona BEFORE scoring and route on fit x persona, never tier: fit + decision-maker = booking email; fit + non-buyer = send nothing, MQL alert suppressed, medium alert with likely decision-makers; competitor = silent end; funding override (>30 employees AND >$10M raised) pulls sub-50-employee accounts back to sales-assisted.
+- 🆕 new-angle: two-channel model: workflow alert channel logs every outcome exactly once (high only for fit + buyer), MQL channel owned solely by scoring so nothing posts twice; max one email per request, human approval by default, unresolvable domain = non-fit, never "I saw you filled out a form".
+- ✅ supports [campaign-ops/knowledge/inbound-orchestration.md:102]: existing fit account with a new contact gets persona qualification and goes to a human (owner), not an automatic booking.
+Review: contradicts
+Status: holding
+
+## Call follow-up sweep — swan-gtm/gtm-skills/skills/boaz-descalo/call-followup-sweep · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
+- ⚠️ contradicts [campaign-ops/knowledge/agentic-gtm-patterns.md:53]: follow-up is not a per-call agent output; triage is subtraction, roughly half to two thirds of a week's calls earn no email, and 3 calls with one account collapse into one draft. Both sides — gtm-master: a Follow-Up Writer runs as one of 5 post-call agents on every call; swan: draft only when a trigger fires (seller commitment or number said aloud = always), dedupe by account, a sweep drafting for 90% of calls means triage is not running.
+- ⚠️ contradicts [campaign-ops/knowledge/gtm-engineer-field-notes.md:47]: no collateral and no CRM writes in the follow-up step. Both sides — gtm-master: post-call follow-up includes relevant case studies and auto-creates HubSpot records; swan: never attach collateral unless asked for by name, never write to the CRM during a sweep, drafts only and a human sends.
+- 🆕 new-angle: extract seller commitments first (search the seller's "I'll / I can / we'll / let me"), then buyer commitments, unanswered questions (incl. any number hedged with "roughly/around"), and dates said aloud; read the last 90 seconds twice; conditional ("if you want, I can") and delegated promises count.
+- 🆕 new-angle: aging buckets on open commitments in business days from the call: 0-2 fresh, 3-5 aging (lead the draft with it), 6-10 overdue (top of report with original quote), 11+ rotted (name the delay); undated promises age from the call date; report order is by age, never by call date, with a coverage line (calls in window, read, unverified, drafts, no-email count) before any draft.
+- 🆕 new-angle: draft spine capped at 150 words and 3 action items: the one thing (usually your dated commitment) / commitments with owner + date in one list / one forwardable sentence for the person not on the call / exactly one ask; pricing calls must restate every number said aloud and confirm or correct hedged ones.
+Review: contradicts
+Status: holding
+
+## Event account plan — swan-gtm/gtm-skills/skills/boaz-descalo/event-account-plan · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
+- ⚠️ contradicts [campaign-ops/knowledge/outbound-master-system.md:87]: account scoring should be additive, not multiplicative, so a rep and the CRO can see which component earned each point. Both sides — gtm-master: Lead Scoring = Fit × Intent × Triggers into 3 tiers; swan: additive 0-100 (industry fit 0-30, size 4-15 with a floor of 4 so blanks never score 0, tech signal 0-25, named attendee 0-25 +5 persona match, multi-division 2 per extra division capped at 10, partner-segment penalty -15 to -25), never show a score without its weights.
+- 🆕 new-angle: a defunct or end-of-life competitor is the top signal (25 vs 15 for a live competitor); search for it by name every time and report a null result as a finding; the migrate track is a different play from displace (buyer is shopping on a clock, be the easiest option).
+- 🆕 new-angle: dedupe attendee lists by parent company and keep a `sheet_names` count, since multiple divisions registering separately is a buying signal; existing customers (own tech tag OR customers-page logo) go on a separate expansion ranking or they crowd out every new logo.
+- 🆕 new-angle: tier cut is a capacity decision (default Tier 1 ~50, Tier 2 ~100, tuned to reps on the floor); every Tier 1 row needs "why this account" + "angle to open with"; each play carries a verbatim one-breath opening question; if most attendees do not own budget, re-aim copy at operational cost (cycle time, ticket volume, audit hours).
+- ✅ supports [campaign-ops/knowledge/abm-engine-implementation.md:55]: technographic gate drives Tier 1; swan: resolve tech stack before scoring, "rank on fit, sequence on signal".
+Review: contradicts
+Status: holding
+
+## Leaked demand recovery — swan-gtm/gtm-skills/skills/eliezer-cohen/leaked-demand-recovery · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: campaign-ops
+- 🆕 new-angle: build the candidate list from capture systems (mailbox, calendar, call recorder, chat/form), not the CRM, and include people with no CRM record; seams: booking never completed, booked never held, held with no follow-up, inbound reply unanswered, live thread with no CRM record, closed-lost on a changed blocker, trial that faded.
+- 🆕 new-angle: hard verification gate, every drop confirmed in 2 independent systems; the system closest to the event wins (calendar > CRM on bookings, mailbox > CRM on last contact, recorder > calendar on attendance); only a forward-dated event counts as a live booking; auto-applied "completed" meeting status is not evidence of attendance.
+- 🆕 new-angle: empty result = wrong query: search by recipient address and domain (not company keyword, replies hide in old threads), paginate to exhaustion, never read a thread's last message from search snippets; an owed follow-up needs full sent history AND a per-domain search after the event date before it is flagged unsent.
+- 🆕 new-angle: route by history before drafting (customer or churned = account owner, open deal with a colleague = flag and stop, closed-lost = proceed only if the blocker truly changed); work closed-lost and faded pilots 6-12 months back; rank drops by depth of original intent, not recency; never re-engage a prior contact in fresh-inbound voice.
+- ✅ supports [campaign-ops/knowledge/agentic-gtm-patterns.md:103]: "meeting without follow-up" as a business-event trigger; swan turns it into a verified sweep that ends silently when nothing is found.
+Review: additive
+Status: holding

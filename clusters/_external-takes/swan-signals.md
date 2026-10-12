@@ -212,3 +212,22 @@ A scheduled scan of LinkedIn posts from people and companies announcing they wil
 - 🆕 new-angle: the human-touch output is two drafts: a short "see you there, {first name}" comment that states only the shared attendance (no fake reaction to post content) and a connection note with a coffee ask, with a standing caveat that the note only sends if the sender has Sales Navigator. The agent never likes, comments or connects, and no sequence is built until a sender is explicitly assigned.
 Review: additive
 Status: promoted-unvalidated
+
+## Handle LinkedIn connection request signal — swan-gtm/gtm-skills/skills/ariel-cohen/handle-linkedin-connection-request-signal · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
+- ⚠️ contradicts [signals/knowledge/signal-scoring.md:60]: an inbound connection request is an ACTIVE signal that overrides passive LinkedIn caps; a decision maker at a company clearing the self-serve gate is MQL-eligible on this lone signal (still never the maximum tier). Both sides — gtm-master: LinkedIn engagement alone never lifts an account above the second-lowest tier; swan: lone connection request from a buyer persona = MQL, only weak personas cap at awareness.
+- 🆕 new-angle: closed-lost requester is a reactivation candidate, not a silent drop; the top-tier floor applies only with a genuine prior evaluation (deal/demo/trial) + strong buyer persona + at least ~90 days since close; a recent close, weak persona or low-dollar pricing loss stays at awareness. MQL channel gets exactly one post per reactivation.
+- 🆕 new-angle: headline-vs-enrichment conflict check: if the headline names a different current company or status ("Stealth", "Founder at [new co]", "ex-[Company]"), enrichment is treated as stale and a live profile scrape decides the employer; a request from someone who left the enriched company is not intent for it.
+- 🆕 new-angle: self-serve gate runs before MQL: fewer than 50 employees AND at most $10M raised routes a decision maker to the self-serve tier; invitation note carried verbatim into CRM note, account memory and alert; dedup keyed on LinkedIn member id in account memory against webhook redelivery.
+Review: contradicts
+Status: holding
+
+## Hiring radar — swan-gtm/gtm-skills/skills/dusan-vystrcil/hiring-radar · filed 2026-10-12
+Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
+- ⚠️ contradicts [signals/knowledge/signal-detection-tools.md:20]: a hiring spree is 3+ fresh roles on the same team. Both sides — gtm-master: Hiring Surge = 5+ roles, 30-90 day window; swan: 3+ same-team roles qualify, and a pattern is only real if the posted dates are.
+- ⚠️ contradicts [signals/knowledge/signal-detection-tools.md:111]: single postings drop to log-only (not alerted), as do category-term-only mentions, evergreen and reposted listings. Both sides — gtm-master: job postings (1-3 roles) are Tier 3 moderate intent for a nurture sequence; swan: a single posting is not a pattern and never reaches the signals channel.
+- ⚠️ contradicts [signals/knowledge/signal-detection-tools.md:81]: alert only within 14 days of the posted dates; older hiring is context, not news. Both sides — gtm-master: hiring activity fresh until 60 days, optimal outreach window 14-30 days; swan: past day 14 it never alerts.
+- 🆕 new-angle: suppression ledger: same pattern within 30 days does not re-alert (new postings attach as evidence), active deal flags "warm signal on active deal" to the owner; one pattern = one alert; zero postings across ALL watched accounts on 3 consecutive runs = sourcing failure until verified, never market silence.
+- 🆕 new-angle: source mechanics: one vetted scraper per board (1 source ~60% of postings, 2 ~85%, 3 ~92%); Greenhouse `posted_at` is a board-level timestamp identical across jobs, so use `created_at` or the whole board reads as a same-day spree; a run returning exactly its item cap is an incomplete pull; resolve agency-posted listings to the true employer or drop them.
+Review: contradicts
+Status: holding
