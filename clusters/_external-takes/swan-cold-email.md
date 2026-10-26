@@ -80,3 +80,24 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
 - ✅ supports [cold-email/tasks/write-followup.md:31]: every follow-up delivers the next piece of value (second finding, next slice, the tool link), never "just checking in".
 Review: contradicts
 Status: holding
+
+## Anti AI slop writing — swan-gtm/gtm-skills/skills/gali-firon/anti-ai-slop-writing · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
+- ⚠️ contradicts [cold-email/knowledge/creator-radar-cold-email.md:7]: analogy hooks. Both sides — gtm-master: "Analogy frame: 'It's like X, but built specifically for your industry'" as a hook that collapses cognitive load (also copywriting-frameworks.md:233 analogy-based persuasion); swan: "Think of it like / It's like / Imagine if" is a zero-instance tell, even one forced analogy is too many, name the thing directly.
+- ⚠️ contradicts [cold-email/tasks/write-ps-line.md:23]: curiosity tease. Both sides — gtm-master: Curiosity P.S. "There's a second angle here that's actually weirder than the first, happy to share if you're curious"; swan: any line that only teases a revelation without naming it is a banned false-suspense move, and "actually" as intensifier is banned (the De-risk example at :24, "Not pitching, just want to know...", is also the banned "Not X. Y." shape).
+- 🆕 new-angle: two separate passes with different tolerances: pass one zero-instance (every hit rewritten, never softened): negative parallelism in all shapes ("less X, more Y", "feels like A, actually B", "You'd expect X. You get Y."), false-suspense "Here's the..." class, self-answered questions, "abstract noun + colon + payoff", stock openers/closers, manufactured or phantom-future stakes, vague authority ("research shows"), invented concept labels.
+- 🆕 new-angle: negative-parallelism test: delete the negated half; if the point stands, the negation was scaffolding; if it collapses, sharpen the positive claim. Allowed: contrast between different subjects, and genuine state shifts where the subject moved from A to B.
+- 🆕 new-angle: pass two is anti-clustering, not deletion: max one tricolon per section, no same opener 3+ times, vary sentence and paragraph length, no bold-first bullets or checkmark rows; over-correcting into stilted voiceless prose is a named failure. House zero-tolerance list kept short (about ten words) beats a long "use sparingly" list; thought-leadership never closes on a product plug.
+- ✅ supports [cold-email/knowledge/human-voice.md:79]: no em dashes in shipped prose, memo words banned, and (:65) no number without a source; swan adds "if the source has no number, use no number".
+Review: contradicts
+Status: holding
+
+## Human writing mannerisms — swan-gtm/gtm-skills/skills/gali-firon/human-mannerisms · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: cold-email
+- ⚠️ contradicts [cold-email/knowledge/copywriting-principles.md:178]: deliberately unnecessary words. Both sides — gtm-master: "Cut ruthlessly. Every word must earn its place" (also writing-frameworks.md:55); swan: "every clause load-bearing and on-task" is itself the AI tell, "the unnecessary bit is the human bit", fix flat copy by adding one off-point aside or side comment.
+- 🆕 new-angle: fixed order and scope: strip AI tells first, then add texture; texture on copy that still has tells makes them louder. Formal, compliance and technical copy stops after the strip pass and gets no texture at all.
+- 🆕 new-angle: dose rule: one or two distinct move-types per piece, never stacked in consecutive lines; a move may recur 2-3 times (e.g. And/But/So openers capped at 2-3), except the mid-sentence aside, max once per piece. Place the move in the flat middle, not the opener or closer.
+- 🆕 new-angle: eight-move library matched to the writer's register: mid-sentence aside, undercut your own big claim, oddly specific true detail, long sentence then a two-word one, conjunction opener, write to one person, visible self-interruption, deadpan the absurd. Dry operators get undercut/deadpan, warm voices get aside/direct address.
+- ✅ supports [cold-email/knowledge/human-voice.md:21]: flawless copy reads as machine-made; swan reaches "above zero" with voice moves rather than human roughness (missing comma, lowercase start), and treats any invented detail as a hard failure.
+Review: contradicts
+Status: holding

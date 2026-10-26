@@ -16,3 +16,22 @@ A six-play live-data SEO kit: keyword research, rank check, site audit, content 
 Review: contradicts
 Resolved 2026-10-01 (Jan): #1 rejected; #7, #10 counter-views added; 🆕 bullets in swan-content-marketing.md
 Status: promoted
+
+## Media and PR outreach — swan-gtm/gtm-skills/skills/gali-firon/media-pr-outreach · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: content-marketing
+- 🆕 new-angle: gtm-master has no earned-media or journalist outreach at all; four pitch types with hard length caps: first contact under 5 sentences with no ask (resource offer only), news pitch under 150 words, byline pitch built on an exec POV that already exists (a proposed specific headline plus "draft ready"), reactive pitch under 100 words sent within a few hours with a quote promised within the hour.
+- 🆕 new-angle: anchor gate: every non-reactive pitch cites a specific, on-beat piece by that reporter verified recent at the source (title, date, link logged); no live anchor = reporter not ready; "love your coverage of X" is a beat, not an anchor; a reactive pitch anchors to the breaking story instead.
+- 🆕 new-angle: them:us sentence ratio of 3:1 minimum (rewrite at 1:1), close on one concrete give (named exec quote on a stated angle, data point, exclusive, ready draft) plus one low-effort ask; never open or close with "happy to be a source"; the press release is supporting material, never the pitch.
+- 🆕 new-angle: one reporter per outlet per story, no mass or templated sends, independent review gate then human send; exactly one follow-up after 5-7 business days, one sentence; log every response including declines. Optional warm-up before first contact: follow and genuinely engage with 1-2 posts, wait a few days (skip for reactive).
+- ✅ supports [cold-email/knowledge/human-voice.md:34]: no "circling back" or sequence-narrating language, plain one-person-to-another voice.
+Review: additive
+Status: holding
+
+## Visual argument review — swan-gtm/gtm-skills/skills/gali-firon/visual-argument-review · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: content-marketing
+- 🆕 new-angle: review B2B design assets (deck, one-pager, carousel, case study, proposal slide) on 8 dimensions in fixed order, structure before craft before polish: strategic fit, brand fidelity, story and hierarchy, layout, typography, proof and data design, imagery and assets, client-readiness. A failure high on the list usually explains failures lower down.
+- 🆕 new-angle: output contract: verdict first (Client-ready / Close, needs fixes / Not ready, never soften Not ready into Close), what works (what to protect), ranked fixes each tagged High/Medium/Low with the exact slide or element, the specific change and the commercial reason; then brand and data checks; then one stronger idea that does not reinvent the asset. Match scrutiny to stakes (a LinkedIn graphic is not a proposal).
+- 🆕 new-angle: blocking rules for client-facing assets: an unsourced or invented metric, a misleading chart (3D, truncated axis) or a generated or approximated real logo is High severity, not cosmetic; metric cards show number first, precise label second; charts carry units and source.
+- 🆕 new-angle: craft heuristics: one message per visual unit with action titles ("Reach that holds through Q4", not "Results"), a 10-second scan reveals the argument, roughly a third of the canvas left empty, hierarchy from size, weight, spacing and placement rather than color (one accent color), dense means information-dense never small type. Toolkit: one vector icon set (never model-generated, never mixed sets), hero imagery generated from one anchor image then varied, no headline text baked into generated images.
+Review: additive
+Status: holding

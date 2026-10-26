@@ -56,3 +56,12 @@ Lookalike expansion at the person level from a few converted seeds, using a simi
 Review: contradicts
 Resolved 2026-10-01 (Jan): #11 rejected (false positive); #12 counter-view added; 🆕 bullets in swan-icp.md
 Status: promoted
+
+## Won-Deal ICP Finder — swan-gtm/gtm-skills/skills/erwann-lefevre/won-deal-icp-finder · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: icp
+- 🆕 new-angle: select deals on a populated value field over the last 12 months, never on an assumed "Closed Won" stage (often missing, inconsistent or localised); a won signal is an extra filter when it exists, lost deals always excluded. Check from ONE sample deal which field really holds money (standard amount often abandoned for custom ARR/ACV/MRR, watch monthly vs annual) and where source lives. Never fall back to "newest N deals": they are the emptiest and give a confident, worthless analysis. Ambiguous field = ask one question and stop.
+- 🆕 new-angle: aggregate revenue per account (not per deal) in code, then cluster on revenue share, never deal or logo count, into 2-4 named archetypes with 1-2 values per dimension (industry, size bucket, geography) plus typical deal size and the named companies behind it. A segment backed by fewer than 2 distinct companies is a customer, not a pattern; one account above ~25% of revenue = report concentration first, keep it visible, build archetypes from the rest.
+- 🆕 new-angle: rank acquisition sources by frequency with revenue attached and always print source coverage; below ~70% of deals carrying a source the ranking is a sample. Name the channel-without-campaign gap (you know outbound paid, not which sequence). Enrich firmographics only for the top ~30 deals by value; personas the CRM never recorded are flagged as gaps, not inferred.
+- ✅ supports [icp/tasks/build-icp.md:32]: an ICP stays a hypothesis until backtested against real historical deals; swan derives it from the won ledger first.
+Review: additive
+Status: holding

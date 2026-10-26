@@ -9,3 +9,12 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: aeo-reddit
 - ✅ supports [aeo-reddit/knowledge/aeo-measurement-system.md:22]: seed prompts in buyer language, never brand or marketing vocabulary.
 Review: additive
 Status: holding
+
+## AI visibility sampling — swan-gtm/gtm-skills/skills/huxley-peckham/ai-visibility-sampling · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: aeo-reddit
+- 🆕 new-angle: never score from a single ask: ask every question at least 3 times per engine per measurement, keep each full answer verbatim and dated, and decide presence by majority vote with the vote count shown (3/3 and 2/3 are different facts; the margin is where next month's movement shows first).
+- 🆕 new-angle: define three presence tiers before scoring and apply them mechanically: named as a recommendation, mentioned in passing, cited as a source; report the recommendation tier separately and never blend it, since it is the one that predicts buyers arriving (the gtm-master scan log records only brand mentioned y/n).
+- 🆕 new-angle: the product is a question x engine grid with vote counts per cell, aggregate on top; a 0/3 to 3/3 flip is movement, a margin wobble is weather. Unstable (split-vote) questions are the undecided, winnable ones and become the work queue.
+- ✅ supports [aeo-reddit/tasks/run-aeo-audit.md:26]: prompt set frozen between runs with changes versioned; swan adds that a changed set marks a series break with a restated baseline, never spliced into one trend line.
+Review: additive
+Status: holding

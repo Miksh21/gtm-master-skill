@@ -18,3 +18,13 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: personas
 - ✅ supports [personas/tasks/build-persona.md:24]: fear outweighs hope; swan's "over-serving pull" rule says messaging with no answer to anxiety and habit loses to no-decision.
 Review: additive
 Status: holding
+
+## Buying group — swan-gtm/gtm-skills/skills/gal-tamir/buying-group · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: personas
+- 🆕 new-angle: scope the committee search by deal stage: early discovery = Champion, Economic Buyer, key Influencers; mid-stage adds Technical Evaluator, Procurement, IT; pre-close = full audit across all functions plus a Blocker check; CS renewal = current contacts only with departures flagged. Search VP+ and Director+ per function in parallel; add C-suite only for deals above $50K ACV.
+- 🆕 new-angle: coverage gaps are ranked by deal risk relative to stage (missing Economic Buyer at Stage 3 outranks a missing Influencer at Stage 1); contacts with insufficient signal get an explicit Unknown role flagged for follow-up, and one person holding several roles is flagged "multi-role, verify alignment".
+- 🆕 new-angle: tenure under 6 months = recent-hire flag (may still be evaluating inherited tools and relationships); any role-change or departure signal = departure risk with a named person to re-thread with.
+- 🆕 new-angle: write the TL;DR last, answering "where does this deal actually stand" rather than listing contacts; 3-5 next steps, each tied to a specific gap, contact or risk, cutting any bullet without a concrete target.
+- ✅ supports [revops/knowledge/deal-desk-and-velocity.md:121]: Economic Buyer identified as a stage-2 exit criterion, matching swan's rule that a missing EB by Stage 3 is the top coverage risk.
+Review: additive
+Status: holding

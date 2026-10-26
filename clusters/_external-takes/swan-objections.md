@@ -58,3 +58,13 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: objections
 - ✅ supports [sequences/knowledge/tiered-routing-template.md:37]: a warm route (engagement, referral, mutual) leads the call because the prospect already recognizes you.
 Review: contradicts
 Status: holding
+
+## ROI business case — swan-gtm/gtm-skills/skills/gal-aga/roi-business-case · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: objections
+- 🆕 new-angle: never show a single ROI number; model worst / average / best on the same root-cause problem and the same buyer baseline. Each scenario shows value created minus total investment over the contract term, giving net ROI and payback, with the arithmetic on the page and rounded conservatively. The worst case must justify the spend on its own; if it does not, the case is not ready and you say so.
+- 🆕 new-angle: baselines come from the buyer's own data, never industry averages or round guesses; missing ones are [CONFIRM WITH BUYER] tasks. Any value that does not trace back to the one root-cause problem is cut, because unrelated "value" makes finance distrust the whole page.
+- 🆕 new-angle: each scenario's assumptions (improvement rate, timeframe, baseline) stay visible so a reviewer can disagree and re-run the math; invite the buyer to edit the inputs. Working signals: the buyer re-runs the numbers themselves, and finance stops arguing inflation and starts discussing timing.
+- 🆕 new-angle: frame the range as impartiality ("even the worst case pays back in X"), which pre-handles the "your numbers are inflated" objection before it is raised; package it as a one-pager the champion can forward to the CFO without the AE in the room.
+- ✅ supports [personas/knowledge/buying-committee-5-roles.md:117]: finance responds to data-backed ROI, TCO and payback models, not emotion.
+Review: additive
+Status: holding

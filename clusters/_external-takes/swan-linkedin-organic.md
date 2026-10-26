@@ -19,3 +19,15 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: linkedin-organic
 - ✅ supports [linkedin-organic/content/cta-optimizer.md:48]: outbound link goes in the first comment, never the body.
 Review: contradicts
 Status: holding
+
+## LinkedIn ghostwriting — swan-gtm/gtm-skills/skills/gali-firon/linkedin-ghostwriting · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: linkedin-organic
+- ⚠️ contradicts [linkedin-organic/strategy/content-calendar-planner.md:24]: posting cadence. Both sides — gtm-master: "Below 3 posts/week: you do not exist", 3/week minimum, default 4; swan: for exec accounts a steady rhythm of about one post every two weeks, clocked from the ledger's last-live date, never bursts.
+- ⚠️ contradicts [linkedin-organic/content/cta-optimizer.md:48]: external links in the post. Both sides — gtm-master: put the link in the first comment because LinkedIn buries posts with external links; swan: every post must carry an attachment, and one of the three standard types is a shared news/article link plus the exec's comment; bare text underperforms.
+- ⚠️ contradicts [linkedin-organic/content/post-writer.md:42]: post length. Both sides — gtm-master: body 80 to 200 words in short lines; swan: six lines or fewer per post "and that is stretching it", drafted tight from the first pass.
+- 🆕 new-angle: anti-repeat gate on argument family, not wording: diff every angle against the post ledger (hook, one-sentence core argument, attachment, date live, performance), the off-limits map and all rejected or deleted options; same family inside an ~8-week cooldown = kill or re-angle; a rejected angle is a permanent block; near-misses go up flagged as judgment calls.
+- 🆕 new-angle: three ranked typed options per exec each run (news share plus comment, repost, thought-leadership plus graphic), close on a thought or question, never a plug or deadline pitch; route each peg to the exec whose lane it is and never let two execs comment on the same source; verify the peg's event date at the primary source.
+- 🆕 new-angle: one-page voice card per exec (diction, 2-3 owned arguments, off-limits, first-hand proof, format habits, 1-2 gold posts, hard nos) built from real history or an 8-question interview; every exec rewrite becomes the new gold sample.
+- 🆕 new-angle: graphic handoff as a ready-to-paste image prompt: brand render style and hex palette, exact headline text reproduced verbatim, 4:5 at 1080x1350, no logos, no invented chart numbers, no other text; generate logo-free and overlay the real logo afterward. Single image for one idea, carousel only for a sequence or framework.
+Review: contradicts
+Status: holding

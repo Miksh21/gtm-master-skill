@@ -231,3 +231,14 @@ Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
 - 🆕 new-angle: source mechanics: one vetted scraper per board (1 source ~60% of postings, 2 ~85%, 3 ~92%); Greenhouse `posted_at` is a board-level timestamp identical across jobs, so use `created_at` or the whole board reads as a same-day spree; a run returning exactly its item cap is an incomplete pull; resolve agency-posted listings to the true employer or drop them.
 Review: contradicts
 Status: holding
+
+## Territory signal digest — swan-gtm/gtm-skills/skills/gal-tamir/territory-signal-digest · filed 2026-10-26
+Source: https://github.com/swan-gtm/gtm-skills · cluster: signals
+- ⚠️ contradicts [signals/knowledge/signal-scoring.md:168]: response latency for intent and funding. Both sides — gtm-master: intent surge answered in under 24 hours ("50% of value lost after 7 days"), funding under 72 hours (:167); swan: one batched sweep every Monday before pipeline review over a default 7-day lookback, so a signal can surface up to a week old.
+- ⚠️ contradicts [signals/knowledge/signal-scoring.md:51]: signal type weights. Both sides — gtm-master: Series A/B/C funding (45) and Bombora surge (40, :53) sit in the mid-weight tier, company news incl. acquisitions is low-weight 15 (:66); swan: funding, exec hire/departure and category intent are all "high", product launch and M&A "medium", only general news "low".
+- 🆕 new-angle: coverage proof in the output: accounts with no signal are listed by name as "checked, nothing moved", and accounts the data provider could not resolve are listed separately with a "verify name/domain and re-run" note, so the rep can tell "quiet" from "never looked".
+- 🆕 new-angle: per-account triage cap of 3-5 signal bullets (more only if every one is high value), a coarse H/M/L account score instead of points, and one "recommended action this week" line tied to the strongest signal.
+- 🆕 new-angle: digest header states lookback window and signal focus up front (7 default, 30/90 optional) and leads with a single "top signal across the whole territory" line; contact departures at key accounts are pulled alongside promotions and job changes; vendor intent floor at score 60+.
+- ✅ supports [signals/tasks/detect-signals-from-list.md:64]: no-signal accounts stay in view (nurture), never removed, because signals appear weekly.
+Review: contradicts
+Status: holding
