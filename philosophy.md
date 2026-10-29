@@ -6,7 +6,7 @@ For executable recipes, go to the cluster tasks. This file is *theory*, not proc
 
 ---
 
-## 1. The 7 Fundamental Principles
+## 1. The 8 Fundamental Principles
 
 1. **Scale what top performers do** — Study the top 10-20% of reps in your org (or industry exemplars). Reverse-engineer their inputs (which lists, which signals, which copy patterns, which channels), then systematize. Most "GTM strategy" should start here, not with frameworks.
 
