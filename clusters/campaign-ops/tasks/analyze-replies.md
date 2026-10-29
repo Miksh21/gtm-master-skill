@@ -28,7 +28,8 @@ User asks "what came in this week?", "review my replies", "summarize inbox activ
 2. Read each + assign one category
 3. For "Interested" replies: flag the company, note what they responded to, suggest next step
 4. Scan ALL replies for patterns: which signal/angle/step got the most engagement?
-5. Identify ONE specific copy or targeting change the data supports
+5. Run the non-responder cut (`philosophy.md` Principle 8): compare everyone contacted in the timeframe who did NOT reply against responders by segment, title, source, signal, step and copy variant. A segment that is silent across all angles is a targeting finding, not a copy finding
+6. Identify ONE specific copy or targeting change the data supports
 
 ## Output format
 
@@ -52,6 +53,9 @@ NEEDS FOLLOW-UP ([n])
 PATTERNS
 [2-3 observations: which step got most replies, which angle resonated, which segment responded]
 
+SILENT MAJORITY
+[Who did NOT reply: segments/titles/sources/variants over-represented among non-responders vs responders, with counts]
+
 ONE CHANGE TO MAKE THIS WEEK
 [Specific recommendation — a subject line, an opener, a targeting filter — based on the data above]
 ```
@@ -60,6 +64,7 @@ ONE CHANGE TO MAKE THIS WEEK
 
 - Every "Interested" reply has a NAMED next step (never just a count)
 - Patterns section has at least 2 observations
+- Silent majority section compares non-responders to responders with counts (never skipped because there are "only replies to look at")
 - ONE specific change recommended, not a vague "improve copy"
 - Out-of-office replies queued, not closed
 

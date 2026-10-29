@@ -28,8 +28,9 @@ User asks for the weekly outbound report, monthly summary, client briefing, or s
 3. Run `tasks/tier-campaigns.md` to assign tiers
 4. Compare tiers to last week's (if data) — surface movements
 5. Identify top performer + extract what made it work (signal + persona + angle)
-6. Synthesize ONE key insight from cross-campaign patterns
-7. Recommend ONE specific action
+6. Read the survivors' opposite (`philosophy.md` Principle 8): which segments, sources and variants stayed silent, and which meetings from the period did not convert (no-show, no next step, lost) and why
+7. Synthesize ONE key insight from cross-campaign patterns, including the silent and non-converted side
+8. Recommend ONE specific action
 
 ## Output format
 
@@ -59,6 +60,10 @@ TOP PERFORMER
 Campaign:      [name]
 Interest rate: [n%]
 Why it worked: [signal + persona + angle that drove results]
+
+WHAT DID NOT COME BACK
+Silent segments/sources/variants: [non-responder cut vs responders, with counts]
+Meetings not converted:          [n] | top reasons by persona/source/promise
 
 KEY INSIGHT
 [One pattern observed across campaigns — e.g. "SDR-hiring signal is outperforming new-CRO signal 2:1 this week"]

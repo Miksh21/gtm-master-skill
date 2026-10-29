@@ -11,6 +11,12 @@ This file describes the role: what they do, why it's exploded, the tool stack, a
 - "How do we structure our GTM team in 2026?"
 - "Why is our 8-person SDR team being outperformed by a founder with a Clay workflow?"
 
+## The goal (north-star test)
+
+> "The goal of a GTM engineer is to build and optimize the revenue system that converts market opportunity into closed revenue, while reducing the human time and cost required to do it." (Matt Herzog, https://matt-herzog.beehiiv.com/p/what-is-the-goal)
+
+Test every proposal against it: does it convert more market opportunity into closed revenue, or cut the human time and cost per closed deal? If neither, question why it gets built. Measuring it honestly means reading what did not convert, not only what did (`philosophy.md` Principle 8).
+
 ## What a GTM Engineer does (3 pillars)
 
 The role sits at the intersection of sales, data, and automation. **NOT a fancy title for an SDR. NOT a RevOps manager.** It's a builder who creates the systems that generate pipeline.
