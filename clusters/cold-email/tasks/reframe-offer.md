@@ -52,7 +52,7 @@ Work through these in order. Stop at the first one that fits, do not stack them.
 | **Lead with the asset** | The thing IS the email, no pitch needed | "I pulled 400 founders hiring SDRs. Want the file?" |
 | **Bound it in time** | Free, narrow, and it expires | "Audit back to you by Friday. No call, no charge" |
 
-- **Counter-view (2026-11-02):** a free audit is the weakest cold offer ("nobody wants to know what's wrong, they want someone who can fix it"); send the finished work as an opportunity report (opportunity + how to capture it) instead of promising an audit [keller-27 youtu.be/KsZo0G0Vx_U]. Awaiting Jan's ruling: supersede the "Audit back to you by Friday" example or keep both.
+- **Counter-view (2026-11-02):** a free audit is the weakest cold offer ("nobody wants to know what's wrong, they want someone who can fix it"); send the finished work as an opportunity report (opportunity + how to capture it) instead of promising an audit [keller-27 youtu.be/KsZo0G0Vx_U]. Jan ruled 2026-11-02: keep both (the audit example stays; prefer the opportunity report when the work can be done from the outside).
 - **Gate on "Lead with the asset" (2026-10-11, creator-radar review L3-13):** it promises a deliverable, so the house ban on deliverable-promising CTAs applies (SKILL.md step 6): only when the asset already exists and ships same day; never for a client under the value-CTA ban.
 
 Two rules that survive every version of this:

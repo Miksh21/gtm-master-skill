@@ -5,7 +5,7 @@
 > [keller-27] "Brutally Ranking 27 Outbound Offers" youtu.be/KsZo0G0Vx_U (2026-09-21).
 > Filed 2026-11-02 at Jan's direct request as working gtm-master knowledge (not a holding take).
 > The channel is tracked by the creator-radar from 2026-11-02; new videos arrive as insight cards in the Monday review.
-> Points that pull against existing canon are listed in "Tensions with canon" at the bottom, each awaiting Jan's ruling.
+> Points that pull against existing canon are listed in "Tensions with canon" at the bottom; Jan ruled keep both on 2026-11-02.
 
 ## When to load
 Designing or auditing WHAT is offered in outbound, before any copy: weak reply rate with decent opens, "our offer is just a description of what we do", choosing between audit / case study / pilot / lead magnet / gift card / event, building an intro offer for strangers, revalidating an offer against the signals a list was built on.
@@ -93,7 +93,7 @@ Cross-cutting rules from the ranking [keller-27]:
 6. **Client rules win.** If a client bans value-based CTAs (deliverable promises, free data, samples), the S-tier "promise a deliverable" offers are out for that client; keep only what the rule allows (e.g. the PS add-on question, worldview-aligned problem framing, a specific risk reversal). Never override a client rule with this file.
 7. Then frame it with `tasks/reframe-offer.md` and write with `tasks/write-first-email.md`.
 
-## Tensions with canon (awaiting Jan's ruling, 2026-11-02)
-- ⚠️ **Free audit.** Canon `tasks/reframe-offer.md` "Bound it in time" uses "Audit back to you by Friday. No call, no charge". Keller: free audit = D tier; send the finished work instead, framed as an opportunity report. Counter-view noted beside the canon line.
-- ⚠️ **Webinars in cold outbound.** Canon `campaign-ops/knowledge/abm-engine-implementation.md` (1:1 channels, Event invites): "Event CTAs outperform other offers in cold outbound to enterprise. Start with webinars on trending topics → then IRL dinners". Keller: webinar invite D tier for outbound, dinner/roundtable A tier. Agreement on dinners; conflict on webinars. Counter-view noted beside the canon line.
+## Tensions with canon (Jan ruled 2026-11-02: keep both)
+- ⚠️ **Free audit.** Canon `tasks/reframe-offer.md` "Bound it in time" uses "Audit back to you by Friday. No call, no charge". Keller: free audit = D tier; send the finished work instead, framed as an opportunity report. Kept as a competing view beside the canon line; surface both when choosing.
+- ⚠️ **Webinars in cold outbound.** Canon `campaign-ops/knowledge/abm-engine-implementation.md` (1:1 channels, Event invites): "Event CTAs outperform other offers in cold outbound to enterprise. Start with webinars on trending topics → then IRL dinners". Keller: webinar invite D tier for outbound, dinner/roundtable A tier. Agreement on dinners; conflict on webinars. Kept as a competing view beside the canon line; surface both when choosing.
 - ⚠️ **Deliverable-promising offers vs the house gate.** Canon gates "Lead with the asset" (only when the asset exists and ships same day; never under a value-CTA ban). Keller's S tier is mostly deliverables. Reconciled, not contradicted: the permissionless form (work already in email 1) passes the gate; a PROMISE of future free work does not. Flag for Jan only if he wants the gate loosened.
