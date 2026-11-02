@@ -31,6 +31,15 @@ Ask for these four. Do not proceed on guesses, and ask again if an answer is vag
 If they cannot answer 4, that is the finding. Say so. Most weak offers are weak because there
 is nothing to give.
 
+## Before the reframe: build the offer (2026-11-02, Mitchell Keller)
+
+Framing cannot rescue a description. Load `clusters/cold-email/knowledge/offer-design-keller.md`
+and run its §6 procedure first: baseline offer shape, value equation corrected for strangers
+(worldview alignment over bigger promises, a mechanism behind every speed/ease claim, a
+specific guarantee), intro offer vs full offer by buyer state, offer type from the 27-offer
+tier list, and the signal-fit check (the offer must speak to the pain the list's signal
+implies). Only then pick a reframe move below.
+
 ## The reframe
 
 Work through these in order. Stop at the first one that fits, do not stack them.
@@ -43,6 +52,7 @@ Work through these in order. Stop at the first one that fits, do not stack them.
 | **Lead with the asset** | The thing IS the email, no pitch needed | "I pulled 400 founders hiring SDRs. Want the file?" |
 | **Bound it in time** | Free, narrow, and it expires | "Audit back to you by Friday. No call, no charge" |
 
+- **Counter-view (2026-11-02):** a free audit is the weakest cold offer ("nobody wants to know what's wrong, they want someone who can fix it"); send the finished work as an opportunity report (opportunity + how to capture it) instead of promising an audit [keller-27 youtu.be/KsZo0G0Vx_U]. Awaiting Jan's ruling: supersede the "Audit back to you by Friday" example or keep both.
 - **Gate on "Lead with the asset" (2026-10-11, creator-radar review L3-13):** it promises a deliverable, so the house ban on deliverable-promising CTAs applies (SKILL.md step 6): only when the asset already exists and ships same day; never for a client under the value-CTA ban.
 
 Two rules that survive every version of this:
@@ -65,13 +75,17 @@ Two rules that survive every version of this:
 
 ## The checklist
 
-The offer is not ready until all five are true. Check them explicitly and name any that fail.
+The offer is not ready until all seven are true. Check them explicitly and name any that fail.
 
 1. **Specific outcome plus a timeline.** Not "more meetings". X in Y days. Numbers force clarity.
 2. **Clear steps to get there.** They can picture how it happens. No black box.
 3. **Social proof.** Does not have to be an exact client. Years, a project, a relevant result.
 4. **Low commitment ask.** Free, fast, no call. This is the biggest single lever.
 5. **Relevance to them.** Built for their situation, not blasted at a list.
+6. **Mechanism behind every bold claim** (2026-11-02, Keller). Fast or effortless without a
+   stated reason reads as fake; name why it is possible.
+7. **Believable to a stranger** (2026-11-02, Keller). The outcome is sized to what someone with
+   no trust would believe, and the copy carries 2-3 facts only their segment would know.
 
 ## The frame
 
@@ -99,7 +113,7 @@ WHY IT WORKS
 <three bullets>
 
 CHECKLIST
-<all five, each passed or failed with one line of reasoning>
+<all seven, each passed or failed with one line of reasoning>
 
 FRAME USED
 <insider / expert, and why>

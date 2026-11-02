@@ -151,7 +151,7 @@ What happens once the infrastructure exists: awareness segments become ads retar
 |---|---|
 | Gifting campaigns | Multiply ROI by tying to an IRL event + custom email sequences per recipient + generating social content from the process (Freckle: custom pickleball rackets to 60 ICP accounts in SF → 140k impressions) |
 | Warm intros | #1 hack: add your close network (investors, partners, evangelists) to a **monthly company update** — recent wins + insider reflections, paired with asks that would feel uncomfortable 1:1 ("just signed a medical-device case study — know anyone like X?") |
-| Event invites | Event CTAs outperform other offers in cold outbound to enterprise. Start with webinars on trending topics → then IRL (small dinners) in SF/NY-type hotspots |
+| Event invites | Event CTAs outperform other offers in cold outbound to enterprise. Start with webinars on trending topics → then IRL (small dinners) in SF/NY-type hotspots. **Counter-view (2026-11-02):** in cold outbound a webinar invite is D tier ("nobody cares about your webinar"), while a dinner/roundtable hung on an event is A tier; lead with the IRL format [keller-27 youtu.be/KsZo0G0Vx_U, see `clusters/cold-email/knowledge/offer-design-keller.md`]. Awaiting Jan's ruling. |
 | Manual outreach | Automate 90%+; reserve manual for dream + high-intent accounts where a lower conversion rate is unacceptable. Hyper-personalize (custom microsites). Where manual vastly outperforms → **human-in-the-loop AI sequencing** to scale it |
 
 Evidence (2026-10-11) for the 1:1 rows above:
