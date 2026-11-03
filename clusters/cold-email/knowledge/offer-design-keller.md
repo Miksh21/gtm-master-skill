@@ -3,6 +3,7 @@
 > Source: Mitchell Keller, YouTube @MitchellKeller_ (channel UCCGG9j6abrpdKNgKlMBh6Ag; cold email agency founder).
 > [keller-100m] "Build Your $100M Offer in 7 Minutes" youtu.be/Hhs23vxf8Y4 (2026-07-08) ·
 > [keller-27] "Brutally Ranking 27 Outbound Offers" youtu.be/KsZo0G0Vx_U (2026-09-21).
+> Full idea-to-GTM procedure from two further Keller videos (live YC walkthrough, psychology of free work): `clusters/campaign-ops/tasks/idea-to-gtm-offer.md` (2026-11-03).
 > Filed 2026-11-02 at Jan's direct request as working gtm-master knowledge (not a holding take).
 > The channel is tracked by the creator-radar from 2026-11-02; new videos arrive as insight cards in the Monday review.
 > Points that pull against existing canon are listed in "Tensions with canon" at the bottom; Jan ruled keep both on 2026-11-02.

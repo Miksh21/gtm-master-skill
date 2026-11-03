@@ -1,6 +1,6 @@
 ---
 name: gtm-master
-description: Master GTM / B2B outbound knowledge base: one router over 15 clusters of runnable tasks and deep knowledge. Covers offer design (value equation for cold traffic, intro offers, 27 outbound offers ranked, offer revalidation against signals), cold email (first emails, follow-ups, subject lines, stress tests, spintax, deliverability, SPF/DKIM/DMARC, warmup), buying signals and intent data (scoring, stacking, alpha signals), list building (Sales Navigator, TAM, ABM), Clay enrichment and workflows (waterfalls, Claygent, Sending Gate, CRM and sequencer push), ICP, personas, lead scoring, objection handling, multi-channel and LinkedIn sequences, campaign ops (hypothesis matrix, A/B tests, reports), RevOps (forecasting, routing, CRM migration, pricing), B2B paid ads (Meta, LinkedIn ABM, Google), AEO and Reddit, content marketing (newsletters, SEO, creators, affiliates) and GTM philosophy (BIPSY). Use for ANY GTM, outbound, sales engineering or RevOps work. Not for deep organic LinkedIn content (linkedin-content), LinkedIn ads fundamentals (linkedin-ads) or exec comms framing (game-pyramid).
+description: Master GTM / B2B outbound router over 15 task and knowledge clusters. Covers offer design (value equation for cold traffic, intro offers, 27 ranked outbound offers, revalidation vs signals), cold email (first emails, follow-ups, subject lines, stress tests, spintax, deliverability, SPF/DKIM/DMARC, warmup), buying signals and intent (scoring, stacking, alpha signals), list building (Sales Navigator, TAM, ABM), Clay workflows (waterfalls, Claygent, Sending Gate, CRM/sequencer push), ICP, personas, lead scoring, objections, multichannel and LinkedIn sequences, campaign ops (hypothesis matrix, A/B tests, reports), RevOps (forecasting, routing, CRM migration, pricing), B2B paid ads (Meta, LinkedIn ABM, Google), AEO and Reddit, content marketing (newsletters, SEO, creators, affiliates) and GTM philosophy (BIPSY). Use for ANY GTM, outbound, sales engineering or RevOps work. Not for organic LinkedIn content (linkedin-content), LinkedIn ads basics (linkedin-ads) or exec comms (game-pyramid).
 ---
 
 ## Setup (Run Once Per Session)
@@ -38,7 +38,7 @@ Master router for B2B GTM/outbound work. Knowledge is split into **15 clusters**
 | **lead-scoring** | "score leads", "prioritize list", "ICP scoring", "lead tiering", "who to contact first" | 1 task (score-and-prioritize) |
 | **objections** | "handle objection", "not interested reply", "send more info reply", "wrong person reply", "objection playbook" | 1 task (handle-objection) |
 | **sequences** | "multi-channel sequence", "LinkedIn outreach", "LinkedIn sequence", "email + LinkedIn flow", "connection request", "InMail" | 2 tasks (design-multi-channel, write-linkedin-sequence) |
-| **campaign-ops** | "TAM", "hypothesis matrix", "name campaigns", "set up campaign", "second brain", "deliverability audit", "LinkedIn profile audit", "CTA optimization", "analyze replies", "score meeting intent", "A/B test", "weekly report", "tier campaigns" | 13 tasks |
+| **campaign-ops** | "idea to GTM", "TAM", "hypothesis matrix", "name campaigns", "set up campaign", "second brain", "deliverability audit", "LinkedIn profile audit", "CTA optimization", "analyze replies", "score meeting intent", "A/B test", "weekly report", "tier campaigns" | 13 tasks |
 | **linkedin-organic** | "write a LinkedIn post", "hook", "carousel", "CTA", "repurpose", "viral post analysis", "swipe file", "trending topics", "niche", "content pillars", "content calendar", "audience persona", "smart comment", "connection request", "DM opener", "profile optimizer", "post analytics" | 21 skills across content / research / strategy / engagement / networking / analytics |
 | **revops** | "diagnose revenue system", "forecast", "pipeline coverage", "pipeline visibility", "lead routing", "handoffs", "data governance", "operating cadence", "revenue planning", "deal desk", "deal velocity", "CRM migration", "AI pricing" | 2 tasks (run-revops-diagnostic, plan-crm-migration) + 9 knowledge files |
 | **paid-ads** | "Meta ads", "Facebook B2B", "LinkedIn ABM ads", "1:1 ABM", "Google Ads", "ad creative", "creative fatigue", "retargeting", "CAPI", "ads audit", "ads report", "ad engagement signals" | 3 tasks (plan-abm-ads-campaign, audit-ads-account, monthly-ads-report) + 9 knowledge files |
@@ -223,6 +223,7 @@ Creator-radar field tactics (channel-by-tier assignment, warm-calling stacks, Li
 
 | Intent | Load |
 |---|---|
+| Turn an idea, product or client into GTM + first offer (Keller method: research, business problem, insider relevancy, role-only audience, signals, snippets, email, psychology, feedback loop); also score several business ideas | `{SKILL_BASE}/clusters/campaign-ops/tasks/idea-to-gtm-offer.md` |
 | Map total addressable market | `{SKILL_BASE}/clusters/campaign-ops/tasks/map-tam.md` |
 | Build a hypothesis matrix | `{SKILL_BASE}/clusters/campaign-ops/tasks/build-hypothesis-matrix.md` |
 | Name campaigns consistently | `{SKILL_BASE}/clusters/campaign-ops/tasks/name-campaigns.md` |
@@ -473,6 +474,7 @@ For deep tool comparison → `{SKILL_BASE}/clusters/cold-email/reference/sequenc
 ```
 GTM request
 ├─ Strategy / planning?
+│  ├─ Idea → GTM + offer    → clusters/campaign-ops/tasks/idea-to-gtm-offer.md
 │  ├─ Define ICP            → clusters/icp/tasks/build-icp.md
 │  ├─ Map TAM               → clusters/campaign-ops/tasks/map-tam.md
 │  ├─ Build hypotheses      → clusters/campaign-ops/tasks/build-hypothesis-matrix.md
